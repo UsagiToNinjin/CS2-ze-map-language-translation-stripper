@@ -1,0 +1,1 @@
+# CS2-map-language-translation-stripper
