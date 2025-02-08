@@ -5,12 +5,12 @@
 {
     "add":
     [ 
-		{
+	 {
             "classname": "point_worldtext",
-			"origin": "-10987 -827 10551",
+	    "origin": "-10987 -827 10551",
             "angles": "0 90 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "1",
             "justify_horizontal": "1",
             "font_name": "Arial Black",
@@ -20,7 +20,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "ありがとうございます",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -29,10 +29,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "-10987 -947 10592",
+	    "origin": "-10987 -947 10592",
             "angles": "0 90 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "1",
             "justify_horizontal": "1",
             "font_name": "Arial Black",
@@ -42,7 +42,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "私が初めて作ったマップです",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -51,10 +51,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "-10987 -947 10564",
+	    "origin": "-10987 -947 10564",
             "angles": "0 90 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "1",
             "justify_horizontal": "1",
             "font_name": "Arial Black",
@@ -64,7 +64,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "大部分のマップとモデルは",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -73,10 +73,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "-10987 -947 10556",
+	    "origin": "-10987 -947 10556",
             "angles": "0 90 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "1",
             "justify_horizontal": "1",
             "font_name": "Arial Black",
@@ -86,7 +86,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "自分が作りました",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -95,10 +95,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "-10987 -703.5 10594",
+	    "origin": "-10987 -703.5 10594",
             "angles": "0 90 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "1",
             "justify_horizontal": "1",
             "font_name": "Arial Black",
@@ -108,7 +108,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "六轮鸭",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -117,10 +117,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "-10987 -713 10588",
+            "origin": "-10987 -713 10588",
             "angles": "0 90 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "1",
             "justify_horizontal": "1",
             "font_name": "Arial Black",
@@ -130,7 +130,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "音楽/路線help：",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -139,10 +139,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "-10987 -703.5 10582",
+	    "origin": "-10987 -703.5 10582",
             "angles": "0 90 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "1",
             "justify_horizontal": "1",
             "font_name": "Arial Black",
@@ -152,7 +152,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "Kim-code-I",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -284,9 +284,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnStartTouch",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<钢盔团和PMC集团合作占领了阿拜多斯学校>>",                
                         "delay": 0.0,
@@ -295,7 +295,7 @@
 
                     {
                         "outputname": "OnStartTouch",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<好在星野她们已经安全撤出学校了>>",                
                         "delay": 4.0,
@@ -304,7 +304,7 @@
 
                     {
                         "outputname": "OnStartTouch",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<比纳不知为何也来到了阿拜多斯学校>>",                
                         "delay": 2.0,
@@ -313,7 +313,7 @@
 
                     {
                         "outputname": "OnStartTouch",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<sensei，我们得想办法把学校夺回来>>",                
                         "delay": 6.0,
@@ -325,9 +325,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnStartTouch",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<ヘルメット団とPMC集団が協力しアビドス学校を占領しました>>",                
                         "delay": 0.0,
@@ -336,7 +336,7 @@
 
                     {
                         "outputname": "OnStartTouch",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<幸いにも星野たちはもう学校から無事に脱出しました>>",                
                         "delay": 4.0,
@@ -345,7 +345,7 @@
 
                     {
                         "outputname": "OnStartTouch",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<何故ビナーがアビドス学校に戻ってきたのか分かりません>>",                
                         "delay": 2.0,
@@ -354,7 +354,7 @@
 
                     {
                         "outputname": "OnStartTouch",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<先生, 私たち学校を取り戻す方法を考え出さないと>>",                
                         "delay": 6.0,
@@ -373,9 +373,9 @@
             {
                 "io":
                 [					
-					{
+	            {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<竟然把学校破坏成这样...>>",                
                         "delay": 1.0,
@@ -387,9 +387,9 @@
             {
                 "io":
                 [					
-					{
+	            {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<学校にこんなことをするなんて...>>",                
                         "delay": 1.0,
@@ -408,9 +408,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<请小心，侦测到一名钢盔团成员躲在后面>>",                
                         "delay": 0.0,
@@ -419,7 +419,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<就从这里破墙而入吧>>",                
                         "delay": 5.0,
@@ -428,7 +428,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<sensei清远离这里，马上要爆炸了>>",                
                         "delay": 15.0,
@@ -440,9 +440,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<気を付けてください，ヘルメット団の一人が後ろに隠れているのを探知しました>>",                
                         "delay": 0.0,
@@ -451,7 +451,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<ここから壁を壊して入りましょ>>",                
                         "delay": 5.0,
@@ -460,7 +460,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<先生 ここから離れてください，もうすぐ爆発します>>",                
                         "delay": 15.0,
@@ -479,9 +479,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<这里的门又被反锁了>>",                
                         "delay": 0.0,
@@ -490,7 +490,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<好，打开了！>>",                
                         "delay": 15.0,
@@ -499,7 +499,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<请等待一下sensei>>",                
                         "delay": 5.0,
@@ -511,9 +511,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<ここのドアまた鍵がかかっていますね>>",                
                         "delay": 0.0,
@@ -522,7 +522,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<よし，開いた！>>",                
                         "delay": 15.0,
@@ -531,7 +531,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<ちょっと待ってください先生>>",                
                         "delay": 5.0,
@@ -550,9 +550,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<这里有个梯子能通往三楼>>",                
                         "delay": 0.0,
@@ -561,7 +561,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<请稍等sensei>>",                
                         "delay": 5.0,
@@ -573,9 +573,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<ここ3階に行ける梯子があります>>",                
                         "delay": 0.0,
@@ -584,7 +584,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<待ってください先生>>",                
                         "delay": 5.0,
@@ -603,9 +603,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTimer",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<增员来袭>>",                
                         "delay": 0.0,
@@ -614,7 +614,7 @@
                 
                     {
                         "outputname": "OnTimer",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<增员来袭>>",                
                         "delay": 0.5,
@@ -623,7 +623,7 @@
 
                     {
                         "outputname": "OnTimer",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<增员来袭>>",                
                         "delay": 1.0,
@@ -632,7 +632,7 @@
 
                     {
                         "outputname": "OnTimer",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<僵尸将在8s后被传送>>",                
                         "delay": 2.0,
@@ -644,9 +644,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTimer",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<助けを呼んでいます>>",                
                         "delay": 0.0,
@@ -655,7 +655,7 @@
                 
                     {
                         "outputname": "OnTimer",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<助けを呼んでいます>>",                
                         "delay": 0.5,
@@ -664,7 +664,7 @@
 
                     {
                         "outputname": "OnTimer",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<助けを呼んでいます>",                
                         "delay": 1.0,
@@ -673,7 +673,7 @@
 
                     {
                         "outputname": "OnTimer",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<8秒後ゾンビがテレポートされます>>",                
                         "delay": 2.0,
@@ -692,9 +692,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<侦测到大范围波动,sensei请找掩体躲避沙尘暴>>",                
                         "delay": 11.0,
@@ -706,9 +706,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アロナ<<大きな範囲の波動を探知しました,先生バンカーを見つけ砂嵐を避けて下さい>>",                
                         "delay": 11.0,
@@ -727,9 +727,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<十连进行中.......>>",                
                         "delay": 0.0,
@@ -741,9 +741,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<十連ガチャ進行中.......>>",                
                         "delay": 0.0,
@@ -762,9 +762,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<无人机支援已到达>>",                
                         "delay": 0.0,
@@ -776,9 +776,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<ドローンがもう着きました>>",                
                         "delay": 0.0,
@@ -797,9 +797,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnCase01",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<左边栅栏碎了!!>>",                
                         "delay": 0.0,
@@ -808,7 +808,7 @@
 
                     {
                         "outputname": "OnCase02",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<中间栅栏碎了!!>>",                
                         "delay": 0.0,
@@ -817,7 +817,7 @@
 
                     {
                         "outputname": "OnCase03",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<右边栅栏碎了!!>>",                
                         "delay": 0.0,
@@ -829,9 +829,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnCase01",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<左の垣が壊れた!!>>",                
                         "delay": 0.0,
@@ -840,7 +840,7 @@
 
                     {
                         "outputname": "OnCase02",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<中の垣が壊れた!!>>",                
                         "delay": 0.0,
@@ -849,7 +849,7 @@
 
                     {
                         "outputname": "OnCase03",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<右の垣が壊れた!!>>",                
                         "delay": 0.0,
@@ -868,9 +868,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPlayerPickup",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<星野加入了战斗>>",                
                         "delay": 0.0,
@@ -879,7 +879,7 @@
 
                     {
                         "outputname": "OnPlayerPickup",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 绫音<<诶？星野前辈什么时候过去的？>>",                
                         "delay": 1.0,
@@ -891,9 +891,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPlayerPickup",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<星野が戦闘に参加しました>>",                
                         "delay": 0.0,
@@ -902,7 +902,7 @@
 
                     {
                         "outputname": "OnPlayerPickup",
-						"targetname": "severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say アヤネ<<え？ 星野先輩いつ行っちゃったんですか？>>",                
                         "delay": 1.0,
@@ -921,9 +921,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPass",
-						"targetname": "[PR#]severadmin",
+		        "targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<-4cost?>>",                
                         "delay": 0.0,
@@ -935,9 +935,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPass",
-						"targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<-4コスト?>>",                
                         "delay": 0.0,
