@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.02.08
+// stripper by 兎RB 25.02.09
 // map ze_bluearchive_abydos_b1
 // workshop id 3261481731
 // 中文>>日本語
@@ -19,7 +19,7 @@
             "color": "255 255 255",
             "fullbright": "1",
             "enabled": "1",
-            "message": "ありがとうございます",
+            "message": "感謝を申し上げます",
 	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
@@ -338,7 +338,7 @@
                         "outputname": "OnStartTouch",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say アロナ<<幸いにも星野たちはもう学校から無事に脱出しました>>",                
+                        "overrideparam": "say アロナ<<幸いにもホシノたちはもう学校から無事に脱出しました>>",                
                         "delay": 4.0,
                         "timestofire": 1
                     },
@@ -356,7 +356,7 @@
                         "outputname": "OnStartTouch",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say アロナ<<先生, 私たち学校を取り戻す方法を考え出さないと>>",                
+                        "overrideparam": "say アロナ<<先生, 私たちの学校を取り戻す方法を考え出さないと>>",                
                         "delay": 6.0,
                         "timestofire": 1
                     }
@@ -453,7 +453,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say アロナ<<ここから壁を壊して入りましょ>>",                
+                        "overrideparam": "say アロナ<<ここから壁を壊して入りましょう>>",                
                         "delay": 5.0,
                         "timestofire": 1
                     },
@@ -515,7 +515,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say アロナ<<ここのドアまた鍵がかかっていますね>>",                
+                        "overrideparam": "say アロナ<<こっちのドアまた鍵がかかっていますね>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -577,7 +577,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say アロナ<<ここ3階に行ける梯子があります>>",                
+                        "overrideparam": "say アロナ<<ここに3階へ行ける梯子があります>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -648,7 +648,7 @@
                         "outputname": "OnTimer",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<助けを呼んでいます>>",                
+                        "overrideparam": "say <<援軍が来てます>>",                
                         "delay": 0.0,
                         "timestofire": -1
                     },
@@ -657,7 +657,7 @@
                         "outputname": "OnTimer",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<助けを呼んでいます>>",                
+                        "overrideparam": "say <<援軍が来てます>>",                
                         "delay": 0.5,
                         "timestofire": -1
                     },
@@ -666,7 +666,7 @@
                         "outputname": "OnTimer",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<助けを呼んでいます>",                
+                        "overrideparam": "say <<援軍が来てます>>",                
                         "delay": 1.0,
                         "timestofire": -1
                     },
@@ -780,7 +780,7 @@
                         "outputname": "OnPressed",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<ドローンがもう着きました>>",                
+                        "overrideparam": "say <<ドローンが着きました>>",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -833,7 +833,7 @@
                         "outputname": "OnCase01",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<左の垣が壊れた!!>>",                
+                        "overrideparam": "say <<左のフェンスが壊れた!!>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -842,7 +842,7 @@
                         "outputname": "OnCase02",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<中の垣が壊れた!!>>",                
+                        "overrideparam": "say <<中のフェンスが壊れた!!>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -851,7 +851,7 @@
                         "outputname": "OnCase03",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<右の垣が壊れた!!>>",                
+                        "overrideparam": "say <<右のフェンスが壊れた!!>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -895,7 +895,7 @@
                         "outputname": "OnPlayerPickup",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<星野が戦闘に参加しました>>",                
+                        "overrideparam": "say <<ホシノが戦闘に参加しました>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -904,7 +904,7 @@
                         "outputname": "OnPlayerPickup",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say アヤネ<<え？ 星野先輩いつ行っちゃったんですか？>>",                
+                        "overrideparam": "say アヤネ<<え？ ホシノ先輩いつ行っちゃったんですか？>>",                
                         "delay": 1.0,
                         "timestofire": 1
                     }
