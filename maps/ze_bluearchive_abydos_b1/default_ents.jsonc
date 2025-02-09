@@ -834,7 +834,7 @@
                         "outputname": "OnCase01",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<左のフェンスが壊れた!!>>",                
+                        "overrideparam": "say <<左の鉄格子が壊れた!!>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -843,7 +843,7 @@
                         "outputname": "OnCase02",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<中のフェンスが壊れた!!>>",                
+                        "overrideparam": "say <<中の鉄格子が壊れた!!>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -852,7 +852,7 @@
                         "outputname": "OnCase03",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<右のフェンスが壊れた!!>>",                
+                        "overrideparam": "say <<右の鉄格子が壊れた!!>>",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
