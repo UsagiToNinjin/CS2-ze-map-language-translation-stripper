@@ -938,7 +938,7 @@
                 [					
 		    {
                         "outputname": "OnPass",
-			"targetname": "[PR#]severadmin",
+			"targetname": "severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<-4コスト?>>",                
                         "delay": 0.0,
