@@ -2,7 +2,6 @@
 // map ze_bluearchive_abydos_b1
 // workshop id 3261481731
 // 中文>>日本語
-// 翻訳機に頼らず自分で翻訳したので多少変な部分があったら書き直して下さい
 {
     "add":
     [ 
@@ -649,7 +648,7 @@
                         "outputname": "OnTimer",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<援軍が来てます>>",                
+                        "overrideparam": "say <<敵襲>>",                
                         "delay": 0.0,
                         "timestofire": -1
                     },
@@ -658,7 +657,7 @@
                         "outputname": "OnTimer",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<援軍が来てます>>",                
+                        "overrideparam": "say <<敵襲>>",                
                         "delay": 0.5,
                         "timestofire": -1
                     },
@@ -667,7 +666,7 @@
                         "outputname": "OnTimer",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say <<援軍が来てます>>",                
+                        "overrideparam": "say <<敵襲>>",                
                         "delay": 1.0,
                         "timestofire": -1
                     },
