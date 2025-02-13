@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.02.12
+// stripper by 兎RB 25.02.13
 // map ze_bluearchive_abydos_b1
 // workshop id 3261481731
 // 中文>>日本語
@@ -391,7 +391,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "severadmin",
                         "inputname": "Command",      
-                        "overrideparam": "say アロナ<<学校にこんなことをするなんて...>>",                
+                        "overrideparam": "say アロナ<<よくも学校をこんな形にしたな...>>",                
                         "delay": 1.0,
                         "timestofire": 1
                     }
