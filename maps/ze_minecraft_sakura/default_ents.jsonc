@@ -1,16 +1,16 @@
-// stripper by 兎RB 25.02.17
+// stripper by 兎RB 25.02.18
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // 中文>>日本語
 {
     "add":
     [ 
-		    {
+	{
             "classname": "point_worldtext",
-			"origin": "-229.496063 3390.298584 641.349243",
+	    "origin": "-229.496063 3390.298584 641.349243",
             "angles": "0 0 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "0",
             "justify_horizontal": "0",
             "font_name": "Arial Black",
@@ -20,7 +20,7 @@
             "fullbright": "0",
             "enabled": "1",
             "message": "私にDM送ってね~o( =∩ω∩= )m",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -29,10 +29,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "1288.219238 -630.413086 177.221802",
+	    "origin": "1288.219238 -630.413086 177.221802",
             "angles": "0 0 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "0",
             "justify_horizontal": "0",
             "font_name": "Arial Black",
@@ -42,7 +42,7 @@
             "fullbright": "0",
             "enabled": "1",
             "message": "ミニ艦長室",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -51,10 +51,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "2935.741943 31.019243 401.778564",
+	    "origin": "2935.741943 31.019243 401.778564",
             "angles": "0 0 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.125",
             "justify_vertical": "0",
             "justify_horizontal": "0",
             "font_name": "Arial Black",
@@ -64,7 +64,7 @@
             "fullbright": "0",
             "enabled": "1",
             "message": "ヒトカゲが一息で",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -73,10 +73,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "8.891357 3110.974121 491.374573",
+	    "origin": "8.891357 3110.974121 491.374573",
             "angles": "0 0 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.25",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.25",
             "justify_vertical": "0",
             "justify_horizontal": "0",
             "font_name": "Arial Black",
@@ -86,7 +86,7 @@
             "fullbright": "0",
             "enabled": "1",
             "message": "(＞ ＜)☆",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -95,10 +95,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "2857.282471 -260.047760 904.902954",
+	    "origin": "2857.282471 -260.047760 904.902954",
             "angles": "0 270 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.25",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.25",
             "justify_vertical": "0",
             "justify_horizontal": "0",
             "font_name": "Arial Black",
@@ -108,7 +108,7 @@
             "fullbright": "0",
             "enabled": "1",
             "message": "の小さな家",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -117,10 +117,10 @@
 
         {
             "classname": "point_worldtext",
-			"origin": "-403.206329 3180.247314 261.569702",
+	    "origin": "-403.206329 3180.247314 261.569702",
             "angles": "0 270 90",
-			"scales": "1 1 1",
-			"depth_render_offset": "0.25",
+	    "scales": "1 1 1",
+	    "depth_render_offset": "0.25",
             "justify_vertical": "0",
             "justify_horizontal": "0",
             "font_name": "Arial Black",
@@ -130,7 +130,7 @@
             "fullbright": "0",
             "enabled": "1",
             "message": "φ(≧ω≦*)♪",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -148,9 +148,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 大家好我就是梦梦杨桃冰箱❀",                
                         "delay": 0.0,
@@ -162,9 +162,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say はじめまして私は梦梦杨桃冰箱❀です",                
                         "delay": 0.0,
@@ -347,9 +347,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 樱",                
                         "delay": 0.0,
@@ -361,9 +361,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 桜",                
                         "delay": 0.0,
@@ -382,9 +382,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 已解锁 mini的色图小屋o(*≧▽≦)ツ",                
                         "delay": 0.0,
@@ -396,9 +396,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say miniエッチな部屋はもう封印したよo(*≧▽≦)ツ",                
                         "delay": 0.0,
@@ -418,9 +418,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 嘤嘤嘤有坏比o(≧口≦)o",                
                         "delay": 0.0,
@@ -432,9 +432,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ぴえん比率が悪くなるo(≧口≦)o",                
                         "delay": 0.0,
@@ -454,9 +454,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 此路是我开 此树是我栽(‾◡◝)",                
                         "delay": 2.0,
@@ -465,7 +465,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 要想从此过，留下买fu财！",                
                         "delay": 3.0,
@@ -474,7 +474,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （守住码头 是男人就坚持40秒~o( =∩ω∩= )）",                
                         "delay": 6.0,
@@ -483,7 +483,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （僵尸10秒后传送 快跑(>▽<)）",                
                         "delay": 46.0,
@@ -495,9 +495,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say この道は私が開拓したよ この木は私が植えたよ(‾◡◝)",                
                         "delay": 2.0,
@@ -506,7 +506,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ここから通りたければ，金になるものを置いて行け！",                
                         "delay": 3.0,
@@ -515,7 +515,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （港を守れ 男なら40秒防御よろぴ~o( =∩ω∩= )）",                
                         "delay": 6.0,
@@ -524,7 +524,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （10秒後ゾンビがテレポートされるよ 早く走れ(>▽<)）",                
                         "delay": 46.0,
@@ -544,9 +544,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 呜啊~(＞ ＜)☆原来是miku的老公来辣！",                
                         "delay": 0.0,
@@ -555,7 +555,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 进屋坐坐叭！咱是miku的妹妹米库喵ฅ",                
                         "delay": 2.0,
@@ -564,7 +564,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （在屋内存活60秒直至后花园门开）",                
                         "delay": 4.0,
@@ -573,7 +573,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （僵尸10秒后传送至厕所）",                
                         "delay": 64.0,
@@ -582,7 +582,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 啊咧！_(:з」∠)_马桶里爬出了怪怪的东西",                
                         "delay": 74.0,
@@ -591,7 +591,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱记得钓鱼台上的钻石块是树屋开关喵Ծ‸Ծ",                
                         "delay": 66.0,
@@ -600,7 +600,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 海的对面是敌人啊...",                
                         "delay": 68.0,
@@ -612,9 +612,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say うわ~(＞ ＜)☆ほらmikuの旦那さんが来たよ！",                
                         "delay": 0.0,
@@ -623,7 +623,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 家に入って座ってみ！私はmikuの妹ミクにゃんฅ",                
                         "delay": 2.0,
@@ -632,7 +632,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （屋内で60秒生存した後花園のドアが開きます）",                
                         "delay": 4.0,
@@ -641,7 +641,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （ゾンビが10秒後トイレにテレポートされます）",                
                         "delay": 64.0,
@@ -650,7 +650,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say あれ！_(:з」∠)_便器の中から変なもの出てきた",                
                         "delay": 74.0,
@@ -659,7 +659,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 私たち釣り場の上のダイアモンドは木屋のスイッチであることを忘れてはいけないにゃんԾ‸Ծ",                
                         "delay": 66.0,
@@ -668,7 +668,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 海の向こうは敵だわ...",                
                         "delay": 68.0,
@@ -688,9 +688,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 一直呆在这里可是会受到惩罚的呦ο(=•ω＜=)ρ⌒☆",                
                         "delay": 0.0,
@@ -702,9 +702,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ずっとここにいると罰を受けるかもしれないよο(=•ω＜=)ρ⌒☆",                
                         "delay": 0.0,
@@ -723,9 +723,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnUseLocked",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 啊嘞┌|*´∀｀|┘貌似什么东西忘记触发了喵",                
                         "delay": 0.0,
@@ -737,9 +737,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnUseLocked",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say あれ┌|*´∀｀|┘何かのトリガーを忘れたぽいにゃん",                
                         "delay": 0.0,
@@ -758,9 +758,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPlayerPickup",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 你惊扰了 文爱警察",                
                         "delay": 0.0,
@@ -772,9 +772,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPlayerPickup",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say お前ネット恋愛のお巡りさんのこと邪魔したな",                
                         "delay": 0.0,
@@ -794,9 +794,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (树屋将在60s后开放)",                
                         "delay": 0.5,
@@ -805,7 +805,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (僵尸20秒后传送，开润！）",                
                         "delay": 26.0,
@@ -814,7 +814,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (树屋将在10s后开放)",                
                         "delay": 50.0,
@@ -823,7 +823,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (僵尸被阻挡5秒，快跑！！(o゜▽゜)o☆）",                
                         "delay": 60.1,
@@ -835,9 +835,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (木屋が60秒後に開放されます)",                
                         "delay": 0.5,
@@ -846,7 +846,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (ゾンビが20秒後テレポートされます，オープンラン！）",                
                         "delay": 26.0,
@@ -855,7 +855,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (木屋が10秒後に開放されます)",                
                         "delay": 50.0,
@@ -864,7 +864,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (ゾンビが5秒間阻止された，早く走れ！！(o゜▽゜)o☆）",                
                         "delay": 60.1,
@@ -884,9 +884,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 啊咧 忘记平常这里是死路咧！Σ( °Д °;)",                
                         "delay": 0.0,
@@ -895,7 +895,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ˃̶͈ ˂̶͈ 康来只能走夜袭（划掉）的秘密通道了",                
                         "delay": 3.0,
@@ -904,7 +904,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 那咱就从这里下去吧！",                
                         "delay": 38.0,
@@ -913,7 +913,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (30秒后门开）",                
                         "delay": 8.0,
@@ -922,7 +922,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (10秒后门开）",                
                         "delay": 28.0,
@@ -934,9 +934,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say あれ ここが行き止まりだったことを忘れてた！Σ( °Д °;)",                
                         "delay": 0.0,
@@ -945,7 +945,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ˃̶͈ ˂̶͈ 夜襲の秘密通路に行くしかなさそうだね",                
                         "delay": 3.0,
@@ -954,7 +954,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 今すぐ降りていこうぜ！",                
                         "delay": 38.0,
@@ -963,7 +963,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (30秒後ドアが開きます）",                
                         "delay": 8.0,
@@ -972,7 +972,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (10秒後ドアが開きます）",                
                         "delay": 28.0,
@@ -992,9 +992,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 三个字，让大家多守40秒(/ω＼*)",                
                         "delay": 4.0,
@@ -1003,7 +1003,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 四十秒",                
                         "delay": 5.0,
@@ -1012,7 +1012,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （僵尸5秒后传送）",                
                         "delay": 0.0,
@@ -1021,7 +1021,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 门开辣！",                
                         "delay": 45.0,
@@ -1030,7 +1030,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 漂流瓶里闪闪发光的是钥匙捏ο(=•ω＜=)ρ⌒☆",                
                         "delay": 48.0,
@@ -1042,9 +1042,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 三文字，もっと皆様に守ってもらうよ40秒(/ω＼*)",                
                         "delay": 4.0,
@@ -1053,7 +1053,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 四十秒",                
                         "delay": 5.0,
@@ -1062,7 +1062,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （ゾンビが5秒後テレポートされます）",                
                         "delay": 0.0,
@@ -1071,7 +1071,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ドア開いたん！",                
                         "delay": 45.0,
@@ -1080,7 +1080,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 漂流瓶の中でピカピカ光ってるのは鍵だよο(=•ω＜=)ρ⌒☆",                
                         "delay": 48.0,
@@ -1100,9 +1100,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （码头30秒后开放！）",                
                         "delay": 0.0,
@@ -1111,7 +1111,7 @@
                     
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 让我们去酒馆做做吧",                
                         "delay": 30.0,
@@ -1123,9 +1123,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （30秒後港が解放されます！）",                
                         "delay": 0.0,
@@ -1134,7 +1134,7 @@
                     
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 私たち酒屋に連れて一杯やろう",                
                         "delay": 30.0,
@@ -1154,9 +1154,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 啊咧⊙▾⊙酒馆被海盗霸占了 还是绕个路吧！",                
                         "delay": 0.0,
@@ -1168,9 +1168,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say あれ⊙▾⊙ホテルがバイキングに占められた 回り道をした方が良さそう！",                
                         "delay": 0.0,
@@ -1190,9 +1190,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 这个宫殿看起来很复杂的样子( ╯▽╰)",                
                         "delay": 0.0,
@@ -1201,7 +1201,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 让咱想想走哪里好捏！",                
                         "delay": 1.0,
@@ -1210,7 +1210,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （守住30s）",                
                         "delay": 3.0,
@@ -1219,7 +1219,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 右侧二楼小屋有一个通往哨站的梯子捏！",                
                         "delay": 30.0,
@@ -1228,7 +1228,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱记得二楼小屋开关在秋千旁来着",                
                         "delay": 32.0,
@@ -1240,9 +1240,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say この宮殿は凄く複雑に見えるね( ╯▽╰)",                
                         "delay": 0.0,
@@ -1251,7 +1251,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 何処に行けばいいか考えてみよう！",                
                         "delay": 1.0,
@@ -1260,7 +1260,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （防御30秒）",                
                         "delay": 3.0,
@@ -1269,7 +1269,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 右の2階の小部屋には哨所に繋がる橋があるよ！",                
                         "delay": 30.0,
@@ -1278,7 +1278,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 確かに2階の小部屋のぶらんこのそばにスイッチがあった気がする",                
                         "delay": 32.0,
@@ -1297,9 +1297,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 侧路暂时无法通行哦喵~( ╯▽╰)",                
                         "delay": 0.0,
@@ -1311,9 +1311,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 脇道は暫く通行できないにゃん~( ╯▽╰)",                
                         "delay": 0.0,
@@ -1333,9 +1333,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 二楼门30秒后打开喵！",                
                         "delay": 0.1,
@@ -1344,7 +1344,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （侧路15秒后开放）",                
                         "delay": 1.1,
@@ -1353,7 +1353,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 试试走哨站再绕进酒馆！",                
                         "delay": 8.0,
@@ -1365,9 +1365,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 2階のドアが30秒後開くんだにゃん！",                
                         "delay": 0.1,
@@ -1376,7 +1376,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （脇道が15秒後解放されます）",                
                         "delay": 1.1,
@@ -1385,7 +1385,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 哨所を通って回り道して酒場に入ってみよう！",                
                         "delay": 8.0,
@@ -1405,9 +1405,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 呜啊 好烧啊φ(゜▽゜*)♪",                
                         "delay": 0.0,
@@ -1416,7 +1416,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱精通撬锁17余年，撬个烟囱也不在话下！",                
                         "delay": 3.0,
@@ -1425,7 +1425,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （给米库30秒撬烟囱时间）",                
                         "delay": 6.0,
@@ -1434,7 +1434,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 根本难不倒咱捏！(≧∀≦)",                
                         "delay": 36.0,
@@ -1443,7 +1443,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 我们下去吧！",                
                         "delay": 40.0,
@@ -1455,9 +1455,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say うわ 熱いなφ(゜▽゜*)♪",                
                         "delay": 0.0,
@@ -1466,7 +1466,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 私たちの鍵開けは17年以上の精通を誇る、煙突を開けるなんて朝飯前だぜ！",                
                         "delay": 3.0,
@@ -1475,7 +1475,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （ミクに煙突を開ける時間30秒をください）",                
                         "delay": 6.0,
@@ -1484,7 +1484,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say この程度では私たちに全然問題にならない！(≧∀≦)",                
                         "delay": 36.0,
@@ -1493,7 +1493,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 私たち降りていこう！",                
                         "delay": 40.0,
@@ -1513,9 +1513,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 哨站顶部有一个钟",                
                         "delay": 0.0,
@@ -1524,7 +1524,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 敲响它或许就能扰乱海盗的注意力！",                
                         "delay": 2.0,
@@ -1536,9 +1536,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 哨所の頂上に鐘があります",                
                         "delay": 0.0,
@@ -1547,7 +1547,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say あの鐘を鳴らせば海賊団の集中力を落とせるかもしれない！",                
                         "delay": 2.0,
@@ -1567,9 +1567,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 海盗们果然都被吸引到岸边了捏！",                
                         "delay": 3.0,
@@ -1578,7 +1578,7 @@
                     
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 我们就光明正大地从哨站门口走出去吧！",                
                         "delay": 6.0,
@@ -1587,7 +1587,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 拉动门卫室的拉杆就能开门了(/≧▽≦)/",                
                         "delay": 8.0,
@@ -1596,7 +1596,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （僵尸10秒后传送）",                
                         "delay": 1.0,
@@ -1608,9 +1608,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say やっぱり海賊たちが海岸へ集まってきたね！",                
                         "delay": 3.0,
@@ -1619,7 +1619,7 @@
                     
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 私たちよ正々堂々と哨所の入り口から歩いていこう！",                
                         "delay": 6.0,
@@ -1628,7 +1628,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 警備室のレバーを引くとドアを開ける！",                
                         "delay": 8.0,
@@ -1637,7 +1637,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （ゾンビが10秒後テレポートされます）",                
                         "delay": 1.0,
@@ -1656,9 +1656,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (大门25秒后打开)",                
                         "delay": 0.1,
@@ -1670,9 +1670,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (大門が25秒後開きます)",                
                         "delay": 0.1,
@@ -1692,9 +1692,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 进酒馆小酌一杯(* /ω＼*)",                
                         "delay": 0.0,
@@ -1706,9 +1706,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 酒場に入って一杯飲むぜ(* /ω＼*)",                
                         "delay": 0.0,
@@ -1728,9 +1728,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 老板，温两碗酒，来一碟茴香豆。",                
                         "delay": 0.0,
@@ -1739,7 +1739,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱们去楼上坐叭！",                
                         "delay": 3.0,
@@ -1751,9 +1751,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 店長、お酒を二杯温めて, フェンネル豆を一皿ください。",                
                         "delay": 0.0,
@@ -1762,7 +1762,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 上の階に行って座りましょうか！",                
                         "delay": 3.0,
@@ -1782,9 +1782,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 真是的 这么着急领我进屋吖(*/ω＼*)",                
                         "delay": 0.0,
@@ -1793,7 +1793,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （十分钟后）",                
                         "delay": 5.0,
@@ -1802,7 +1802,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ⊙▽⊙海盗又鲨回来了 咱们快跑",                
                         "delay": 7.0,
@@ -1811,7 +1811,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+		        "targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 可是楼下已经被包围了",                
                         "delay": 9.0,
@@ -1820,7 +1820,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 看来只能走窗户了喵！",                
                         "delay": 10.0,
@@ -1829,7 +1829,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (25秒后玻璃碎掉）",                
                         "delay": 15.0,
@@ -1838,7 +1838,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 海盗这会儿都在酒馆",                
                         "delay": 40.0,
@@ -1847,7 +1847,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 那咱们就趁虚而入 端了他们的老窝♪(´∇`*)",                
                         "delay": 43.0,
@@ -1859,9 +1859,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say まったく なんでそんなに急いで私を部屋に連れ込もうとするの(*/ω＼*)",                
                         "delay": 0.0,
@@ -1870,7 +1870,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （十分後）",                
                         "delay": 5.0,
@@ -1879,7 +1879,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ⊙▽⊙海賊がまた戻ってきた 早く逃げよう",                
                         "delay": 7.0,
@@ -1888,7 +1888,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say でも下の階にはもう囲まれてる",                
                         "delay": 9.0,
@@ -1897,7 +1897,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 窓を通じて行くしかなさそう！",                
                         "delay": 10.0,
@@ -1906,7 +1906,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (25秒後ガラスが割れます）",                
                         "delay": 15.0,
@@ -1915,7 +1915,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 今海賊たちが全員酒場にいる",                
                         "delay": 40.0,
@@ -1924,7 +1924,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say それじゃ隙を見て乗り込んで、奴らの根城を潰そう♪(´∇`*)",                
                         "delay": 43.0,
@@ -1944,9 +1944,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 根据咱多年坐船全球巡回演唱的经历",                
                         "delay": 0.0,
@@ -1955,7 +1955,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 船舱开关一定在船舵旁边！^O^",                
                         "delay": 2.0,
@@ -1967,9 +1967,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 私たちが長年船に乗って世界巡回公演をしてきた経験に因ると",                
                         "delay": 0.0,
@@ -1978,7 +1978,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 船室のスイッチは船室のそばにあるはずではないでしょうか！^O^",                
                         "delay": 2.0,
@@ -1998,9 +1998,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 船舱在40秒后打开",                
                         "delay": 0.0,
@@ -2009,7 +2009,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 潜入舰长室计划开始ヾ(≧O≦)〃",                
                         "delay": 40.0,
@@ -2021,9 +2021,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 船が40秒後に開きます",                
                         "delay": 0.0,
@@ -2032,7 +2032,7 @@
 
                     {
                         "outputname": "OnPressed",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 艦長室侵入作戦開始ヾ(≧O≦)〃",                
                         "delay": 40.0,
@@ -2052,9 +2052,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 康来没办法从正门进入舰长室了！",                
                         "delay": 0.0,
@@ -2063,7 +2063,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 会不会有秘密通道捏（´v｀）",                
                         "delay": 3.0,
@@ -2075,9 +2075,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 正門から艦長室に入るしかなさそう！",                
                         "delay": 0.0,
@@ -2086,7 +2086,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 秘密通路があるかもしれないよ（´v｀）",                
                         "delay": 3.0,
@@ -2106,9 +2106,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱就说的吧 果然脚下有秘密通道╰(*°▽°*)╯",                
                         "delay": 0.0,
@@ -2117,7 +2117,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (30秒后门开)",                
                         "delay": 3.0,
@@ -2126,7 +2126,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (10秒后僵尸传送)",                
                         "delay": 25.0,
@@ -2135,7 +2135,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 朝着最后一个房间前进吧！",                
                         "delay": 33.0,
@@ -2147,9 +2147,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 噂をすれば影が差す やっぱり足の下に秘密通路があった╰(*°▽°*)╯",                
                         "delay": 0.0,
@@ -2158,7 +2158,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 30秒後ドアが開きます",                
                         "delay": 3.0,
@@ -2167,7 +2167,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 10秒後ゾンビがテレポートされます",                
                         "delay": 25.0,
@@ -2176,7 +2176,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 最後の部屋へ向いて進もう！",                
                         "delay": 33.0,
@@ -2196,9 +2196,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 守住这扇铁门咱们就成功辣(/≧▽≦)/",                
                         "delay": 0.2,
@@ -2207,7 +2207,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （最后30秒！！）",                
                         "delay": 3.1,
@@ -2216,7 +2216,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 成功辣！！!φ(≧ω≦*)♪",                
                         "delay": 40.0,
@@ -2225,7 +2225,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 此刻开始我们要征服星辰大海！！",                
                         "delay": 45.0,
@@ -2234,7 +2234,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 剧终 感谢游玩！~o( =∩ω∩= )m",                
                         "delay": 47.0,
@@ -2246,9 +2246,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say この鉄のドアを守れば我々の勝ちだ(/≧▽≦)/",                
                         "delay": 0.2,
@@ -2257,7 +2257,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （最後30秒！！）",                
                         "delay": 3.1,
@@ -2266,7 +2266,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say やった！！!φ(≧ω≦*)♪",                
                         "delay": 40.0,
@@ -2275,7 +2275,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say これより我々が星の海を征服する！！",                
                         "delay": 45.0,
@@ -2284,7 +2284,7 @@
 
                     {
                         "outputname": "OnTrigger",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say おしまい プレイしてくれてありがとー！~o( =∩ω∩= )m",                
                         "delay": 47.0,
@@ -2304,9 +2304,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnStartTouch",
-						"targetname": "[PR#]cmd",
+			"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say _(:з」∠)_不要再打咱了喵",                
                         "delay": 0.0,
@@ -2318,9 +2318,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnStartTouch",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",      
                         "overrideparam": "say _(:з」∠)_また打たないでにゃん",                
                         "delay": 0.0,
