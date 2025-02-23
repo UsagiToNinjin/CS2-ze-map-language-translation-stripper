@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.02.18
+// stripper by 兎RB 25.02.23
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // 中文>>日本語
@@ -776,7 +776,7 @@
                         "outputname": "OnPlayerPickup",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say お前ネット恋愛のお巡りさんのこと邪魔したな",                
+                        "overrideparam": "say お前よくもLAN愛を邪魔したな",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
