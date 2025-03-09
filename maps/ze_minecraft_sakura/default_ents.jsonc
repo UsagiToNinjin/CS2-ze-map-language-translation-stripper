@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.02.23
+// stripper by 兎RB 25.03.09
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // 中文>>日本語
@@ -1136,7 +1136,7 @@
                         "outputname": "OnPressed",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 私たち酒屋に連れて一杯やろう",                
+                        "overrideparam": "say 私たちを酒場に連れて一杯やらせて",                
                         "delay": 30.0,
                         "timestofire": 1
                     }
