@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.03.09
+// stripper by 兎RB 25.03.16
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // 中文>>日本語
@@ -661,7 +661,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 私たち釣り場の上のダイアモンドは木屋のスイッチであることを忘れてはいけないにゃんԾ‸Ծ",                
+                        "overrideparam": "say 釣り場の上のダイアモンドは木屋の扉のスイッチであることを忘れちゃいけないにゃんԾ‸Ծ",                
                         "delay": 66.0,
                         "timestofire": 1
                     },
@@ -1046,7 +1046,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 三文字，もっと皆様に守ってもらうよ40秒(/ω＼*)",                
+                        "overrideparam": "say 三文字，もっとみんなに守ってもらうよ40秒(/ω＼*)",                
                         "delay": 4.0,
                         "timestofire": 1
                     },
@@ -1172,7 +1172,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say あれ⊙▾⊙ホテルがバイキングに占められた 回り道をした方が良さそう！",                
+                        "overrideparam": "say あれ⊙▾⊙ホテルがバイキングに占められちゃった 回り道をした方が良さそう！",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1244,7 +1244,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say この宮殿は凄く複雑に見えるね( ╯▽╰)",                
+                        "overrideparam": "say この宮殿はすごく複雑に見えるね( ╯▽╰)",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -1253,7 +1253,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 何処に行けばいいか考えてみよう！",                
+                        "overrideparam": "say どこに行けばいいか考えてみよう！",                
                         "delay": 1.0,
                         "timestofire": 1
                     },
@@ -1315,7 +1315,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 脇道は暫く通行できないにゃん~( ╯▽╰)",                
+                        "overrideparam": "say 近道は暫く通行できないにゃん~( ╯▽╰)",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1378,7 +1378,7 @@
                         "outputname": "OnPressed",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say （脇道が15秒後解放されます）",                
+                        "overrideparam": "say （近道が15秒後解放されます）",                
                         "delay": 1.1,
                         "timestofire": 1
                     },
@@ -1468,7 +1468,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 私たちの鍵開けは17年以上の精通を誇る、煙突を開けるなんて朝飯前だぜ！",                
+                        "overrideparam": "say 俺たちの鍵開けは17年以上の精通を誇る、煙突を開けるなんて朝飯前だぜ！",                
                         "delay": 3.0,
                         "timestofire": 1
                     },
@@ -1486,7 +1486,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say この程度では私たちに全然問題にならない！(≧∀≦)",                
+                        "overrideparam": "say この程度では全然問題にならない！(≧∀≦)",                
                         "delay": 36.0,
                         "timestofire": 1
                     },
@@ -1549,7 +1549,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say あの鐘を鳴らせば海賊団の集中力を落とせるかもしれない！",                
+                        "overrideparam": "say あの鐘を鳴らせば海賊団の意識をそらせられるかもしれない！",                
                         "delay": 2.0,
                         "timestofire": 1
                     }
@@ -1621,7 +1621,7 @@
                         "outputname": "OnPressed",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 私たちよ正々堂々と哨所の入り口から歩いていこう！",                
+                        "overrideparam": "say 私たちは正々堂々と哨所の入り口から歩いていこう！",                
                         "delay": 6.0,
                         "timestofire": 1
                     },
@@ -1630,7 +1630,7 @@
                         "outputname": "OnPressed",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 警備室のレバーを引くとドアを開ける！",                
+                        "overrideparam": "say 警備室のレバーを引くとドアを開けられる！",                
                         "delay": 8.0,
                         "timestofire": 1
                     },
@@ -1710,7 +1710,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 酒場に入って一杯飲むぜ(* /ω＼*)",                
+                        "overrideparam": "say 酒場に入って一杯飲もうぜ(* /ω＼*)",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1971,7 +1971,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 私たちが長年船に乗って世界巡回公演をしてきた経験に因ると",                
+                        "overrideparam": "say 私たちが長年船に乗って世界巡回公演をしてきた経験によると",                
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -2358,12 +2358,602 @@
                         "outputname": "OnStartTouch",
                         "targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say 思えなかったよ,私たちがまた戻ってきたことをにゃん",                
+                        "overrideparam": "say 思わなかったよ,私たちがまた戻ってきたことをにゃん",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
                 ]
             }    
         }                        
+    ],
+    "modify": // add music lyric output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]inmyroom"
+            },
+            "insert":
+            {
+                "io":
+                [					
+		    {
+                        "outputname": "OnEntitySpawned",
+			"targetname": "lyric_inmyroom",
+                        "inputname": "Enable",                
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnEntitySpawned",
+			"targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ♪ MUSIC [ キツネDJ : In My Room ]",                
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }
+    ],        
+    "add": // music inmyroom lyric
+    [
+        {
+	    "targetname": "lyric_inmyroom",
+	    "classname": "trigger_multiple",
+	    "origin": "1096 -436 236",
+	    "angles": "0 0 0",
+	    "scales": "1 1 1",
+	    "startdisabled": "1",
+            "wait": "1",
+	    "spawnflags": "4097",
+	    "model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
+	    "io":
+	    [
+                {
+		    "outputname": "OnStartTouch",
+		    "targetname": "!self",
+		    "inputname": "Kill",
+		    "delay": 0.1,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnStartTouch",
+		    "targetname": "lyric_hud",
+		    "inputname": "FireUser1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnStartTouch",
+		    "targetname": "lyric_hud",
+		    "inputname": "FireUser2",
+		    "delay": 0.0,
+		    "timestofire": -1
+		}
+            ]
+        },
+        
+        {
+	    "targetname": "lyric_hud",
+	    "classname": "env_hudhint",
+	    "messagevolume": "0",
+	    "message": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
+            "io":
+	    [
+	        {
+		    "outputname": "OnUser1",
+	            "targetname": "!self",
+		    "inputname": "ShowHudHint",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser1",
+		    "targetname": "!self",
+		    "inputname": "FireUser1",
+		    "delay": 0.1,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM",
+		    "delay": 3.3,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM",
+		    "delay": 6.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
+		    "delay": 8.6,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "あー眠たい殻に篭りたい\nAー nemuritai kara ni komoritai",
+		    "delay": 12.3,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "携帯のアラームが止まない\nkeitai no aramu ga yamanai",
+		    "delay": 15.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "ノールックで消す俺はベテラン\nnourukku de kesu ore ha beteran",
+		    "delay": 17.6,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "Wait, oh wait, oh wait, oh wait",
+		    "delay": 20.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "あーもう何もする気起きない\nAー mou nani mo suru ki okinai",
+		    "delay": 23.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "ゲームに課金しすぎたみたい\ngeimu ni kakin shisugita mitai",
+		    "delay": 25.7,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "もっかいベッドに包まりダイブ\nmokkai beddo ni tsutsumari daibu",
+		    "delay": 28.3,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "Wait, oh wait, oh wait, oh wait",
+		    "delay": 30.9,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "今日お昼からランチの予定\nkyou ohiru kara ranchi no yotei",
+		    "delay": 34.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "約束してたけど既に too late oh\nyakusoku shiteta kedo sude ni too late oh",
+		    "delay": 35.8,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "鳴りやまない ringin′ my bell\nnariyamanai ringin′ my bell",
+		    "delay": 39.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "ため息が部屋に広がる\ntameiki ga heya ni hirogaru",
+		    "delay": 41.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "こうなっても動じない\nkou nattemo doujinai",
+		    "delay": 44.3,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "Uber呼んでもはやアニメ三昧\nUber yondemo haya anime zanmai",
+		    "delay": 46.5,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "そう背伸びはしないよ 等身大の\nsou senobi ha shinaiyo doushindai no",
+		    "delay": 49.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "「俺」「俺」「俺」\n「ore」「ore」「ore」",
+		    "delay": 52.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+	            "inputname": "SetMessage",
+                    "overrideparam": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
+		    "delay": 54.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM",
+		    "delay": 56.8,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM",
+		    "delay": 59.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
+		    "delay": 62.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM",
+		    "delay": 65.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM",
+		    "delay": 67.5,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM",
+		    "delay": 70.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
+		    "delay": 72.5,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "あぁこりゃまたボッチだね\nAa korya mata botti dane",
+		    "delay": 76.5,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "またブッチでプチっとオッコだね\nmata butti de buttito okko dane",
+		    "delay": 78.5,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "でも部屋から出れない\ndemo heya kara derenai",
+		    "delay": 81.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "ビックマウス許してくれなきゃ\nbikkumausu yurushite kurenakya",
+		    "delay": 82.5,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "ブレイクアップだぜ\nbureikuappu daze",
+	            "delay": 84.8,
+	            "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "独り言サイファー無限ループで\nhitorigoto saifa mugen ruupu de",
+		    "delay": 87.5,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "続くlike a マシンガントークの\ntsuzuku like a mashingantouku no",
+		    "delay": 89.6,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "お供にはそう my ハピーターンと\notomo niha sou my hapitan to",
+		    "delay": 92.6,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "冷たいお茶で欠席裁判\ntsumetai ocha de kesseki saiban",
+		    "delay": 94.2,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "無罪放免です\nmuzanhoumen desu",
+		    "delay": 98.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "しつこくしすぎな奴は裏目に出る\nshikoshiku sugina yatsu ha urame ni deru",
+		    "delay": 100.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "部屋に飾るシクラメン\nheya ni kazaru shikuramen",
+		    "delay": 103.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "ため息で花びらが揺れる\ntameiki de hanabira ga hirogaru",
+		    "delay": 105.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "ああもう連絡もしない\naa mou renraku mo sinai",
+		    "delay": 108.5,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "怒られることには\nokorareru koto niha",
+		    "delay": 110.3,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "そう耐性ないから\nsou naisei nai kara",
+		    "delay": 112.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "嫌いになったつもりではないのよ\nkirai ni nattari tsumori deha nainoyo",
+		    "delay": 113.2,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "「メンゴ」「メンゴ」「メン...」\n「mengo」「mengo」「men...」",
+		    "delay": 116.1,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
+		    "delay": 118.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM",
+		    "delay": 120.8,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM",
+		    "delay": 123.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
+		    "delay": 126.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM",
+		    "delay": 129.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM",
+		    "delay": 131.5,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM",
+		    "delay": 133.9,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
+		    "delay": 136.6,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "SetMessage",
+                    "overrideparam": "All day, oh my, all day, oh my in my room",
+		    "delay": 140.0,
+		    "timestofire": -1
+		},
+
+                {
+	            "outputname": "OnUser2",
+		    "targetname": "!self",
+		    "inputname": "Kill",
+		    "delay": 159.0,
+		    "timestofire": -1
+		}
+            ]
+        }
     ]
 }
