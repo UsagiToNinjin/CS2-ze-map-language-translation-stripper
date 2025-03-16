@@ -436,7 +436,7 @@
                         "outputname": "OnTrigger",
 			"targetname": "cmd",
                         "inputname": "Command",      
-                        "overrideparam": "say ぴえん比率が悪くなるo(≧口≦)o",                
+                        "overrideparam": "say ぴえん人間の比率が悪くなるo(≧口≦)o",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
