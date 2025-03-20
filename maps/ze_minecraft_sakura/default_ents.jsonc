@@ -1,144 +1,3007 @@
-// stripper by 兎RB 25.03.16
+// stripper by 兎RB 25.03.19
 // map ze_minecraft_sakura
 // workshop id 3184013959
-// 中文>>日本語
+// if find mistranslation tell me
+// serial number 日本語:"1" 한국어:"2"
 {
-    "add":
-    [ 
-	{
-            "classname": "point_worldtext",
-	    "origin": "-229.496063 3390.298584 641.349243",
-            "angles": "0 0 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "0",
-            "justify_horizontal": "0",
-            "font_name": "Arial Black",
-            "font_size": "100",
-            "world_units_per_pixel": "0.05",
-            "color": "255 255 255",
-            "fullbright": "0",
-            "enabled": "1",
-            "message": "私にDM送ってね~o( =∩ω∩= )m",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "1288.219238 -630.413086 177.221802",
-            "angles": "0 0 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "0",
-            "justify_horizontal": "0",
-            "font_name": "Arial Black",
-            "font_size": "19",
-            "world_units_per_pixel": "0.224",
-            "color": "0 0 0",
-            "fullbright": "0",
-            "enabled": "1",
-            "message": "ミニ艦長室",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "2935.741943 31.019243 401.778564",
-            "angles": "0 0 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "0",
-            "justify_horizontal": "0",
-            "font_name": "Arial Black",
-            "font_size": "19",
-            "world_units_per_pixel": "0.35",
-            "color": "0 0 0",
-            "fullbright": "0",
-            "enabled": "1",
-            "message": "ヒトカゲが一息で",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "8.891357 3110.974121 491.374573",
-            "angles": "0 0 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.25",
-            "justify_vertical": "0",
-            "justify_horizontal": "0",
-            "font_name": "Arial Black",
-            "font_size": "20",
-            "world_units_per_pixel": "0.35",
-            "color": "0 0 0",
-            "fullbright": "0",
-            "enabled": "1",
-            "message": "(＞ ＜)☆",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "2857.282471 -260.047760 904.902954",
-            "angles": "0 270 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.25",
-            "justify_vertical": "0",
-            "justify_horizontal": "0",
-            "font_name": "Arial Black",
-            "font_size": "100",
-            "world_units_per_pixel": "0.05",
-            "color": "0 0 0",
-            "fullbright": "0",
-            "enabled": "1",
-            "message": "の小さな家",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "-403.206329 3180.247314 261.569702",
-            "angles": "0 270 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.25",
-            "justify_vertical": "0",
-            "justify_horizontal": "0",
-            "font_name": "Arial Black",
-            "font_size": "50",
-            "world_units_per_pixel": "0.1",
-            "color": "0 0 0",
-            "fullbright": "0",
-            "enabled": "1",
-            "message": "φ(≧ω≦*)♪",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        }
-    ],    
     "modify":
     [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "insert":
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",      
+                        "overrideparam": "1", // please type language serial number here               
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "GetValue",                    
+                        "delay": 0.1,
+                        "timestofire": 1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.03.19",                    
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }    
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",			
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "2",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",			
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+			"io":
+			[    
+                // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "42545",
+					"inputname": "SetMessage",
+					"overrideparam": "お楽しみ！！！\nφ(≧ω≦*)♪",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "42348",
+					"inputname": "SetMessage",
+					"overrideparam": "賢者は恋に落ちないが　貴方と一緒だと賢者でいるのが難しい",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+				{
+					"outputname": "OnCase01",
+					"targetname": "42348",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 4332 -476.533630 331.672668",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "42291",
+					"inputname": "SetMessage",
+					"overrideparam": "孤独な人はいつも観察が上手.JPG",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "42287",
+					"inputname": "SetMessage",
+					"overrideparam": "哨所",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "42285",
+					"inputname": "SetMessage",
+					"overrideparam": "海岸酒場",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "42284",
+					"inputname": "SetMessage",
+					"overrideparam": "MinionsHian♪\nの小さな家",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "41925",
+					"inputname": "SetMessage",
+					"overrideparam": "mini妻の家",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "41933",
+					"inputname": "SetMessage",
+					"overrideparam": "ヒトカゲが一息で\nお前たちを燃やし尽くす！！！",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "41931",
+					"inputname": "SetMessage",
+					"overrideparam": "お！kurumi熱い\n(＞ ＜)☆",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "41931",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 8 3110.974121 496.374573",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "41930",
+					"inputname": "SetMessage",
+					"overrideparam": "Luckyにゃん！luckydayฅ",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "41928",
+					"inputname": "SetMessage",
+					"overrideparam": "醤油の白酒金庫",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "41916", 
+					"inputname": "SetMessage",
+					"overrideparam": "あんまりミニじゃない\n艦長室",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "42241",
+					"inputname": "SetMessage",
+					"overrideparam": "←マップに問題があったらすぐ\n私にDM送ってね~o( =∩ω∩= )m",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "dreammmmmmm",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say はじめまして私は梦梦杨桃冰箱❀です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "MinionsHian~",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say miniエッチな部屋はもう封印したよo(*≧▽≦)ツ>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "luckyyy",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 桜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42172",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ぴえん比率が悪くなるo(≧口≦)o>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "41948",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say この道は私が開拓したよ この木は私が植えたよ(‾◡◝)>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41948",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ここから通りたければ，金になるものを置いて行け！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41948",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （港を守れ 男なら40秒防御よろぴ~o( =∩ω∩= )）>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41948",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （10秒後ゾンビがテレポートされるよ 早く走れ(＞▽＜)）>46.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say うわ~(＞ ＜)☆ほら　ミクの旦那さんが来たよ！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 家に入って座ってみ！私はミクの妹ミクにゃんฅ>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （屋内で60秒生存した後花園のドアが開きます）>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （ゾンビが10秒後トイレにテレポートされます）>64.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say あれ！_(:з」∠)_便器の中から変なもの出てきた>74.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 釣り場の上のダイアモンドは木屋の扉のスイッチであることを忘れちゃいけないにゃんԾ‸Ծ>66.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 海の向こうは敵だわ...>68.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42061",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ずっとここにいると罰を受けるかもしれないよο(=•ω＜=)ρ⌒☆>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "egg_sakura",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUseLocked>cmd>Command>say あれ┌|*´∀｀|┘何かのトリガーを忘れたぽいにゃん>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "gu",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say お前よくもLAN愛を邪魔したな>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41983",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (木屋が60秒後に開放されます)>0.5>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41983",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (ゾンビが20秒後テレポートされます，オープンラン！）>26.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41983",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (木屋が10秒後に開放されます)>50.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "41983",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (ゾンビが5秒間阻止された，早く走れ！！(o゜▽゜)o☆）>60.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say あれ ここが行き止まりだったことを忘れてた！Σ( °Д °;)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase01",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ˃̶͈ ˂̶͈ 夜襲の秘密通路に行くしかなさそうだね>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 今すぐ降りていこうぜ！>38.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (30秒後ドアが開きます）>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (10秒後ドアが開きます）>28.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase01",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 三文字，もっとみんなに守ってもらうよ40秒(/ω＼*)>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 四十秒>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （ゾンビが5秒後テレポートされます）>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ドア開いたん！>45.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 漂流瓶の中でピカピカ光ってるのは鍵だよο(=•ω＜=)ρ⌒☆>48.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say （30秒後港が解放されます！）>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 私たちを酒場に連れて一杯やらせて>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42393",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say あれ⊙▾⊙ホテルがバイキングに占められちゃった 回り道をした方が良さそう！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say この宮殿はすごく複雑に見えるね( ╯▽╰)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase01",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say どこに行けばいいか考えさせて！>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （防御30秒）>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 右の2階の小部屋には哨所に繋がる橋があるよ！>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase01",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 2階の小部屋は確かぶらんこのそばにスイッチがあった気がする>32.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "celu",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 近道は暫く通行できないにゃん~( ╯▽╰)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 2階のドアが30秒後開くんだにゃん！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say （近道が15秒後解放されます）>1.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 哨所を通って回り道して酒場に入ってみよう！>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say うわ 熱いなφ(゜▽゜*)♪>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 俺たちの鍵開けは17年以上の精通を誇る、煙突を開けるなんて朝飯前だぜ！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （ミクに煙突を開ける時間30秒をください）>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say この程度では全然問題にならない！(≧∀≦)>36.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 私たち降りていこう！>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42436",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 哨所の頂上に鐘があります>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42436",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say あの鐘を鳴らせば海賊団の意識をそらせられるかもしれない！>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say やっぱり海賊たちが海岸へ集まってきたね！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 私たちは正々堂々と哨所の入り口から歩いていこう！>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 警備室のレバーを引くとドアを開けられる！>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say （ゾンビが10秒後テレポートされます）>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "door14",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (大門が25秒後開きます)>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42452",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 酒場に入って一杯飲もうぜ(* /ω＼*)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42453",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 店長、お酒を二杯温めて, フェンネル豆を一皿ください。>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42453",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 上の階に行って座りましょうか！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say まったく なんでそんなに急いで私を部屋に連れ込もうとするの(*/ω＼*)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （十分後）>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ⊙▽⊙海賊がまた戻ってきた 早く逃げよう>7.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say でも下の階にはもう囲まれてる>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 窓を通じて行くしかなさそう！>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (25秒後ガラスが割れます）>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 今海賊たちが全員酒場にいる>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say それじゃ隙を見て乗り込んで、奴らの根城を潰そう♪(´∇`*)>43.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42468",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 私たちが長年船に乗って世界巡回公演をしてきた経験によると>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42468",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 船室のスイッチは船室のそばにあるはずではないでしょうか！^O^>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 船が40秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 艦長室侵入作戦開始ヾ(≧O≦)〃>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42495",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 正門から艦長室に入るしかなさそう！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42495",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 秘密通路があるかもしれないよ（´v｀）>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 噂をすれば影が差す やっぱり足の下に秘密通路があった╰(*°▽°*)╯>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 30秒後ドアが開きます>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 10秒後ゾンビがテレポートされます>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 最後の部屋へ向いて進もう！>33.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say この鉄のドアを守れば我々の勝ちだ(/≧▽≦)/>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （最後30秒！！）>3.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say やった！！!φ(≧ω≦*)♪>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say これより我々が星の海を征服する！！>45.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say おしまい プレイしてくれてありがとー！~o( =∩ω∩= )m>47.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "46778",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say _(:з」∠)_また打たないでにゃん>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "46776",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 思わなかったよ,私たちがまた戻ってきたことをにゃん>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "SetMessage",
+					"overrideparam": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>3.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>6.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitorikiri de isaseteyone>8.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あー眠たい殻に篭りたい\nAー nemuritai kara ni komoritai>12.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>携帯のアラームが止まない\nkeitai no aramu ga yamanai>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ノールックで消す俺はベテラン\nnourukku de kesu ore ha beteran>17.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あーもう何もする気起きない\nAー mou nani mo suru ki okinai>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ゲームに課金しすぎたみたい\ngeimu ni kakin shisugita mitai>25.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>もっかいベッドに包まりダイブ\nmokkai beddo ni tsutsumari daibu>28.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>今日お昼からランチの予定\nkyou ohiru kara ranchi no yotei>34.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>約束してたけど既に too late oh\nyakusoku shiteta kedo sude ni too late oh>35.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴りやまない ringin′ my bell\nnariyamanai ringin′ my bell>39.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ため息が部屋に広がる\ntameiki ga heya ni hirogaru>41.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>こうなっても動じない\nkou nattemo doujinai>44.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>Uber 呼んでもはやアニメ三昧\nUber yondemo haya anime zanmai>46.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>そう背伸びはしないよ 等身大の\nsou senobi ha shinaiyo doushindai no>49.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>「俺」「俺」「俺」\n「ore」「ore」「ore」>52.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM>54.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>56.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>59.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitorikiri de isaseteyone>62.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM>65.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM>67.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitorikiri de isaseteyone>72.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あぁこりゃまたボッチだね\nAa korya mata botti dane>76.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>またブッチでプチっとオッコだね\nmata butti de buttito okko dane>78.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>でも部屋から出れない\ndemo heya kara derenai>81.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ビックマウス許してくれなきゃ\nbikkumausu yurushite kurenakya>82.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ブレイクアップだぜ\nbureikuappu daze>84.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>独り言サイファー無限ループで\nhitorigoto saifa mugen rupu de>87.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>続くlike a マシンガントークの\ntsuzuku like a mashingantouku no>89.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>お供にはそう my ハピーターンと\notomo niha sou my hapitan to>92.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>冷たいお茶で欠席裁判\ntsumetai ocha de kesseki saiban>94.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>無罪放免です\nmuzanhoumen desu>98.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>しつこくしすぎな奴は裏目に出る\nshikoshiku sugina yatsu ha urame ni deru>100.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>部屋に飾るシクラメン\nheya ni kazaru shikuramen>103.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ため息で花びらが揺れる\ntameiki de hanabira ga yureru>105.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ああもう連絡もしない\nAA mou renraku mo sinai>108.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>怒られることには\nokorareru koto niha>110.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>そう耐性ないから\nsou naisei nai kara>112.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>嫌いになったつもりではないのよ\nkirai ni natta tsumori deha nainoyo>113.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>「メンゴ」「メンゴ」「メン...」\n「mengo」「mengo」「men...」>116.1>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM>118.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>120.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>123.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitorikiri de isaseteyone>126.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM>129.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM>131.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM>133.9>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitorikiri de isaseteyone>136.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // 한국어
+				{
+					"outputname": "OnCase02",
+					"targetname": "42545",
+					"inputname": "SetMessage",
+					"overrideparam": "기대해줘！！！\nφ(≧ω≦*)♪",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42348",
+					"inputname": "SetMessage",
+					"overrideparam": "현자는 사랑에 빠지지 않으나　당신과 함께 있으면 현자로 있기가 힘들다",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42348",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 4315 -476.533630 331.672668",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42291",
+					"inputname": "SetMessage",
+					"overrideparam": "고독한 사람은 언제나 관찰이 능숙.JPG",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42291",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 277.583649 3765 1028.006226",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42287",
+					"inputname": "SetMessage",
+					"overrideparam": "초소",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42285",
+					"inputname": "SetMessage",
+					"overrideparam": "해안술집",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42284",
+					"inputname": "SetMessage",
+					"overrideparam": "MinionsHian♪\n의 작으만한 집",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "41925",
+					"inputname": "SetMessage",
+					"overrideparam": "mini아내의 집",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "41933",
+					"inputname": "SetMessage",
+					"overrideparam": "파이리가 단숨에\n너희들을 태워 버리겠다！！！",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "41931",
+					"inputname": "SetMessage",
+					"overrideparam": "오！kurumi뜨거워\n(＞ ＜)☆",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "41931",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 4 3110.974121 496.374573",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "41930",
+					"inputname": "SetMessage",
+					"overrideparam": "Lucky냥！luckydayฅ",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "41928",
+					"inputname": "SetMessage",
+					"overrideparam": "간장백주창고",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "41916",
+					"inputname": "SetMessage",
+					"overrideparam": "그닥 미니하지 않는\n함장실",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42402",
+					"inputname": "SetMessage",
+					"overrideparam": "친구출연φ(≧ω≦*)♪",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42241",
+					"inputname": "SetMessage",
+					"overrideparam": "←맵에 문제가 생겼다면 바로\n나한테 DM 보내 줘~o( =∩ω∩= )m",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "dreammmmmmm",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 처음 뵙겠습니다 저는梦梦杨桃冰箱❀입니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "MinionsHian~",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say mini야한 방은 이미 막아 놨는걸o(*≧▽≦)ツ>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "luckyyy",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 벚꽃>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42172",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 으아아 비율이 나빠지잖아o(≧口≦)o>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "41948",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 이 길은 내가 개척한거야 이 나무는 내가 심은거야(‾◡◝)>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41948",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 여기서부터 지나가고 싶으면，돈이 되는 물건을 놓고 가！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41948",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （ 항구를 지켜라 남자라면40초 방어 잘 부탁해~o( =∩ω∩= )）>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41948",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （10초 후 좀비가 텔레포트 될꺼야 빨리 뛰어(＞▽＜)）>46.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 우와~(＞ ＜)☆봐봐 미쿠의 남편이 왔어！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 집에 와서 앉아 봐봐！나는 미쿠의 여동생 미쿠냥ฅ>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （실내에서 60초 생존한 후 하원의 문이 열립니다）>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （좀비가 10초 후 화장실에 텔레포트 됩니다）>64.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 어라！_(:з」∠)_변기 안에서 이상한 게 나왔어>74.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 낚시터 위에 다이아몬드는 나무집의 문 스위치 라는걸 잊어서는 안된다냥Ծ‸Ծ>66.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 바다 반대편에는 적이네...>68.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42061",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 계속 여기 있으면 벌을 받을지도 몰라ο(=•ω＜=)ρ⌒☆>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "egg_sakura",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUseLocked>cmd>Command>say 어라┌|*´∀｀|┘뭔가의 트리거를 잊은거 같아냥>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "gu",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say 이 자식 잘도 랜선연애 방해를>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41983",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (나무집이 60초 후에 개방됩니다)>0.5>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41983",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (좀비가 20초 후 텔레포트 됩니다，오픈 런！）>26.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41983",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (나무집이 10초 후에 개방됩니다)>50.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "41983",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (좀비가 5초 간 저지당했어，빨리 뛰어！！(o゜▽゜)o☆）>60.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 어라 여기가 막다른 길이었다는 것을 깜빡했어！Σ( °Д °;)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase02",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ˃̶͈ ˂̶͈ 야습의 비밀통로로 갈 수 밖에 없을 것 같네>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 지금 바로 내려가자！>38.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (30초 후 문이 열립니다）>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (10초 후 문이 열립니다）>28.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase02",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 세글자，좀 더 모두들에게 지켜 받을께 40초(/ω＼*)>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 사십초>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （좀비가 5초후 텔레포트 됩니다）>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 문 열렸어！>45.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 표류병 속에 반짝반짝 빛나는 것은 열쇠야ο(=•ω＜=)ρ⌒☆>48.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say （30초 후 항구가 개방됩니다！ ）>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 우리들을 술집에 대려가 한 잔 마시게 해줘>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42393",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 어라⊙▾⊙호텔이 바이킹한테 점령 당해버렸네 돌아서 가는편이 좋겠어！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 이 궁전은 엄청 복잡해 보이네( ╯▽╰)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 어디로 가면 좋을지 생각하게 해 줘！>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （방어30초）>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 오른쪽 2층 작은방에는 초소로 연결된 다리가 있어！>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 2층 작은방은 기억하기로는 그네 옆에 스위치가 있었던 것 같아>32.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "celu",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 옆 길은 잠시동안 통행 불가능하다냥~( ╯▽╰)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 2층 문이 30초 후 열린다냥！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say （ 옆 길이 15초 후 개방됩니다 ）>1.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 초소를 지나 돌아가서 술집에 들어가 보자！>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 우와 뜨거워라φ(゜▽゜*)♪>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 우리들의 문따기 실력은 17년 이상의 정통을 자랑하지、굴뚝 따는건 식은 죽 먹기！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （미쿠에게 굴뚝을 열을 시간 30초를 주세요）>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 이 정도로는 우리들에게 전혀 문제가 되지않아！(≧∀≦)>36.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 우리들 내려가자！>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42436",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 초소 정상에 종이 있습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42436",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 저 종을 울리면 해적단의 주위를 끌 수 있어！>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 역시나 해적들이 해안으로 몰리기 시작했네！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 우리들은 정정당당하게 초소 입구를 통해 걸어가자！>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 경비실의 레버를 당기면 문을 열 수 있어！>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say （좀비가 10초후 텔레포트 됩니다）>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "door14",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (대문이 25초 후 열립니다)>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42452",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 술집에 들어가 한 잔 마시자구나(* /ω＼*)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42453",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 사장님、술 두 잔 따뜻한걸로, 회향콩 한 접시 주세요。>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42453",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 윗 층으로 올라가 앉아볼까요！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 정말 왜 그렇게 다급하게 나를 방으로 데리고 들어갈려고 하는거야(*/ω＼*)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （십분후）>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ⊙▽⊙해적단이 또 돌아왔어 빨리 도망가자>7.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 그치만 밑에 층엔 이미 둘러싸여있어>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 창문을 통해 갈 수 밖에 없을 것 같아！>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (25초 후 창문이 깨집니다）>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 지금 해적들이 모두 술집에 있어>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 틈을 타서 배에 올라타、녀석들의 근거지를 부수자♪(´∇`*)>43.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42468",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 우리들이 오랫동안 배에 타 세계일주한 경험에 따르면>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42468",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 선실의 스위치는 선실 옆에 있지 않을까요！^O^>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 배가 40초후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 함장실침입전투개시ヾ(≧O≦)〃>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42495",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 정문으로부터 함장실로 들어갈 수 밖에 없을 것 같아！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42495",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 비밀통로가 있을 지도 몰라（´v｀）>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 호랑이도 제 말하면 온다더니 역시 발 밑에 비밀통로가 있었잖아╰(*°▽°*)╯>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 30초 후 문이 열립니다>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 10초 후 좀비가 텔레포트 됩니다>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 마지막 방으로 항하여 돌진！>33.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 이 철문을 지키면 우리들의 승리다(/≧▽≦)/>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （마지막30초！！）>3.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 해냈다！！!φ(≧ω≦*)♪>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 이제부터 우리들이 별의 바다를 정복한다！！>45.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 끝 플레이 해 줘서 고마워！~o( =∩ω∩= )m>47.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "46778",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say _(:з」∠)_또 때리지 말아달라냥>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "46776",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 생각하지도 못 했어,우리들이 또 다시 돌아 온 것을 냥>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "SetMessage",
+					"overrideparam": "出かけないで ALL DAY IN MY ROOM\n나가지 말아 줘 ALL DAY IN MY ROOM",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\n울리지 말아 줘 ALL DAY IN MY ROOM>3.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\n말하지 말아 줘 ALL DAY IN MY ROOM>6.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>8.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あー眠たい殻に篭りたい\n아ー 자고 싶어 껍데기에 틀어박히고 싶어>12.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>携帯のアラームが止まない\n휴대폰 알람이 멈추질 않아>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ノールックで消す俺はベテラン\n노루크로 지우는 나는 베테랑>17.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あーもう何もする気起きない\n아ー 더 이상 아무것도 할 의욕이 안생겨>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ゲームに課金しすぎたみたい\n게임에 과금을 너무 많이 한거 같아>25.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>もっかいベッドに包まりダイブ\n다시 침대에 둘러싸여 다이브>28.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>今日お昼からランチの予定\n오늘 점심부터 런치 예정>34.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>約束してたけど既に too late oh\n약속했는데 이미 too late oh>35.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴りやまない ringin′ my bell\n그치지 않는 알람 ringin′ my bell>39.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ため息が部屋に広がる\n한숨이 방으로 펼쳐지네>41.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>こうなっても動じない\n이렇게 되도 동요하질 않아>44.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>Uber 呼んでもはやアニメ三昧\nUber 불러도 애니 삼매경>46.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>そう背伸びはしないよ 等身大の\n그렇게 애쓰지는 않아 있는 그대로의 나>49.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>「俺」「俺」「俺」\n「나」「나」「나」>52.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\n나가지 말아 줘 ALL DAY IN MY ROOM>54.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\n울리지 말아 줘 ALL DAY IN MY ROOM>56.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\n말하지 말아 줘 ALL DAY IN MY ROOM>59.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>62.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\n돌아오지 말아 줘 ALL DAY IN MY ROOM>65.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\n찾지 말아 줘 ALL DAY IN MY ROOM>67.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\n건들지 말아 줘 ALL DAY IN MY ROOM>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>72.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あぁこりゃまたボッチだね\n아아 이거 또 혼자네>76.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>またブッチでプチっとオッコだね\n또 풀이 죽어버렸네>78.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>でも部屋から出れない\n그래도 방에서 못 나가겠어>81.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ビックマウス許してくれなきゃ\n빅 마우스를 용서해 주지 않으면>82.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ブレイクアップだぜ\n브레이크업 이야>84.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>独り言サイファー無限ループで\n혼잣말 사이퍼 무한 루프로>87.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>続くlike a マシンガントークの\n계속되는 like a 머신건 토크의>89.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>お供にはそう my ハピーターンと\n함께는 그렇게 my 해피 턴과>92.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>冷たいお茶で欠席裁判\n차가운 차로 결석재판>94.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>無罪放免です\n무죄방면 입니다>98.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>しつこくしすぎな奴は裏目に出る\n칠흑적인 녀석은 예상이 틀어지지>100.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>部屋に飾るシクラメン\n방에 꾸며둔 시클라면>103.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ため息で花びらが揺れる\n한숨으로 꽃잎이 흔들려>105.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ああもう連絡もしない\n아아 이젠 연락도 안해>108.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>怒られることには\n혼나는 것에는>110.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>そう耐性ないから\n그다지 내성이 없으니깐>112.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>嫌いになったつもりではないのよ\n싫어하게 될 생각은 아니야>113.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>「メンゴ」「メンゴ」「メン...」\n「안미」「안미」「안...」>116.1>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\n나가지 말아 줘 ALL DAY IN MY ROOM>118.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\n울리지 말아 줘 ALL DAY IN MY ROOM>120.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\n말하지 말아 줘 ALL DAY IN MY ROOM>123.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>126.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\n돌아오지 말아 줘 ALL DAY IN MY ROOM>129.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\n찾지 말아 줘 ALL DAY IN MY ROOM>131.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\n건들지 말아 줘 ALL DAY IN MY ROOM>133.9>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lyric_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>136.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        }        
+    ],
+    "modify": // remove message output, add targetname
+    [
+		// message "友情出演φ(≧ω≦*)♪"
+		{
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "42402"
+            },
+            "replace":
+            {
+                "targetname": "42402"
+            }
+        },
+        // message "←地图有问题就私信揍我~o( =∩ω∩= )m"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "42241"
+            },
+            "replace":
+            {
+                "targetname": "42241"
+            }
+        },
+        // message "不太迷你的舰长室"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "41916"
+            },
+            "replace":
+            {
+                "targetname": "41916",
+                "origin": "1299 -630.413086 181",
+				"justify_vertical": "1",
+			    "justify_horizontal": "1"
+            }
+        },
+        // message "酱爆的酱香型金库"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "41928"
+            },
+            "replace":
+            {
+                "targetname": "41928",
+                "origin": "3155.968506 11.5 562",
+				"justify_vertical": "1",
+			    "justify_horizontal": "1"
+            }
+        },
+        // message "Lucky喵！luckydayฅ"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "41930"
+            },
+            "replace":
+            {
+                "targetname": "41930"
+            }
+        },
+        // message "哇！kurumi好烧 (＞ ＜)☆"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "41931"
+            },
+            "replace":
+            {
+                "targetname": "41931"
+            }
+        },
+        // message "小火龙一口喷死你们！！！"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "41933"
+            },
+            "replace":
+            {
+                "targetname": "41933",
+                "origin": "2961 31.019243 405",
+				"justify_vertical": "1",
+			    "justify_horizontal": "1"
+            }
+        },
+        // message "mini老婆的家"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "41925"
+            },
+            "replace":
+            {
+                "targetname": "41925",
+				"origin": "4861.5 927.068176 638",
+				"justify_vertical": "1",
+			    "justify_horizontal": "1"
+            }
+        },
+        // message "MinionsHian♪的小窝"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "42284"
+            },
+            "replace":
+            {
+                "targetname": "42284",
+                "origin": "2857.282471 -270 910",
+				"justify_vertical": "1",
+			    "justify_horizontal": "1"
+            }
+        },
+        // message "海岸酒馆"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "42285"
+            },
+            "replace":
+            {
+				"origin": "3414.745850 -65 484",
+                "targetname": "42285",
+				"justify_vertical": "1",
+			    "justify_horizontal": "1"
+            }
+        },
+        // message "哨站"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "42287"
+            },
+            "replace":
+            {
+                "targetname": "42287",
+				"origin": "3706 -819.783142 448",
+				"justify_vertical": "1",
+			    "justify_horizontal": "1"
+            }
+        },
+        // message "孤独的人总是善于观察.JPG"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "42291"
+            },
+            "replace":
+            {
+                "targetname": "42291"
+            }
+        },
+        // message "智者不入爱河 与你难做智者"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "42348"
+            },
+            "replace":
+            {
+                "targetname": "42348"
+            }
+        },
+        // message "敬请期待！！！φ(≧ω≦*)♪"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "42545"
+            },
+            "replace":
+            {
+                "targetname": "42545"
+            }
+        },
+
         {
             "match":
             {
@@ -148,193 +3011,15 @@
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 大家好我就是梦梦杨桃冰箱❀",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say はじめまして私は梦梦杨桃冰箱❀です",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "42241"
-            },
-            "replace":
-            {
-                "message": "←マップに問題があったらすぐ"
-            }
-        },
-        
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "41916"
-            },
-            "replace":
-            {
-                "message": "あんまり大きくない",
-                "origin": "1283.219238 -630.413086 182.221802"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "41928"
-            },
-            "replace":
-            {
-                "message": "醤油の白酒金庫",
-                "origin": "3155.968506 24.164131 558.662170"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "41930"
-            },
-            "replace":
-            {
-                "message": "Luckyにゃん！luckydayฅ"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "41931"
-            },
-            "replace":
-            {
-                "message": "お！kurumi熱い",
-                "origin": "8.891357 3110.974121 496.374573"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "41933"
-            },
-            "replace":
-            {
-                "message": "お前たちを燃やし尽くす！！！",
-                "origin": "2920.741943 31.019243 396.778564"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "41925"
-            },
-            "replace":
-            {
-                "message": "mini妻の家",
-                "origin": "4853.578613 927.068176 635.339111"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "42284"
-            },
-            "replace":
-            {
-                "message": "MinionsHian♪",
-                "origin": "2857.282471 -259.047760 909.902954"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "42285"
-            },
-            "replace":
-            {
-                "message": "海岸酒場"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "42287"
-            },
-            "replace":
-            {
-                "message": "哨所"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "42291"
-            },
-            "replace":
-            {
-                "message": "孤独な人はいつも観察が上手.JPG"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "42348"
-            },
-            "replace":
-            {
-                "message": "賢者は恋に落ちないが　貴方と一緒だと賢者でいるのが難しい",
-                "origin": "4327.531250 -476.533630 331.672668"
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "42545"
-            },
-            "replace":
-            {
-                "message": "お楽しみ！！！",
-                "origin": "-403.206329 3180.247314 266.569702"
             }
         },
 
@@ -347,31 +3032,17 @@
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 樱",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 桜",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
             }
-        },
+        },    
 
         {
             "match":
@@ -382,25 +3053,11 @@
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 已解锁 mini的色图小屋o(*≧▽≦)ツ",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say miniエッチな部屋はもう封印したよo(*≧▽≦)ツ",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -414,29 +3071,19 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42172"
             },
+            "replace":
+            {
+                "targetname": "42172"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 嘤嘤嘤有坏比o(≧口≦)o",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say ぴえん人間の比率が悪くなるo(≧口≦)o",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -450,13 +3097,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "41948"
             },
+            "replace":
+            {
+                "targetname": "41948"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 此路是我开 此树是我栽(‾◡◝)",                
                         "delay": 2.0,
@@ -465,7 +3116,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 要想从此过，留下买fu财！",                
                         "delay": 3.0,
@@ -474,7 +3125,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （守住码头 是男人就坚持40秒~o( =∩ω∩= )）",                
                         "delay": 6.0,
@@ -483,50 +3134,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （僵尸10秒后传送 快跑(>▽<)）",                
-                        "delay": 46.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say この道は私が開拓したよ この木は私が植えたよ(‾◡◝)",                
-                        "delay": 2.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say ここから通りたければ，金になるものを置いて行け！",                
-                        "delay": 3.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （港を守れ 男なら40秒防御よろぴ~o( =∩ω∩= )）",                
-                        "delay": 6.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （10秒後ゾンビがテレポートされるよ 早く走れ(>▽<)）",                
                         "delay": 46.0,
                         "timestofire": 1
                     }
@@ -540,13 +3150,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "41961"
             },
+            "replace":
+            {
+                "targetname": "41961"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 呜啊~(＞ ＜)☆原来是miku的老公来辣！",                
                         "delay": 0.0,
@@ -555,7 +3169,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 进屋坐坐叭！咱是miku的妹妹米库喵ฅ",                
                         "delay": 2.0,
@@ -564,7 +3178,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （在屋内存活60秒直至后花园门开）",                
                         "delay": 4.0,
@@ -573,7 +3187,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （僵尸10秒后传送至厕所）",                
                         "delay": 64.0,
@@ -582,7 +3196,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 啊咧！_(:з」∠)_马桶里爬出了怪怪的东西",                
                         "delay": 74.0,
@@ -591,7 +3205,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱记得钓鱼台上的钻石块是树屋开关喵Ծ‸Ծ",                
                         "delay": 66.0,
@@ -600,83 +3214,15 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 海的对面是敌人啊...",                
                         "delay": 68.0,
                         "timestofire": 1
                     }
                 ]
-            }, 
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say うわ~(＞ ＜)☆ほらmikuの旦那さんが来たよ！",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 家に入って座ってみ！私はmikuの妹ミクにゃんฅ",                
-                        "delay": 2.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （屋内で60秒生存した後花園のドアが開きます）",                
-                        "delay": 4.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （ゾンビが10秒後トイレにテレポートされます）",                
-                        "delay": 64.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say あれ！_(:з」∠)_便器の中から変なもの出てきた",                
-                        "delay": 74.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 釣り場の上のダイアモンドは木屋の扉のスイッチであることを忘れちゃいけないにゃんԾ‸Ծ",                
-                        "delay": 66.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 海の向こうは敵だわ...",                
-                        "delay": 68.0,
-                        "timestofire": 1
-                    }
-                ]
             }
-        },
+        },    
 
         {
             "match":
@@ -684,29 +3230,19 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42061"
             },
+            "replace":
+            {
+                "targetname": "42061"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 一直呆在这里可是会受到惩罚的呦ο(=•ω＜=)ρ⌒☆",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say ずっとここにいると罰を受けるかもしれないよο(=•ω＜=)ρ⌒☆",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -723,25 +3259,11 @@
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnUseLocked",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 啊嘞┌|*´∀｀|┘貌似什么东西忘记触发了喵",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnUseLocked",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say あれ┌|*´∀｀|┘何かのトリガーを忘れたぽいにゃん",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -758,25 +3280,11 @@
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPlayerPickup",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 你惊扰了 文爱警察",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPlayerPickup",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say お前よくもLAN愛を邪魔したな",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -790,13 +3298,17 @@
                 "classname": "func_button",
                 "hammeruniqueid": "41983"
             },
+            "replace":
+            {
+                "targetname": "41983"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (树屋将在60s后开放)",                
                         "delay": 0.5,
@@ -805,7 +3317,7 @@
 
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (僵尸20秒后传送，开润！）",                
                         "delay": 26.0,
@@ -814,7 +3326,7 @@
 
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (树屋将在10s后开放)",                
                         "delay": 50.0,
@@ -823,50 +3335,9 @@
 
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (僵尸被阻挡5秒，快跑！！(o゜▽゜)o☆）",                
-                        "delay": 60.1,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say (木屋が60秒後に開放されます)",                
-                        "delay": 0.5,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say (ゾンビが20秒後テレポートされます，オープンラン！）",                
-                        "delay": 26.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say (木屋が10秒後に開放されます)",                
-                        "delay": 50.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say (ゾンビが5秒間阻止された，早く走れ！！(o゜▽゜)o☆）",                
                         "delay": 60.1,
                         "timestofire": 1
                     }
@@ -880,13 +3351,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42043"
             },
+            "replace":
+            {
+                "targetname": "42043"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 啊咧 忘记平常这里是死路咧！Σ( °Д °;)",                
                         "delay": 0.0,
@@ -895,7 +3370,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ˃̶͈ ˂̶͈ 康来只能走夜袭（划掉）的秘密通道了",                
                         "delay": 3.0,
@@ -904,7 +3379,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 那咱就从这里下去吧！",                
                         "delay": 38.0,
@@ -913,7 +3388,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (30秒后门开）",                
                         "delay": 8.0,
@@ -922,59 +3397,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (10秒后门开）",                
-                        "delay": 28.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say あれ ここが行き止まりだったことを忘れてた！Σ( °Д °;)",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say ˃̶͈ ˂̶͈ 夜襲の秘密通路に行くしかなさそうだね",                
-                        "delay": 3.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 今すぐ降りていこうぜ！",                
-                        "delay": 38.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say (30秒後ドアが開きます）",                
-                        "delay": 8.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say (10秒後ドアが開きます）",                
                         "delay": 28.0,
                         "timestofire": 1
                     }
@@ -988,13 +3413,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42319"
             },
+            "replace":
+            {
+                "targetname": "42319"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 三个字，让大家多守40秒(/ω＼*)",                
                         "delay": 4.0,
@@ -1003,7 +3432,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 四十秒",                
                         "delay": 5.0,
@@ -1012,7 +3441,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （僵尸5秒后传送）",                
                         "delay": 0.0,
@@ -1021,68 +3450,18 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 门开辣！",                
                         "delay": 45.0,
                         "timestofire": 1
                     },
-
+                    
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 漂流瓶里闪闪发光的是钥匙捏ο(=•ω＜=)ρ⌒☆",                
-                        "delay": 48.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 三文字，もっとみんなに守ってもらうよ40秒(/ω＼*)",                
-                        "delay": 4.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 四十秒",                
-                        "delay": 5.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （ゾンビが5秒後テレポートされます）",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say ドア開いたん！",                
-                        "delay": 45.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 漂流瓶の中でピカピカ光ってるのは鍵だよο(=•ω＜=)ρ⌒☆",                
                         "delay": 48.0,
                         "timestofire": 1
                     }
@@ -1096,13 +3475,17 @@
                 "classname": "func_button",
                 "hammeruniqueid": "42338"
             },
+            "replace":
+            {
+                "targetname": "42338"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （码头30秒后开放！）",                
                         "delay": 0.0,
@@ -1111,32 +3494,9 @@
                     
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 让我们去酒馆做做吧",                
-                        "delay": 30.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （30秒後港が解放されます！）",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-                    
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 私たちを酒場に連れて一杯やらせて",                
                         "delay": 30.0,
                         "timestofire": 1
                     }
@@ -1150,29 +3510,19 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42393"
             },
+            "replace":
+            {
+                "targetname": "42393"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 啊咧⊙▾⊙酒馆被海盗霸占了 还是绕个路吧！",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say あれ⊙▾⊙ホテルがバイキングに占められちゃった 回り道をした方が良さそう！",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1186,13 +3536,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42396"
             },
+            "replace":
+            {
+                "targetname": "42396"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 这个宫殿看起来很复杂的样子( ╯▽╰)",                
                         "delay": 0.0,
@@ -1201,7 +3555,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 让咱想想走哪里好捏！",                
                         "delay": 1.0,
@@ -1210,7 +3564,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （守住30s）",                
                         "delay": 3.0,
@@ -1219,7 +3573,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 右侧二楼小屋有一个通往哨站的梯子捏！",                
                         "delay": 30.0,
@@ -1228,59 +3582,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱记得二楼小屋开关在秋千旁来着",                
-                        "delay": 32.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say この宮殿はすごく複雑に見えるね( ╯▽╰)",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say どこに行けばいいか考えてみよう！",                
-                        "delay": 1.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （防御30秒）",                
-                        "delay": 3.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 右の2階の小部屋には哨所に繋がる橋があるよ！",                
-                        "delay": 30.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 確かに2階の小部屋のぶらんこのそばにスイッチがあった気がする",                
                         "delay": 32.0,
                         "timestofire": 1
                     }
@@ -1297,25 +3601,11 @@
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 侧路暂时无法通行哦喵~( ╯▽╰)",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 近道は暫く通行できないにゃん~( ╯▽╰)",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1329,13 +3619,17 @@
                 "classname": "func_button",
                 "hammeruniqueid": "42412"
             },
+            "replace":
+            {
+                "targetname": "42412"
+            } ,
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 二楼门30秒后打开喵！",                
                         "delay": 0.1,
@@ -1344,7 +3638,7 @@
 
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （侧路15秒后开放）",                
                         "delay": 1.1,
@@ -1353,41 +3647,9 @@
 
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 试试走哨站再绕进酒馆！",                
-                        "delay": 8.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 2階のドアが30秒後開くんだにゃん！",                
-                        "delay": 0.1,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （近道が15秒後解放されます）",                
-                        "delay": 1.1,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 哨所を通って回り道して酒場に入ってみよう！",                
                         "delay": 8.0,
                         "timestofire": 1
                     }
@@ -1401,13 +3663,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42432"
             },
+            "replace":
+            {
+                "targetname": "42432"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 呜啊 好烧啊φ(゜▽゜*)♪",                
                         "delay": 0.0,
@@ -1416,7 +3682,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱精通撬锁17余年，撬个烟囱也不在话下！",                
                         "delay": 3.0,
@@ -1425,7 +3691,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （给米库30秒撬烟囱时间）",                
                         "delay": 6.0,
@@ -1434,7 +3700,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 根本难不倒咱捏！(≧∀≦)",                
                         "delay": 36.0,
@@ -1443,59 +3709,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 我们下去吧！",                
-                        "delay": 40.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say うわ 熱いなφ(゜▽゜*)♪",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-                    
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 俺たちの鍵開けは17年以上の精通を誇る、煙突を開けるなんて朝飯前だぜ！",                
-                        "delay": 3.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （ミクに煙突を開ける時間30秒をください）",                
-                        "delay": 6.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say この程度では全然問題にならない！(≧∀≦)",                
-                        "delay": 36.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 私たち降りていこう！",                
                         "delay": 40.0,
                         "timestofire": 1
                     }
@@ -1509,13 +3725,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42436"
             },
+            "replace":
+            {
+                "targetname": "42436"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 哨站顶部有一个钟",                
                         "delay": 0.0,
@@ -1524,32 +3744,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 敲响它或许就能扰乱海盗的注意力！",                
-                        "delay": 2.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 哨所の頂上に鐘があります",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say あの鐘を鳴らせば海賊団の意識をそらせられるかもしれない！",                
                         "delay": 2.0,
                         "timestofire": 1
                     }
@@ -1563,13 +3760,17 @@
                 "classname": "func_button",
                 "hammeruniqueid": "42438"
             },
+            "replace":
+            {
+                "targetname": "42438"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 海盗们果然都被吸引到岸边了捏！",                
                         "delay": 3.0,
@@ -1578,7 +3779,7 @@
                     
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 我们就光明正大地从哨站门口走出去吧！",                
                         "delay": 6.0,
@@ -1587,7 +3788,7 @@
 
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 拉动门卫室的拉杆就能开门了(/≧▽≦)/",                
                         "delay": 8.0,
@@ -1596,50 +3797,9 @@
 
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （僵尸10秒后传送）",                
-                        "delay": 1.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say やっぱり海賊たちが海岸へ集まってきたね！",                
-                        "delay": 3.0,
-                        "timestofire": 1
-                    },
-                    
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 私たちは正々堂々と哨所の入り口から歩いていこう！",                
-                        "delay": 6.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 警備室のレバーを引くとドアを開けられる！",                
-                        "delay": 8.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （ゾンビが10秒後テレポートされます）",                
                         "delay": 1.0,
                         "timestofire": 1
                     }
@@ -1656,25 +3816,11 @@
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (大门25秒后打开)",                
-                        "delay": 0.1,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say (大門が25秒後開きます)",                
                         "delay": 0.1,
                         "timestofire": 1
                     }
@@ -1688,29 +3834,19 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42452"
             },
+            "replace":
+            {
+                "targetname": "42452"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 进酒馆小酌一杯(* /ω＼*)",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 酒場に入って一杯飲もうぜ(* /ω＼*)",                
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1724,13 +3860,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42453"
             },
+            "replace":
+            {
+                "targetname": "42453"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 老板，温两碗酒，来一碟茴香豆。",                
                         "delay": 0.0,
@@ -1739,32 +3879,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱们去楼上坐叭！",                
-                        "delay": 3.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 店長、お酒を二杯温めて, フェンネル豆を一皿ください。",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 上の階に行って座りましょうか！",                
                         "delay": 3.0,
                         "timestofire": 1
                     }
@@ -1778,13 +3895,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42463"
             },
+            "replace":
+            {
+                "targetname": "42463"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 真是的 这么着急领我进屋吖(*/ω＼*)",                
                         "delay": 0.0,
@@ -1793,7 +3914,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （十分钟后）",                
                         "delay": 5.0,
@@ -1802,7 +3923,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say ⊙▽⊙海盗又鲨回来了 咱们快跑",                
                         "delay": 7.0,
@@ -1811,7 +3932,7 @@
 
                     {
                         "outputname": "OnTrigger",
-		        "targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 可是楼下已经被包围了",                
                         "delay": 9.0,
@@ -1820,7 +3941,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 看来只能走窗户了喵！",                
                         "delay": 10.0,
@@ -1829,7 +3950,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (25秒后玻璃碎掉）",                
                         "delay": 15.0,
@@ -1838,7 +3959,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 海盗这会儿都在酒馆",                
                         "delay": 40.0,
@@ -1847,86 +3968,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 那咱们就趁虚而入 端了他们的老窝♪(´∇`*)",                
-                        "delay": 43.0,
-                        "timestofire": 1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say まったく なんでそんなに急いで私を部屋に連れ込もうとするの(*/ω＼*)",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-                    
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （十分後）",                
-                        "delay": 5.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say ⊙▽⊙海賊がまた戻ってきた 早く逃げよう",                
-                        "delay": 7.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say でも下の階にはもう囲まれてる",                
-                        "delay": 9.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 窓を通じて行くしかなさそう！",                
-                        "delay": 10.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say (25秒後ガラスが割れます）",                
-                        "delay": 15.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 今海賊たちが全員酒場にいる",                
-                        "delay": 40.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say それじゃ隙を見て乗り込んで、奴らの根城を潰そう♪(´∇`*)",                
                         "delay": 43.0,
                         "timestofire": 1
                     }
@@ -1940,13 +3984,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42468"
             },
+            "replace":
+            {
+                "targetname": "42468"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 根据咱多年坐船全球巡回演唱的经历",                
                         "delay": 0.0,
@@ -1955,32 +4003,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 船舱开关一定在船舵旁边！^O^",                
-                        "delay": 2.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 私たちが長年船に乗って世界巡回公演をしてきた経験によると",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 船室のスイッチは船室のそばにあるはずではないでしょうか！^O^",                
                         "delay": 2.0,
                         "timestofire": 1
                     }
@@ -1994,13 +4019,17 @@
                 "classname": "func_button",
                 "hammeruniqueid": "42477"
             },
+            "replace":
+            {
+                "targetname": "42477"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 船舱在40秒后打开",                
                         "delay": 0.0,
@@ -2009,32 +4038,9 @@
 
                     {
                         "outputname": "OnPressed",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 潜入舰长室计划开始ヾ(≧O≦)〃",                
-                        "delay": 40.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 船が40秒後に開きます",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 艦長室侵入作戦開始ヾ(≧O≦)〃",                
                         "delay": 40.0,
                         "timestofire": 1
                     }
@@ -2048,13 +4054,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42495"
             },
+            "replace":
+            {
+                "targetname": "42495"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 康来没办法从正门进入舰长室了！",                
                         "delay": 0.0,
@@ -2063,32 +4073,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 会不会有秘密通道捏（´v｀）",                
-                        "delay": 3.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 正門から艦長室に入るしかなさそう！",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 秘密通路があるかもしれないよ（´v｀）",                
                         "delay": 3.0,
                         "timestofire": 1
                     }
@@ -2102,13 +4089,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42499"
             },
+            "replace":
+            {
+                "targetname": "42499"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 咱就说的吧 果然脚下有秘密通道╰(*°▽°*)╯",                
                         "delay": 0.0,
@@ -2117,7 +4108,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (30秒后门开)",                
                         "delay": 3.0,
@@ -2126,7 +4117,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say (10秒后僵尸传送)",                
                         "delay": 25.0,
@@ -2135,50 +4126,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 朝着最后一个房间前进吧！",                
-                        "delay": 33.0,
-                        "timestofire": 1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 噂をすれば影が差す やっぱり足の下に秘密通路があった╰(*°▽°*)╯",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 30秒後ドアが開きます",                
-                        "delay": 3.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 10秒後ゾンビがテレポートされます",                
-                        "delay": 25.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 最後の部屋へ向いて進もう！",                
                         "delay": 33.0,
                         "timestofire": 1
                     }
@@ -2192,13 +4142,17 @@
                 "classname": "trigger_multiple",
                 "hammeruniqueid": "42506"
             },
+            "replace":
+            {
+                "targetname": "42506"
+            }, 
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 守住这扇铁门咱们就成功辣(/≧▽≦)/",                
                         "delay": 0.2,
@@ -2207,7 +4161,7 @@
                     
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say （最后30秒！！）",                
                         "delay": 3.1,
@@ -2216,7 +4170,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 成功辣！！!φ(≧ω≦*)♪",                
                         "delay": 40.0,
@@ -2225,7 +4179,7 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 此刻开始我们要征服星辰大海！！",                
                         "delay": 45.0,
@@ -2234,59 +4188,9 @@
 
                     {
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 剧终 感谢游玩！~o( =∩ω∩= )m",                
-                        "delay": 47.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say この鉄のドアを守れば我々の勝ちだ(/≧▽≦)/",                
-                        "delay": 0.2,
-                        "timestofire": 1
-                    },
-                    
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say （最後30秒！！）",                
-                        "delay": 3.1,
-                        "timestofire": 1
-                    }, 
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say やった！！!φ(≧ω≦*)♪",                
-                        "delay": 40.0,
-                        "timestofire": 1
-                    }, 
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say これより我々が星の海を征服する！！",                
-                        "delay": 45.0,
-                        "timestofire": 1
-                    }, 
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say おしまい プレイしてくれてありがとー！~o( =∩ω∩= )m",                
                         "delay": 47.0,
                         "timestofire": 1
                     }
@@ -2300,29 +4204,19 @@
                 "classname": "trigger_teleport",
                 "hammeruniqueid": "46778"
             },
+            "replace": 
+            {
+                "targetname": "46778"
+            },
             "delete":
             {
                 "io":
                 [					
-		    {
+					{
                         "outputname": "OnStartTouch",
-			"targetname": "[PR#]cmd",
+						"targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say _(:з」∠)_不要再打咱了喵",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnStartTouch",
-			"targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say _(:з」∠)_また打たないでにゃん",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -2336,6 +4230,10 @@
                 "classname": "trigger_teleport",
                 "hammeruniqueid": "46776"
             },
+            "replace":
+            {
+                "targetname": "46776"
+            },
             "delete":
             {
                 "io":
@@ -2345,20 +4243,6 @@
                         "targetname": "[PR#]cmd",
                         "inputname": "Command",      
                         "overrideparam": "say 没想到叭,咱又回来了喵~",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-                    {
-                        "outputname": "OnStartTouch",
-                        "targetname": "cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 思わなかったよ,私たちがまた戻ってきたことをにゃん",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -2377,9 +4261,9 @@
             {
                 "io":
                 [					
-		    {
+				    {
                         "outputname": "OnEntitySpawned",
-			"targetname": "lyric_inmyroom",
+						"targetname": "lyric_inmyroom",
                         "inputname": "Enable",                
                         "delay": 0.0,
                         "timestofire": 1
@@ -2387,7 +4271,7 @@
 
                     {
                         "outputname": "OnEntitySpawned",
-			"targetname": "cmd",
+						"targetname": "cmd",
                         "inputname": "Command",
                         "overrideparam": "say ♪ MUSIC [ キツネDJ : In My Room ]",                
                         "delay": 0.0,
@@ -2400,560 +4284,100 @@
     "add": // music inmyroom lyric
     [
         {
-	    "targetname": "lyric_inmyroom",
-	    "classname": "trigger_multiple",
-	    "origin": "1096 -436 236",
-	    "angles": "0 0 0",
-	    "scales": "1 1 1",
-	    "startdisabled": "1",
+			"targetname": "lyric_inmyroom",
+			"classname": "trigger_multiple",
+			"origin": "1096 -436 236",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
             "wait": "1",
-	    "spawnflags": "4097",
-	    "model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
-	    "io":
-	    [
+			"spawnflags": "4097",
+			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
+			"io":
+			[
                 {
-		    "outputname": "OnStartTouch",
-		    "targetname": "!self",
-		    "inputname": "Kill",
-		    "delay": 0.1,
-		    "timestofire": -1
-		},
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
 
-		{
-		    "outputname": "OnStartTouch",
-		    "targetname": "lyric_hud",
-		    "inputname": "FireUser1",
-		    "delay": 0.0,
-		    "timestofire": -1
-		},
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
 
                 {
-		    "outputname": "OnStartTouch",
-		    "targetname": "lyric_hud",
-		    "inputname": "FireUser2",
-		    "delay": 0.0,
-		    "timestofire": -1
-		}
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
             ]
         },
         
         {
-	    "targetname": "lyric_hud",
-	    "classname": "env_hudhint",
-	    "messagevolume": "0",
-	    "message": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
+			"targetname": "lyric_hud",
+			"classname": "env_hudhint",
+			"message": "language",
             "io":
-	    [
-	        {
-		    "outputname": "OnUser1",
-	            "targetname": "!self",
-		    "inputname": "ShowHudHint",
-		    "delay": 0.0,
-		    "timestofire": -1
-		},
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
 
                 {
-		    "outputname": "OnUser1",
-		    "targetname": "!self",
-		    "inputname": "FireUser1",
-		    "delay": 0.01,
-		    "timestofire": -1
-		},
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
 
                 {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM",
-		    "delay": 3.3,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM",
-		    "delay": 6.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
-		    "delay": 8.6,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "あー眠たい殻に篭りたい\nAー nemuritai kara ni komoritai",
-		    "delay": 12.3,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "携帯のアラームが止まない\nkeitai no aramu ga yamanai",
-		    "delay": 15.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "ノールックで消す俺はベテラン\nnourukku de kesu ore ha beteran",
-		    "delay": 17.6,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
                     "overrideparam": "Wait, oh wait, oh wait, oh wait",
-		    "delay": 20.0,
-		    "timestofire": -1
-		},
+					"delay": 20.0,
+					"timestofire": -1
+				},
 
                 {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "あーもう何もする気起きない\nAー mou nani mo suru ki okinai",
-		    "delay": 23.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "ゲームに課金しすぎたみたい\ngeimu ni kakin shisugita mitai",
-		    "delay": 25.7,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "もっかいベッドに包まりダイブ\nmokkai beddo ni tsutsumari daibu",
-		    "delay": 28.3,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
                     "overrideparam": "Wait, oh wait, oh wait, oh wait",
-		    "delay": 30.9,
-		    "timestofire": -1
-		},
+					"delay": 30.9,
+					"timestofire": -1
+				},
 
                 {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "今日お昼からランチの予定\nkyou ohiru kara ranchi no yotei",
-		    "delay": 34.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "約束してたけど既に too late oh\nyakusoku shiteta kedo sude ni too late oh",
-		    "delay": 35.8,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "鳴りやまない ringin′ my bell\nnariyamanai ringin′ my bell",
-		    "delay": 39.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "ため息が部屋に広がる\ntameiki ga heya ni hirogaru",
-		    "delay": 41.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "こうなっても動じない\nkou nattemo doujinai",
-		    "delay": 44.3,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "Uber呼んでもはやアニメ三昧\nUber yondemo haya anime zanmai",
-		    "delay": 46.5,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "そう背伸びはしないよ 等身大の\nsou senobi ha shinaiyo doushindai no",
-		    "delay": 49.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "「俺」「俺」「俺」\n「ore」「ore」「ore」",
-		    "delay": 52.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-	            "inputname": "SetMessage",
-                    "overrideparam": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
-		    "delay": 54.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM",
-		    "delay": 56.8,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM",
-		    "delay": 59.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
-		    "delay": 62.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM",
-		    "delay": 65.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM",
-		    "delay": 67.5,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM",
-		    "delay": 70.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
-		    "delay": 72.5,
-		    "timestofire": -1
-		},
-                
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "あぁこりゃまたボッチだね\nAa korya mata botti dane",
-		    "delay": 76.5,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "またブッチでプチっとオッコだね\nmata butti de buttito okko dane",
-		    "delay": 78.5,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "でも部屋から出れない\ndemo heya kara derenai",
-		    "delay": 81.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "ビックマウス許してくれなきゃ\nbikkumausu yurushite kurenakya",
-		    "delay": 82.5,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "ブレイクアップだぜ\nbureikuappu daze",
-	            "delay": 84.8,
-	            "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "独り言サイファー無限ループで\nhitorigoto saifa mugen ruupu de",
-		    "delay": 87.5,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "続くlike a マシンガントークの\ntsuzuku like a mashingantouku no",
-		    "delay": 89.6,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "お供にはそう my ハピーターンと\notomo niha sou my hapitan to",
-		    "delay": 92.6,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "冷たいお茶で欠席裁判\ntsumetai ocha de kesseki saiban",
-		    "delay": 94.2,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "無罪放免です\nmuzanhoumen desu",
-		    "delay": 98.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "しつこくしすぎな奴は裏目に出る\nshikoshiku sugina yatsu ha urame ni deru",
-		    "delay": 100.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "部屋に飾るシクラメン\nheya ni kazaru shikuramen",
-		    "delay": 103.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "ため息で花びらが揺れる\ntameiki de hanabira ga hirogaru",
-		    "delay": 105.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "ああもう連絡もしない\naa mou renraku mo sinai",
-		    "delay": 108.5,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "怒られることには\nokorareru koto niha",
-		    "delay": 110.3,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "そう耐性ないから\nsou naisei nai kara",
-		    "delay": 112.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "嫌いになったつもりではないのよ\nkirai ni nattari tsumori deha nainoyo",
-		    "delay": 113.2,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "「メンゴ」「メンゴ」「メン...」\n「mengo」「mengo」「men...」",
-		    "delay": 116.1,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
-		    "delay": 118.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM",
-		    "delay": 120.8,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM",
-		    "delay": 123.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
-		    "delay": 126.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM",
-		    "delay": 129.0,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM",
-		    "delay": 131.5,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM",
-		    "delay": 133.9,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
-                    "overrideparam": "一人きりで居させてよね\nhitorikiri de isaseteyone",
-		    "delay": 136.6,
-		    "timestofire": -1
-		},
-
-                {
-		    "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "SetMessage",
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
                     "overrideparam": "All day, oh my, all day, oh my in my room",
-		    "delay": 140.0,
-		    "timestofire": -1
-		},
+					"delay": 140.0,
+					"timestofire": -1
+				},
 
                 {
-	            "outputname": "OnUser2",
-		    "targetname": "!self",
-		    "inputname": "Kill",
-		    "delay": 159.0,
-		    "timestofire": -1
-		}
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 159.0,
+					"timestofire": -1
+				}
             ]
-        }
+		}
     ]
 }
