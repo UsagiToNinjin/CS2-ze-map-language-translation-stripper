@@ -15,9 +15,9 @@
             {
                 "io":
                 [					
-					{
-                        "outputname": "OnMapSpawn",
-						"targetname": "language_counter",
+		    {
+			"outputname": "OnMapSpawn",
+			"targetname": "language_counter",
                         "inputname": "SetValue",      
                         "overrideparam": "1", // please type language serial number here               
                         "delay": 0.0,
@@ -26,7 +26,7 @@
 
                     {
                         "outputname": "OnMapSpawn",
-						"targetname": "language_counter",
+			"targetname": "language_counter",
                         "inputname": "GetValue",                    
                         "delay": 0.1,
                         "timestofire": 1
@@ -34,7 +34,7 @@
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
-						"targetname": "cmd",
+			"targetname": "cmd",
                         "inputname": "Command",
                         "overrideparam": "say language translation stripper 25.03.19",                    
                         "delay": 1.0,
@@ -47,14 +47,14 @@
     "add":
     [
         {
-			"targetname": "language_counter",			
-			"classname": "math_counter",
+            "targetname": "language_counter",			
+	    "classname": "math_counter",
             "startvalue": "0",
             "min": "0",
             "max": "2",
-			"io":
+	    "io":
             [
-				{
+		{
                     "outputname": "OutValue",
                     "targetname": "language_case",
                     "inputname": "InValue",
@@ -65,147 +65,147 @@
         },
 
         {
-			"targetname": "language_case",			
-			"classname": "logic_case",
-			"case01": "1", // 日本語
-			"case02": "2", // 한국어
-			"io":
-			[    
-                // 日本語
-				{
-					"outputname": "OnCase01",
-					"targetname": "42545",
-					"inputname": "SetMessage",
-					"overrideparam": "お楽しみ！！！\nφ(≧ω≦*)♪",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+	    "targetname": "language_case",			
+	    "classname": "logic_case",
+	    "case01": "1", // 日本語
+	    "case02": "2", // 한국어
+	    "io":
+	    [    
+	    // 日本語
+	        {
+		    "outputname": "OnCase01",
+		    "targetname": "42545",
+		    "inputname": "SetMessage",
+		    "overrideparam": "お楽しみ！！！\nφ(≧ω≦*)♪",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "42348",
-					"inputname": "SetMessage",
-					"overrideparam": "賢者は恋に落ちないが　貴方と一緒だと賢者でいるのが難しい",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-                
-				{
-					"outputname": "OnCase01",
-					"targetname": "42348",
-					"inputname": "KeyValue",
-					"overrideparam": "origin 4332 -476.533630 331.672668",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+		    "outputname": "OnCase01",
+		    "targetname": "42348",
+		    "inputname": "SetMessage",
+		    "overrideparam": "賢者は恋に落ちないが　貴方と一緒だと賢者でいるのが難しい",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "42291",
-					"inputname": "SetMessage",
-					"overrideparam": "孤独な人はいつも観察が上手.JPG",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+                    "outputname": "OnCase01",
+                    "targetname": "42348",
+                    "inputname": "KeyValue",
+                    "overrideparam": "origin 4332 -476.533630 331.672668",
+                    "delay": 0.0,
+                    "timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "42287",
-					"inputname": "SetMessage",
-					"overrideparam": "哨所",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+		    "outputname": "OnCase01",
+		    "targetname": "42291",
+		    "inputname": "SetMessage",
+		    "overrideparam": "孤独な人はいつも観察が上手.JPG",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "42285",
-					"inputname": "SetMessage",
-					"overrideparam": "海岸酒場",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+		    "outputname": "OnCase01",
+		    "targetname": "42287",
+		    "inputname": "SetMessage",
+		    "overrideparam": "哨所",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "42284",
-					"inputname": "SetMessage",
-					"overrideparam": "MinionsHian♪\nの小さな家",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+		    "outputname": "OnCase01",
+		    "targetname": "42285",
+		    "inputname": "SetMessage",
+		    "overrideparam": "海岸酒場",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "41925",
-					"inputname": "SetMessage",
-					"overrideparam": "mini妻の家",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+		    "outputname": "OnCase01",
+		    "targetname": "42284",
+		    "inputname": "SetMessage",
+	            "overrideparam": "MinionsHian♪\nの小さな家",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "41933",
-					"inputname": "SetMessage",
-					"overrideparam": "ヒトカゲが一息で\nお前たちを燃やし尽くす！！！",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+			"outputname": "OnCase01",
+			"targetname": "41925",
+			"inputname": "SetMessage",
+			"overrideparam": "mini妻の家",
+			"delay": 0.0,
+			"timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "41931",
-					"inputname": "SetMessage",
-					"overrideparam": "お！kurumi熱い\n(＞ ＜)☆",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+			"outputname": "OnCase01",
+			"targetname": "41933",
+			"inputname": "SetMessage",
+			"overrideparam": "ヒトカゲが一息で\nお前たちを燃やし尽くす！！！",
+			"delay": 0.0,
+			"timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "41931",
-					"inputname": "KeyValue",
-					"overrideparam": "origin 8 3110.974121 496.374573",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+			"outputname": "OnCase01",
+			"targetname": "41931",
+			"inputname": "SetMessage",
+			"overrideparam": "お！kurumi熱い\n(＞ ＜)☆",
+			"delay": 0.0,
+			"timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "41930",
-					"inputname": "SetMessage",
-					"overrideparam": "Luckyにゃん！luckydayฅ",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+			"outputname": "OnCase01",
+			"targetname": "41931",
+			"inputname": "KeyValue",
+			"overrideparam": "origin 8 3110.974121 496.374573",
+			"delay": 0.0,
+			"timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "41928",
-					"inputname": "SetMessage",
-					"overrideparam": "醤油の白酒金庫",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+			"outputname": "OnCase01",
+			"targetname": "41930",
+			"inputname": "SetMessage",
+			"overrideparam": "Luckyにゃん！luckydayฅ",
+			"delay": 0.0,
+			"timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "41916", 
-					"inputname": "SetMessage",
-					"overrideparam": "あんまりミニじゃない\n艦長室",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+			"outputname": "OnCase01",
+			"targetname": "41928",
+			"inputname": "SetMessage",
+			"overrideparam": "醤油の白酒金庫",
+			"delay": 0.0,
+			"timestofire": -1
+		},
 
-				{
-					"outputname": "OnCase01",
-					"targetname": "42241",
-					"inputname": "SetMessage",
-					"overrideparam": "←マップに問題があったらすぐ\n私にDM送ってね~o( =∩ω∩= )m",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		{
+			"outputname": "OnCase01",
+			"targetname": "41916", 
+			"inputname": "SetMessage",
+			"overrideparam": "あんまりミニじゃない\n艦長室",
+			"delay": 0.0,
+			"timestofire": -1
+		},
+
+		{
+			"outputname": "OnCase01",
+			"targetname": "42241",
+			"inputname": "SetMessage",
+			"overrideparam": "←マップに問題があったらすぐ\n私にDM送ってね~o( =∩ω∩= )m",
+			"delay": 0.0,
+			"timestofire": -1
+		},
 
                 {
 					"outputname": "OnCase01",
