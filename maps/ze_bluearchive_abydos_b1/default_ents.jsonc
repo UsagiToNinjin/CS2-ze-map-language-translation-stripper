@@ -1,203 +1,911 @@
-// stripper by 兎RB 25.02.17
+// stripper by 兎RB 25.03.23
 // map ze_bluearchive_abydos_b1
 // workshop id 3261481731
-// 中文>>日本語
+// if find mistranslation tell me
+// serial number 日本語:"1" 한국어:"2"
 {
-    "add":
-    [ 
-	 {
-            "classname": "point_worldtext",
-	    "origin": "-10987 -827 10551",
-            "angles": "0 90 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "1",
-            "justify_horizontal": "1",
-            "font_name": "Arial Black",
-            "font_size": "40",
-            "world_units_per_pixel": "0.25",
-            "color": "255 255 255",
-            "fullbright": "1",
-            "enabled": "1",
-            "message": "感謝を申し上げます",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "-10987 -947 10592",
-            "angles": "0 90 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "1",
-            "justify_horizontal": "1",
-            "font_name": "Arial Black",
-            "font_size": "20",
-            "world_units_per_pixel": "0.25",
-            "color": "255 255 255",
-            "fullbright": "1",
-            "enabled": "1",
-            "message": "私が初めて作ったマップです",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "-10987 -947 10564",
-            "angles": "0 90 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "1",
-            "justify_horizontal": "1",
-            "font_name": "Arial Black",
-            "font_size": "20",
-            "world_units_per_pixel": "0.25",
-            "color": "255 255 255",
-            "fullbright": "1",
-            "enabled": "1",
-            "message": "大部分のマップとモデルは",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "-10987 -947 10556",
-            "angles": "0 90 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "1",
-            "justify_horizontal": "1",
-            "font_name": "Arial Black",
-            "font_size": "20",
-            "world_units_per_pixel": "0.25",
-            "color": "255 255 255",
-            "fullbright": "1",
-            "enabled": "1",
-            "message": "自分が作りました",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "-10987 -703.5 10594",
-            "angles": "0 90 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "1",
-            "justify_horizontal": "1",
-            "font_name": "Arial Black",
-            "font_size": "25",
-            "world_units_per_pixel": "0.25",
-            "color": "255 255 255",
-            "fullbright": "1",
-            "enabled": "1",
-            "message": "六轮鸭",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-            "origin": "-10987 -711 10588",
-            "angles": "0 90 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "1",
-            "justify_horizontal": "1",
-            "font_name": "Arial Black",
-            "font_size": "25",
-            "world_units_per_pixel": "0.25",
-            "color": "255 255 255",
-            "fullbright": "1",
-            "enabled": "1",
-            "message": "音楽/ルートhelp：",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        },
-
-        {
-            "classname": "point_worldtext",
-	    "origin": "-10987 -703.5 10582",
-            "angles": "0 90 90",
-	    "scales": "1 1 1",
-	    "depth_render_offset": "0.125",
-            "justify_vertical": "1",
-            "justify_horizontal": "1",
-            "font_name": "Arial Black",
-            "font_size": "25",
-            "world_units_per_pixel": "0.25",
-            "color": "255 255 255",
-            "fullbright": "1",
-            "enabled": "1",
-            "message": "Kim-code-I",
-	    "fademindist": "-1",
-            "rendercolor": "255 255 255",
-            "renderamt": "255",
-            "rendermode": "kRenderNormal",
-            "renderfx": "kRenderFxNone"
-        }
-    ],    
     "modify":
     [
         {
             "match":
             {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "16097"
+                "classname": "logic_auto"
             },
-            "replace":
+            "insert":
             {
-                "origin": "-10987 -827 10599"
+                "io":
+                [					
+		    {
+                        "outputname": "OnMapSpawn",
+			"targetname": "language_counter",
+                        "inputname": "SetValue",      
+                        "overrideparam": "1", // please type language serial number here               
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+			"targetname": "language_counter",
+                        "inputname": "GetValue",                    
+                        "delay": 0.1,
+                        "timestofire": 1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+			"targetname": "severadmin",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.03.23",                    
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+                ]
             }
+        }    
+    ],
+    "add":
+    [
+        {
+	    "targetname": "language_counter",			
+	    "classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "2",
+	    "io":
+            [
+		{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
         },
 
         {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "16092"
-            },
-            "replace":
-            {
-                "origin": "-10987 -827 10583"
-            }
-        },
+	    "targetname": "language_case",			
+	    "classname": "logic_case",
+	    "case01": "1", // 日本語
+	    "case02": "2", // 한국어
+	    "io":
+	    [
+                // 日本語
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16096",
+		    "inputname": "SetMessage",
+		    "overrideparam": "このマップは",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
-        {
-            "match":
-            {
-                "classname": "point_worldtext",
-                "hammeruniqueid": "16094"
-            },
-            "replace":
-            {
-                "message": "マップの制作に手伝ってくれた皆さんに",
-                "origin": "-10987 -827 10567"
-            }
-        },
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16098",
+		    "inputname": "SetMessage",
+		    "overrideparam": "私が初めて作ったマップです",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16099",
+		    "inputname": "SetMessage",
+		    "overrideparam": "良い提案があったら",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "worldtext1",
+		    "inputname": "SetMessage",
+		    "overrideparam": "steamを通じて連絡ください",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16100",
+		    "inputname": "SetMessage",
+		    "overrideparam": "大部分のマップとモデルは\n自分が作りました\nBlueArchive",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16100",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -947 10552",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16094",
+		    "inputname": "SetMessage",
+		    "overrideparam": "マップの制作に手伝ってくれた皆さんに",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16094",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -827 10567",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16097",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -827 10599",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16092",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -827 10583",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "worldtext2",
+		    "inputname": "SetMessage",
+		    "overrideparam": "誠にありがとうございます",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "17554",
+		    "inputname": "SetMessage",
+		    "overrideparam": "blender help：\n六轮鸭\n音楽/ルートhelp：\nKim-code-I",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "17855",
+		    "inputname": "SetMessage",
+		    "overrideparam": "等マップ制作関連手伝い",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16168",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>severadmin>Command>say アロナ＜＜ヘルメット団とPMC集団が協力しアビドス学校を占領しました＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16168",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>severadmin>Command>say アロナ＜＜幸いにもホシノたちはもう学校から無事に脱出しました＞＞>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16168",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>severadmin>Command>say アロナ＜＜何故ビナーがアビドス学校に戻ってきたのか分かりません＞＞>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "16168",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>severadmin>Command>say アロナ＜＜先生, 私たちの学校を取り戻す方法を考え出さないと＞＞>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_02_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜よくも学校をこんなことにするなんて...＞＞>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_04_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜気を付けてください，ヘルメット団の一人が後ろに隠れているのを探知しました＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_04_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜ここから壁を壊して入りましょう＞＞>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_04_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜先生 ここから離れてください，もうすぐ爆発します＞＞>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_05_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜こっちのドアまた鍵がかかっていますね＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_05_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜よし，開いた！＞＞>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_05_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜ちょっと待ってください先生＞＞>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_06_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜ここに3階へ行ける梯子があります＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "S1_door_06_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜待ってください先生＞＞>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "binah_arapche_ZM_teleport_timer",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>severadmin>Command>say ＜＜敵襲＞＞>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "binah_arapche_ZM_teleport_timer",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>severadmin>Command>say ＜＜敵襲＞＞>0.5>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "binah_arapche_ZM_teleport_timer",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>severadmin>Command>say ＜＜敵襲＞＞>1.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "binah_arapche_ZM_teleport_timer",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>severadmin>Command>say ＜＜8秒後ゾンビがテレポートされます＞＞>2.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "binah_lv1_dead_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say アロナ＜＜大きな範囲の波動を探知しました,先生バンカーを見つけ砂嵐を避けて下さい＞＞>11.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "arona_card_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>severadmin>Command>say ＜＜十連ガチャ進行中.......＞＞>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "ayane_healdrone_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>severadmin>Command>say ＜＜ドローンが着きました＞＞>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "s2_door_12_break_case",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase01>severadmin>Command>say アロナ＜＜左の鉄格子が壊れた!!＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "s2_door_12_break_case",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase02>severadmin>Command>say アロナ＜＜中の鉄格子が壊れた!!＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "s2_door_12_break_case",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase03>severadmin>Command>say アロナ＜＜右の鉄格子が壊れた!!＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "hoshino_knife",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>severadmin>Command>say ＜＜ホシノが戦闘に参加しました!＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "hoshino_knife",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>severadmin>Command>say アヤネ＜＜え？ ホシノ先輩いつ行っちゃったんですか？＞＞>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+	                
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "hoshino_filter",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPass>severadmin>Command>say ＜＜-4コスト?＞＞>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "komakaze_granede_branch_02",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase01>komakaze_granede_text_01>SetMessage>燃焼>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "komakaze_granede_branch_02",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase02>komakaze_granede_text_01>SetMessage>高爆>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "komakaze_granede_branch_02",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase03>komakaze_granede_text_01>SetMessage>煙>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "komakaze_granede_text_01",
+		    "inputname": "SetMessage",
+		    "overrideparam": "燃焼",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                // 한국어
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16096",
+		    "inputname": "SetMessage",
+		    "overrideparam": "이 맵은",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16098",
+		    "inputname": "SetMessage",
+		    "overrideparam": "제가 처음으로 만든 맵 입니다",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16099",
+		    "inputname": "SetMessage",
+		    "overrideparam": "좋은 제안이 있다면",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "worldtext1",
+		    "inputname": "SetMessage",
+		    "overrideparam": "steam을 통해 연락해 주세요",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16100",
+		    "inputname": "SetMessage",
+		    "overrideparam": "대부분의 맵과 모델은\n제가 만들었습니다\nBlueArchive",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16100",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -947 10552",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16094",
+		    "inputname": "SetMessage",
+		    "overrideparam": "맵 제작에 도움을 주신 여러분들께",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16094",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -827 10567",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16097",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -827 10599",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16092",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -827 10583",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "worldtext2",
+		    "inputname": "SetMessage",
+		    "overrideparam": "진심으로 감사드립니다",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "17554",
+		    "inputname": "SetMessage",
+		    "overrideparam": "blender help：\n六轮鸭\n음악/루트help：\nKim-code-I",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "17855",
+		    "inputname": "SetMessage",
+		    "overrideparam": "등 맵 제작관련 도움",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "17855",
+		    "inputname": "KeyValue",
+		    "overrideparam": "origin -10987 -699 10551",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16168",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>severadmin>Command>say 아로나＜＜헬멧단과 PMC집단이 헙력해 아비도스 학교를 점령했어요＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16168",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>severadmin>Command>say 아로나＜＜호시노쪽은 다행히 무사히 학교에서 탈출했어요＞＞>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16168",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>severadmin>Command>say 아로나＜＜어째서 비나가 아비도스 학교에 돌아왔는지 모르겠어요＞＞>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "16168",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>severadmin>Command>say 아로나＜＜선생님, 우리들의 학교를 되찾을 방법을 생각해내지 않으면＞＞>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_02_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜감히 학교를 이런식으로 만들다니...＞＞>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_04_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜조심해 주세요，헬멧단 한 명이 뒤에 숨어있는 것을 탐지했어요＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_04_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜여기서 부터 벽을 부수고 들아갑시다＞＞>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_04_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜선생님 여기서 부터 떨어저 주세요，곧 폭발해요＞＞>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_05_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜이 쪽 문이 또 잠겨있네요＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_05_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜좋아，열렸다！＞＞>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_05_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜잠시 기다려 주세요 선생님＞＞>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_06_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜여기에 3층으로 갈 수 있는 사다리가 있어요＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "S1_door_06_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜기다려 주세요＞＞>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "binah_arapche_ZM_teleport_timer",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>severadmin>Command>say ＜＜적습＞＞>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "binah_arapche_ZM_teleport_timer",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>severadmin>Command>say ＜＜적습＞＞>0.5>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "binah_arapche_ZM_teleport_timer",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>severadmin>Command>say ＜＜적습＞＞>1.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "binah_arapche_ZM_teleport_timer",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>severadmin>Command>say ＜＜8초 후 좀비가 텔레포트 됩니다＞＞>2.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "binah_lv1_dead_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>severadmin>Command>say 아로나＜＜거대한 범위의 파동을 탐지했어요,선생님 벙커를 찾아 모래폭풍을 피해주세요＞＞>11.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "arona_card_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>severadmin>Command>say ＜＜십연가챠 진행중.......＞＞>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+	                
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "ayane_healdrone_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>severadmin>Command>say ＜＜드론이 도착했습니다＞＞>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "s2_door_12_break_case",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase02>severadmin>Command>say 아로나＜＜왼쪽의 쇠창살이 부서졌다!!＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "s2_door_12_break_case",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase02>severadmin>Command>say 아로나＜＜가운데의 쇠창살이 부서졌다!!＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "s2_door_12_break_case",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase03>severadmin>Command>say 아로나＜＜오른쪽의 쇠창살이 부서졌다!!＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "hoshino_knife",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>severadmin>Command>say ＜＜호시노가 전투에 참여했습니다!＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "hoshino_knife",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>severadmin>Command>say 아야네＜＜엥？ 호시노 선배 언제 가버리신 건가요？＞＞>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "hoshino_filter",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPass>severadmin>Command>say ＜＜-4코스트?＞＞>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+	                
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "komakaze_granede_branch_02",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase02>komakaze_granede_text_01>SetMessage>연소>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+                
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "komakaze_granede_branch_02",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase02>komakaze_granede_text_01>SetMessage>고폭>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "komakaze_granede_branch_02",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnCase03>komakaze_granede_text_01>SetMessage>연기>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "komakaze_granede_text_01",
+		    "inputname": "SetMessage",
+		    "overrideparam": "연소",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+	            "targetname": "worldtext1",
+	            "classname": "point_worldtext",
+		    "origin": "-10987 -947 10576",
+	            "angles": "0 90 90",
+		    "scales": "1 1 1",
+		    "depth_render_offset": "0.125",
+	            "reorient_mode": "0",
+	            "justify_vertical": "1",
+	            "justify_horizontal": "1",
+	            "font_name": "Arial Black",
+	            "font_size": "20",
+	            "world_units_per_pixel": "0.25",
+	            "color": "255 255 255",
+	            "fullbright": "1",
+	            "enabled": "1",
+	            "message": "language",
+		    "fademindist": "-1",
+	            "rendercolor": "255 255 255",
+	            "renderamt": "255",
+	            "rendermode": "kRenderNormal",
+	            "renderfx": "kRenderFxNone"
+	        },
+
+	        {
+	            "targetname": "worldtext2",
+	            "classname": "point_worldtext",
+		    "origin": "-10987 -827 10552",
+	            "angles": "0 90 90",
+		    "scales": "1 1 1",
+		    "depth_render_offset": "0.125",
+	            "reorient_mode": "0",
+	            "justify_vertical": "1",
+	            "justify_horizontal": "1",
+	            "font_name": "Arial Black",
+	            "font_size": "40",
+	            "world_units_per_pixel": "0.25",
+	            "color": "255 255 255",
+	            "fullbright": "1",
+	            "enabled": "1",
+	            "message": "language",
+		    "fademindist": "-1",
+	            "rendercolor": "255 255 255",
+	            "renderamt": "255",
+	            "rendermode": "kRenderNormal",
+	            "renderfx": "kRenderFxNone"
+	        }
+            ]
+        }
+    ],
+    "modify": // remove message output, add targetname
+    [
+        // message "这是我第一张尝试制作的地图"
         {
             "match":
             {
@@ -206,11 +914,10 @@
             },
             "replace":
             {
-                "message": "このマップは",
-                "origin": "-10987 -947 10600"
+                "targetname": "16096"
             }
         },
-
+        // message "如果有好建议"
         {
             "match":
             {
@@ -219,11 +926,10 @@
             },
             "replace":
             {
-                "message": "良い提案があったら",
-                "origin": "-10987 -947 10584"
+                "targetname": "16098"
             }
         },
-
+        // message "可以通过steam联系我"
         {
             "match":
             {
@@ -232,11 +938,10 @@
             },
             "replace":
             {
-                "message": "steamを通じて連絡ください",
-                "origin": "-10987 -947 10576"
+                "targetname": "16099"
             }
         },
-
+        // message "绝大部分贴图与模型来自 BlueArchive"
         {
             "match":
             {
@@ -245,22 +950,46 @@
             },
             "replace":
             {
-                "message": "BlueArchive"
+                "targetname": "16100"
             }
         },
-
+        // message "ze_bluearchive_abydos"
         {
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "17855"
+                "hammeruniqueid": "16097"
             },
             "replace":
             {
-                "message": "等マップ制作関連手伝い"
+                "targetname": "16097"
             }
         },
-        
+        // message "Map by 木耳烤麸"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "16092"
+            },
+            "replace":
+            {
+                "targetname": "16092"
+            }
+        },
+        // message "感谢所有群友在我制作过程中的帮助与解惑"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "16094"
+            },
+            "replace":
+            {
+                "targetname": "16094"
+            }
+        },
+        // message "blender help：音乐/路线help："
         {
             "match":
             {
@@ -269,8 +998,19 @@
             },
             "replace":
             {
-                "message": "blender help：",
-                "origin": "-10987 -713.5 10600"
+                "targetname": "17554"
+            }
+        },
+        // message "等群友制作过程中的帮助"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "17855"
+            },
+            "replace":
+            {
+                "targetname": "17855"
             }
         },
 
@@ -279,6 +1019,10 @@
             {
                 "classname": "trigger_once",
                 "hammeruniqueid": "16168"
+            },
+            "replace":
+            {
+                "targetname": "16168"
             },
             "delete":
             {
@@ -295,7 +1039,7 @@
 
                     {
                         "outputname": "OnStartTouch",
-			"targetname": "[PR#]severadmin",
+		      	"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<好在星野她们已经安全撤出学校了>>",                
                         "delay": 4.0,
@@ -320,47 +1064,6 @@
                         "timestofire": 1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnStartTouch",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<ヘルメット団とPMC集団が協力しアビドス学校を占領しました>>",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<幸いにもホシノたちはもう学校から無事に脱出しました>>",                
-                        "delay": 4.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<何故ビナーがアビドス学校に戻ってきたのか分かりません>>",                
-                        "delay": 2.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<先生, 私たちの学校を取り戻す方法を考え出さないと>>",                
-                        "delay": 6.0,
-                        "timestofire": 1
-                    }
-                ]
             }
         },
 
@@ -373,25 +1076,11 @@
             {
                 "io":
                 [					
-	            {
+		    {
                         "outputname": "OnTrigger",
 			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<竟然把学校破坏成这样...>>",                
-                        "delay": 1.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-	            {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<よくも学校をこんなことにするなんて...>>",                
                         "delay": 1.0,
                         "timestofire": 1
                     }
@@ -435,38 +1124,6 @@
                         "timestofire": 1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<気を付けてください，ヘルメット団の一人が後ろに隠れているのを探知しました>>",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<ここから壁を壊して入りましょう>>",                
-                        "delay": 5.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<先生 ここから離れてください，もうすぐ爆発します>>",                
-                        "delay": 15.0,
-                        "timestofire": 1
-                    }
-                ]
             }
         },
 
@@ -506,38 +1163,6 @@
                         "timestofire": 1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<こっちのドアまた鍵がかかっていますね>>",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<よし，開いた！>>",                
-                        "delay": 15.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<ちょっと待ってください先生>>",                
-                        "delay": 5.0,
-                        "timestofire": 1
-                    }
-                ]
             }
         },
         
@@ -564,29 +1189,6 @@
 			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<请稍等sensei>>",                
-                        "delay": 5.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<ここに3階へ行ける梯子があります>>",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<待ってください先生>>",                
                         "delay": 5.0,
                         "timestofire": 1
                     }
@@ -639,47 +1241,6 @@
                         "timestofire": -1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTimer",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<敵襲>>",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-                
-                    {
-                        "outputname": "OnTimer",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<敵襲>>",                
-                        "delay": 0.5,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnTimer",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<敵襲>>",                
-                        "delay": 1.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnTimer",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<8秒後ゾンビがテレポートされます>>",                
-                        "delay": 2.0,
-                        "timestofire": -1
-                    }
-                ]
             }
         },
         
@@ -697,20 +1258,6 @@
 			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say 阿罗娜<<侦测到大范围波动,sensei请找掩体躲避沙尘暴>>",                
-                        "delay": 11.0,
-                        "timestofire": 1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnTrigger",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アロナ<<大きな範囲の波動を探知しました,先生バンカーを見つけ砂嵐を避けて下さい>>",                
                         "delay": 11.0,
                         "timestofire": 1
                     }
@@ -736,20 +1283,6 @@
                         "timestofire": -1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<十連ガチャ進行中.......>>",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
             }
         },
         
@@ -767,20 +1300,6 @@
 			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<无人机支援已到达>>",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPressed",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<ドローンが着きました>>",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -824,38 +1343,6 @@
                         "timestofire": 1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnCase01",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<左の鉄格子が壊れた!!>>",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnCase02",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<中の鉄格子が壊れた!!>>",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnCase03",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<右の鉄格子が壊れた!!>>",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
             }
         },
         
@@ -886,29 +1373,6 @@
                         "timestofire": 1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPlayerPickup",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<ホシノが戦闘に参加しました>>",                
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPlayerPickup",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say アヤネ<<え？ ホシノ先輩いつ行っちゃったんですか？>>",                
-                        "delay": 1.0,
-                        "timestofire": 1
-                    }
-                ]
             }
         },
 
@@ -923,38 +1387,13 @@
                 [					
 		    {
                         "outputname": "OnPass",
-		        "targetname": "[PR#]severadmin",
+			"targetname": "[PR#]severadmin",
                         "inputname": "Command",      
                         "overrideparam": "say <<-4cost?>>",                
                         "delay": 0.0,
                         "timestofire": -1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnPass",
-			"targetname": "severadmin",
-                        "inputname": "Command",      
-                        "overrideparam": "say <<-4コスト?>>",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            }
-        },
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]komakaze_granede_text_01"
-            },
-            "replace":
-            {
-                "message": "燃焼"
             }
         },
         
@@ -975,6 +1414,15 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
+                    
+                    {
+                        "outputname": "OnCase02",
+			"targetname": "[PR#]komakaze_granede_text_01",
+                        "inputname": "SetMessage",      
+                        "overrideparam": "高爆",                
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
 
                     {
                         "outputname": "OnCase03",
@@ -985,30 +1433,7 @@
                         "timestofire": -1
                     }
                 ]
-            },
-            "insert":
-            {
-                "io":
-                [					
-		    {
-                        "outputname": "OnCase01",
-			"targetname": "komakaze_granede_text_01",
-                        "inputname": "SetMessage",      
-                        "overrideparam": "燃焼",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase03",
-			"targetname": "komakaze_granede_text_01",
-                        "inputname": "SetMessage",      
-                        "overrideparam": "煙",                
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
             }
-        }
+        }    
     ]
 }
