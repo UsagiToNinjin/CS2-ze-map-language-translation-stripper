@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.03.19
+// stripper by 兎RB 25.03.23
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // if find mistranslation tell me
@@ -36,7 +36,7 @@
                         "outputname": "OnMapSpawn",
 			"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.03.19",                    
+                        "overrideparam": "say language translation stripper 25.03.23",                    
                         "delay": 1.0,
                         "timestofire": 1
                     }
@@ -71,7 +71,7 @@
 	    "case02": "2", // 한국어
 	    "io":
 	    [    
-	    // 日本語
+	        // 日本語
 	        {
 		    "outputname": "OnCase01",
 		    "targetname": "42545",
@@ -344,6 +344,24 @@
 
                 {
 		    "outputname": "OnCase01",
+		    "targetname": "nya",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say あれ ポータルはもう閉まちゃったにゃん！Σ(っ °Д °;)っ>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+	 	    "outputname": "OnCase01",
+	  	    "targetname": "nya",
+	 	    "inputname": "AddOutPut",
+	  	    "overrideparam": "OnStartTouch>cmd>Command>say 次は早く来てね！(o≖◡≖)>1.0>-1",
+	    	    "delay": 0.0,
+	    	    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
 		    "targetname": "42061",
 		    "inputname": "AddOutPut",
 		    "overrideparam": "OnTrigger>cmd>Command>say ずっとここにいると罰を受けるかもしれないよο(=•ω＜=)ρ⌒☆>0.0>1",
@@ -599,6 +617,24 @@
 		     "targetname": "42412",
 		    "inputname": "AddOutPut",
 		    "overrideparam": "OnPressed>cmd>Command>say 哨所を通って回り道して酒場に入ってみよう！>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase01",
+		    "targetname": "a",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>cmd>Command>say あれ！ベットがこんなに多いなんて，もしかしてパーティーでもするの(* /ω＼*)>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase01",
+		    "targetname": "a",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>cmd>Command>say この淫虫め 生きていたところで米の値段を上げるだけだ！（｀へ´）>15.0>1",
 		    "delay": 0.0,
 		    "timestofire": -1
 		},
@@ -1721,6 +1757,24 @@
 
                 {
 		    "outputname": "OnCase02",
+		    "targetname": "nya",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say 어라 포탈이 이미 닫혀버렸다냥！Σ(っ °Д °;)っ>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "nya",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say 다음에는 빨리 와 줘！(o≖◡≖)>1.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
 		    "targetname": "42061",
 		    "inputname": "AddOutPut",
 		    "overrideparam": "OnTrigger>cmd>Command>say 계속 여기 있으면 벌을 받을지도 몰라ο(=•ω＜=)ρ⌒☆>0.0>1",
@@ -1976,6 +2030,24 @@
 		    "targetname": "42412",
 		    "inputname": "AddOutPut",
 		    "overrideparam": "OnPressed>cmd>Command>say 초소를 지나 돌아가서 술집에 들어가 보자！>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+                {
+		    "outputname": "OnCase02",
+		    "targetname": "a",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>cmd>Command>say 어라！침대가 이렇게나 많다니，혹시 파티라도 하는거야(* /ω＼*)>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "a",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>cmd>Command>say 이 쌀숭이 너가 살아봤자 쌀 값만 올릴 뿐이야！（｀へ´）>15.0>1",
 		    "delay": 0.0,
 		    "timestofire": -1
 		},
@@ -3222,7 +3294,37 @@
                     }
                 ]
             }
-        },    
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]nya"
+            },
+            "delete":
+            {
+                "io":
+                [					
+		    {
+                        "outputname": "OnStartTouch",
+			"targetname": "[PR#]cmd",
+                        "inputname": "Command",      
+                        "overrideparam": "say 啊咧 传送门已经关闭了喵！Σ(っ °Д °;)っ",                
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+		    {
+                        "outputname": "OnStartTouch",
+			"targetname": "[PR#]cmd",
+                        "inputname": "Command",      
+                        "overrideparam": "say 下次早点来！(o≖◡≖)",                
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
 
         {
             "match":
@@ -3651,6 +3753,36 @@
                         "inputname": "Command",      
                         "overrideparam": "say 试试走哨站再绕进酒馆！",                
                         "delay": 8.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]a"
+            },
+            "delete":
+            {
+                "io":
+                [					
+		    {
+                        "outputname": "OnTrigger",
+			"targetname": "[PR#]cmd",
+                        "inputname": "Command",      
+                        "overrideparam": "say 啊咧！这么多张床，难道是要开趴咩(* /ω＼*)",                
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+		    {
+                        "outputname": "OnTrigger",
+			"targetname": "[PR#]cmd",
+                        "inputname": "Command",      
+                        "overrideparam": "say 你这淫虫留命在世上只会把米吃贵！（｀へ´）",                
+                        "delay": 15.0,
                         "timestofire": 1
                     }
                 ]
