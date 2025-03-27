@@ -364,7 +364,7 @@
 		    "outputname": "OnCase01",
 		    "targetname": "boss_start_relay",
 		    "inputname": "AddOutPut",
-		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：ふむ，自分から苦労をしてございますよね ＊＊>15.0>1",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：ふむ，自分から受難を選ぶのですね ＊＊>15.0>1",
 		    "delay": 0.0,
 		    "timestofire": -1
                 },
