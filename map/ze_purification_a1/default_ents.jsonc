@@ -73,894 +73,894 @@
             [
                 // 日本語
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ これはなんだ？ ＊＊>33.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ これはなんだ？ ＊＊>33.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：そなた達よ　ついに来ましたか ＊＊>39.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：そなた達よ　ついに来ましたか ＊＊>39.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：我の名はバルトリ ＊＊>42.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：我の名はバルトリ ＊＊>42.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：ここの三つの教会は奇跡を生み出すことが可能でございます ＊＊>47.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：ここの三つの教会は奇跡を生み出すことが可能でございます ＊＊>47.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：それたちを力を手に入れなさい，我が最後にそなた達に力を貸してあげよう ＊＊>51.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：それらの力を手に入れなさい，我が最後にそなた達に力を貸してあげよう ＊＊>51.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：我は今でも遅れないように祈りましょう ＊＊>55.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：我は今でも手遅れないように祈りましょう ＊＊>55.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3749",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 講堂で祈りを捧げましょう ＊＊>35.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3749",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 講堂で祈りを捧げましょう ＊＊>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3815",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ ここは二番目の教会です ＊＊>35.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3815",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ ここは二番目の教会です ＊＊>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_final",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 洞窟の入口から撤退だ！ ＊＊>123.5>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_final",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 洞窟の入口から撤退だ！ ＊＊>123.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_final",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そなた達は我を失望させませんでした ＊＊>140.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_final",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そなた達は我を失望させませんでした ＊＊>140.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_final",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：今，浄化！ ＊＊>201.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_final",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：今，浄化！ ＊＊>201.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_final",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：我に力が感じられる ＊＊>179.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_final",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：我に力が感じられる ＊＊>179.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "4049",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 今私たちは祈る時間が要る，陣地を守りなさい ＊＊>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "4049",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 今私たちは祈る時間が要る，陣地を守りなさい ＊＊>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
                 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "4051",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 防御！　私たちは早くやった ＊＊>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "4051",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 防御！　私たちは早くやった ＊＊>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "4072",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 行く先々不死身ばっかだな，見るにはまだ大丈夫そうだ，きっと何かの原因があるはずだ ＊＊>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "4072",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 行く先々不死身ばっかだな，見るにはまだ大丈夫そうだ，きっと何かの原因があるはずだ ＊＊>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "4072",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ ほら，行って見なよ　ここはどうして ＊＊>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "4072",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ ほら，行って見なよ　ここはどうして ＊＊>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "3862",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 続けて，最後の教会へ進みなさい ＊＊>70.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "3862",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 続けて，最後の教会へ進みなさい ＊＊>70.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl1",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＜＜ Level 1 ：浄化 ＞＞>1.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＜＜ Level 1 ：浄化 ＞＞>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＜＜ Level 2 ：星淵 ＞＞>1.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＜＜ Level 2 ：星淵 ＞＞>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ ここはどこだ？ ＊＊>9.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ ここはどこだ？ ＊＊>9.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：此処は永寂星淵，我々の領域でござういます ＊＊>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：此処は永寂星淵，我々の領域でございます ＊＊>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：次はそなた達を解決する番でございます ＊＊>23.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：次はそなた達を解決する番でございます ＊＊>23.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：問題がもう解決された以上 ＊＊>19.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：問題がもう解決された以上 ＊＊>19.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：此処で静かに過ごしながら，絶望の中で腐り果てなさい ＊＊>28.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：此処で静かに過ごしながら，絶望の中で朽ち果てなさい ＊＊>28.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ ここにエネルギーを集めれば出られる道を生み出すことが出来ます ＊＊>33.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ ここにエネルギーを集めれば出られる道を生み出すことが出来ます ＊＊>33.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 炎が消えました，続けて進みなさい ＊＊>153.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 炎が消えました，続けて進みなさい ＊＊>153.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 前の道が炎に遮られました，私に方法を考える時間を下さい ＊＊>115.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 前の道が炎に遮られました，私に方法を考える時間を下さい ＊＊>115.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ まもなく立ち去れそうです ＊＊>296.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ まもなく立ち去れそうです ＊＊>296.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 彼女を会いに行かなきゃ ＊＊>303.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 彼女を会いに行かなきゃ ＊＊>303.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 何が起きてるんだ？ ＊＊>7.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 何が起きてるんだ？ ＊＊>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：ああ ＊＊>13.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：ああ ＊＊>13.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 注意：常に湧き上がる星の気を避けなさい ＊＊>30.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 注意：常に湧き上がる星の気を避けなさい ＊＊>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：ふむ，自分から苦労をしてございますよね ＊＊>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：ふむ，自分から苦労をしてございますよね ＊＊>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：???＊＊>5.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：???＊＊>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：其方が此処まで来ておるとは ＊＊>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：其方が此処まで来ておるとは ＊＊>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 目標：バルトリ 撃破 ＊＊>26.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 目標：バルトリ 撃破 ＊＊>26.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：この我の手で直接そなた達を終わらせていただきましょう ＊＊>22.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：この我の手で直接そなた達を終わらせて差し上げよう ＊＊>22.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_skill1_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 翻弄「北風と太陽」☆☆☆>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_skill1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 翻弄「北風と太陽」☆☆☆>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_timeup_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 残り時間40秒 ＊＊＊>90.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_timeup_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 残り時間40秒 ＊＊＊>90.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_timeup_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 最後20秒，もっと早く ＊＊＊>110.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_timeup_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 最後20秒，もっと早く ＊＊＊>110.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_timeup_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 終わってしまいました...... ＊＊＊>130.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_timeup_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 終わってしまいました...... ＊＊＊>130.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_skill2_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 夢符「蓬色之虚夢」☆☆☆>3.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_skill2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 夢符「蓬色之虚夢」☆☆☆>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_skill3_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 古童「豪族皿屋敷」☆☆☆>3.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_skill3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 古童「豪族皿屋敷」☆☆☆>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_skill4_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 呪文「月蝕之閃光」☆☆☆>3.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_skill4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 呪文「月蝕之閃光」☆☆☆>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_defeat_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そんな！ ＊＊>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そんな！ ＊＊>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_defeat_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 彼女はどこに行ったかな？ ＊＊>5.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 彼女はどこに行ったかな？ ＊＊>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_defeat_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ どうでもいい，先にここから出よう ＊＊>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ どうでもいい，先にここから出よう ＊＊>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_final_move",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnOnFullyOpen>command>Command>say ＊＊ ステージクリア　おめでとうございます！ ＊＊>3.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_final_move",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnOnFullyOpen>command>Command>say ＊＊ ステージクリア　おめでとうございます！ ＊＊>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_final_move",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnOnFullyOpen>command>Command>say ＊＊ 貴方のプレイに感謝します！ ＊＊>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_final_move",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnOnFullyOpen>command>Command>say ＊＊ 貴方のプレイに感謝します！ ＊＊>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "boss_final_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：其方よ　終わったと思ってるんですか？ ＊＊>2.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "boss_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：其方よ　終わったと思ってるんですか？ ＊＊>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
                 // 한국어
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 이것은 뭐지？ ＊＊>33.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 이것은 뭐지？ ＊＊>33.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 소녀：그대들이여 드디어 왔는가 ＊＊>39.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 소녀：그대들이여 드디어 왔는가 ＊＊>39.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 소녀：나의 이름은 바르톨리 ＊＊>42.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 소녀：나의 이름은 바르톨리 ＊＊>42.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：이곳의 세 개의 교회는 기적을 창조해 낼 수가 있지 ＊＊>47.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：이곳의 세 개의 교회는 기적을 창조해 낼 수가 있지 ＊＊>47.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：그것들의 힘을 얻으면，내가 마지막에 그대들에게 도움을 주겠다 ＊＊>51.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：그것들의 힘을 얻으면，내가 마지막에 그대들에게 도움을 주겠다 ＊＊>51.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3734",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：나는 지금이라도 너무 늦지 않기를 바란다 ＊＊>55.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3734",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：나는 지금이라도 너무 늦지 않기를 바란다 ＊＊>55.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3749",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 강당에서 기도를 드립시다 ＊＊>35.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3749",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 강당에서 기도를 드립시다 ＊＊>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3815",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 여기는 두 번째 교회입니다 ＊＊>35.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3815",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 여기는 두 번째 교회입니다 ＊＊>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_final",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 동굴 입구에서 철수다！ ＊＊>123.5>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_final",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 동굴 입구에서 철수다！ ＊＊>123.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_final",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：그대들은 저를 실망시키지 않으셨군요 ＊＊>140.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_final",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：그대들은 저를 실망시키지 않으셨군요 ＊＊>140.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_final",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：지금，정화！ ＊＊>201.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_final",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：지금，정화！ ＊＊>201.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_final",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：나에게 힘이 느껴지는구나 ＊＊>179.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_final",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：나에게 힘이 느껴지는구나 ＊＊>179.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "4049",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 지금 우리는 기도할 시간이 필요하니，진지를 지켜주세요 ＊＊>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "4049",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 지금 우리는 기도할 시간이 필요하니，진지를 지켜주세요 ＊＊>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
                 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "4051",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 방어！우리들은 빠르게 해냈어 ＊＊>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "4051",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 방어！우리들은 빠르게 해냈어 ＊＊>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "4072",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 가는 곳마다 불사신이야，이곳을 보아하니 아직 멀쩡하잖아，분명히 뭔가 원인이 있을꺼야 ＊＊>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "4072",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 가는 곳마다 불사신이야，이곳을 보아하니 아직 멀쩡하잖아，분명히 뭔가 원인이 있을꺼야 ＊＊>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "4072",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 이봐，가서 한 번 봐봐 이거 어째서 ＊＊>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "4072",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 이봐，가서 한 번 봐봐 이거 어째서 ＊＊>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "3862",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>command>Command>say ＊＊ 계속해서，마지막 교회로 나아가세요 ＊＊>70.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "3862",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ＊＊ 계속해서，마지막 교회로 나아가세요 ＊＊>70.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl1",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＜＜ Level 1 ：정화 ＞＞>1.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＜＜ Level 1 ：정화 ＞＞>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＜＜ Level 2 ：성연 ＞＞>1.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＜＜ Level 2 ：성연 ＞＞>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 여긴 어디지？ ＊＊>9.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 여긴 어디지？ ＊＊>9.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이곳은 영적성연，우리들의 영역입니다 ＊＊>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이곳은 영적성연，우리들의 영역입니다 ＊＊>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：다음은 그대들을 해결할 차례이군요 ＊＊>23.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：다음은 그대들을 해결할 차례이군요 ＊＊>23.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：문제가 이미 해결된 이상 ＊＊>19.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：문제가 이미 해결된 이상 ＊＊>19.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이곳에서 잘 지내면서，절망 속에서 썩어가십시오 ＊＊>28.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이곳에서 잘 지내면서，절망 속에서 썩어가십시오 ＊＊>28.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 이곳에 에너지를 모으면 나갈 길을 창조해 낼 수 있습니다 ＊＊>33.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 이곳에 에너지를 모으면 나갈 길을 창조해 낼 수 있습니다 ＊＊>33.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 불꽃이 사그라들었습니다，계속해서 전진하세요 ＊＊>153.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 불꽃이 사그라들었습니다，계속해서 전진하세요 ＊＊>153.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 앞 길이 불꽃에 의해 막혔습니다，저에게 방법을 생각할 시간을 만들어 주세요 ＊＊>115.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 앞 길이 불꽃에 의해 막혔습니다，저에게 방법을 생각할 시간을 만들어 주세요 ＊＊>115.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 곧 떠날 수 있습니다 ＊＊>296.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 곧 떠날 수 있습니다 ＊＊>296.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 그녀를 만나러 가야 해 ＊＊>303.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 그녀를 만나러 가야 해 ＊＊>303.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 뭐가 일어난거지？ ＊＊>7.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 뭐가 일어난거지？ ＊＊>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：아아 ＊＊>13.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：아아 ＊＊>13.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "relay_lvl2",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 주의：항상 솟구치는 별의 기운을 피하세요 ＊＊>30.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "relay_lvl2",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 주의：항상 솟구치는 별의 기운을 피하세요 ＊＊>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：흠，스스로 사서 고생하군요 ＊＊>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：흠，스스로 사서 고생하군요 ＊＊>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：???＊＊>5.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：???＊＊>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：그대가 여기까지 오다니 ＊＊>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：그대가 여기까지 오다니 ＊＊>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 목표：바르톨리 격파 ＊＊>26.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 목표：바르톨리 격파 ＊＊>26.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_start_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：제 손으로 직접 그대들을 끝내겠습니다 ＊＊>22.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：제 손으로 직접 그대들을 끝내겠습니다 ＊＊>22.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_skill1_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 번롱「북풍과 태양」☆☆☆>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_skill1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 번롱「북풍과 태양」☆☆☆>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_timeup_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 40초 남았습니다 ＊＊＊>90.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_timeup_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 40초 남았습니다 ＊＊＊>90.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_timeup_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 마지막 20초，더 빨리 ＊＊＊>110.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_timeup_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 마지막 20초，더 빨리 ＊＊＊>110.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_timeup_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 끝나버렸습니다...... ＊＊＊>130.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_timeup_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊＊ 끝나버렸습니다...... ＊＊＊>130.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_skill2_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 몽부「봉(蓬)색의 허몽」☆☆☆>3.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_skill2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 몽부「봉(蓬)색의 허몽」☆☆☆>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_skill3_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 고동「호족 사라야시키」☆☆☆>3.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_skill3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 고동「호족 사라야시키」☆☆☆>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_skill4_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 주술「월식의 섬광」☆☆☆>3.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_skill4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ☆☆☆ 주술「월식의 섬광」☆☆☆>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_defeat_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이럴수가！ ＊＊>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이럴수가！ ＊＊>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_defeat_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 그녀는 어디로 갔지？ ＊＊>5.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 그녀는 어디로 갔지？ ＊＊>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_defeat_relay",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnTrigger>command>Command>say ＊＊ 어찌됐든 상관없어，먼저 이곳에서 떠나자 ＊＊>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ＊＊ 어찌됐든 상관없어，먼저 이곳에서 떠나자 ＊＊>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_final_move",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnOnFullyOpen>command>Command>say ＊＊ 스테이지 클리어 축하 드립니다！ ＊＊>3.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_final_move",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnOnFullyOpen>command>Command>say ＊＊ 스테이지 클리어 축하 드립니다！ ＊＊>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "boss_final_move",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnOnFullyOpen>command>Command>say ＊＊ 당신의 플레이에 감사 드립니다！ ＊＊>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "boss_final_move",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnOnFullyOpen>command>Command>say ＊＊ 당신의 플레이에 감사 드립니다！ ＊＊>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
