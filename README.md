@@ -1,1 +1,1 @@
-# CS2-map-language-translation-stripper
+# CS2-ze-map-language-translation-stripper
