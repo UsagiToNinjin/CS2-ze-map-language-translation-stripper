@@ -1094,7 +1094,36 @@
         }
     ],
     "modify": // remove message output, add targetname
-    [               
+    [
+        // message "建筑参考：Abrahamic Family House by Adjaye Associates"
+	{
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "3730"
+            },
+            "replace":
+            {
+                "targetname": "3730",
+		"origin": "9296 5881 -8000",
+		"message": "建筑参考：Abrahamic Family House"
+            }
+	},
+	// message "test server: exg 感谢赞助：Bella•Lientece"
+	{
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "4079"
+            },
+            "replace":
+            {
+                "targetname": "4079",
+		"origin": "9416 5881 -8082",
+		"message": "test server: exg"
+            }
+	},
+
         {
             "match":
             {
