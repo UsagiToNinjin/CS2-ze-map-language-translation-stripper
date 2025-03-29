@@ -13,9 +13,9 @@
             {
                 "io":
                 [					
-					{
+		    {
                         "outputname": "OnPlayerPickup",
-						"targetname": "[PR#]command",
+			"targetname": "[PR#]command",
                         "inputname": "Command",      
                         "overrideparam": "say ** 风神器拾取 CD:60s 持续：3s **",             
                         "delay": 0.0,
