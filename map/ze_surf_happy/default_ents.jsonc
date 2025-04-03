@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.03.31
+// stripper by 兎RB 25.04.03
 // map ze_surf_happy
 // workshop id 3386114661
 // if find mistranslation tell me
@@ -63,7 +63,7 @@
                         "outputname": "OnMapSpawn",
                         "targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.03.31",                    
+                        "overrideparam": "say language translation stripper 25.04.03",                    
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -110,480 +110,480 @@
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "logic_auto",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ ポート Port by：凯尔希的老公 ＜＜＜>6.0>-1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "logic_auto",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ ポート Port by：凯尔希的老公 ＜＜＜>6.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40秒後テレポートされます ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40秒後テレポートされます ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後橋が切れます ＜＜＜>55.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後橋が切れます ＜＜＜>55.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後テレポートされます ＜＜＜>30.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後テレポートされます ＜＜＜>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5秒後テレポートされます ＜＜＜>35.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5秒後テレポートされます ＜＜＜>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 60秒後橋が切れます ＜＜＜>5.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 60秒後橋が切れます ＜＜＜>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "708",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "708",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "526",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "526",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "526",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "526",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "885",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "885",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "524",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "524",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "524",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "524",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "873",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "873",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "866",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "866",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "665",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後テレポートします ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "665",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後テレポートします ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "522",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "522",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase01",
-                        "targetname": "522",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "522",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
                 // 한국어
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "logic_auto",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ 작자 Map by：港村村长 ＜＜＜>5.0>-1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "logic_auto",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ 작자 Map by：港村村长 ＜＜＜>5.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "logic_auto",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ 포트 Port by：凯尔希的老公 ＜＜＜>6.0>-1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "logic_auto",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ 포트 Port by：凯尔希的老公 ＜＜＜>6.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40초 후 텔레포트 됩니다 ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40초 후 텔레포트 됩니다 ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10초 후 다리가 끊어집니다 ＜＜＜>55.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10초 후 다리가 끊어집니다 ＜＜＜>55.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10초 후 텔레포트 됩니다 ＜＜＜>30.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10초 후 텔레포트 됩니다 ＜＜＜>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5초 후 텔레포트 됩니다 ＜＜＜>35.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5초 후 텔레포트 됩니다 ＜＜＜>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 60초 후 다리가 끊어집니다 ＜＜＜>5.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 60초 후 다리가 끊어집니다 ＜＜＜>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "708",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "708",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "526",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "526",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "526",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 방어 60초 후 인간이 텔레포트 됩니다 ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "526",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 방어 60초 후 인간이 텔레포트 됩니다 ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "885",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "885",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "524",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 방어 60초 후 인간이 텔레포트 됩니다 ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "524",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 방어 60초 후 인간이 텔레포트 됩니다 ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "524",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "524",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "873",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "873",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "866",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "866",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "665",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10초 후 텔레포트 됩니다 ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "665",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10초 후 텔레포트 됩니다 ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "522",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 방어 60초 후 인간이 텔레포트 됩니다 ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "522",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 방어 60초 후 인간이 텔레포트 됩니다 ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase02",
-                        "targetname": "522",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase02",
+		    "targetname": "522",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
                 // English
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "logic_auto",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ Map by：港村村长 ＜＜＜>5.0>-1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "logic_auto",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ Map by：港村村长 ＜＜＜>5.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "logic_auto",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ Port by：凯尔希的老公 ＜＜＜>6.0>-1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "logic_auto",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ Port by：凯尔希的老公 ＜＜＜>6.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 40 seconds ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 40 seconds ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ The bridge will break in 10 seconds ＜＜＜>55.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ The bridge will break in 10 seconds ＜＜＜>55.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 10 seconds ＜＜＜>30.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 10 seconds ＜＜＜>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 5 seconds ＜＜＜>35.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 5 seconds ＜＜＜>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "nuke_trigger",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ The bridge will break in 60 seconds ＜＜＜>5.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "nuke_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ The bridge will break in 60 seconds ＜＜＜>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "708",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Zombies will be released in 15 seconds ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "708",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Zombies will be released in 15 seconds ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "526",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 30 seconds ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "526",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 30 seconds ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "526",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Defense 60 seconds after humans will teleport ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "526",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Defense 60 seconds after humans will teleport ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "885",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Zombies will be released in 15 seconds ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "885",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Zombies will be released in 15 seconds ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "524",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Defense 60 seconds after humans will teleport ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "524",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Defense 60 seconds after humans will teleport ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "524",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 30 seconds ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "524",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 30 seconds ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "873",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Zombies will be released in 15 seconds ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "873",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Zombies will be released in 15 seconds ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "866",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Zombies will be released in 15 seconds ＜＜＜>0.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "866",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Zombies will be released in 15 seconds ＜＜＜>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "665",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 10 seconds ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "665",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 10 seconds ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "522",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Defense 60 seconds after humans will teleport ＜＜＜>10.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "522",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Defense 60 seconds after humans will teleport ＜＜＜>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 },
 
                 {
-                        "outputname": "OnCase03",
-                        "targetname": "522",
-                        "inputname": "AddOutPut",
-                        "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 30 seconds ＜＜＜>15.0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
+		    "outputname": "OnCase03",
+		    "targetname": "522",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ Will teleport in 30 seconds ＜＜＜>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
                 }
             ]
         }
