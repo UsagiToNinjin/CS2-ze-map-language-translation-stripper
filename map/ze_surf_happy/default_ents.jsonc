@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.04.03
+// stripper by 兎RB 25.04.05
 // map ze_surf_happy
 // workshop id 3386114661
 // if find mistranslation tell me
@@ -10,33 +10,6 @@
             "match":
             {
                 "classname": "logic_auto"
-            },
-            "replace":
-            {
-                "targetname": "logic_auto"
-            },
-            "delete": // remove message output
-            {
-                "io":
-                [					
-                    {
-                        "outputname": "OnMapSpawn",
-                        "targetname": "[PR#]cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say >>> 作者 Map by：港村村长 <<<",              
-                        "delay": 5.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnMapSpawn",
-                        "targetname": "[PR#]cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say >>> 移植 Port by：凯尔希的老公 <<<",              
-                        "delay": 6.0,
-                        "timestofire": -1
-                    }
-                ]
             },		
             "insert":
             {
@@ -63,7 +36,7 @@
                         "outputname": "OnMapSpawn",
                         "targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.04.03",                    
+                        "overrideparam": "say language translation stripper 25.04.05",                    
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -100,24 +73,6 @@
             "io":
             [
                 // 日本語
-                {
-                    "outputname": "OnCase01",
-                    "targetname": "logic_auto",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ 作者 Map by：港村村长 ＜＜＜>5.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-		    "outputname": "OnCase01",
-		    "targetname": "logic_auto",
-		    "inputname": "AddOutPut",
-		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ ポート Port by：凯尔希的老公 ＜＜＜>6.0>-1",
-		    "delay": 0.0,
-		    "timestofire": -1
-                },
-
                 {
 		    "outputname": "OnCase01",
 		    "targetname": "nuke_trigger",
@@ -264,24 +219,6 @@
                 // 한국어
                 {
 		    "outputname": "OnCase02",
-		    "targetname": "logic_auto",
-		    "inputname": "AddOutPut",
-		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ 작자 Map by：港村村长 ＜＜＜>5.0>-1",
-		    "delay": 0.0,
-		    "timestofire": -1
-                },
-
-                {
-		    "outputname": "OnCase02",
-		    "targetname": "logic_auto",
-		    "inputname": "AddOutPut",
-		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ 포트 Port by：凯尔希的老公 ＜＜＜>6.0>-1",
-		    "delay": 0.0,
-		    "timestofire": -1
-                },
-
-                {
-		    "outputname": "OnCase02",
 		    "targetname": "nuke_trigger",
 		    "inputname": "AddOutPut",
 		    "overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40초 후 텔레포트 됩니다 ＜＜＜>0.0>1",
@@ -424,24 +361,6 @@
 		    "timestofire": -1
                 },
                 // English
-                {
-		    "outputname": "OnCase03",
-		    "targetname": "logic_auto",
-		    "inputname": "AddOutPut",
-		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ Map by：港村村长 ＜＜＜>5.0>-1",
-		    "delay": 0.0,
-		    "timestofire": -1
-                },
-
-                {
-		    "outputname": "OnCase03",
-		    "targetname": "logic_auto",
-		    "inputname": "AddOutPut",
-		    "overrideparam": "OnMapSpawn>cmd>Command>say ＞＞＞ Port by：凯尔希的老公 ＜＜＜>6.0>-1",
-		    "delay": 0.0,
-		    "timestofire": -1
-                },
-
                 {
 		    "outputname": "OnCase03",
 		    "targetname": "nuke_trigger",
