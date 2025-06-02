@@ -1,0 +1,29 @@
+// stripper by 兎RB 25.05.25
+// map ze_minecraft_sakura
+// workshop id 3184013959
+// if find mistranslation tell me
+{
+    "modify": // remove message output
+    [ 
+        {
+            "match":
+            {
+                "targetname": "[PR#]xm1014_kill_relay"
+            },
+            "delete":
+            {
+                "io":
+                [					
+		    {
+                        "outputname": "OnUser1",
+			"targetname": "[PR#]cmd",
+                        "inputname": "Command",      
+                        "overrideparam": "say 啊嘞，被抛弃了伤心割手手喵QAQ",                
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+		]
+	    }	
+	}	
+    ]
+}	
