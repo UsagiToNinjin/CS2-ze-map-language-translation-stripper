@@ -103,2948 +103,2947 @@
                 },
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lamiya_weapon",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPlayerPickup>command>Command>say *** 異世界から来たラミアはこの異変にとても興味を持っているようです ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lamiya_weapon",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>command>Command>say *** 異世界から来たラミアはこの異変にとても興味を持っているようです ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "emma_weapon",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPlayerPickup>command>Command>say *** 異世界から来たエマはどうやら私たちと敵対したいようです ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "emma_weapon",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>command>Command>say *** 異世界から来たエマはどうやら私たちと敵対したいようです ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "mingyue_weapon",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPlayerPickup>command>Command>say *** あるプレイヤーが獲得しました[銘月の応急医療] ***>0.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "mingyue_weapon",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>command>Command>say *** あるプレイヤーが獲得しました[銘月の応急医療] ***>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "Spring_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:春 ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "Spring_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:春 ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "summer_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:夏 ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "summer_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:夏 ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "autumn_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:秋 ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "autumn_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:秋 ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "winter_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:冬 ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "winter_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:冬 ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "rtv_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:RTV ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "rtv_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ ステージが設定されました:RTV ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "bath_dead_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say バルトリ 死亡>0.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "bath_dead_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say バルトリ 死亡>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 最近 天気の様子がおかしい ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 最近 天気の様子がおかしい ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：バルトリという魔法使いがこの全ての原因を知っていると言ってたね ***>11.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：バルトリという魔法使いがこの全ての原因を知っていると言ってたね ***>11.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：でも彼女の力だけでは解決できないみたいだ，俺たちの助けが必要とする訳だ ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：でも彼女の力だけでは解決できないみたいだ，俺たちの助けが必要とする訳だ ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 春が始まったばかりなのに，秩序の庭の空気は異様に暑い ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 春が始まったばかりなのに，秩序の庭の空気は異様に暑い ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** B：じゃあ行ってみましょう，どんな状況なのか，暑くて死んじゃいそう ***>20.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** B：じゃあ行ってみましょう，どんな状況なのか，暑くて死んじゃいそう ***>20.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 死んでいた死体が何故か突然起き上がってゾンビになってる ***>8.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 死んでいた死体が何故か突然起き上がってゾンビになってる ***>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 		
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：来てくれましたね，秩序者よ ***>1.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：来てくれましたね，秩序者よ ***>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：各地の季節が滅茶苦茶になっています，夏は蝉が鳴き，春に竹の子が生える ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：各地の季節が滅茶苦茶になっています，夏は蝉が鳴き，春に竹の子が生える ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：我の調査によると，全ては誰かが裏で操っているからです ***>8.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：我の調査によると，全ては誰かが裏で操っているからです ***>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：なので，あなた達の力が必要です ***>12.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：なので，あなた達の力が必要です ***>12.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：奴らはあまりにも強くて，我ひとりでは手に負えません ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：奴らはあまりにも強くて，我ひとりでは手に負えません ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：あなた達もここ数日のひどい天気にもううんざりしてるでしょ，違いますか ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：あなた達もここ数日のひどい天気にもううんざりしてるでしょ，違いますか ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 話はここまで，道を案内します ***>22.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 話はここまで，道を案内します ***>22.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：四季の力と呼ばれる武器は四つの季節の力を吸い込むことが出来ます，それさえあればこの異変を解決するのは難しくありません ***>17.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：四季の力と呼ばれる武器は四つの季節の力を吸い込むことが出来ます，それさえあればこの異変を解決するのは難しくありません ***>17.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：あの遠くにある尖塔が見えますか？  ***>1.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：あの遠くにある尖塔が見えますか？  ***>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：あそこには強くてカオスなエネルギーの反応があります，あれに近づくと我は自分の寒氷が融けて消えるのを感じます ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：あそこには強くてカオスなエネルギーの反応があります，あれに近づくと我は自分の寒氷が融けて消えるのを感じます ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：我は異変を起こした張本人がどこかに隠れていると思います！ ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：我は異変を起こした張本人がどこかに隠れていると思います！ ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_door2_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** A：ちょっと見せて，ここには何が書いてあるんだ，うーん…… ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_door2_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** A：ちょっと見せて，ここには何が書いてあるんだ，うーん…… ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_door2_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** B：もう見るのやめましょう。ゾンビをもう抑えきれなさそうです ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_door2_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** B：もう見るのやめましょう。ゾンビをもう抑えきれなさそうです ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_door2_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** A：生命の色が渦巻き，七重の門がこの世に現れ，力の塔が九天に君臨する…………素晴らしい　俺は全てを悟ってしまった！！！ ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_door2_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** A：生命の色が渦巻き，七重の門がこの世に現れ，力の塔が九天に君臨する…………素晴らしい　俺は全てを悟ってしまった！！！ ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_goto_library_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ここは何かの儀式が行われているみたいだ，上空のエネルギーがすごく混乱している ***>1.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_goto_library_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ここは何かの儀式が行われているみたいだ，上空のエネルギーがすごく混乱している ***>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_goto_library_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：我の遠くから誰かが中に入っていくのを見たことがあります，彼は我々が片をつける相手になるかもしれません ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_goto_library_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：我の遠くから誰かが中に入っていくのを見たことがあります，彼は我々が片をつける相手になるかもしれません ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_goto_library_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：とにかく，先に上に行って様子を見てみましょう ***>7.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_goto_library_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：とにかく，先に上に行って様子を見てみましょう ***>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lv1_tower_button3",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ** バルトリ：多分ここです，上に行って，我がこの儀式を打ち破れるか試してみます **>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lv1_tower_button3",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ** バルトリ：多分ここです，上に行って，我がこの儀式を打ち破れるか試してみます **>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：よし……ちょっと見せてください，本当容易いことはありませんわ… ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：よし……ちょっと見せてください，本当容易いことはありませんわ… ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ???：誰？！ ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ???：誰？！ ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ???：浄化の儀式を邪魔するなんて，許しません ***>28.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ???：浄化の儀式を邪魔するなんて，許しません ***>28.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ソニア：我が名はソニア，あなた達は全員死ぬべき ***>32.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ソニア：我が名はソニア，あなた達は全員死ぬべき ***>32.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：秩序の庭の方々よ，彼女のことはあなた達に任せます ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：秩序の庭の方々よ，彼女のことはあなた達に任せます ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ???：貴方かよ……敗れたくせによくもまた邪魔をしに来ましたよね ***>16.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ???：貴方かよ……敗れたくせによくもまた邪魔をしに来ましたよね ***>16.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_skill1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 夢符[紫の錯綜たる迷夢] ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_skill1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 夢符[紫の錯綜たる迷夢] ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_skill2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 暗符[純粋なる狂気] ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_skill2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 暗符[純粋なる狂気] ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_skill3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 暗符[斜光の悪夢] ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_skill3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 暗符[斜光の悪夢] ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：うむ……強い ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：うむ……強い ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：何故あなた達は春の力を奪おうとするんですか？ ***>2.5>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：何故あなた達は春の力を奪おうとするんですか？ ***>2.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：儀式はもうダメだ…… ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：儀式はもうダメだ…… ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：…………………… ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：…………………… ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：このゾンビたち……私は分かってしまいました，お姉さんに戻って知らせなきゃ…… ***>8.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：このゾンビたち……私は分かってしまいました，お姉さんに戻って知らせなきゃ…… ***>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：ふん，失礼 ***>9.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：ふん，失礼 ***>9.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：逃げられましたか？構いませんよ秩序者よ，我々はすでに春の力を手に入れました ***>14.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：逃げられましたか？構いませんよ秩序者よ，我々はすでに春の力を手に入れました ***>14.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：我にこの力を使わせてくれると外へ出る道を導いてあげます，少し時間がかかります ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：我にこの力を使わせてくれると外へ出る道を導いてあげます，少し時間がかかります ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ステージクリア！ ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ステージクリア！ ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 貴方は春の力を手に入れました！！！ ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 貴方は春の力を手に入れました！！！ ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl1_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 春の力が固定されました，貴方は今後のステージでも引き続いて使用することが出来ます…… ***>9.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl1_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 春の力が固定されました，貴方は今後のステージでも引き続いて使用することが出来ます…… ***>9.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：さすが秩序者，我が出来なかったことを簡単にやっちゃうなんて ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：さすが秩序者，我が出来なかったことを簡単にやっちゃうなんて ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：ちょっと考えさせて下さい，次に行く場所は……迷いの森かな ***>7.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：ちょっと考えさせて下さい，次に行く場所は……迷いの森かな ***>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：我はあそこで無秩序な夏の力を感じたことがあります ***>9.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：我はあそこで無秩序な夏の力を感じたことがあります ***>9.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：この長いトンネルを抜ければもうすぐ到着です ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：この長いトンネルを抜ければもうすぐ到着です ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：あのゾンビたちもずっとついてきてるな ***>8.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：あのゾンビたちもずっとついてきてるな ***>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** B：ボス。こんなものは問題になりませんよ，わしが食い止めてみせましょう ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** B：ボス。こんなものは問題になりませんよ，わしが食い止めてみせましょう ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：ここには濃い夏の力が満ちています ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：ここには濃い夏の力が満ちています ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：前に進みたいけど，少し腕前が必要みたいです ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：前に進みたいけど，少し腕前が必要みたいです ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** A：俺に任せてくれ，俺は1日1000プッシュアップやってるから問題ないさ ***>40.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** A：俺に任せてくれ，俺は1日1000プッシュアップやってるから問題ないさ ***>40.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：お前たちはここに居すぎる ***>74.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：お前たちはここに居すぎる ***>74.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：どうやら，お前たちがソニアが言っていた怪しい連中だようね ***>90.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：どうやら，お前たちがソニアが言っていた怪しい連中だようね ***>90.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：立ち去りなさい，人間，私が気が変わる前に ***>100.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：立ち去りなさい，人間，私が気が変わる前に ***>100.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：そうか？ならば残されてる儀式の力でお前たちを滅ぼすとしよう ***>175.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：そうか？ならば残されてる儀式の力でお前たちを滅ぼすとしよう ***>175.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：これを試させて頂こう ***>208.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：これを試させて頂こう ***>208.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：うむ，命だけは見逃してやろう ***>228.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：うむ，命だけは見逃してやろう ***>228.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：ここはもう大丈夫だ，また問題を起こしたら，次は許さない ***>230.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：ここはもう大丈夫だ，また問題を起こしたら，次は許さない ***>230.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_win_trigger",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ステージクリア！ ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_win_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ステージクリア！ ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_win_trigger",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 貴方は夏の力を手に入れました！！！ ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_win_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 貴方は夏の力を手に入れました！！！ ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl2_win_trigger",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 夏の力が固定されました，貴方は今後のステージでも引き続いて使用することが出来ます…… ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl2_win_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 夏の力が固定されました，貴方は今後のステージでも引き続いて使用することが出来ます…… ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：俺はもう二つの季節の力を手に入れたようだ ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：俺はもう二つの季節の力を手に入れたようだ ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：もしかして彼女の良心でも見つかりましたか？それとも混乱を引き起こしすぎて力を使い果たしたのかしら？ ***>20.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：もしかして彼女の良心でも見つかりましたか？それとも混乱を引き起こしすぎて力を使い果たしたのかしら？ ***>20.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：秋の力が集まっている場所をもう見つけました，ぐずぐずしなで，早速参りましょう ***>30.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：秋の力が集まっている場所をもう見つけました，ぐずぐずしなで，早速参りましょう ***>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：だが前の……ソニアのお姉さん？ ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：だが前の……ソニアのお姉さん？ ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：彼女はどうして最後に攻撃を躊躇ってたかな？ ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：彼女はどうして最後に攻撃を躊躇ってたかな？ ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：そんなに気にせず，我々の成功が目の前に ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：そんなに気にせず，我々の成功が目の前に ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** B：問題ないっす，隊長は隊を率いることだけでいいっす，僕たち隊員も考え事山ほどありますから ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** B：問題ないっす，隊長は隊を率いることだけでいいっす，僕たち隊員も考え事山ほどありますから ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：我の知る限りでは，ここは秋の力が大量に宿っているだけではありません ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：我の知る限りでは，ここは秋の力が大量に宿っているだけではありません ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：以前混乱を引き起こしたソニアも此処に居て，異変を持続させていました ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：以前混乱を引き起こしたソニアも此処に居て，異変を持続させていました ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：勝ちに乗じて追撃することが最も賢明な選択です ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：勝ちに乗じて追撃することが最も賢明な選択です ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say ** ヒントに従って正しい魔法陣を押してください **>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ** ヒントに従って正しい魔法陣を押してください **>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_door1_counter",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say ** よくやりました，まもなく結界が消えます **>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_door1_counter",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ** よくやりました，まもなく結界が消えます **>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_gotoboss_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：感じる，彼女はこの場所にいます ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_gotoboss_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：感じる，彼女はこの場所にいます ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_gotoboss_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：よし，少し時間を下さい，彼女が隠れている空間を見つけ出します ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_gotoboss_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：よし，少し時間を下さい，彼女が隠れている空間を見つけ出します ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_start_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：あなた達よくも私の領域に踏み込んできましたよね ***>3.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：あなた達よくも私の領域に踏み込んできましたよね ***>3.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_start_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：ちょうどいい，以前の屈辱今こそリベンジしてやる ***>5.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：ちょうどいい，以前の屈辱今こそリベンジしてやる ***>5.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_start_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：全員地獄に堕ちなさい！！！ ***>7.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：全員地獄に堕ちなさい！！！ ***>7.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_skill1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 魔法[Magical Butterfly] ***>4.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_skill1_relay",
+	   	    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 魔法[Magical Butterfly] ***>4.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_skill2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 星風 [虹色の乱舞] ***>4.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_skill2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 星風 [虹色の乱舞] ***>4.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_skill3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 夢符 [天龍流星之雨] ***>4.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_skill3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 夢符 [天龍流星之雨] ***>4.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_skill4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 星符 [波と粒子の境界] ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_skill4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 星符 [波と粒子の境界] ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_skill5_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 暗符 [アポロン偽神論] ***>6.5>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_skill5_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 暗符 [アポロン偽神論] ***>6.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：お見事，秩序者よ，我々は彼女を倒しました！ ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：お見事，秩序者よ，我々は彼女を倒しました！ ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：ここから離れましょう，秋の力も共に ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：ここから離れましょう，秋の力も共に ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：待ちなさい！ ***>23.5>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：待ちなさい！ ***>23.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：あなた達はここから出られません ***>28.5>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：あなた達はここから出られません ***>28.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：彼女はもう狂っています，何をするか分かりませんよ，今は逃げるのが最優先です ***>38.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：彼女はもう狂っています，何をするか分かりませんよ，今は逃げるのが最優先です ***>38.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：もし秋の力まで失われたら…… ***>91.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：もし秋の力まで失われたら…… ***>91.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：あなた達を行かせる訳にはいかない…… ***>97.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：あなた達を行かせる訳にはいかない…… ***>97.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：もう仕方ないわ ***>94.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：もう仕方ないわ ***>94.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：季節の力を置いていきなさい！ ***>32.5>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：季節の力を置いていきなさい！ ***>32.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：行きましょう！前方に転送門があります，撤退の準備を ***>80.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：行きましょう！前方に転送門があります，撤退の準備を ***>80.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ソニア：ちくしょう！！！！！ ***>119.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ソニア：ちくしょう！！！！！ ***>119.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ステージクリア！ ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ステージクリア！ ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 貴方は秋の力を手に入れました！！！ ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 貴方は秋の力を手に入れました！！！ ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl3_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 秋の力が固定されました，貴方は今後のステージでも引き続いて使用することが出来ます…… ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl3_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 秋の力が固定されました，貴方は今後のステージでも引き続いて使用することが出来ます…… ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：素晴らしいです，秩序の庭の皆様 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：素晴らしいです，秩序の庭の皆様 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：俺一つ疑問がある，天気はどんどん安定してるけど ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：俺一つ疑問がある，天気はどんどん安定してるけど ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：ゾンビたちもどんどん活発になっているぞ ***>20.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：季節が元に戻ったら奴らはゆっくりと眠りにつくはずではないのか？ ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：まだ冬の力が残っています，今回の異変も完璧に解決できるはずです ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：そんな細かいことは気にしないで下さい ***>30.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：おそらくこれは回光返照かもしれませんね（笑） ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_stat_protect_push",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：今回の旅，我々はソニアの姉を倒す必要があります ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_stat_protect_push",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：我の情報網によると彼女は今重大な儀式を行い，更に大きな異変を引き起こしていること ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_stat_protect_push",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：これはチャンスです，その時の彼女の力は弱まっているはず，今こそ打ち倒す絶好のチャンスです ***>20.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_stat_protect_push",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** B：あんたは理解してるでしょうね，じゃあうちの隊長はどうするのさ ***>24.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：凍てつく冬，我が最も好きな気候です ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：我が魔晶を起動して道を開きます，あなた達はゾンビを食い止めてください ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_move0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnFullyOpen>command>Command>say *** バルトリ：もう行ってもいいです ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_button0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** 左のボタンが押されました ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_button1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** 右のボタンが押されました ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：この扉を潜れば，旅の終わりです，皆様準備は宜しいでしょうか？ ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_trigger5",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** バルトリ：いいチャンスですよ，彼女の儀式は決定的な時期になるはずです，防御結晶を壊せば強引に目覚めさせられます ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_trigger5",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** B：俺に任せろ，fire in the hole！ ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ？？？：あ？！！！ ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ？？？：浄化の儀式が………… ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** A：これでお前の異変の儀式はもうダメになっただろう ***>7.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ドロシ：四季の力を司る神である ***>17.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ドロシ：我が名は，ドロシ ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ？？？：異変の儀式？あなた何か勘違いしているんじゃないでしょうか？ ***>12.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ドロシ：あなた達何度も何度も私の邪魔をするなんて，悪魔と同じですわよ ***>22.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ドロシ：お前たちもこれらのゾンビと共に永遠の眠りにつくがいい！ ***>26.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** A：なんかおかしいぞ……バルトリ，こいつって悪者じゃなかったのか？どうして神様になっとるんだ？ ***>32.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** バルトリ：緊急事態で説明してる暇なんてありません，あいつの言葉に惑わされないでください，彼女を倒す絶好のチャンスですよ！ ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "bath_push_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリは極寒の長銃を使う準備ができています ***>60.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_d1_timer0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTimer>command>Command>say *** 里春「四月の魔女」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_d2_timer0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTimer>command>Command>say *** 里秋「季節外れの烈風」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_d5_g_timer0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTimer>command>Command>say *** 異常「流星の落下」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_d7_g_timer0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTimer>command>Command>say *** 異常「枯れゆく青い百合」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_d6_g_relay0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 里夏「超特急納涼列車」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_d4_g_relay0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 里冬「寒霜の七星剣」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_d3_g_relay0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 終焉「四季輪廻の絶境」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** あなた達...ありえない...壊すなんて...この世界を... ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A:世界を壊す? 異変を引き起こしたのは逆にてめじゃないのか? ***>7.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:ここまで来た以上,もう隠す必要なんてありません ***>14.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:貴方が勘違いしてる異変は彼女たちがゾンビの波を止める為の手段にすぎないです ***>16.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:本当の異変この私である! ***>18.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:死霊魔法を深く研究して初めて私は気づいた ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:力の終着点は生と死の狭間にあり ***>28.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:今の私は死の力を完全に掌握している ***>31.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:そして生の力はこの四季の輪廻の中にあるわけだ ***>34.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:秩序者? ふざけてるの!もはやお前たちは利用価値もないんだよ ***>43.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:今の私こそが真の神である! ***>40.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:お前たちを神へと至る私の踏み台にしてやる! ***>46.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A:神になるだと?面白いじゃないか,てめの実力見せてもらおう! ***>55.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_end1_cmd0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** B:まさかお前これが全力か? ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_end1_cmd0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ:私の奥義差し上げましょう ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_end1_cmd1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：なに!あ——ありえない! ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_end1_cmd1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** バルトリ：この私バルトリが... ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase01",
-			"targetname": "s4_end1_cmd1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 結局,バルトリは考えを止め,あなた達は再び世界の秩序を守り抜けた ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-// 한국어
-{
-			"outputname": "OnCase02",
-			"targetname": "bitru_weapon",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPlayerPickup>command>Command>say *** 지옥에서 온 악마 비트르가 눈을 떴습니다 ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lamiya_weapon",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPlayerPickup>command>Command>say *** 이세계에서 온 라미야는 이 이변에 대해 무척 흥미를 가진듯 합니다 ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "emma_weapon",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPlayerPickup>command>Command>say *** 이세계에서 온 에마는 우리들과 적대하고 싶은 모양입니다 ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "mingyue_weapon",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPlayerPickup>command>Command>say *** 어느 플레이어가 획득했습니다[명월의 응급의료] ***>0.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "Spring_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:봄 ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "summer_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:여름 ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "autumn_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:가을 ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "winter_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:겨울 ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "rtv_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:RTV ＞＞＞>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "bath_dead_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say 바르토리 사망>0.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 최근 날씨상태가 이상하다 ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：바르톨리라는 마법사가 이 모든 원인을 안다고 말했었지 ***>11.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：그치만 그녀의 힘만으로는 해결할 수 없는 모양이군，우리들의 도움이 필요한 것 같은데 ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 봄이 막 시작되었는데，질서의 정원 공기가 이상하게도 덥다 ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** B：그럼 가 보죠，어떤 상황인지，더워 죽을것 같아 ***>20.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 죽어있던 시체들이 어쨰서인지 갑자기 일어나 좀비가 되어있다 ***>8.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-		
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：와 주셨군요，질서자 ***>1.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：각 계절이 엉망진창으로 되어있습니다，여름은 매미가 울고，봄에는 죽순이 나고 ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：제 조사에 따르면，모든 것은 누군가가 뒤에서 조작하고있기 때문입니다 ***>8.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：그래서，당신들의 힘이 필요합니다 ***>12.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：녀석들은 너무나도 강력해서，저 혼자로는 감당하기가 힘듭니다 ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：당신들도 요 며칠 끔찍한 날씨에 벌써 지긋지긋하시지 않습니까，아닌가요 ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 이야기는 여기까지，길을 안내하겠습니다 ***>22.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_relay_1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：사계의 힘으로 불리는 무기는 4개의 계절의 힘을 흡수하는 것이 가능합니다，그것만 있다면 이 이변을 해결하는건 어렵지 않습니다 ***>17.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저 멀리있는 첨탑이 보이시나요？  ***>1.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저기는 강력하고 카오스한 에너지 반응이 있습니다，저곳에 다가가면 저는 자신의 한빙(寒氷)이 녹아 사라지는걸 느낍니다 ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저는 이변을 일으킨 장본인이 어딘가에 숨어있다고 생각합니다！ ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_door2_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** A：좀 보여 줘，여기에 뭐가 써져 있는거야，음… ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_door2_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** B：그만 봅시다。더 이상 좀비를 억누를 수 없을 것 같아요 ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_door2_button",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** A：생명의 색과 소용돌이，칠중의 문이 이 세계에 나타나，힘의 탑이 구천에 군림하느니…………굉장하군　나는 모든 것을 깨달아버렸어！！！ ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_goto_library_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 여기는 무언가의 의식이 진행되고 있는 것 같다，상공의 에너지가 무척 혼란스럽다 ***>1.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_goto_library_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：제 멀리로부터 누군가가 안으로 들어가는 것을 본 적이 있습니다，그는 우리들이 처리할 상대가 될 수도 있겠군요 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_goto_library_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：아무튼，먼저 위로 가서 상태를 보도록 하죠 ***>7.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lv1_tower_button3",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say ** 바르톨리：아마 이곳이 틀림없습니다，위로 가서，제가 의식을 타파할 수 있을지 시험해 보겠습니다 **>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：좋아……잠시 보여주세요，정말이지 쉬운 일이 없네요… ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ???：누구냐？！ ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ???：정화의 의식을 방해하다니，용서하지 않겠다 ***>28.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 소니아：내 이름은 소니아，당신들은 전원 죽어야 할 존재 ***>32.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：질서의 정원분들이여，그녀는 당신들에게 맡기겠습니다 ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_trigger7",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** ???：당신인가요……저한테 당했던 주제에 잘도 다시 방해를 하러 오셨군요 ***>16.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_skill1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 몽부[보랏빛이 뒤엉킨 미몽] ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_skill2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 암부[순수한 광기] ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_skill3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 암부[사광의 악몽] ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：윽……강하군 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：어째서 당신들은 봄의 힘을 빼앗으려고 하는거죠？ ***>2.5>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：의식은 이젠 글렸어…… ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：…………………… ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：이 좀비들……저는 알아버렸습니다，누나에게 돌아가 알리지 않으면…… ***>8.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：흠，실례 ***>9.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：도망갔나요？상관없습니다 질서자，우리들은 이미 봄의 힘을 얻었습니다 ***>14.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저에게 이 힘을 사용해게 해주시면 밖으로 나가는 길을 이끌어 드리도록하죠，잠시 시간이 걸립니다 ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 스테이지 클리어！ ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 당신은 봄의 힘을 얻었습니다！！！ ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl1_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 봄의 힘이 고정되었습니다，당신은 다음 스테이지에서도 계속해서 사용하는 것이 가능합니다…… ***>9.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：역시 질서자，제가 해내지 못한것을 간단히 해버리다니 ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：잠시 생각좀 하게 해주세요，다음에 갈 곳은……미혹의 숲인가 ***>7.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저는 저기서 무질서한 여름의 힘을 느낀적이 있습니다 ***>9.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：이 긴 터널을 빠져나오면 곧 도착이에요 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：좀비들도 계속 따라오잖아 ***>8.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** B：보스。이정도는 문제가 되지않소，제가 막아보도록 하죠 ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：여기에 짙은 여름의 힘이 차오르고 있는군요 ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：앞으로 나아가고 싶지만，아무래도 역량이 필요한 것 같네요 ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** A：나에게 맡겨주게나，난 하루에 1000번 푸쉬 업 하니깐 문제없지 ***>40.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：너희들 이곳에 너무 머물고있다 ***>74.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：보아하니，너희들이 소니아가 말한 수상한 자들이군 ***>90.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：이곳에서 떠나세요，인간，내가 마음이 바뀌기 전에 ***>100.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：그렇군？그럼 남아있는 의식의 힘으로 너희들을 몰살하도록 하지 ***>175.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：이걸 시험해보도록 해보지 ***>208.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：음，목숨만은 살려주겠다 ***>228.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_enda_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** ？？？：여기는 이제 괜찮다，다시 문제를 일으키거든，다음은 용서치 않겠다 ***>230.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_win_trigger",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 스테이지 클리어！ ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_win_trigger",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 당신은 여름의 힘을 얻었습니다！！！ ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl2_win_trigger",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 여름의 힘이 고정되었습니다，당신은 다음 스테이지에서도 계속해서 사용하는 것이 가능합니다…… ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：나는 벌써 두 개의 계절의 힘을 얻은 모양이다 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：혹시 그너의 양심이라도 찾았나요？아니면 혼돈을 일으킨 나머지 힘이 빠져버린걸까？ ***>20.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：가을의 힘이 모여있는 곳을 벌써 찾았답니다，꾸물꾸물대지말고，바로 가도록 하죠 ***>30.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：하지만 전에……소니아 언니？ ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：그녀는 어째서 마지막에 공격을 망설인거지？ ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：그렇게 신경쓰지 마시여，우리들의 성공이 눈 앞에 ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** B：걱정 마십쇼，대장은 부대를 이끄는 것만으로도 괜찬으니깐 말이죠，우리들의 부원들도 생각할 것이 잔뜩 있으니깐요 ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：제가 알기로는，이곳은 가을의 힘이 대량으로 깃들어 있는 뿐만이 아닙니다 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：이전에 혼란을 일으킨 소니아도 여기에 있어，이변을 계속 일으켰습니다 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_ir_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：지금까지 이겨 온 기세로 격추하는 것이 가장 현명한 선택입니다 ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say ** 힌트를 따라서 알맞게 마법진을 눌려 주세요 **>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_door1_counter",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say ** 잘 하셨습니다，잠시 후 결계가 사라집니다 **>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_gotoboss_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：느껴져，그녀는 이 곳에 있습니다 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_gotoboss_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：좋아，잠시 시간을 주십시오，그녀가 숨어 있는 공간을 찾아 내겠습니다 ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_start_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：당신들 잘도 저의 영역에 발을 들이셨군요 ***>3.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_start_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：마침 잘 됬군，지난 번의 굴욕을 지금 복수해 주도록 하죠 ***>5.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_start_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：모두 지옥에 떨어져라！！！ ***>7.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_skill1_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 마법[Magical Butterfly] ***>4.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_skill2_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 성풍 [홍(虹)색의 난무] ***>4.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_skill3_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 몽부 [천룡유성의 비] ***>4.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_skill4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 성부 [파도와 입자의 경계] ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_skill5_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 암부 [아폴론의 위신논] ***>6.5>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：훌륭하시군요，질서자，우리들은 그녀를 쓰러트렸습니다！ ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_boss_defeat_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：여기서 나갑시다，가을의 힘과 같이 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：기다리세요！ ***>23.5>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：당신들은 여기서 나갈 수 없습니다 ***>28.5>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：그녀는 이미 정신 나갔습니다，무엇을 할지 알 수 없습니다，지금은 도망가는 것이 최우선 입니다 ***>38.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：혹시 가을의 힘까지 잃어버렸으면…… ***>91.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：당신들을 가게 할 수는 없지…… ***>97.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：더 이상 어쩔 수 없지 ***>94.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：계절의 힘을 두고 가십시오！ ***>32.5>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：어서 가시죠！전방에 전송문이 있습니다，철수 준비를 ***>80.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_final_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 소니아：젠장！！！！！ ***>119.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 스테이지 클리어！ ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 당신은 가을의 힘을 얻었습니다！！！ ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl3_win_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 가을의 힘이 고정되었습니다，당신은 다음 스테이지에서도 계속해서 사용하는 것이 가능합니다…… ***>6.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：굉장하시군요，질서의 정원분들 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：문제 하나가 있어，날씨는 점점 안정해지고 있지만 ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
-		},
-
-		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：좀비들도 점점 활발해지고 있잖아 ***>20.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：ゾンビたちもどんどん活発になっているぞ ***>20.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A：계절이 원래대로 돌아오면 녀석들도 점차 잠들어야 하지 않은가？ ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：季節が元に戻ったら奴らはゆっくりと眠りにつくはずではないのか？ ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：아직 겨울의 힘이 남아 있습니다，이번의 이변도 완벽하게 해결 할 수 있으실겁니다 ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：まだ冬の力が残っています，今回の異変も完璧に解決できるはずです ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：그런 세세한 것은 신경쓰지 마십시오 ***>30.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：そんな細かいことは気にしないで下さい ***>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：아마도 이것은 회광반조일지도 모르겠네요（웃음） ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：おそらくこれは回光返照かもしれませんね（笑） ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_stat_protect_push",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：이번 여행，우리들은 소니아의 언니를 쓰러트릴 필요가 있습니다 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_stat_protect_push",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：今回の旅，我々はソニアの姉を倒す必要があります ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_stat_protect_push",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：저의 정보망에 따르면 그녀는 지금 중대한 의식을 행하고，게다가 막대한 이변을 일으키고 있는 것 ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_stat_protect_push",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：我の情報網によると彼女は今重大な儀式を行い，更に大きな異変を引き起こしていること ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_stat_protect_push",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：이것은 찬스입니다，그 때의 그녀의 힘은 약해져 있을 터，지금이야 말로 쓰러트릴 절호의 찬스입니다 ***>20.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_stat_protect_push",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：これはチャンスです，その時の彼女の力は弱まっているはず，今こそ打ち倒す絶好のチャンスです ***>20.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_stat_protect_push",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** B：당신은 이해하고 있겠죠，자 우리 대장은 어떻게 할 것인가 ***>24.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_stat_protect_push",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** B：あんたは理解してるでしょうね，じゃあうちの隊長はどうするのさ ***>24.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：얼어붙은 겨울，제가 가장 좋아하는 기후이죠 ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：凍てつく冬，我が最も好きな気候です ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_trigger1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：제가 마결을 가동해 길을 열겠습니다，당신들은 좀비를 막아주세요 ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：我が魔晶を起動して道を開きます，あなた達はゾンビを食い止めてください ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_move0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnFullyOpen>command>Command>say *** 바르톨리：이제 가셔도 좋습니다 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_move0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnFullyOpen>command>Command>say *** バルトリ：もう行ってもいいです ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_button0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** 왼쪽의 버튼이 눌려졌습니다 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_button0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** 左のボタンが押されました ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_button1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnPressed>command>Command>say *** 오른쪽의 버튼이 눌려졌습니다 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_button1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** 右のボタンが押されました ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_tele",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：이 문을 지나면，여행은 끝입니다，여러분 준비는 되셨습니까？ ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：この扉を潜れば，旅の終わりです，皆様準備は宜しいでしょうか？ ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_trigger5",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：좋은 찬스입니다，그녀의 의식은 이제 결정적일 시기가 될 것 입니다，방어결정을 부수면 강제로 각성 시킬 수 있습니다 ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_trigger5",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** バルトリ：いいチャンスですよ，彼女の儀式は決定的な時期になるはずです，防御結晶を壊せば強引に目覚めさせられます ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_trigger5",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnStartTouch>command>Command>say *** B：나에게 맡겨만 주시게，fire in the hole！ ***>10.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_trigger5",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** B：俺に任せろ，fire in the hole！ ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ？？？：응？！！！ ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ？？？：あ？！！！ ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ？？？：정화의 의식이………… ***>5.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ？？？：浄化の儀式が………… ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** A：이걸로 이변의 의식은 더 이상 불가능하겠지 ***>7.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** A：これでお前の異変の儀式はもうダメになっただろう ***>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** 도로시：사계의 힘을 관장하는 신 ***>17.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+	            "overrideparam": "OnHitMin>command>Command>say *** ドロシ：四季の力を司る神である ***>17.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** 도로시：내 이름은，도로시 ***>15.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ドロシ：我が名は，ドロシ ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** ？？？：이변의 이식？ 당신 뭔가 착각하고 있지 않으신지？ ***>12.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ？？？：異変の儀式？あなた何か勘違いしているんじゃないでしょうか？ ***>12.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** 도로시：당신들은 몇 번이나 몇 번이나 나를 방해하다니，악마와 다를 바가 없네요 ***>22.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ドロシ：あなた達何度も何度も私の邪魔をするなんて，悪魔と同じですわよ ***>22.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** 도로시：당신들도 좀비들과 영원히 잠드는게 좋겠군요！ ***>26.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ドロシ：お前たちもこれらのゾンビと共に永遠の眠りにつくがいい！ ***>26.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** A：뭔가 이상해……바르톨리，이녀석 나쁜 놈 아니였던가？어째서 신이 되어 있는거지？ ***>32.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** A：なんかおかしいぞ……バルトリ，こいつって悪者じゃなかったのか？どうして神様になっとるんだ？ ***>32.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "lvl4_crystal_hp",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnHitMin>command>Command>say *** 바르톨리：긴급사태로 설명 할 여유가 없습니다，저녀석의 말에 현혹되지 마세요，그녀를 쓰러트릴 절호의 찬스입니다！ ***>35.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** バルトリ：緊急事態で説明してる暇なんてありません，あいつの言葉に惑わされないでください，彼女を倒す絶好のチャンスですよ！ ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "bath_push_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리는 혹한의 장총을 사용할 준비가 되어있습니다 ***>60.0>-1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "bath_push_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリは極寒の長銃を使う準備ができています ***>60.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_d1_timer0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTimer>command>Command>say *** 이춘「사월의 마녀」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_d1_timer0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>command>Command>say *** 里春「四月の魔女」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_d2_timer0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTimer>command>Command>say *** 이추「어긋난 계절의 열풍」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_d2_timer0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>command>Command>say *** 里秋「季節外れの烈風」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_d5_g_timer0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTimer>command>Command>say *** 이상「유성의 낙하」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_d5_g_timer0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>command>Command>say *** 異常「流星の落下」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_d7_g_timer0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTimer>command>Command>say *** 이상「말라가는 푸른 백합」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_d7_g_timer0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>command>Command>say *** 異常「枯れゆく青い百合」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_d6_g_relay0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 이하「초특급납량열차」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_d6_g_relay0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 里夏「超特急納涼列車」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_d4_g_relay0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 이동「한상의 칠성검」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_d4_g_relay0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 里冬「寒霜の七星剣」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_d3_g_relay0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 종언「사계윤회의 절경」 ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_d3_g_relay0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 終焉「四季輪廻の絶境」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 당신들...말도 안돼...망쳐버리다니...이 세계를... ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** あなた達...ありえない...壊すなんて...この世界を... ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A:세계를 망쳐? 이변을 일으킨건 반대로 네가 아니냐? ***>7.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A:世界を壊す? 異変を引き起こしたのは逆にてめじゃないのか? ***>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:여기까지 온 이상,더 이상 숨길 필요는 없겠군요 ***>14.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:ここまで来た以上,もう隠す必要なんてありません ***>14.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:당신이 착각하고 있는 이변은 그녀들이 좀비의 파도를 막기 위한 수단일 뿐 ***>16.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:貴方が勘違いしてる異変は彼女たちがゾンビの波を止める為の手段にすぎないです ***>16.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:진짜의 이변은 바로 나다! ***>18.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:本当の異変この私である! ***>18.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:사령마법을 오래 연구해 처음으로 나는 눈치챘다 ***>25.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:死霊魔法を深く研究して初めて私は気づいた ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:힘의 종착점은 생과 죽음의 사이에 있고 ***>28.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:力の終着点は生と死の狭間にあり ***>28.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:지금의 나는 죽음의 힘을 완전히 파악하고 있지 ***>31.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:今の私は死の力を完全に掌握している ***>31.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:그리고 생의 힘은 계절의 윤회 속에 있는 것이다 ***>34.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:そして生の力はこの四季の輪廻の中にあるわけだ ***>34.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:질서자? 웃기지도 않군!너희들은 이제 이용할 가치도 없다 ***>43.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:秩序者? ふざけてるの!もはやお前たちは利用価値もないんだよ ***>43.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:지금의 나야말로 진정한 신이다! ***>40.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:今の私こそが真の神である! ***>40.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:너희들을 신에게 달하는 나의 발판으로 해주지! ***>46.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:お前たちを神へと至る私の踏み台にしてやる! ***>46.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_boss_die_relay",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** A:신이 된다고? 재밌는데?, 니 실력을 보도록 하지! ***>55.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A:神になるだと?面白いじゃないか,てめの実力見せてもらおう! ***>55.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_end1_cmd0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** B:설마 이게 전력인가? ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_end1_cmd0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** B:まさかお前これが全力か? ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_end1_cmd0",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리:저의 오기 보여드리도록 하죠 ***>3.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_end1_cmd0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ:私の奥義差し上げましょう ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_end1_cmd1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：이런!말—말도 안되! ***>0.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_end1_cmd1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：なに!あ——ありえない! ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_end1_cmd1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 바르톨리：나 바르톨리가... ***>2.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_end1_cmd1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** バルトリ：この私バルトリが... ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		},
 
 		{
-			"outputname": "OnCase02",
-			"targetname": "s4_end1_cmd1",
-			"inputname": "AddOutPut",
-			"overrideparam": "OnTrigger>command>Command>say *** 결국,바르톨리는 생각을 멈추고,당신들은 다시 세계의 질서를 지켜냈다 ***>4.0>1",
-			"delay": 0.0,
-			"timestofire": -1
+		    "outputname": "OnCase01",
+		    "targetname": "s4_end1_cmd1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 結局,バルトリは考えを止め,あなた達は再び世界の秩序を守り抜けた ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+		// 한국어
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "bitru_weapon",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>command>Command>say *** 지옥에서 온 악마 비트르가 눈을 떴습니다 ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lamiya_weapon",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>command>Command>say *** 이세계에서 온 라미야는 이 이변에 대해 무척 흥미를 가진듯 합니다 ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "emma_weapon",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>command>Command>say *** 이세계에서 온 에마는 우리들과 적대하고 싶은 모양입니다 ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "mingyue_weapon",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPlayerPickup>command>Command>say *** 어느 플레이어가 획득했습니다[명월의 응급의료] ***>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "Spring_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:봄 ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "summer_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:여름 ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "autumn_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:가을 ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "winter_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:겨울 ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "rtv_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ＜＜＜ 스테이지가 설정되었습니다:RTV ＞＞＞>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "bath_dead_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say 바르토리 사망>0.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 최근 날씨상태가 이상하다 ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：바르톨리라는 마법사가 이 모든 원인을 안다고 말했었지 ***>11.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：그치만 그녀의 힘만으로는 해결할 수 없는 모양이군，우리들의 도움이 필요한 것 같은데 ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 봄이 막 시작되었는데，질서의 정원 공기가 이상하게도 덥다 ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** B：그럼 가 보죠，어떤 상황인지，더워 죽을것 같아 ***>20.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 죽어있던 시체들이 어쨰서인지 갑자기 일어나 좀비가 되어있다 ***>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+		
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：와 주셨군요，질서자 ***>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：각 계절이 엉망진창으로 되어있습니다，여름은 매미가 울고，봄에는 죽순이 나고 ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：제 조사에 따르면，모든 것은 누군가가 뒤에서 조작하고있기 때문입니다 ***>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：그래서，당신들의 힘이 필요합니다 ***>12.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：녀석들은 너무나도 강력해서，저 혼자로는 감당하기가 힘듭니다 ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：당신들도 요 며칠 끔찍한 날씨에 벌써 지긋지긋하시지 않습니까，아닌가요 ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 이야기는 여기까지，길을 안내하겠습니다 ***>22.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_relay_1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：사계의 힘으로 불리는 무기는 4개의 계절의 힘을 흡수하는 것이 가능합니다，그것만 있다면 이 이변을 해결하는건 어렵지 않습니다 ***>17.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저 멀리있는 첨탑이 보이시나요？  ***>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저기는 강력하고 카오스한 에너지 반응이 있습니다，저곳에 다가가면 저는 자신의 한빙(寒氷)이 녹아 사라지는걸 느낍니다 ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저는 이변을 일으킨 장본인이 어딘가에 숨어있다고 생각합니다！ ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_door2_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** A：좀 보여 줘，여기에 뭐가 써져 있는거야，음… ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_door2_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** B：그만 봅시다。더 이상 좀비를 억누를 수 없을 것 같아요 ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_door2_button",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** A：생명의 색과 소용돌이，칠중의 문이 이 세계에 나타나，힘의 탑이 구천에 군림하느니…………굉장하군　나는 모든 것을 깨달아버렸어！！！ ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_goto_library_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 여기는 무언가의 의식이 진행되고 있는 것 같다，상공의 에너지가 무척 혼란스럽다 ***>1.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_goto_library_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：제 멀리로부터 누군가가 안으로 들어가는 것을 본 적이 있습니다，그는 우리들이 처리할 상대가 될 수도 있겠군요 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_goto_library_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：아무튼，먼저 위로 가서 상태를 보도록 하죠 ***>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lv1_tower_button3",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say ** 바르톨리：아마 이곳이 틀림없습니다，위로 가서，제가 의식을 타파할 수 있을지 시험해 보겠습니다 **>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：좋아……잠시 보여주세요，정말이지 쉬운 일이 없네요… ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ???：누구냐？！ ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ???：정화의 의식을 방해하다니，용서하지 않겠다 ***>28.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 소니아：내 이름은 소니아，당신들은 전원 죽어야 할 존재 ***>32.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：질서의 정원분들이여，그녀는 당신들에게 맡기겠습니다 ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_trigger7",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** ???：당신인가요……저한테 당했던 주제에 잘도 다시 방해를 하러 오셨군요 ***>16.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_skill1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 몽부[보랏빛이 뒤엉킨 미몽] ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_skill2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 암부[순수한 광기] ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_skill3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 암부[사광의 악몽] ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：윽……강하군 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：어째서 당신들은 봄의 힘을 빼앗으려고 하는거죠？ ***>2.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：의식은 이젠 글렸어…… ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：…………………… ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：이 좀비들……저는 알아버렸습니다，누나에게 돌아가 알리지 않으면…… ***>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：흠，실례 ***>9.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：도망갔나요？상관없습니다 질서자，우리들은 이미 봄의 힘을 얻었습니다 ***>14.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저에게 이 힘을 사용해게 해주시면 밖으로 나가는 길을 이끌어 드리도록하죠，잠시 시간이 걸립니다 ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 스테이지 클리어！ ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 당신은 봄의 힘을 얻었습니다！！！ ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl1_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 봄의 힘이 고정되었습니다，당신은 다음 스테이지에서도 계속해서 사용하는 것이 가능합니다…… ***>9.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：역시 질서자，제가 해내지 못한것을 간단히 해버리다니 ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：잠시 생각좀 하게 해주세요，다음에 갈 곳은……미혹의 숲인가 ***>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：저는 저기서 무질서한 여름의 힘을 느낀적이 있습니다 ***>9.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：이 긴 터널을 빠져나오면 곧 도착이에요 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：좀비들도 계속 따라오잖아 ***>8.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** B：보스。이정도는 문제가 되지않소，제가 막아보도록 하죠 ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：여기에 짙은 여름의 힘이 차오르고 있는군요 ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：앞으로 나아가고 싶지만，아무래도 역량이 필요한 것 같네요 ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** A：나에게 맡겨주게나，난 하루에 1000번 푸쉬 업 하니깐 문제없지 ***>40.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：너희들 이곳에 너무 머물고있다 ***>74.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：보아하니，너희들이 소니아가 말한 수상한 자들이군 ***>90.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：이곳에서 떠나세요，인간，내가 마음이 바뀌기 전에 ***>100.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：그렇군？그럼 남아있는 의식의 힘으로 너희들을 몰살하도록 하지 ***>175.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：이걸 시험해보도록 해보지 ***>208.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：음，목숨만은 살려주겠다 ***>228.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_enda_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** ？？？：여기는 이제 괜찮다，다시 문제를 일으키거든，다음은 용서치 않겠다 ***>230.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_win_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 스테이지 클리어！ ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_win_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 당신은 여름의 힘을 얻었습니다！！！ ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl2_win_trigger",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 여름의 힘이 고정되었습니다，당신은 다음 스테이지에서도 계속해서 사용하는 것이 가능합니다…… ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：나는 벌써 두 개의 계절의 힘을 얻은 모양이다 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：혹시 그너의 양심이라도 찾았나요？아니면 혼돈을 일으킨 나머지 힘이 빠져버린걸까？ ***>20.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：가을의 힘이 모여있는 곳을 벌써 찾았답니다，꾸물꾸물대지말고，바로 가도록 하죠 ***>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：하지만 전에……소니아 언니？ ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：그녀는 어째서 마지막에 공격을 망설인거지？ ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+	            "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：그렇게 신경쓰지 마시여，우리들의 성공이 눈 앞에 ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** B：걱정 마십쇼，대장은 부대를 이끄는 것만으로도 괜찬으니깐 말이죠，우리들의 부원들도 생각할 것이 잔뜩 있으니깐요 ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：제가 알기로는，이곳은 가을의 힘이 대량으로 깃들어 있는 뿐만이 아닙니다 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：이전에 혼란을 일으킨 소니아도 여기에 있어，이변을 계속 일으켰습니다 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_ir_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：지금까지 이겨 온 기세로 격추하는 것이 가장 현명한 선택입니다 ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say ** 힌트를 따라서 알맞게 마법진을 눌려 주세요 **>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_door1_counter",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say ** 잘 하셨습니다，잠시 후 결계가 사라집니다 **>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_gotoboss_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：느껴져，그녀는 이 곳에 있습니다 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_gotoboss_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：좋아，잠시 시간을 주십시오，그녀가 숨어 있는 공간을 찾아 내겠습니다 ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+	     	    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：당신들 잘도 저의 영역에 발을 들이셨군요 ***>3.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：마침 잘 됬군，지난 번의 굴욕을 지금 복수해 주도록 하죠 ***>5.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_start_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：모두 지옥에 떨어져라！！！ ***>7.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_skill1_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 마법[Magical Butterfly] ***>4.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_skill2_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 성풍 [홍색의 난무] ***>4.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_skill3_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 몽부 [천룡유성의 비] ***>4.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_skill4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 성부 [파도와 입자의 경계] ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_skill5_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 암부 [아폴론의 위신논] ***>6.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：훌륭하시군요，질서자，우리들은 그녀를 쓰러트렸습니다！ ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_boss_defeat_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：여기서 나갑시다，가을의 힘과 같이 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：기다리세요！ ***>23.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：당신들은 여기서 나갈 수 없습니다 ***>28.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：그녀는 이미 정신 나갔습니다，무엇을 할지 알 수 없습니다，지금은 도망가는 것이 최우선 입니다 ***>38.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：혹시 가을의 힘까지 잃어버렸으면…… ***>91.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：당신들을 가게 할 수는 없지…… ***>97.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：더 이상 어쩔 수 없지 ***>94.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：계절의 힘을 두고 가십시오！ ***>32.5>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：어서 가시죠！전방에 전송문이 있습니다，철수 준비를 ***>80.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+	 	    "outputname": "OnCase02",
+		    "targetname": "lvl3_final_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 소니아：젠장！！！！！ ***>119.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 스테이지 클리어！ ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 당신은 가을의 힘을 얻었습니다！！！ ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl3_win_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 가을의 힘이 고정되었습니다，당신은 다음 스테이지에서도 계속해서 사용하는 것이 가능합니다…… ***>6.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：굉장하시군요，질서의 정원분들 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：문제 하나가 있어，날씨는 점점 안정해지고 있지만 ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+	 	    "outputname": "OnCase02",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：좀비들도 점점 활발해지고 있잖아 ***>20.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A：계절이 원래대로 돌아오면 녀석들도 점차 잠들어야 하지 않은가？ ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：아직 겨울의 힘이 남아 있습니다，이번의 이변도 완벽하게 해결 할 수 있으실겁니다 ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：그런 세세한 것은 신경쓰지 마십시오 ***>30.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：아마도 이것은 회광반조일지도 모르겠네요（웃음） ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_stat_protect_push",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：이번 여행，우리들은 소니아의 언니를 쓰러트릴 필요가 있습니다 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_stat_protect_push",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：저의 정보망에 따르면 그녀는 지금 중대한 의식을 행하고，게다가 막대한 이변을 일으키고 있는 것 ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_stat_protect_push",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：이것은 찬스입니다，그 때의 그녀의 힘은 약해져 있을 터，지금이야 말로 쓰러트릴 절호의 찬스입니다 ***>20.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_stat_protect_push",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** B：당신은 이해하고 있겠죠，자 우리 대장은 어떻게 할 것인가 ***>24.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：얼어붙은 겨울，제가 가장 좋아하는 기후이죠 ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_trigger1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：제가 마결을 가동해 길을 열겠습니다，당신들은 좀비를 막아주세요 ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_move0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnFullyOpen>command>Command>say *** 바르톨리：이제 가셔도 좋습니다 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_button0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** 왼쪽의 버튼이 눌려졌습니다 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_button1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnPressed>command>Command>say *** 오른쪽의 버튼이 눌려졌습니다 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_tele",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：이 문을 지나면，여행은 끝입니다，여러분 준비는 되셨습니까？ ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_trigger5",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** 바르톨리：좋은 찬스입니다，그녀의 의식은 이제 결정적일 시기가 될 것 입니다，방어결정을 부수면 강제로 각성 시킬 수 있습니다 ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_trigger5",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnStartTouch>command>Command>say *** B：나에게 맡겨만 주시게，fire in the hole！ ***>10.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ？？？：응？！！！ ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ？？？：정화의 의식이………… ***>5.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** A：이걸로 이변의 의식은 더 이상 불가능하겠지 ***>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** 도로시：사계의 힘을 관장하는 신 ***>17.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** 도로시：내 이름은，도로시 ***>15.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** ？？？：이변의 이식？ 당신 뭔가 착각하고 있지 않으신지？ ***>12.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** 도로시：당신들은 몇 번이나 몇 번이나 나를 방해하다니，악마와 다를 바가 없네요 ***>22.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** 도로시：당신들도 좀비들과 영원히 잠드는게 좋겠군요！ ***>26.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** A：뭔가 이상해……바르톨리，이녀석 나쁜 놈 아니였던가？어째서 신이 되어 있는거지？ ***>32.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "lvl4_crystal_hp",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnHitMin>command>Command>say *** 바르톨리：긴급사태로 설명 할 여유가 없습니다，저녀석의 말에 현혹되지 마세요，그녀를 쓰러트릴 절호의 찬스입니다！ ***>35.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "bath_push_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리는 혹한의 장총을 사용할 준비가 되어있습니다 ***>60.0>-1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_d1_timer0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>command>Command>say *** 이춘「사월의 마녀」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_d2_timer0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>command>Command>say *** 이추「어긋난 계절의 열풍」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_d5_g_timer0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>command>Command>say *** 이상「유성의 낙하」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_d7_g_timer0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTimer>command>Command>say *** 이상「말라가는 푸른 백합」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_d6_g_relay0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 이하「초특급납량열차」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_d4_g_relay0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 이동「한상의 칠성검」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_d3_g_relay0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 종언「사계윤회의 절경」 ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 당신들...말도 안돼...망쳐버리다니...이 세계를... ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A:세계를 망쳐? 이변을 일으킨건 반대로 네가 아니냐? ***>7.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:여기까지 온 이상,더 이상 숨길 필요는 없겠군요 ***>14.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:당신이 착각하고 있는 이변은 그녀들이 좀비의 파도를 막기 위한 수단일 뿐 ***>16.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:진짜의 이변은 바로 나다! ***>18.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:사령마법을 오래 연구해 처음으로 나는 눈치챘다 ***>25.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:힘의 종착점은 생과 죽음의 사이에 있고 ***>28.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:지금의 나는 죽음의 힘을 완전히 파악하고 있지 ***>31.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:그리고 생의 힘은 계절의 윤회 속에 있는 것이다 ***>34.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:질서자? 웃기지도 않군!너희들은 이제 이용할 가치도 없다 ***>43.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:지금의 나야말로 진정한 신이다! ***>40.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:너희들을 신에게 달하는 나의 발판으로 해주지! ***>46.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_boss_die_relay",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** A:신이 된다고? 재밌는데?, 니 실력을 보도록 하지! ***>55.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_end1_cmd0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** B:설마 이게 전력인가? ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_end1_cmd0",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리:저의 오기 보여드리도록 하죠 ***>3.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_end1_cmd1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：이런!말—말도 안되! ***>0.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_end1_cmd1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 바르톨리：나 바르톨리가... ***>2.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
+
+		{
+		    "outputname": "OnCase02",
+		    "targetname": "s4_end1_cmd1",
+		    "inputname": "AddOutPut",
+		    "overrideparam": "OnTrigger>command>Command>say *** 결국,바르톨리는 생각을 멈추고,당신들은 다시 세계의 질서를 지켜냈다 ***>4.0>1",
+		    "delay": 0.0,
+		    "timestofire": -1
 		}
             ]
         }
