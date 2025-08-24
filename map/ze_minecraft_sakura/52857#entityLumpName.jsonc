@@ -3,8 +3,8 @@
 // workshop id 3184013959
 // if find mistranslation tell me
 {
-    "modify": // remove message output
-    [ 
+	"modify": // remove message output
+    [
         {
             "match":
             {
@@ -12,18 +12,18 @@
             },
             "delete":
             {
-	    	"io":
-                [					
-		    {
+                "io":
+                [
+					{
                         "outputname": "OnTrigger",
-			"targetname": "[PR#]cmd",
-                        "inputname": "Command",      
-                        "overrideparam": "say 小哥买苹果嘛~",  
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 小哥买苹果嘛~",
                         "delay": 0.0,
                         "timestofire": 1
                     }
-		]
-	    }	
-	}	
-    ]
-}	
+				]
+			}
+		}
+	]
+}
