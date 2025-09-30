@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.05.31
+// stripper by 兎RB 25.09.30
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // if find mistranslation tell me
@@ -37,7 +37,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.05.31",
+                        "overrideparam": "say language translation stripper 25.09.30",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -617,7 +617,7 @@
 					"outputname": "OnCase01",
 					"targetname": "48188",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say say 小さなサキュバス:“ふむ，あんたに少し力を分けてあげる”>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say 小さなサキュバス:“ふむ，あんたに少し力を分けてあげる”>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -761,7 +761,7 @@
 					"outputname": "OnCase01",
 					"targetname": "47415",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say say ^(*￣(oo)￣)^テストのボタンを消すの忘れてた　教えてくれてありがとう>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say ^(*￣(oo)￣)^テストのボタンを消すの忘れてた　教えてくれてありがとう>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3416,7 +3416,7 @@
 					"outputname": "OnCase02",
 					"targetname": "48188",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say say 작은 서큐버스:“흠，너에게 잠시 힘을 나눠주지”>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say 작은 서큐버스:“흠，너에게 잠시 힘을 나눠주지”>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3560,7 +3560,7 @@
 					"outputname": "OnCase02",
 					"targetname": "47415",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say say ^(*￣(oo)￣)^테스트용 버튼을 지우는 걸 잊어버렸어 알려줘서 고마워>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say ^(*￣(oo)￣)^테스트용 버튼을 지우는 걸 잊어버렸어 알려줘서 고마워>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
