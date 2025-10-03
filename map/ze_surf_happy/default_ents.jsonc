@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.04.05
+// stripper by 兎RB 25.10.03
 // map ze_surf_happy
 // workshop id 3386114661
 // if find mistranslation tell me
@@ -23,20 +23,12 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
-
-                    {
-                        "outputname": "OnMapSpawn",
-						"targetname": "language_counter",
-                        "inputname": "GetValue",
-                        "delay": 0.1,
-                        "timestofire": -1
-                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.04.05",
+                        "overrideparam": "say language translation stripper 25.10.03",
                         "delay": 1.0,
                         "timestofire": -1
                     }
