@@ -1,8 +1,9 @@
-// stripper by 兎RB 25.03.23
+// stripper by 兎RB 25.10.03
 // map ze_bluearchive_abydos_b1
 // workshop id 3261481731
 // if find mistranslation tell me
 // serial number 日本語:"1" 한국어:"2"
+// map name changed to "ze_re_abydos"
 {
     "modify":
     [
@@ -23,20 +24,12 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
-
-                    {
-                        "outputname": "OnMapSpawn",
-						"targetname": "language_counter",
-                        "inputname": "GetValue",
-                        "delay": 0.1,
-                        "timestofire": -1
-                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.03.23",
+                        "overrideparam": "say language translation stripper 25.10.03",
                         "delay": 1.0,
                         "timestofire": -1
                     }
