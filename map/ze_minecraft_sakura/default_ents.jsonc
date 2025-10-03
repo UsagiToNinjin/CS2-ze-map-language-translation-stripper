@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.09.30
+// stripper by 兎RB 25.10.03
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // if find mistranslation tell me
@@ -24,20 +24,12 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
-
-                    {
-                        "outputname": "OnMapSpawn",
-						"targetname": "language_counter",
-                        "inputname": "GetValue",
-                        "delay": 0.1,
-                        "timestofire": -1
-                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.09.30",
+                        "overrideparam": "say language translation stripper 25.10.03",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -84,7 +76,7 @@
 
 				{
                     "outputname": "OnCase01",
-					"targetname": "xm1014_kill_relay",
+					"targetname": "xm1014_kill_relay_t",
                     "inputname": "AddOutPut",
 					"overrideparam": "OnUser1>cmd>Command>say あれ，捨てられちゃった 悲しくて手首切っちゃうにゃんQAQ>0.0>1",
                     "delay": 0.0,
@@ -498,6 +490,15 @@
 
 				{
 					"outputname": "OnCase01",
+					"targetname": "48367",
+					"inputname": "SetMessage",
+					"overrideparam": "アドミンroom",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
 					"targetname": "48505",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnStartTouch>cmd>Command>say ああ！こんなにベットが多いなんて，まさかアクアちゃんしちゃうの>0.0>1",
@@ -806,7 +807,7 @@
 					"outputname": "OnCase01",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say サーバーの人数が36人以下の場合，ゾンビがドアハグした際の核爆発効果を削除します！！>0.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say サーバーの人数が45人以下の場合，ゾンビがドアハグした際の核爆発効果を削除します！！>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -815,7 +816,7 @@
 					"outputname": "OnCase01",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say サーバーの人数が36人以下の場合，ゾンビがドアハグした際の核爆発効果を削除します！！>0.3>1",
+					"overrideparam": "OnUser1>cmd>Command>say サーバーの人数が45人以下の場合，ゾンビがドアハグした際の核爆発効果を削除します！！>0.3>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -977,7 +978,7 @@
 					"outputname": "OnCase01",
 					"targetname": "qworliusndfgsdhbb",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say （港を守れ 男なら40秒防御よろぴ~o( =∩ω∩= )）>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say （港を守れ 男なら35秒防御よろぴ~o( =∩ω∩= )）>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -986,7 +987,7 @@
 					"outputname": "OnCase01",
 					"targetname": "qworliusndfgsdhbb",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say （10秒後ゾンビがテレポートされるよ 早く走れ(＞▽＜)）>45.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say （10秒後ゾンビがテレポートされるよ 早く走れ(＞▽＜)）>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1022,7 +1023,7 @@
 					"outputname": "OnCase01",
 					"targetname": "41961",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say （ゾンビが10秒後トイレにテレポートされます）>66.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say （ゾンビが12秒後トイレにテレポートされます）>66.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1031,7 +1032,7 @@
 					"outputname": "OnCase01",
 					"targetname": "41961",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say あれ！_(:з」∠)_便器の中から変なもの出てきた>76.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say あれ！_(:з」∠)_便器の中から変なもの出てきた>78.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1040,7 +1041,7 @@
 					"outputname": "OnCase01",
 					"targetname": "41961",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 釣り場の上のダイアモンドは木屋の扉のスイッチであることを忘れちゃいけないにゃんԾ‸Ծ>64.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ゾンビがテレポートされましたにゃんԾ‸Ծ>64.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1083,36 +1084,36 @@
 
                 {
 					"outputname": "OnCase01",
-					"targetname": "41983",
+					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say (木屋が60秒後に開放されます)>0.5>1",
+					"overrideparam": "OnUser1>cmd>Command>say (木屋が60秒後に開放されます)>0.5>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "relay_tree",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say (木屋が40秒後に開放されます）>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 
                 {
 					"outputname": "OnCase01",
-					"targetname": "41983",
+					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say (ゾンビが20秒後テレポートされます，オープンラン！）>32.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say (ゾンビが20秒後テレポートされます，オープンラン！）>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 
                 {
 					"outputname": "OnCase01",
-					"targetname": "41983",
+					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say (木屋が5秒後に開放されます)>55.1>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "41983",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say (木屋が40秒後に開放されます）>20.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say (木屋が5秒後に開放されます)>55.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1508,7 +1509,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42463",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say (15秒後ガラスが割れます）>25.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say (15秒後ガラスが割れます）>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1517,7 +1518,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42463",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 今海賊たちが全員酒場にいる>40.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say 今海賊たちが全員酒場にいる>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1526,7 +1527,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42463",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say それじゃ隙を見て乗り込んで、奴らの根城を潰そう♪(´∇`*)>43.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say それじゃ隙を見て乗り込んで、奴らの根城を潰そう♪(´∇`*)>38.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1562,7 +1563,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42477",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 船室が40秒後に開きます>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 船室が30秒後に開きます>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1571,7 +1572,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42477",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 艦長室侵入作戦開始ヾ(≧O≦)〃>40.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 艦長室侵入作戦開始ヾ(≧O≦)〃>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1580,7 +1581,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42477",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 船室が10秒後に開きます>30.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 船室が10秒後に開きます>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1616,7 +1617,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42499",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 30秒後ドアが開きます>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say (30秒後ドアが開きます)>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1625,7 +1626,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42499",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 10秒後ゾンビがテレポートされます>25.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say (5秒後ゾンビがテレポートされます)>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1635,6 +1636,15 @@
 					"targetname": "42499",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>cmd>Command>say 最後の部屋へ向いて進もう！>33.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (10秒後ドアが開きます)>23.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2883,7 +2893,7 @@
 
 				{
                     "outputname": "OnCase02",
-					"targetname": "xm1014_kill_relay",
+					"targetname": "xm1014_kill_relay_t",
                     "inputname": "AddOutPut",
 					"overrideparam": "OnUser1>cmd>Command>say 어라，버려졌어 슬퍼서 손목 자를 거야 냐아QAQ>0.0>1",
                     "delay": 0.0,
@@ -3297,6 +3307,15 @@
 
 				{
 					"outputname": "OnCase02",
+					"targetname": "48367",
+					"inputname": "SetMessage",
+					"overrideparam": "어드민room",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
 					"targetname": "48505",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnStartTouch>cmd>Command>say 아아！이렇게나 침대가 많다니，설마 아쿠아 하는거야?>0.0>1",
@@ -3605,7 +3624,7 @@
 					"outputname": "OnCase02",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say 서버의 인원 수가 36명 이하인 경우，좀비가 도어 허그시 뉴크가 발생하는 트리거를 제거합니다！！>0.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say 서버의 인원 수가 45명 이하인 경우，좀비가 도어 허그시 뉴크가 발생하는 트리거를 제거합니다！！>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3614,7 +3633,7 @@
 					"outputname": "OnCase02",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say 서버의 인원 수가 36명 이하인 경우，좀비가 도어 허그시 뉴크가 발생하는 트리거를 제거합니다！！>0.3>1",
+					"overrideparam": "OnUser1>cmd>Command>say 서버의 인원 수가 45명 이하인 경우，좀비가 도어 허그시 뉴크가 발생하는 트리거를 제거합니다！！>0.3>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3794,7 +3813,7 @@
 					"outputname": "OnCase02",
 					"targetname": "qworliusndfgsdhbb",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say （ 항구를 지켜라 남자라면40초 방어 잘 부탁해~o( =∩ω∩= )）>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say （ 항구를 지켜라 남자라면35초 방어 잘 부탁해~o( =∩ω∩= )）>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3803,7 +3822,7 @@
 					"outputname": "OnCase02",
 					"targetname": "qworliusndfgsdhbb",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say （10초 후 좀비가 텔레포트 될꺼야 빨리 뛰어(＞▽＜)）>45.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say （10초 후 좀비가 텔레포트 될꺼야 빨리 뛰어(＞▽＜)）>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3839,7 +3858,7 @@
 					"outputname": "OnCase02",
 					"targetname": "41961",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say （좀비가 10초 후 화장실에 텔레포트 됩니다）>66.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say （좀비가 12초 후 화장실에 텔레포트 됩니다）>66.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3848,16 +3867,16 @@
 					"outputname": "OnCase02",
 					"targetname": "41961",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 어라！_(:з」∠)_변기 안에서 이상한 게 나왔어>76.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say 어라！_(:з」∠)_변기 안에서 이상한 게 나왔어>78.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 
-                {
+				{
 					"outputname": "OnCase02",
 					"targetname": "41961",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 낚시터 위에 다이아몬드는 나무집의 문 스위치 라는걸 잊어서는 안된다냥Ծ‸Ծ>64.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say 좀비가 텔레포트 되었다냥Ծ‸Ծ>64.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3900,36 +3919,36 @@
 
                 {
 					"outputname": "OnCase02",
-					"targetname": "41983",
+					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say (나무집이 60초 후에 개방됩니다)>0.5>1",
+					"overrideparam": "OnUser1>cmd>Command>say (나무집이 60초 후에 개방됩니다)>0.5>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "relay_tree",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say (나무집이 40초 후에 개방됩니다)>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 
                 {
 					"outputname": "OnCase02",
-					"targetname": "41983",
+					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say (좀비가 20초 후 텔레포트 됩니다，오픈 런！）>32.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say (좀비가 20초 후 텔레포트 됩니다，오픈 런！）>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 
                 {
 					"outputname": "OnCase02",
-					"targetname": "41983",
+					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say (나무집이 5초 후에 개방됩니다)>55.1>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "41983",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say (나무집이 40초 후에 개방됩니다)>20.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say (나무집이 5초 후에 개방됩니다)>55.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4325,7 +4344,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42463",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say (15초 후 창문이 깨집니다）>25.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say (15초 후 창문이 깨집니다）>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4334,7 +4353,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42463",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 지금 해적들이 모두 술집에 있어>40.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say 지금 해적들이 모두 술집에 있어>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4343,7 +4362,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42463",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 틈을 타서 배에 올라타、녀석들의 근거지를 부수자♪(´∇`*)>43.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say 틈을 타서 배에 올라타、녀석들의 근거지를 부수자♪(´∇`*)>38.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4379,7 +4398,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42477",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 선실이 40초후에 열립니다>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 선실이 30초후에 열립니다>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4388,7 +4407,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42477",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 함장실침입전투개시ヾ(≧O≦)〃>40.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 함장실침입전투개시ヾ(≧O≦)〃>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4397,7 +4416,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42477",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 선실이 10초후에 열립니다>30.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 선실이 10초후에 열립니다>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4433,7 +4452,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42499",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 30초 후 문이 열립니다>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say (30초 후 문이 열립니다)>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4442,7 +4461,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42499",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 10초 후 좀비가 텔레포트 됩니다>25.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say (5초 후 좀비가 텔레포트 됩니다)>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4452,6 +4471,15 @@
 					"targetname": "42499",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>cmd>Command>say 마지막 방으로 항하여 돌진！>33.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (10초 후 문이 열립니다)>23.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5927,6 +5955,21 @@
 			    "justify_horizontal": "1"
             }
         },
+		// message "爱德敏room"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "48367"
+            },
+            "replace":
+            {
+                "targetname": "48367",
+				"origin": "6893.422363 -1806.315918 893.679993",
+				"justify_vertical": "1",
+			    "justify_horizontal": "1"
+            }
+        },
 
 		{
             "match":
@@ -5941,7 +5984,7 @@
                         "outputname": "OnUser1",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say 服务器人数低于36，已移除僵尸贴门核爆效果！！",
+                        "overrideparam": "say 服务器人数低于45，已移除僵尸贴门核爆效果！！",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -5950,7 +5993,7 @@
                         "outputname": "OnUser1",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say 服务器人数低于36，已移除僵尸贴门核爆效果！！",
+                        "overrideparam": "say 服务器人数低于45，已移除僵尸贴门核爆效果！！",
                         "delay": 0.3,
                         "timestofire": 1
                     }
@@ -5989,7 +6032,7 @@
                         "outputname": "OnTrigger",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say （守住码头 是男人就坚持40秒~o( =∩ω∩= )）",
+                        "overrideparam": "say （守住码头 是男人就坚持35秒~o( =∩ω∩= )）",
                         "delay": 3.0,
                         "timestofire": 1
                     },
@@ -5999,7 +6042,7 @@
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say （僵尸10秒后传送 快跑(>▽<)）",
-                        "delay": 45.0,
+                        "delay": 40.0,
                         "timestofire": 1
                     }
                 ]
@@ -6051,7 +6094,7 @@
                         "outputname": "OnTrigger",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say （僵尸10秒后传送至厕所）",
+                        "overrideparam": "say （僵尸12秒后传送至厕所）",
                         "delay": 66.0,
                         "timestofire": 1
                     },
@@ -6061,7 +6104,7 @@
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say 啊咧！_(:з」∠)_马桶里爬出了怪怪的东西",
-                        "delay": 76.0,
+                        "delay": 78.0,
                         "timestofire": 1
                     },
 
@@ -6069,7 +6112,7 @@
                         "outputname": "OnTrigger",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say 咱记得钓鱼台上的钻石块是树屋开关喵Ծ‸Ծ",
+                        "overrideparam": "say 姜丝传送了喵Ծ‸Ծ",
                         "delay": 64.0,
                         "timestofire": 1
                     },
@@ -6145,19 +6188,14 @@
         {
             "match":
             {
-                "classname": "func_button",
-                "hammeruniqueid": "41983"
-            },
-            "replace":
-            {
-                "targetname": "41983"
+                "targetname": "[PR#]relay_tree"
             },
             "delete":
             {
                 "io":
                 [
 					{
-                        "outputname": "OnPressed",
+                        "outputname": "OnUser1",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say (树屋将在60s后开放)",
@@ -6165,8 +6203,17 @@
                         "timestofire": 1
                     },
 
+					{
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say (树屋将在40s后开放)",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
                     {
-                        "outputname": "OnPressed",
+                        "outputname": "OnUser1",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say (僵尸20秒后传送，开润！）",
@@ -6175,20 +6222,11 @@
                     },
 
                     {
-                        "outputname": "OnPressed",
+                        "outputname": "OnUser1",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say (树屋将在5s后开放)",
                         "delay": 55.1,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnPressed",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say (树屋将在40s后开放)",
-                        "delay": 20.0,
                         "timestofire": 1
                     }
                 ]
@@ -6812,7 +6850,7 @@
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say (15秒后玻璃碎掉）",
-                        "delay": 25.0,
+                        "delay": 20.0,
                         "timestofire": 1
                     },
 
@@ -6821,7 +6859,7 @@
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say 海盗这会儿都在酒馆",
-                        "delay": 40.0,
+                        "delay": 35.0,
                         "timestofire": 1
                     },
 
@@ -6830,7 +6868,7 @@
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say 那咱们就趁虚而入 端了他们的老窝♪(´∇`*)",
-                        "delay": 43.0,
+                        "delay": 38.0,
                         "timestofire": 1
                     },
 
@@ -6899,7 +6937,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say 船舱在40秒后打开",
+                        "overrideparam": "say 船舱在30秒后打开",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -6909,7 +6947,7 @@
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say 潜入舰长室计划开始ヾ(≧O≦)〃",
-                        "delay": 40.0,
+                        "delay": 30.0,
                         "timestofire": 1
                     },
 
@@ -6918,7 +6956,7 @@
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
                         "overrideparam": "say 船舱在10秒后打开",
-                        "delay": 30.0,
+                        "delay": 20.0,
                         "timestofire": 1
                     }
                 ]
@@ -6996,8 +7034,8 @@
                         "outputname": "OnTrigger",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say (10秒后僵尸传送)",
-                        "delay": 25.0,
+                        "overrideparam": "say (5秒后僵尸传送)",
+                        "delay": 30.0,
                         "timestofire": 1
                     },
 
@@ -7007,6 +7045,15 @@
                         "inputname": "Command",
                         "overrideparam": "say 朝着最后一个房间前进吧！",
                         "delay": 33.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say (10秒后门开)",
+                        "delay": 23.0,
                         "timestofire": 1
                     }
                 ]
@@ -8199,6 +8246,27 @@
 		{
             "match":
             {
+                "targetname": "[PR#]hl_xm1014_temp"
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnEntitySpawned",
+						"targetname": "xm1014_kill_relay&*",
+                        "inputname": "AddOutPut",
+						"overrideparam": "OnUser1>xm1014_kill_relay_t>FireUser1>>0>1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
                 "targetname": "[PR#]hl_saying_temp"
 			},
 			"insert":
@@ -8218,11 +8286,11 @@
     ],
 	"add": // trigger to replace point_template
     [
-		// 47716#entityLumpName(mciddreams_temp)
+		// mciddreams_temp(47716#entityLumpName)
         {
 			"targetname": "door_mcddreams_trigger_t",
 			"classname": "trigger_multiple",
-			"origin": "-410.063477 3062.415527 376",
+			"origin": "-396 3064 362",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
 			"startdisabled": "1",
@@ -8230,17 +8298,16 @@
 			"spawnflags": "4097",
 			"model": "maps/ze_minecraft_sakura/entities/door_mcddreams_trigger_47798.vmdl"
 		},
-        // 48200#entityLumpName(hl_xm1014_temp)
+        // hl_xm1014_temp(48200#entityLumpName)
 		{
-			"targetname": "xm1014_kill_relay",
-			"classname": "logic_relay",
-			"startdisabled": "1"
+			"targetname": "xm1014_kill_relay_t",
+			"classname": "logic_relay"
 		},
 		// 52857#entityLumpName(hl_saying_temp)
         {
 			"targetname": "hl_saying_t",
 			"classname": "trigger_multiple",
-			"origin": "-887.152344 3124.001953 372",
+			"origin": "-704 3102 426",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
 			"startdisabled": "1",
@@ -8265,7 +8332,7 @@
 						"targetname": "lyric_inmyroom",
                         "inputname": "Enable",
                         "delay": 0.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     },
 
                     {
@@ -8274,7 +8341,7 @@
                         "inputname": "Command",
                         "overrideparam": "say ♪ MUSIC [ キツネDJ : In My Room ]",
                         "delay": 0.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     }
                 ]
             }
@@ -8294,7 +8361,7 @@
 						"targetname": "lyric_good_dream",
                         "inputname": "Enable",
                         "delay": 0.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     },
 
                     {
@@ -8303,7 +8370,7 @@
                         "inputname": "Command",
                         "overrideparam": "say ♪ MUSIC [ Kirara Magic : Good Dream(feat. Shion) ]",
                         "delay": 0.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     }
                 ]
             }
@@ -8323,7 +8390,7 @@
 						"targetname": "lyric_sunny_rain",
                         "inputname": "Enable",
                         "delay": 0.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     },
 
                     {
@@ -8332,7 +8399,7 @@
                         "inputname": "Command",
                         "overrideparam": "say ♪ MUSIC [ Kirara Magic : Sunny Rain(feat. Shion) ]",
                         "delay": 0.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     }
                 ]
             }
@@ -8352,7 +8419,7 @@
 						"targetname": "lyric_aurora_vip",
                         "inputname": "Enable",
                         "delay": 0.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     },
 
                     {
@@ -8361,7 +8428,7 @@
                         "inputname": "Command",
                         "overrideparam": "say ♪ MUSIC [ Kirara Magic : Aurora VIP(feat. Shion) ]",
                         "delay": 0.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     }
                 ]
             }
