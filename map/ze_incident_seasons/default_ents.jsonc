@@ -1,8 +1,9 @@
-// stripper by 兎RB 25.06.07
+// stripper by 兎RB 25.10.03
 // map ze_incident_seasons
 // workshop id 3472606171
 // if find mistranslation tell me
 // serial number 日本語:"1" 한국어:"2"
+// This stripper is unfinished
 {
     "modify":
     [
@@ -11,7 +12,7 @@
             {
                 "classname": "logic_auto"
             },
-			"delete":
+			"delete": // increase the delay time to transmit 0.1sec AddOutPut
             {
                 "io":
                 [
@@ -44,20 +45,12 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
-
-                    {
-                        "outputname": "OnMapSpawn",
-						"targetname": "language_counter",
-                        "inputname": "GetValue",
-                        "delay": 0.01,
-                        "timestofire": -1
-                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "command",
                         "inputname": "Command",
-                        "overrideparam": "say stripper update 25.06.07",
+                        "overrideparam": "say stripper update 25.10.03",
                         "delay": 1.0,
                         "timestofire": -1
                     }
