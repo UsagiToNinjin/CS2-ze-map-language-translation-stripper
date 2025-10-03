@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.03.29
+// stripper by 兎RB 25.10.03
 // map ze_purification_a1
 // workshop id 33128279930
 // if find mistranslation tell me
@@ -23,20 +23,12 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
-
-                    {
-                        "outputname": "OnMapSpawn",
-						"targetname": "language_counter",
-                        "inputname": "GetValue",
-                        "delay": 0.1,
-                        "timestofire": -1
-                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.03.29",
+                        "overrideparam": "say language translation stripper 25.10.03",
                         "delay": 1.0,
                         "timestofire": -1
                     }
