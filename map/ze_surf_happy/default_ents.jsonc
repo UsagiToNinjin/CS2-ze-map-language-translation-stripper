@@ -2,7 +2,7 @@
 // map ze_surf_happy
 // workshop id 3386114661
 // if find mistranslation tell me
-// serial number 日本語:"1" 한국어:"2" English:"3"
+// serial number 日本語:"1" 한국어:"2" English:"3" 
 {
     "modify":
     [
@@ -793,4 +793,5 @@
 			}
 		}
     ]
+
 }
