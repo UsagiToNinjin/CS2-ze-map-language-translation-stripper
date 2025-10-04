@@ -1,0 +1,826 @@
+// stripper by 兎RB 25.05.12
+// map ze_purification_a1
+// workshop id 3128279930
+{
+	"filter": // remove choose level trigger
+    [ 
+        {
+            "targetname": "[PR#]case_lvl"
+		}
+	],
+	"modify":
+    [ 
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "delete": // remove choose level trigger
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]counter_lvl",
+                        "inputname": "GetValue",                      
+                        "delay": 0.02,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "command",
+                        "inputname": "Command",
+                        "overrideparam": "say stripper update 25.05.12",                       
+                        "delay": 1.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "command",
+                        "inputname": "Command",
+                        "overrideparam": "host_timescale 1",                       
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // spawn to location of the the stage selection button
+                    {
+                        "outputname": "OnMapSpawn",
+                        "targetname": "tpa_lvl1",
+                        "inputname": "FireUser1",                       
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	],
+    "modify": // change player teleport origin to location of the stage selection button
+    [ 
+        {
+            "match":
+            {
+                "targetname": "[PR#]tp_lvl1"
+            },	
+            "replace":
+            {
+                "origin": "7650 7360 -7970",
+                "angles": "0 180 0"
+            }
+        }
+    ],
+    "add": // player stage teleport
+    [ 
+        {
+			"targetname": "tp_stage",
+            "classname": "trigger_teleport",
+            "origin": "7650 7360 -7970",
+		    "angles": "0 0 0",
+		    "scales": "1 1 1",
+            "target": "tp_stage_des",
+		    "spawnflags": "4097",
+            "startdisabled": "1",
+            "model": "maps/ze_purification_a1/entities/hurt_final_3907.vmdl"
+        },
+
+        {
+			"targetname": "tp_stage_des",
+            "classname": "info_teleport_destination",
+		    "origin": "9000 -8250 6170",
+            "angles": "0 0 0",
+            "scales": "1 1 1"
+        }
+    ],
+    "add": // round finish
+	[
+	    {
+			"targetname": "end_round",
+			"classname": "info_map_parameters",
+			"io":
+			[
+                {
+                    "outputname": "OnUser1",
+                    "targetname": "!self",
+                    "inputname": "FireWinCondition",
+                    "overrideparam": "5",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        }
+    ],
+    "add": // stage 2 boss
+    [ 
+        {
+            "targetname": "bt_boss",
+            "classname": "func_button",
+            "origin": "7415 7300 -7950",
+            "angels": "0 0 0",
+            "scales": "1 1 1",
+            "spawnflags": "1057",
+            "wait": "1",
+            "speed": "5",	    
+            "model": "maps/ze_purification_a1/entities/button_lvl1_30549.vmdl",
+            "io":
+            [
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "!self",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "bt*",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "tp_stage",
+                    "inputname": "Enable",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "boss_start_relay",
+                    "inputname": "Trigger",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "boss_hp_text*",
+                    "inputname": "Enable",
+                    "delay": 25.0,
+                    "timestofire": -1
+                },
+                // limit fight boss time for overplay
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "boss_defeat_relay",
+                    "inputname": "Trigger",
+                    "delay": 150.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        // stage 2 boss worldtext
+        {
+			"targetname": "tt_boss",
+            "classname": "point_worldtext",
+			"origin": "7415 7300 -7940",
+            "angles": "0 90 90",
+			"scales": "1 1 1",
+			"depth_render_offset": "0.125",
+			"reorient_mode": "0",
+            "justify_vertical": "1",
+			"justify_horizontal": "1",
+            "font_name": "Arial Black",
+            "font_size": "50",
+            "world_units_per_pixel": "0.25",
+            "color": "255 255 255",
+            "fullbright": "1",
+            "enabled": "1",
+            "message": "Boss",
+		    "fademindist": "-1",
+            "rendercolor": "255 255 255",
+            "renderamt": "255",
+            "rendermode": "kRenderNormal",
+            "renderfx": "kRenderFxNone"
+        },
+        // stage 2 boss hp text
+        {
+			"targetname": "boss_hp_text",
+            "classname": "point_worldtext",
+			"origin": "9568 -8192 6500",
+            "angles": "0 180 90",
+			"scales": "3 3 3",
+			"depth_render_offset": "0.125",
+			"reorient_mode": "1",
+            "justify_vertical": "1",
+			"justify_horizontal": "1",
+            "font_name": "Arial Black",
+            "font_size": "150",
+            "world_units_per_pixel": "0.25",
+            "color": "255 255 255",
+            "fullbright": "1",
+            "enabled": "0",
+            "message": "0",
+			"fademaxdist": "0",
+		    "fademindist": "-1",
+            "rendercolor": "255 255 255",
+            "renderamt": "255",
+            "rendermode": "kRenderNormal",
+            "renderfx": "kRenderFxNone"
+        },
+        
+        {
+			"targetname": "boss_hp_text_h",
+            "classname": "point_worldtext",
+			"origin": "9568 -8192 6600",
+            "angles": "0 180 90",
+			"scales": "3 3 3",
+			"depth_render_offset": "0.125",
+			"reorient_mode": "1",
+            "justify_vertical": "1",
+			"justify_horizontal": "1",
+            "font_name": "Arial Black",
+            "font_size": "150",
+            "world_units_per_pixel": "0.25",
+            "color": "255 255 255",
+            "fullbright": "1",
+            "enabled": "0",
+            "message": "♥♥♥♥",
+			"fademaxdist": "0",
+		    "fademindist": "-1",
+            "rendercolor": "255 255 255",
+            "renderamt": "255",
+            "rendermode": "kRenderNormal",
+            "renderfx": "kRenderFxNone"
+        },
+
+        {
+			"targetname": "boss_hp_text_counter",
+			"classname": "math_counter",
+			"max": "16",
+			"min": "1",
+			"startvalue":"1",
+			"io":
+			[
+			    {
+					"outputname": "OnGetValue",
+					"targetname": "boss_hp_text_case",
+					"inputname": "InValue",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]	
+		},
+
+		{
+			"targetname": "boss_hp_text_case",
+			"classname": "logic_case",
+			"case01": "1",
+			"case02": "2",
+			"case03": "3",
+			"case04": "4",
+			"case05": "5",
+			"io":
+			[
+			    {
+					"outputname": "OnCase01",
+					"targetname": "boss_hp_text_h",
+					"inputname": "SetMessage",
+					"overrideparam": "♥♥♥♥",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "boss_hp_text_h",
+					"inputname": "SetMessage",
+					"overrideparam": "♥♥♥♡",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "boss_hp_text_h",
+					"inputname": "SetMessage",
+					"overrideparam": "♥♥♡♡",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase04",
+					"targetname": "boss_hp_text_h",
+					"inputname": "SetMessage",
+					"overrideparam": "♥♡♡♡",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase05",
+					"targetname": "boss_hp_text_h",
+					"inputname": "SetMessage",
+					"overrideparam": "♥♡♡♡♡",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		}
+    ],
+    "modify": // stage 2 add last boss hp text output, reduce boss hp
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]boss_hp"
+            },
+            "replace":
+            {
+                "startvalue": "10"
+            },	
+			"insert":
+            {
+                "io":
+                [
+                    {
+						"outputname": "OutValue",
+						"targetname": "boss_hp_text",
+						"inputname": "SetIntMessage",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+                    {
+						"outputname": "OnHitMin",
+						"targetname": "boss_hp_text_counter",
+						"inputname": "Add",
+						"overrideparam": "1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnHitMin",
+						"targetname": "boss_hp_text_counter",
+						"inputname": "GetValue",
+						"delay": 0.1,
+						"timestofire": -1
+					}
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]boss_hp_add_mult"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]boss_hp",
+						"inputname": "Add",
+                        "overrideparam": "160",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+                ]
+            },	
+			"insert":
+            {
+                "io":
+                [
+                    {
+						"outputname": "OnStartTouch",
+						"targetname": "boss_hp",
+						"inputname": "Add",
+                        "overrideparam": "100",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]boss_phase_counter"
+            },	
+			"insert":
+            {
+                "io":
+                [
+                    {
+						"outputname": "OnHitMin",
+						"targetname": "boss_hp_text*",
+						"inputname": "Disable",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+                ]
+            }
+        }
+    ],
+    "add": // stage 2 laser
+    [ 
+        {
+            "targetname": "bt_laser",
+            "classname": "func_button",
+            "origin": "7415 7420 -7950",
+            "angels": "0 0 0",
+            "scales": "1 1 1",
+            "spawnflags": "1057",
+            "wait": "1",
+            "speed": "5",	    
+            "model": "maps/ze_purification_a1/entities/button_lvl1_30549.vmdl",
+            "io":
+            [
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "!self",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "bt*",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "tp_stage",
+                    "inputname": "Enable",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnPressed",
+                    "targetname": "button_lv2train",
+                    "inputname": "Press",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+					"outputname": "OnPressed",
+					"targetname": "burn_param",
+					"inputname": "SetFloatValue",
+					"overrideparam": "2",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPressed",
+					"targetname": "burn_param",
+					"inputname": "SetFloatValue",
+					"overrideparam": "1",
+					"delay": 55.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPressed",
+					"targetname": "command",
+					"inputname": "Command",
+					"overrideparam": "host_timescale 2",
+					"delay": 1.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPressed",
+					"targetname": "command",
+					"inputname": "Command",
+					"overrideparam": "host_timescale 1",
+					"delay": 55.0,
+					"timestofire": -1
+				}
+            ]
+        },
+        // stage 2 laser worldtext
+        {
+			"targetname": "tt_boss",
+            "classname": "point_worldtext",
+			"origin": "7415 7420 -7940",
+            "angles": "0 90 90",
+			"scales": "1 1 1",
+			"depth_render_offset": "0.125",
+			"reorient_mode": "0",
+            "justify_vertical": "1",
+			"justify_horizontal": "1",
+            "font_name": "Arial Black",
+            "font_size": "50",
+            "world_units_per_pixel": "0.25",
+            "color": "255 255 255",
+            "fullbright": "1",
+            "enabled": "1",
+            "message": "Laser",
+		    "fademindist": "-1",
+            "rendercolor": "255 255 255",
+            "renderamt": "255",
+            "rendermode": "kRenderNormal",
+            "renderfx": "kRenderFxNone"
+        },
+        // stage 2 laser param pitch
+        {
+			"targetname": "burn_param",
+			"classname": "snd_event_param",
+			"parametername": "pitch",
+			"floatvalue": "1"		
+		}
+    ],
+    "modify": // stage 2 laser param pitch output
+    [ 
+        {
+            "match":
+            {
+                "targetname": "[PR#]burn"
+            },
+            "insert":
+            {
+                "io":
+                [					
+					{
+                        "outputname": "SoundEventGuid",
+						"targetname": "burn_param",
+                        "inputname": "SetSoundEventGUID",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	],        	
+	"modify": // change language chinese to english
+    [ 
+        {
+            "match":
+            {
+                "targetname": "[PR#]boss_final_relay"
+            },
+            "delete":
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 巴托莉：你以为结束了吗？ **",
+                        "delay": 2.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** Bartoli : Did you think it's end ? **",
+                        "delay": 2.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]boss_defeat_relay"
+            },
+            "delete":
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** 巴托莉：怎么可能！ **",                
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** 她去哪里了？ **",                
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** 不管怎么样，先离开这里 **",                
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** Bartoli：How is that possible！ **",                
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** Where did she go？ **",                
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** No matter what，let's get out of here first **",                
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]boss_start_relay"
+            },
+            "delete":
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** 巴托莉：哼，自讨苦吃 **",                
+                        "delay": 15.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** 巴托莉：??? **",                
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** 巴托莉：你居然能到这里 **",                
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** 目标：击败巴托莉 **",                
+                        "delay": 26.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** 巴托莉：就让我亲手了结你们 **",                
+                        "delay": 22.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** Bartoli：Hmm，you brought this on yourself **",                
+                        "delay": 15.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** Bartoli：??? **",                
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** Bartoli：You actually made it here **",                
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** Objective：Defeat Bartoli **",                
+                        "delay": 26.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "command",
+                        "inputname": "Command",      
+                        "overrideparam": "say ** Bartoli：Let me personally put an end to you **",                
+                        "delay": 22.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }
+	],
+	"modify":
+    [ 
+        {
+            "match":
+            {
+                "targetname": "[PR#]boss_final_move"
+            },
+            "delete": // remove unnecessary message
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnFullyOpen",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 恭喜通关！ **",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnFullyOpen",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 感谢您的游玩！ **",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert": // stage 2 round finish
+            {
+                "io":
+                [					
+					{
+                        "outputname": "OnFullyOpen",
+						"targetname": "end_round",
+                        "inputname": "FireUser1",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}

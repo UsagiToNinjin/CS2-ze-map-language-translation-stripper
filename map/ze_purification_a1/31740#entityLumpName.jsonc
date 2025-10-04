@@ -1,0 +1,28 @@
+// stripper by 兎RB 25.03.29
+// map ze_purification_a1
+// workshop id 33128279930
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]weapon_winda"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 风神器拾取 CD:60s 持续：3s **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
