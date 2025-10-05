@@ -1814,7 +1814,7 @@
 					"targetname": "!self",
 					"inputname": "SetMessage",
                     "overrideparam": "침수 및 붕괴의 위험이 있다고 판단되어",
-					"delay": 3.5,
+					"delay": 3.0,
 					"timestofire": -1
 				},
 
@@ -1823,7 +1823,7 @@
 					"targetname": "!self",
 					"inputname": "SetMessage",
                     "overrideparam": "제7지하호수로 이어지는",
-					"delay": 7.5,
+					"delay": 7.0,
 					"timestofire": -1
 				},
 
@@ -1832,7 +1832,7 @@
 					"targetname": "!self",
 					"inputname": "SetMessage",
                     "overrideparam": "동굴 출입을 금지합니다.",
-					"delay": 9.7,
+					"delay": 9.2,
 					"timestofire": -1
 				},
 
@@ -1840,7 +1840,7 @@
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "Kill",
-					"delay": 12.7,
+					"delay": 12.2,
 					"timestofire": -1
 				}
             ]
@@ -1851,7 +1851,7 @@
 			"classname": "trigger_multiple",
 			"origin": "-5761.628906 -5451.459961 455.964844",
 			"angles": "0 0 0",
-			"scales": "1 1 1",
+			"scales": "5 5 5",
 			"startdisabled": "1",
             "wait": "1",
 			"spawnflags": "4097",
