@@ -498,7 +498,7 @@
             ]
         }
     ],
-    "modify": // remove message output, add targetname
+    "modify": // remove message output, replace point_worldtext origin
     [
         // message "感谢以下维护及帮助："
         {
@@ -522,7 +522,7 @@
             },
             "replace":
             {
-                "origin": "-10922.856445 8322.433594 -14529.869141" // set center
+                "origin": "-10922.856445 8322.433594 -14529.869141"
             }
         },
         // message "时墨_luck"
@@ -534,7 +534,7 @@
             },
             "replace":
             {
-                "origin": "-10922.856445 8318.450195 -14542.646484" // set center
+                "origin": "-10922.856445 8318.450195 -14542.646484"
             }
         },
         {
@@ -875,7 +875,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#]severadmin",
                         "inputname": "Command",
-						"overrideparam": "say **  有人尝试卡bug被披萨神扔进了尸笼  **", // 누군가가 버그를 시도하면 피자신에 의해 좀비쪽으로 팅긴다??
+						"overrideparam": "say **  有人尝试卡bug被披萨神扔进了尸笼  **",
                         "delay": 0.0,
                         "timestofire": -1
                     }
