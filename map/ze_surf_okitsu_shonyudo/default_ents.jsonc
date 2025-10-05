@@ -1152,6 +1152,14 @@
                         "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
                         "delay": 0.0,
                         "timestofire": 1
+                    },
+                    // add hud output
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "NOTICE01_hud_trigger",
+                        "inputname": "Enable",
+                        "delay": 10.0,
+                        "timestofire": 1
                     }
                 ]
             }
@@ -1476,6 +1484,14 @@
                         "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
                         "delay": 0.0,
                         "timestofire": 1
+                    },
+                    // add hud output
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "NOTICE02_hud_trigger",
+                        "inputname": "Enable",
+                        "delay": 15.0,
+                        "timestofire": 1
                     }
                 ]
             }
@@ -1730,5 +1746,192 @@
                 ]
             }
         }
-    ]
+    ],
+    "add": // Information announcement hud
+    [
+        {
+			"targetname": "NOTICE01_hud_trigger",
+			"classname": "trigger_multiple",
+			"origin": "-5605.472656 11972 12408.099609",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+            "wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_surf_okitsu_shonyudo/entities/[HURT]H_WIN_3835.vmdl",
+			"io":
+			[
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "NOTICE01_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "NOTICE01_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+        // 先日の台風における影響で水没および崩落の危険があると判断されたため、第七地底湖に続く洞窟への立ち入りを禁止させていただきます
+        {
+			"targetname": "NOTICE01_hud",
+			"classname": "env_hudhint",
+			"message": "며칠 전 태풍의 영향으로",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "침수 및 붕괴의 위험이 있다고 판단되어",
+					"delay": 3.5,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "제7지하호수로 이어지는",
+					"delay": 7.5,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "동굴 출입을 금지합니다.",
+					"delay": 9.7,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 12.7,
+					"timestofire": -1
+				}
+            ]
+        },
+
+        {
+			"targetname": "NOTICE02_hud_trigger",
+			"classname": "trigger_multiple",
+			"origin": "-5761.628906 -5451.459961 455.964844",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+            "wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_surf_okitsu_shonyudo/entities/[HURT]H_WIN_3835.vmdl",
+			"io":
+			[
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "NOTICE02_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "NOTICE02_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+        // いつもsurf_shonyudoをご愛顧いただき誠にありがとうございます。それでは良いサーフの旅を！
+        {
+			"targetname": "NOTICE02_hud",
+			"classname": "env_hudhint",
+			"message": "항상 surf_shonyudo를 사랑해 주셔서",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "진심으로 감사드립니다.",
+					"delay": 3.8,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "그럼 즐거운 서프 여행을!",
+					"delay": 6.9,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 9.9,
+					"timestofire": -1
+				}
+            ]
+        }
+    ]           
 }
