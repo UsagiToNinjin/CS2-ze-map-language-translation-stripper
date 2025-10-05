@@ -27,7 +27,7 @@
             }
         }
     ],
-    "modify": // remove message output, add targetname
+    "modify": // remove message output
     [
         // message "沖 津 鍾 乳 洞"
         {
@@ -1733,3 +1733,4 @@
     ]
 
 }
+
