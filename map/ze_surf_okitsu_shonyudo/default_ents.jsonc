@@ -27,7 +27,7 @@
             }
         }
     ],
-    "modify": // remove message output
+    "modify": // remove message output, replace point_worldtext message,origin
     [
         // message "沖 津 鍾 乳 洞"
         {
@@ -1733,4 +1733,5 @@
     ]
 
 }
+
 
