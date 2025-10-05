@@ -17,7 +17,7 @@
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
-						"targetname": "severadmin",
+						"targetname": "[CONSOLE]",
                         "inputname": "Command",
                         "overrideparam": "say language translation stripper 25.10.05",
                         "delay": 1.0,
@@ -1731,4 +1731,5 @@
             }
         }
     ]
+
 }
