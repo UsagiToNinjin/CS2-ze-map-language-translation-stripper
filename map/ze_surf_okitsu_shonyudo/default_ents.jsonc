@@ -1,0 +1,1734 @@
+// stripper by 兎RB 25.10.05
+// map ze_surf_okitsu_shonyudo
+// workshop id 3170338275
+// if find mistranslation tell me
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "insert":
+            {
+                "io":
+                [
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "severadmin",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.10.05",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "modify": // remove message output, add targetname
+    [
+        // message "沖 津 鍾 乳 洞"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "6903"
+            },
+            "replace":
+            {
+                "message": "오 키 츠 동 굴",
+                "origin": "-5597.472656 10518.999023 12700"
+            }
+        },
+        // message "入口"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "6927"
+            },
+            "replace":
+            {
+                "message": "입구"
+            }
+        },
+        // message "沖 津 鍾 乳 洞"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "21956"
+            },
+            "replace":
+            {
+                "message": "오\n키\n츠\n동\n굴"
+            }
+        },
+        // message "歓迎"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "21958"
+            },
+            "replace":
+            {
+                "message": "환\n영"
+            }
+        },
+        // message "ゾンビエスケープ"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "21959"
+            },
+            "replace":
+            {
+                "message": "좀\n비\n탈\n출"
+            }
+        },
+        // message "沖津鍾乳洞のマップは岩手県下閉伊郡"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "20093"
+            },
+            "replace":
+            {
+                "message": "오키츠 동굴 맵은 이와테현 시모헤이군\n이와이즈미정에 존재하는, 일본 3대 동굴로\n그 중「류센 동굴」을 참고해 만들어졌습니다.\n즉 가상의 동굴입니다.\n(사이타마에 그런 게 있을 리가 없잔아 멍청아)"
+            }
+        },
+        // message "surf_shonyudo の歴史 (2018～) :"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "20094"
+            },
+            "replace":
+            {
+                "message": "surf_shonyudo의 역사 (2018～) :\n\nv1 - 서프 초보자 사양\nv2 - 환상 버전 most shit version\nv3 v4 - 난이도개변 서프 참격 구현\nv5 - 대폭 리메이크 가장 많이 플레이된 버전\nv6 - Last Update in CS:GO\ncs2 - 총 리메이크 오만가지 요소개변"
+            }
+        },
+        // message "現管理者 (第七地底湖は除く) :"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "19126"
+            },
+            "replace":
+            {
+                "message": "현 관리자 (제7 지하호수는 제외함) :"
+            }
+        },
+        // message "現管理者 (第七地底湖は除く) :"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "19127"
+            },
+            "replace":
+            {
+                "message": "현 관리자 (제7 지하호수는 제외함) :"
+            }
+        },
+        // message "沖津鍾乳洞 旧管理者 :"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "19115"
+            },
+            "replace":
+            {
+                "message": "오키츠 동굴 구 관리자 :"
+            }
+        },
+        // message "沖津鍾乳洞 旧管理者 :"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "19116"
+            },
+            "replace":
+            {
+                "message": "오키츠 동굴 구 관리자 :"
+            }
+        },
+        // message "ze_surf_okitsu_shonyudo 埼玉県 沖津鍾乳洞"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18614"
+            },
+            "replace":
+            {
+                "message": "ze_surf_okitsu_shonyudo 사이타마 오키츠동굴\n▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰"
+            }
+        },
+        // message "ze_surf_okitsu_shonyudo 埼玉県 沖津鍾乳洞"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18615"
+            },
+            "replace":
+            {
+                "message": "ze_surf_okitsu_shonyudo 사이타마 오키츠동굴\n▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰"
+            }
+        },
+        // message "現代編 (外伝) - Present day (Side Story)"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18579"
+            },
+            "replace":
+            {
+                "message": "　　현대편 (외전) - Present day (Side Story)\n    ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉\n  아리사카 시오리(16) - Shiori Arisaka"
+            }
+        },
+        // message "現代編 (外伝) - Present day (Side Story)"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18580"
+            },
+            "replace":
+            {
+                "message": "　　현대편 (외전) - Present day (Side Story)\n    ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉\n  아리사카 시오리(16) - Shiori Arisaka"
+            }
+        },
+        // message "- オカルト部に所属している霊感をもつ不思議な女子高生。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18582"
+            },
+            "replace":
+            {
+                "message": "　- 오컬트부에 소속되어 있는 영감을 지닌 신비한 여고생。\n A mysterious high school girl with a psychic sense who belongs to the occult club.\n- 와타리기 거리에 있는 폐터널로 향하기 전에 동굴을 관광하고 있다。\n She is wandering around sightseeing before going to an abandoned tunnel in Watagi Town."
+            }
+        },
+        // message "- オカルト部に所属している霊感をもつ不思議な女子高生。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18583"
+            },
+            "replace":
+            {
+                "message": "　- 오컬트부에 소속되어 있는 영감을 지닌 신비한 여고생。\n A mysterious high school girl with a psychic sense who belongs to the occult club.\n- 와타리기 거리에 있는 폐터널로 향하기 전에 동굴을 관광하고 있다。\n She is wandering around sightseeing before going to an abandoned tunnel in Watagi Town."
+            }
+        },
+        // message "M-ART - 木漏れ日の欠片 M-ART - 雫"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18620"
+            },
+            "replace":
+            {
+                "message": "\nM-ART - 木漏れ日の欠片(나뭇잎 사이로 비치는 햇살)\n\nM-ART - 雫(물방울)"
+            }
+        },
+        // message "M-ART - 木漏れ日の欠片 M-ART - 雫"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18621"
+            },
+            "replace":
+            {
+                "message": "\nM-ART - 木漏れ日の欠片(나뭇잎 사이로 비치는 햇살)\n\nM-ART - 雫(물방울)"
+            }
+        },
+        // message "渡辺家"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18093"
+            },
+            "replace":
+            {
+                "message": "와\n타\n나\n베",
+                "origin": "10530.25 -9278.5 -12228.512695",
+                "font_size": "70"
+            }
+        },
+        // message "大林家"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18080"
+            },
+            "replace":
+            {
+                "message": "오\n오\n바\n야\n시",
+                "origin": "10530.25 -9407 -12222",
+                "font_size": "70"
+            }
+        },
+        // PSE server is alive DEAD >> ALIVE
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "19121"
+            },
+            "replace":
+            {
+                "message": "Hmn,  coboldon, Azel, tharame, tuna,\nPOSSESSION Server (ALIVE)\n"
+            }
+        },
+        // PSE server is alive DEAD >> ALIVE
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "19122"
+            },
+            "replace":
+            {
+                "message": "Hmn,  coboldon, Azel, tharame, tuna,\nPOSSESSION Server (ALIVE)\n"
+            }
+        },
+		
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "3791"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+		
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "3812"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 大岩をどかす 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 大岩をどかす 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 큰 바위를 옮기는 데 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 큰 바위를 옮기는 데 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+		
+		{
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "4272"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ドアが開くまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ドアが開くまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+		
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4316"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+		
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4322"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+		{
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "4364"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 橋を上げるまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 橋を上げるまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 다리를 올리기 까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 다리를 올리기 까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+		
+		{
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "4376"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 運搬機の起動まで 10 秒 <!>",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 運搬機の起動まで 40 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 운반기 작동까지 10 초 <!>",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 운반기 작동까지 40 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+        
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "4401"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 別の起動ボタンも必要のようだ... <!>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 다른 작동 버튼도 필요한 모양이다... <!>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "math_counter",
+				"hammeruniqueid": "4403"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 50 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 40.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 50 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 40.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4408"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4416"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 倒木を取り除いている 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 倒木を取り除いている 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 쓰러진 나무를 치우고 있어 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 쓰러진 나무를 치우고 있어 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4420"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 倒木を取り除いている 10 秒 <!>",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 倒木を取り除いている 40 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 쓰러진 나무를 치우고 있어 10 초 <!>",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 쓰러진 나무를 치우고 있어 40 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "4424"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ドアが開くまで 10 秒 <!>",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ドアが開くまで 40 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 10 초 <!>",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 40 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4430"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 大岩をどかす 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 大岩をどかす 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 큰 바위를 옮기는 데 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 큰 바위를 옮기는 데 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "4435"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ここが最後の防衛です！ 60 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ここが最後の防衛です！ 10 秒 <!>",
+                        "delay": 50.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 여기가 마지막 방어입니다！ 60 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 여기가 마지막 방어입니다！ 10 초 <!>",
+                        "delay": 50.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4484"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4501"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4508"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ドアが開くまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ドアが開くまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4296"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 足場を上げるまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 足場を上げるまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 발판을 올리기 까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 발판을 올리기 까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4286"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 足場を上げるまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 足場を上げるまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 발판을 올리기 까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 발판을 올리기 까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4312"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "4495"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#][STAGE]ZOMBIE_ENCOUNT"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!>まもなくゾンビが開放されます <!>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 곧 좀비가 개방됩니다 <!>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "7276"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "7634"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 大岩をどかす 10 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 큰 바위를 옮기는 데 10 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "7639"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 大岩をどかす 10 秒 <!>",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 大岩をどかす 20 秒 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 큰 바위를 옮기는 데 10 초 <!>",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 큰 바위를 옮기는 데 20 초 <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "18352"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say *** LV2로 이행 ***",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "19886"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 別の起動ボタンも必要のようだ... <!>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 다른 작동 버튼도 필요한 모양이다... <!>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ]
+}
