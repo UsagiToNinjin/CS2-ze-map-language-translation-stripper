@@ -437,6 +437,78 @@
                 "message": "(숨겨진 보스는 열심히 제작중)\n(The hidden boss is currently under development.)"
             }
         },
+        // message "渡木トンネル"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18525"
+            },
+            "replace":
+            {
+                "message": "와타기 터널"
+            }
+        },
+        // message "渡木トンネル"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "18526"
+            },
+            "replace":
+            {
+                "message": "와타기 터널"
+            }
+        },
+        // message "渡木トンネル"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "17427"
+            },
+            "replace":
+            {
+                "message": "와타기 터널"
+            }
+        },
+        // message "渡木トンネル"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "17428"
+            },
+            "replace":
+            {
+                "message": "와타기 터널"
+            }
+        },
+        // message "ゾンビが車に触れたら人間は強制的に敗北するだろう。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "17970"
+            },
+            "replace":
+            {
+                "message": "좀비가 차에 닿으면 인간은 강제적으로 패배합니다。\nIf the zombie touches the car, the human side would be forced to lose."
+            }
+        },
+        // message "ゾンビが車に触れたら人間は強制的に敗北するだろう。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "17971"
+            },
+            "replace":
+            {
+                "message": "좀비가 차에 닿으면 인간은 강제적으로 패배합니다。\nIf the zombie touches the car, the human side would be forced to lose."
+            }
+        },
 
         {
             "match":
@@ -5552,7 +5624,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> エレベータを動かす -- Move the elevator 30 sec <!>",
+                        "overrideparam": "say <!> エレベータを動かす -- Move the elevator 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     }
@@ -5575,7 +5647,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 엘리베이터를 작동시킵니다 -- Move the elevator 30 sec <!>",
+                        "overrideparam": "say <!> 엘리베이터를 작동시킵니다 -- Move the elevator 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     }
@@ -6373,6 +6445,59 @@
                     }
                 ]
             }
-        }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#][DOOR]ST02_04"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnFullyOpen",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ドアが閉まる -- The door closes 30 sec <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+                    
+                    {
+                        "outputname": "OnFullyOpen",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> ドアが閉まる -- The door closes 10 sec <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnFullyOpen",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 문이 닫힙니다 -- The door closes 30 sec <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+                    
+                    {
+                        "outputname": "OnFullyOpen",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 문이 닫힙니다 -- The door closes 10 sec <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }    
     ]           
 }
