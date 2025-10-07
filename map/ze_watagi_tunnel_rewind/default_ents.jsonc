@@ -821,6 +821,80 @@
                 "message": "당신은 무사히 터널에서 탈출했습니다。엔딩 영상이 시작됩니다。\nYou have successfully exited the tunnel. The ending video begins."
             }
         },
+        // message "SaGa Emerald Beyond - 謎だ"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29899"
+            },
+            "replace":
+            {
+                "message": "\nSaGa Emerald Beyond - 수수께끼다\n\nSaGa Emerald Beyond - 가끔은 눈물을 보여줘\n\nYuli Audio Craft - 위험\n\nYuli Audio Craft - 물가" 
+            }
+        },
+        // message "SaGa Emerald Beyond - 謎だ"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29900"
+            },
+            "replace":
+            {
+                "message": "\nSaGa Emerald Beyond - 수수께끼다\n\nSaGa Emerald Beyond - 가끔은 눈물을 보여줘\n\nYuli Audio Craft - 위험\n\nYuli Audio Craft - 물가" 
+            }
+        },
+        // message "SaGa Emerald Beyond - 高揚する魂 (戦闘準備)"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29903"
+            },
+            "replace":
+            {
+                "message": "\nSaGa Emerald Beyond - 들끓는 영혼 (전투준비)\n\nSaGa Emerald Beyond - 진심의 싸움\n\nSaGa Emerald Beyond - 승리!\n" 
+            }
+        },
+        // message "SaGa Emerald Beyond - 高揚する魂 (戦闘準備)"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29904"
+            },
+            "replace":
+            {
+                "message": "\nSaGa Emerald Beyond - 들끓는 영혼 (전투준비)\n\nSaGa Emerald Beyond - 진심의 싸움\n\nSaGa Emerald Beyond - 승리!\n" 
+            }
+        },
+        // message "Yuli Audio Craft - 逃げられない"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29912"
+            },
+            "replace":
+            {
+                "message": "\nYuli Audio Craft - 도망칠 수 없어\n\n유훌카 - 강마\n\n비타치ー소재관 - 유령계SE전반",
+                "origin": "9778.534180 5236 6792" 
+            }
+        },
+        // message "Yuli Audio Craft - 逃げられない"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29913"
+            },
+            "replace":
+            {
+                "message": "\nYuli Audio Craft - 도망칠 수 없어\n\n유훌카 - 강마\n\n비타치ー소재관 - 유령계SE전반",
+                "origin": "9777.534180 5235 6793" 
+            }
+        },
 
         {
             "match":
@@ -7286,6 +7360,6 @@
                     }
                 ]
             }
-        }    
+        }
     ]           
 }
