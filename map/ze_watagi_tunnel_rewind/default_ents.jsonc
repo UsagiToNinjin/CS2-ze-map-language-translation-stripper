@@ -1,7 +1,7 @@
-// stripper by 兎RB 25.10.07
+// stripper by 兎RB 25.10.09
 // map ze_watagi_tunnel_rewind
 // workshop id 3518946563
-// if find mistranslation tell me
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 {
     "modify":
     [
@@ -19,7 +19,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.07",
+                        "overrideparam": "say language translation stripper 25.10.09 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
