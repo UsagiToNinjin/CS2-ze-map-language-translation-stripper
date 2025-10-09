@@ -1,8 +1,8 @@
-// stripper by 兎RB 25.10.03
+// stripper by 兎RB 25.10.09
 // map ze_surf_happy
 // workshop id 3386114661
-// if find mistranslation tell me
-// serial number 日本語:"1" 한국어:"2" English:"3" 
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2" English:"3"
 {
     "modify":
     [
@@ -11,10 +11,41 @@
             {
                 "classname": "logic_auto"
             },
+			"delete": // remove message output
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>> 作者 Map by：港村村长 <<<",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>> 移植 Port by：凯尔希的老公 <<<",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    }
+				]
+			},		
             "insert":
             {
                 "io":
                 [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "logic_auto_relay",
+                        "inputname": "Trigger",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
 					{
                         "outputname": "OnMapSpawn",
 						"targetname": "language_counter",
@@ -28,7 +59,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.03",
+                        "overrideparam": "say language translation stripper 25.10.09 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -65,11 +96,29 @@
 			"io":
 			[
                 // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "logic_auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞＞ 作者 Map by：港村村长 ＜＜＜>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "logic_auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞＞ ポート Port by：凯尔希的老公 ＜＜＜>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
                 {
 					"outputname": "OnCase01",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40秒後テレポートされます ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40秒後全員テレポートされます ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -87,7 +136,7 @@
 					"outputname": "OnCase01",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後テレポートされます ＜＜＜>30.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後全員テレポートされます ＜＜＜>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -96,7 +145,7 @@
 					"outputname": "OnCase01",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5秒後テレポートされます ＜＜＜>35.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5秒後全員テレポートされます ＜＜＜>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -123,7 +172,7 @@
 					"outputname": "OnCase01",
 					"targetname": "526",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後全員テレポートされます ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -159,7 +208,7 @@
 					"outputname": "OnCase01",
 					"targetname": "524",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後全員テレポートされます ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -204,16 +253,34 @@
 					"outputname": "OnCase01",
 					"targetname": "522",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後テレポートされます ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後全員テレポートされます ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 				// 한국어
+				{
+					"outputname": "OnCase02",
+					"targetname": "logic_auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞＞ 작자 Map by：港村村长 ＜＜＜>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "logic_auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞＞ 포트 Port by：凯尔希的老公 ＜＜＜>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
                 {
 					"outputname": "OnCase02",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40초 후 텔레포트 됩니다 ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40초 후 전원 텔레포트 됩니다 ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -231,7 +298,7 @@
 					"outputname": "OnCase02",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10초 후 텔레포트 됩니다 ＜＜＜>30.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10초 후 전원 텔레포트 됩니다 ＜＜＜>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -240,7 +307,7 @@
 					"outputname": "OnCase02",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5초 후 텔레포트 됩니다 ＜＜＜>35.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5초 후 전원 텔레포트 됩니다 ＜＜＜>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -267,7 +334,7 @@
 					"outputname": "OnCase02",
 					"targetname": "526",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 전원 텔레포트 됩니다 ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -303,7 +370,7 @@
 					"outputname": "OnCase02",
 					"targetname": "524",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 전원 텔레포트 됩니다 ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -348,11 +415,29 @@
 					"outputname": "OnCase02",
 					"targetname": "522",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 텔레포트 됩니다 ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30초 후 전원 텔레포트 됩니다 ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 				// English
+				{
+					"outputname": "OnCase03",
+					"targetname": "logic_auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞＞  Map by：港村村长 ＜＜＜>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "logic_auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞＞  Port by：凯尔希的老公 ＜＜＜>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
                 {
 					"outputname": "OnCase03",
 					"targetname": "nuke_trigger",
@@ -497,7 +582,12 @@
 					"timestofire": -1
 				}
             ]
-        }
+        },
+		// in logic_auto message output
+		{
+			"targetname": "logic_auto_relay",
+			"classname": "logic_relay"
+		}	
     ],
     "modify": // remove message output, add targetname
     [
