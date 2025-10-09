@@ -1,7 +1,7 @@
-// stripper by 兎RB 25.10.03
+// stripper by 兎RB,kokopekko 25.10.09
 // map ze_purification_a1
-// workshop id 33128279930
-// if find mistranslation tell me
+// workshop id 3128279930
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2"
 {
     "modify":
@@ -26,9 +26,9 @@
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
-						"targetname": "severadmin",
+						"targetname": "command",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.03",
+                        "overrideparam": "say language translation stripper 25.10.09 by 兎RB,kokopekko",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -69,6 +69,15 @@
 					"targetname": "worldtext1",
 					"inputname": "SetMessage",
 					"overrideparam": "ご支援ありがとうございます：Bella•Lientece",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "501",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>command>Command>say ＊＊ 20後にドアが開きます ＊＊>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -540,6 +549,51 @@
 					"delay": 1.1,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "first_par_train_path3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>command>Command>say ＊＊ もう準備はできているようだ ＊＊>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "first_par_train_path3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>command>Command>say ＊＊ 出発の準備を ＊＊>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "second_par_train_path3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>command>Command>say ＊＊ もう準備はできているようだ ＊＊>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "second_par_train_path3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>command>Command>say ＊＊ 出発の準備を ＊＊>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "human_hurt",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 失敗しました, ゾンビの妨害で詠唱が中断されました ＊＊>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
                 // 한국어
 				{
 					"outputname": "OnCase02",
@@ -564,6 +618,15 @@
 					"targetname": "3730",
 					"inputname": "SetMessage",
 					"overrideparam": "건축참고：Abrahamic Family House",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "501",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>command>Command>say ＊＊ 20초 후 문이 열립니다 ＊＊>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1034,6 +1097,51 @@
 					"overrideparam": "OnPlayerPickup>command>Command>say ＊＊ 벽 아이템 획득 쿨타임:60초 지속：5초 ＊＊>0.0>1",
 					"delay": 1.1,
 					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "first_par_train_path3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>command>Command>say ＊＊ 이미 준비는 되어있는듯 하다 ＊＊>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "first_par_train_path3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>command>Command>say ＊＊ 출발 준비를 ＊＊>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "second_par_train_path3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>command>Command>say ＊＊ 이미 준비는 되어있는듯 하다 ＊＊>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "second_par_train_path3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>command>Command>say ＊＊ 출발 준비를 ＊＊>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "human_hurt",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 실패했습니다, 좀비의 방해로 영창이 중단되었습니다 ＊＊>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
 				}
             ]
         },
@@ -1115,6 +1223,32 @@
 				"message": "test server: exg"
             }
 		},
+
+		{
+            "match":
+            {
+                "classname": "func_button",
+                "hammeruniqueid": "501"
+            },
+            "replace":
+            {
+                "targetname": "501"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 20seconds to open the door **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},			
 
         {
             "match":
@@ -1827,6 +1961,87 @@
                     }
                 ]
             }
-        }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]first_par_train_path3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** It looks like it's already ready **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** Get ready to leave now **",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]second_par_train_path3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** It looks like it's already ready **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** Get ready to leave now **",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]human_hurt"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** You failed, the zombie interrupted the casting **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}			
     ]
 }
