@@ -1,0 +1,1979 @@
+// stripper by 兎RB 25.10.12
+// map ze_otakuroom_pt
+// workshop id 3128321209
+// if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2"
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Map_Auto"
+            },
+			"delete": // remove message output
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Map by Tenshi.**",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Special Thanks:GemaYue , uuz , 银月筱瑶, 兎RB**",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Original map : kz_otakuroom_v3 , by GemaYue**",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **It's my first map , thanks for playing**",
+                        "delay": 9.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Model by uuz**",
+                        "delay": 7.0,
+                        "timestofire": -1
+                    }
+				]
+			},		
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "logic_auto_t",
+                        "inputname": "Trigger",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "2", // please type language serial number here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.10.12 by 兎RB",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "2",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+			"io":
+			[
+                // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "652",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞15秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "670",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞30秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒＜＜>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "map_relay_lvl1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **ステージ 1**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "map_relay_lvl2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **ステージ 2**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "button_lvl1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say **[管理者]ステージ 1**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "button_lvl2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say **[管理者]ステージ 2**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "button_lvl4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say **[管理者]ZM**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "map_relay_lvl4_r",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **爆発まであと1分**>147.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "map_relay_lvl4_r",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **爆発まであと2分**>87.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "map_relay_lvl4_r",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **爆発まであと3分**>27.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "button_lvl3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say **[管理者]ステージ 3**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "map_relay_lvl3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **ステージ 3**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1452",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞70秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1452",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞10秒後に紙飛行機が飛び立ちます＜＜>60.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_airplane",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞30秒間サバイバル＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv3_ts_hp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMin>cmd>Command>say **やられた.もう無理だ**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv3_door3_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1027",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **30秒後に飛行機が出発します**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1027",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **5秒**>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1086",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **10秒**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnCase01",
+					"targetname": "1220",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞30秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1220",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒＜＜>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1224",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞25秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1224",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞画面に飛び込め＜＜>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1240",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **10秒待ってください**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1240",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **5秒**>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1242",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞30秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1242",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒＜＜>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_zom_tri",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞失敗＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_rubcap",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞ゴミ箱に飛び込め＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_last_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **ロボット掃除機が10秒後に出発します**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "trigger_lv2_drawer",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒待ってください＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "816",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞バッテリーが30秒後に取り外されます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "846",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **10秒**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "839",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞引き出しが30秒後に開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "917",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ロボット掃除機が35秒後に出発します＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ゴミ箱の蓋が15秒後に開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_final_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞爆発まであと5秒＜＜>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "ts_ult_compare",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEqualTo>cmd>Command>say **全人類の緋想天**>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "ts_skill_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase03>cmd>Command>say **要石**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// 保留
+				{
+					"outputname": "OnCase01",
+					"targetname": "ts_skill_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase01>cmd>Command>say **Gasu**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// 保留
+				{
+					"outputname": "OnCase01",
+					"targetname": "ts_skill_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase02>cmd>Command>say **Gasu**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// 保留
+				{
+					"outputname": "OnCase01",
+					"targetname": "ts_skill_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase04>cmd>Command>say **Sakai**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **マップ制作 Tenshi.**>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **特別感謝:GemaYue , uuz , 银月筱瑶, 兎RB**>3.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **オリジナルマップ : kz_otakuroom_v3 , by GemaYue**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **初めて作ったマップです,プレイしてくれてありがとうございます**>4.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **モデル uuzより**>2.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv3_last_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>lv3_last_r>OnUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// 한국어
+				{
+					"outputname": "OnCase02",
+					"targetname": "652",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞15초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "670",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞30초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초＜＜>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "map_relay_lvl1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **스테이지 1**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "map_relay_lvl2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **스테이지 2**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "button_lvl1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say **[관리자]스테이지 1**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "button_lvl2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say **[관리자]스테이지 2**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "button_lvl4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say **[관리자]ZM**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "map_relay_lvl4_r",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **폭발까지 앞으로 1분**>147.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "map_relay_lvl4_r",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **폭발까지 앞으로 2분**>87.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "map_relay_lvl4_r",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **폭발까지 앞으로 3분**>27.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "button_lvl3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say **[관리자]스테이지 3**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "map_relay_lvl3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **스테이지 3**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1452",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞70초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1452",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞10초 후에 비행이가 떠납니다＜＜>60.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_airplane",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞30초간 서바이벌＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv3_ts_hp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMin>cmd>Command>say **당했다. 더 이상 무리다**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv3_door3_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1027",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **30초 후에 비행기가 출발합니다**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1027",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **5초**>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1086",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **10초**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnCase02",
+					"targetname": "1220",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞30초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1220",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초＜＜>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1224",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞25초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1224",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞화면에 뛰어 드세요＜＜>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1240",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **10초 기다려 주세요**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1240",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **5초**>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1242",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞30초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1242",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초＜＜>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_zom_tri",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞실패＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_rubcap",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞쓰레기통에 뛰어 들어＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_last_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **로봇청소기가 10초 후에 출발합니다**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "trigger_lv2_drawer",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초 기다려 주세요＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "816",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞베터리가 30초 후에 제거됩니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "846",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **10초**>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "839",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞서랍이 30초 후이 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "917",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞로봇청소기가 35초 후에 출발합니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞쓰레기통 뚜껑이 15초 후에 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_final_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞폭발까지 앞으로 5초＜＜>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "ts_ult_compare",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEqualTo>cmd>Command>say **전인류의 비상천**>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "ts_skill_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase03>cmd>Command>say **요석**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// 보류
+				{
+					"outputname": "OnCase02",
+					"targetname": "ts_skill_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase01>cmd>Command>say **Gasu**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// 보류
+				{
+					"outputname": "OnCase02",
+					"targetname": "ts_skill_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase02>cmd>Command>say **Gasu**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// 보류
+				{
+					"outputname": "OnCase02",
+					"targetname": "ts_skill_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase04>cmd>Command>say **Sakai**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **맵 제작 Tenshi.**>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **특별감사:GemaYue , uuz , 银月筱瑶, 兎RB**>3.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **오리지널 맵 : kz_otakuroom_v3 , by GemaYue**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **처음으로 만든 맵 입니다,플레이 해주셔서 감사합니다**>4.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "logic_auto_t",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say **모델 uuz로 부터**>2.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv3_last_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>lv3_last_r>OnUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+		
+		{
+			"targetname": "logic_auto_t",
+			"classname": "logic_relay"
+		},
+
+		{
+			"targetname": "lv3_last_r",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "lv3_lastzom_trigger*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **ラウンド失敗**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "lv3_lastzom_trigger*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say **라운드 실패**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "map_relay_lvl4_r",
+			"classname": "logic_relay"
+		}
+    ],
+    "modify": // remove message output, add targetname/output
+    [
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "652"
+            },
+			"replace":
+			{
+				"targetname": "652"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Wait for 15 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "670"
+            },
+			"replace":
+			{
+				"targetname": "670"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Wait for 30 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "677"
+            },
+			"replace":
+			{
+				"targetname": "677"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Hold on for 20 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>5 seconds<<",
+                        "delay": 15.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]map_relay_lvl1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Stage 1**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]map_relay_lvl2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Stage 2**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]button_lvl1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **[Admin]Stage 1**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]button_lvl2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **[Admin]Stage 2**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]button_lvl4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **[Admin]ZM**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]map_relay_lvl4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Nuke in 1 min**",
+                        "delay": 148.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Nuke in 2 mins**",
+                        "delay": 88.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Nuke in 3 mins**",
+                        "delay": 28.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "map_relay_lvl4_r",
+                        "inputname": "Enable",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "map_relay_lvl4_r",
+                        "inputname": "Trigger",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+				]
+			}		
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]button_lvl3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **[Admin]Stage 3**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]map_relay_lvl3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Stage 3**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1452"
+            },
+			"replace":
+			{
+				"targetname": "1452"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Wait for 70 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>The paper plane will take off in 10 seconds<<",
+                        "delay": 60.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_airplane"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnFullyOpen",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Survive for 30 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv3_ts_hp"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMin",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Im defeated.Its impossable**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv3_door3_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Wait 5 seconds**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1027"
+            },
+			"replace":
+			{
+				"targetname": "1027"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Air leaves in 30 seconds**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **5 seconds**",
+                        "delay": 25.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1086"
+            },
+			"replace":
+			{
+				"targetname": "1086"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Hold 10 seconds**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1220"
+            },
+			"replace":
+			{
+				"targetname": "1220"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Wait for 30 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>5 seconds<<",
+                        "delay": 25.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1224"
+            },
+			"replace":
+			{
+				"targetname": "1224"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Wait for 25 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Jump into the screen**",
+                        "delay": 25.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1240"
+            },
+			"replace":
+			{
+				"targetname": "1240"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Hold 10 seconds**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **5 seconds**",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1242"
+            },
+			"replace":
+			{
+				"targetname": "1242"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Hold 30 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>5 seconds<<",
+                        "delay": 25.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_zom_tri"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>You failed<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_rubcap"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnFullyOpen",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Jump into the trash can<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_last_relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **ClearRobot leaving in 10 seconds**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]trigger_lv2_drawer"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Wait for 20 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "816"
+            },
+			"replace":
+			{
+				"targetname": "816"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>The batteries will be removed after 30 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "846"
+            },
+			"replace":
+			{
+				"targetname": "846"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Hold 10 seconds**",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "839"
+            },
+			"replace":
+			{
+				"targetname": "839"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>The drawer will open in 30 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "917"
+            },
+			"replace":
+			{
+				"targetname": "917"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>The sweeping robot will leave in 35 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1338"
+            },
+			"replace":
+			{
+				"targetname": "1338"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>The trash can lid will open in 15 seconds<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_final_relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>Nuke in 5 seconds<<",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]ts_ult_compare"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnEqualTo",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **全人类の绯想天**",
+                        "delay": 0.1,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]ts_skill_case"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase03",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Kanameishi**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Gasu**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnCase02",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Gasu**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnCase04",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say **Sakai**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ]
+}
