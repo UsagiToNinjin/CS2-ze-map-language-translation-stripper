@@ -576,7 +576,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_last_temp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>lv3_last_r>OnUser1>>0.0>-1",
+					"overrideparam": "OnEntitySpawned>lv3_last_r>FireUser1>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1035,7 +1035,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_last_temp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>lv3_last_r>OnUser2>>0.0>-1",
+					"overrideparam": "OnEntitySpawned>lv3_last_r>FireUser2>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1976,5 +1976,4 @@
             }
         }
     ]
-
 }
