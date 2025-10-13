@@ -1,0 +1,2739 @@
+// stripper by 兎RB 25.10.13
+// map ze_starlight_revue_cs2
+// workshop id 3519985936
+// if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2"
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+			},		
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "1", // please type language serial number here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.10.13 by 兎RB",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "2",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+			"io":
+			[
+                // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞これは私の最初のマップで,CSGOの時の少女☆歌劇 レヴュースタァライトです＜＜>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞マップにバグがあった場合,私のワークショップにコメントを残してください＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞楽しんでください＜＜>13.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞マップの音楽をオンにするとより良いプレイができます＜＜>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞诺漫Normannさんのリードに感謝します＜＜>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞このバージョンは最終版ではありません＜＜>11.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞待機 30秒後に教室の裏のドアが開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_door",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞待機 30秒後に迷宮のゲートが開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_dianti",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞エレベーターのドアが30秒後に開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_dianti",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞舞台が10秒後に始まります＜＜>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_door3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞待機 30秒後にダンスルームのドアが開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_door4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞図書室のドアが10秒後に開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞待機 10秒後に教室の前のドアが開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞おかしい,どうしてドアが閉まってるんだ,別の方法を考えてみよう＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞あの壁は壊れているみたいだ,倒せるかどうか見てみよう＜＜>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_cmd1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞廊下が何かで塞がってる,教室から回り込もう＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_trigger_door6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞図書室の裏のドアが25秒後に開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_button_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞学校の正門が40秒後に開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1_button_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞おかしい,どうして学校の正門に入れないんだ,早く左の小さな林に入ってみよう＜＜>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞舞台が55秒後に始まります＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_xingjianchunna",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞星見 純那さんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_tiantangzhenshi",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞天堂 真矢さんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_aichenghualian",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞愛城 華恋さんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_shenleguang",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞神楽 ひかりさんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_zhenzhou",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞露崎 まひるさんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_hualiu",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞花柳 香子さんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_shuangye",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞石動 双葉さんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_dina",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞西條 クロディーヌさんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_dachangnainai",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞大場 ななさんを見つけた＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger_cmd1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞9人の少女を探し出せばエレベーターが作動されます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_end_tokyo",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKのテレポートを作動します＜＜>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_end_tokyo",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞俺!リスポーンする!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞全てのキリンを壊した,30秒間守り抜いて星が昇るのを待とう＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒間守り抜き,プラットフォームが降りてくるのを待とう＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_track_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞プラットフォームが15秒後に動き始める,他のプラットフォームにいるゾンビに注意しよう＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_counter_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞成功した！15秒間守り抜いて道が現れるのを待とう＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_tp2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3秒後にゾンビがテレポートされます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_tp2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞両側のクリスタルを壊さないと先に進めない＜＜>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_tp3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒後にテレポートされます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ハシゴが開放された,早く走れ!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3秒後にAFKのテレポートを作動します＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞星が間もなく消える,早く走れ!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞15秒後にAFKのテレポートを作動します＜＜>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞鳥かごの中で30秒待つとテレポートされます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3秒後にAFKのテレポートを作動します＜＜>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞鳥かごが5秒後に上昇します＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞一つ目の鉄門が20秒後に開きます＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞二つ目の鉄門が20秒後に開きます＜＜>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞三つ目の鉄門が5秒後に開きます＜＜>41.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞真のエンディングの解放条件が達していないことが検出されました＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞偽のエンディングが始まります......＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒後にレーザーが作動されます＜＜>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞まもなくステージを再作動します……＜＜>41.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ハシゴが壊れた＜＜>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞真のエンディングの解放条件を達成しました＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞まもなく最後の舞台が始まります＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ハシゴを守りながらテレポートを待とう＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にテレポートされます＜＜>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ライトの下で30秒間守り抜いて一緒にあの星を取りに行こう!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_danmu_solo_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞舞台に最後まで残っていた者がトップスターになった＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_danmu_solo_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞プレイしていただきありがとうございます,バグを見つけた場合はワークショップのコメント欄にご報告ください＜＜>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_danmu_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞最後まで残っていた者だけトップスターになれる＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_danmu_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞運命の最後の舞台で最後のダンスを捧げよう＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_door_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞待機 10秒後にドアが開きます＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_door_2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞なんでドアが2つあるんだ,20秒間守り抜いて正しいドアを探そう＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_door_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞またか?20秒間守り抜いて正しいドアを探し続けよう＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_door_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞10秒間守り抜いて正しいドアを探し続けよう＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKのテレポートを作動します＜＜>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞なんでドアがないんだ?道がないのか?＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒間守って,壁が消えるのを待とう＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_tp4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKのテレポートを作動します＜＜>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_trigger_tp4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞早く棚の下に入って15秒間守り抜け＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv4_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞生存180秒＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "3315",
+					"inputname": "SetMessage",
+					"overrideparam": "少女☆歌劇 レヴュースタァライト",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "3315",
+					"inputname": "KeyValue",
+					"overrideparam": "origin -10302 10893 95",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "8084",
+					"inputname": "SetMessage",
+					"overrideparam": "3ステージ\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "8085",
+					"inputname": "SetMessage",
+					"overrideparam": "2ステージ\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "8086",
+					"inputname": "SetMessage",
+					"overrideparam": "1ステージ\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "11084",
+					"inputname": "SetMessage",
+					"overrideparam": "4ステージ\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // 한국어
+				{
+					"outputname": "OnCase02",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이것은 저의 처음 맵으로,CSGO 시기의 소녀☆가극 레뷰 스타 라이트 입니다＜＜>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞맵에 버그가 있을 경우,저의 워크숍에 코멘드를 남겨 주세요＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞즐겨주세요＜＜>13.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞맵의 음악을 키면 보다 좋은 플레이가 가능합니다＜＜>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞诺漫Normann씨의 리드에 감사합니다＜＜>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이 버젼은 최종판이 아닙니다＜＜>11.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞대기 30초 후에 교실 뒷 문이 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_door",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞대기 30초 후에 미궁 게이트가 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_dianti",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞엘리베이터 문이30초 후에 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_dianti",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞무대가 10초 후에 시작됩니다＜＜>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_door3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞대기 30초 후에 댄스룸 문이 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_door4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞도서실 문이10초 후에 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞대기 10초 후에 교실 앞 문이 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이상하다,어째서 문이 닫혀 있지,다른 방법을 생각해 보자＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞저 벽은 부서져 있는 것 같다,쓰러뜨릴 수 있을지는 봐 보자＜＜>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_cmd1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞복도가 무언가로 막혀져 있다,교실로부터 돌아 가자＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_trigger_door6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞도서실 뒷 문이25초 후에 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_button_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞학교 정문이 40초 후에 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1_button_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞이상하다,어째서 학교 정문으로 들어갈 수 없는거지,빨리 왼쪽의 작은 숲에 들어가 보자＜＜>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞무대가 55초 후에 시작됩니다＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_xingjianchunna",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞호시미 쥰나씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_tiantangzhenshi",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞텐도 마야씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_aichenghualian",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞아이죠 카렌씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_shenleguang",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞카구라 히카리씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_zhenzhou",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞츠유자키 마히루씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_hualiu",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞하나야기 카오루코씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_shuangye",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이스루기 후타바씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_dina",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞사이죠 클로딘씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_dachangnainai",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞다이바 나나씨를 찾았다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger_cmd1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞9명의 소녀를 찾아내면 엘리베이터가 작동됩니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_end_tokyo",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트를 작동합니다＜＜>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_end_tokyo",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞나!리스폰 한다!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞모든 기린을 부쉈다,30초간 지켜내고 별이 뜨는걸 기다리자＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초간 지켜내고,플랫폼이 내려 오는걸 기다리자＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_track_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞플랫폼이 15초 후에 움직이기 시작한다,다른 플랫폼에 있는 좀비에 주의하자＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_counter_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞성공했다！15초간 지켜내며 길이 나타나는걸 기다리자＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_tp2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3초 후에 좀비가 텔레포트 됩니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_tp2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞양쪽 크리스탈을 부수지 않으면 앞으로 나아갈 수 없다先に進めない＜＜>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_tp3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초 후에 텔레포트 됩니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞사다리가 개방됬어,빨리 달려!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3초 후에 AFK 텔레포트를 작동합니다＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞별이 곧 사라진다,빨리 달려!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞15초 후에 AFK 텔레포트를 작동합니다＜＜>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞새 바구니 안에서 30초 기다리면 텔레포트 됩니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3초 후에 AFK 텔레포트를 작동합니다＜＜>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞새 바구니가 5초 후에 상승합니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞첫번째 철문이 20초 후에 열립니다＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞두번째 철문이20초 후에 열립니다＜＜>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞세번째 철문이 5초 후에 열립니다＜＜>41.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞참 엔딩 해방조건이 충족되지 않는 것이 검출되었습니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞거짓 엔딩이 시작됩니다......＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초 후에 레이저 작동됩니다＜＜>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞곧 스테이지를 재작동합니다……＜＜>41.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞사다리가 부서졌다＜＜>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞참 엔딩의 해방조건을 달성했습니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞곧 마지막 무대가 시작됩니다＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞사다리를 지키면서 텔레포트를 기다리자＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 텔레포트 됩니다＜＜>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞라이트 밑에서 30초간 막아내고 함께 저 별을 따러 가자!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_danmu_solo_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞무대에 마지막까지 남아 있는 자가 탑 스타가 되었다＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_danmu_solo_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞플레이 해 주셔서 감사합니다,버그를 찾았을 경우 워크숍 코멘드란에 보고 바랍니다＜＜>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_danmu_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞마지막까지 남아 있는 자만 탑 스타가 될 수 있다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_danmu_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞운명의 마지막 무대에서 마지막의 댄스를 바치자＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_door_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞대기 10초 후에 문이 열립니다＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_door_2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞어째서 문이 2개 있는거야,20초간 막아내고 올바른 문을 찾자＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_door_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞또인가?20초간 막아내고 올바른 문을 계속 찾자＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_door_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞10초간 막아내고 올바른 문을 계속 찾자＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트를 작동합니다＜＜>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞어째서 문이 없지?길이 없는건가?＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초간 막고,벽이 사라지는 것을 기다리자＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_tp4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트를 작동합니다＜＜>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_trigger_tp4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞빨리 선반 밑으로 들어가 15초간 지켜내＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv4_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞생존 180초＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "3315",
+					"inputname": "SetMessage",
+					"overrideparam": "소녀☆가극 레뷰 스타라이트",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "3315",
+					"inputname": "KeyValue",
+					"overrideparam": "origin -10302 10878 95",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "8084",
+					"inputname": "SetMessage",
+					"overrideparam": "3스테이지\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "8085",
+					"inputname": "SetMessage",
+					"overrideparam": "2스테이지\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "8086",
+					"inputname": "SetMessage",
+					"overrideparam": "1스테이지\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "11084",
+					"inputname": "SetMessage",
+					"overrideparam": "4스테이지\n",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		}		
+    ],
+    "modify": // remove message output, add targetname/output
+    [
+        // message : "少女 ☆歌剧"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "3315"
+            },
+            "replace":
+            {
+                "targetname": "3315"
+            }
+        },
+        // message : "第三关"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "8084"
+            },
+            "replace":
+            {
+                "targetname": "8084"
+            }
+        },
+        // message : "第二关"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "8085"
+            },
+            "replace":
+            {
+                "targetname": "8085"
+            }
+        },
+        // message : "第一关"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "8086"
+            },
+            "replace":
+            {
+                "targetname": "8086"
+            }
+        },
+        // message : "第四关"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "11084"
+            },
+            "replace":
+            {
+                "targetname": "11084"
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]revue_lev1_trigger_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>这是我的第一张地图,重置GO时期的少女歌剧<<",
+                        "delay": 8.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>如遇到地图bug，请到我创意工坊下留言<<",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>祝大家玩的愉快<<",
+                        "delay": 13.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>建议打开地图音乐体验更佳<<",
+                        "delay": 12.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>感谢诺漫Normann指挥测试<<",
+                        "delay": 9.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>此版本不代表最终版本<<",
+                        "delay": 11.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_trigger_door1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>等待30秒教室后门打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+		
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_trigger_door"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>等待30秒迷宫的栅栏门打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_dianti"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>电梯门还有30秒打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>舞台将在10秒后开启<<",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_trigger_door3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>等待30秒舞蹈室的门打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_trigger_door4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>图书室的门还有10秒打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_trigger_door5"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>等待10秒教室前门打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>奇怪，门怎么锁住了，我们再想想其他办法<<",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>那面墙好像坏了，我们看看能不能给它推倒<<",
+                        "delay": 12.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_trigger_cmd1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>走廊被东西挡住了，从教室里绕过去吧<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+		
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_trigger_door6"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>图书室的后门在25秒后打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1_button_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>学校大门还有40秒打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>奇怪,学校大门怎么进不去,快进左边的小树林<<",
+                        "delay": 40.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_counter"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>舞台将在55秒后开启<<",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_xingjianchunna"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了星见纯那<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_tiantangzhenshi"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了天堂真矢<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_aichenghualian"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了爱城华恋<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_shenleguang"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了神乐光<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_zhenzhou"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了露崎真昼<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_hualiu"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了花柳香子<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_shuangye"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了石动双叶<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_dina"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了西条克洛迪娜<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_dachangnainai"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到了大场奈奈<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger_cmd1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>找到九名少女开启电梯<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_end_tokyo"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>AFK传送将在5秒后开启<<",
+                        "delay": 15.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>我!再生产!<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_counter"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>打碎了所有长颈鹿,守住30秒等待星星上升<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>守住20秒等待平台下降<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_track_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>平台将在15秒后开始移动，注意其他平台上的僵尸<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_counter_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>我们成功了!守住15秒等待道路出现<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_tp2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>僵尸将在3秒后传送",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>我们需要打碎两边水晶才能继续前进<<",
+                        "delay": 4.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_tp3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>我们将在20秒后传送<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>梯子开放了，快走！<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>AFK3秒后传送<<",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_6"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>星星马上就要消失了，快走!<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>AFK将在15秒后开启<<",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_7"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>站在鸟笼里等待30秒传送<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>AFK将在3秒后开启",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_niaolong_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>鸟笼将在5秒后上升<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>第一道铁门还有20秒打开<<",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>第二道铁门还有20秒打开<<",
+                        "delay": 21.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>第三道铁门还有5秒打开<<",
+                        "delay": 41.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_bad_end_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>检测到没有达成真结局解锁条件<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>将开启假结局......<<",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>20秒后将开启跳刀<<",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>即将重启舞台......<<",
+                        "delay": 41.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>梯子已碎掉<<",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_good_end_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>已达成真结局解锁目标<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>即将开启最后的舞台<<",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>守住梯子等待传送<<",
+                        "delay": 2.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>我们将在五秒后传送<<",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_end_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>站在灯光下面守住30秒一起去取得那颗星!<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_danmu_solo_case"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>站在舞台上的最后一人成为了Top star<<",
+                        "delay": 2.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>感谢游玩,若遇到bug请在创意工坊下留言<<",
+                        "delay": 4.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_danmu_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>站在舞台上的最后一人成为了Top star<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>感谢游玩,若遇到bug请在创意工坊下留言<<",
+                        "delay": 2.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_door_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>等待10秒门打开<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_door_2"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>怎么会有两扇门,守住20秒寻找正确的门<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_door_3"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>又来?守住20秒继续寻找正确的门<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_door_4"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>守住10秒继续寻找正确的门<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_door_5"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>AFK将在5秒后传送<<",
+                        "delay": 8.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>怎么没有门了?没有路了吗?<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>守住5秒等待墙壁消失<<",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_trigger_tp4"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>AFK将在5秒后传送<<",
+                        "delay": 15.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>快站到架子下面去守住15秒<<",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv4_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say >>生存180秒<<",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}
