@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.10.12
+// stripper by 兎RB 25.10.16
 // map ze_otakuroom_pt
 // workshop id 3128321209
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -20,10 +20,11 @@
                         "inputname": "Command",
                         "overrideparam": "say **Round Failed**",
                         "delay": 0.0,
-                        "timestofire": 1
+                        "timestofire": -1
                     }
 				]
 			}
 		}
 	]
+
 }
