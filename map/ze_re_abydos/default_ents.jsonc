@@ -1,8 +1,8 @@
-// stripper by 兎RB 25.10.09
+// stripper by 兎RB 25.10.16
 // map ze_re_abydos
 // workshop id 3261481731
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
-// serial number 日本語:"1" 한국어:"2"
+// serial number 日本語:"1" 한국어:"2" English:"3"
 {
     "modify":
     [
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.09 by 兎RB",
+                        "overrideparam": "say language translation stripper 25.10.16 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -43,7 +43,7 @@
 			"classname": "math_counter",
             "startvalue": "0",
             "min": "0",
-            "max": "2",
+            "max": "3",
 			"io":
             [
 				{
@@ -61,6 +61,7 @@
 			"classname": "logic_case",
 			"case01": "1", // 日本語
 			"case02": "2", // 한국어
+			"case03": "3", // English
 			"io":
 			[
                 // 日本語
@@ -329,7 +330,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_komakaze_skill_05_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>severadmin>Command>say **  헬리곱터에 주의해  **>0>-1",
+					"overrideparam": "OnTrigger>severadmin>Command>say **  헬리콥터에 주의해  **>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -428,7 +429,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_egg_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>severadmin>Command>say 홍신소 아직 포기하지 않았는가！>0>-1",
+					"overrideparam": "OnTrigger>severadmin>Command>say 흥신소 아직 포기하지 않았는가！>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -492,6 +493,222 @@
 					"targetname": "lv1_d1",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnStartTouch>severadmin>Command>say **  누군가가 버그를 시도할려고 하면 피자신께서 좀비쪽으로 날려버립니다  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// English
+                {
+					"outputname": "OnCase03",
+					"targetname": "10460",
+					"inputname": "SetMessage",
+					"overrideparam": "Thank you to\nsupporters",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "boss_komakaze_skill_02_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say **  Massive explosion  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_komakaze_skill_01_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say **  Troop dispatch  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_komakaze_skill_03_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say **  Boom  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_komakaze_skill_04_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say **  Watch out for the giant robot  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_komakaze_skill_05_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say **  Watch out for the helicopter  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv_last_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>severadmin>Command>say We finally drove off the Helmet Squad! Let's check the field again to see if there are any stragglers left!>30>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_tank_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase02>severadmin>Command>say **  Get off the tank  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_tank_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase02>severadmin>Command>say **  Get off the tank  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_tank_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase03>severadmin>Command>say **  Get off the tank  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_tank_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase04>severadmin>Command>say **  Get off the tank  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_tank_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase05>severadmin>Command>say **  Approach the tank  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_tank_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase06>severadmin>Command>say **  Approach the tank  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_tank_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase07>severadmin>Command>say **  Approach the tank  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "boss_tank_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase08>severadmin>Command>say **  Approach the tank  **>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_normalend_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say Let’s drive out the remaining Helmet Squad！>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_egg_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say Hasn't the detective agency given up yet！>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "68_die_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say Let’s drive out the remaining Helmet Squad！>3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "68_die_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>severadmin>Command>say It seems their mission has failed..>0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_say",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>severadmin>Command>say **  Mapper:木耳烤麸  **>0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_say",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>severadmin>Command>say **  Supporter:凯岩城的狼  **>2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_say",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>severadmin>Command>say **  Supporter:时墨_luck  **>4>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_say",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>severadmin>Command>say **  Thank you for playing  **>6>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv1_d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>severadmin>Command>say **  If someone tries to exploit a bug, Pizza god will send them flying toward the zombies  **>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
