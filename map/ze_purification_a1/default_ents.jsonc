@@ -1,4 +1,4 @@
-// stripper by 兎RB,kokopekko 25.10.09
+// stripper by 兎RB,kokopekko 25.10.18
 // map ze_purification_a1
 // workshop id 3128279930
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -26,9 +26,9 @@
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
-						"targetname": "command",
+						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.09 by 兎RB,kokopekko",
+                        "overrideparam": "say language translation stripper 25.10.18 by 兎RB,kokopekko",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -113,7 +113,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：ここの三つの教会は奇跡を生み出すことが可能でございます ＊＊>47.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：ここの三つの教会は奇跡を生み出すことが出来る ＊＊>47.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -185,7 +185,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：我に力が感じられる ＊＊>179.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：我に力を感じる ＊＊>179.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -194,7 +194,7 @@
 					"outputname": "OnCase01",
 					"targetname": "4049",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 今私たちは祈る時間が要る，陣地を守りなさい ＊＊>0.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 今私たちは祈る時間が必要だ，陣地を守りなさい ＊＊>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -266,7 +266,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：此処は永寂星淵，我々の領域でござういます ＊＊>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：此処は永寂星淵，我々の領域である ＊＊>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -275,7 +275,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：次はそなた達を解決する番でございます ＊＊>23.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：次はそなた達を解決する番ですね ＊＊>23.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -392,7 +392,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：其方が此処まで来ておるとは ＊＊>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そなたが此処まで来ておるとは ＊＊>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -527,7 +527,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：其方よ　終わったと思ってるんですか？ ＊＊>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そなたよ　終わったと思ってるんですか？ ＊＊>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
