@@ -15,7 +15,7 @@
                 "io":
                 [
 					{
-                        "outputname": "OnTrigger",
+                        "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
                         "overrideparam": "say <!> せんせいの人形を手に入れた！ -- Got the doll ! <!>",
@@ -29,7 +29,7 @@
                 "io":
                 [
 					{
-                        "outputname": "OnTrigger",
+                        "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
                         "overrideparam": "say <!> 선생님의 인형을 얻었다！ -- Got the doll ! <!>",
@@ -40,4 +40,5 @@
 			}
 		}
 	]
+
 }
