@@ -578,6 +578,198 @@
                 "message": "나를 본떠 만든 인형이 각지에 흩어져 있는 모양이다...\n창피하니까 전부 주워 와 주지 않겠니?\nIt seems dolls modeled after me are scattered all over the place...\nThis is terribly embarrassing for me, so could you please collect them all?"
             }
         },
+        // message "難易度 (DIFFICULTY)　:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34652"
+            },
+            "replace":
+            {
+                "message": "난이도 (DIFFICULTY)　:"
+            }
+        },
+        // message "難易度 (DIFFICULTY)　:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34653"
+            },
+            "replace":
+            {
+                "message": "난이도 (DIFFICULTY)　:"
+            }
+        },
+        // message "ロマンシング Romancing"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34655"
+            },
+            "replace":
+            {
+                "message": "로맨싱 Romancing"
+            }
+        },
+        // message "ロマンシング Romancing"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34656"
+            },
+            "replace":
+            {
+                "message": "로맨싱 Romancing"
+            }
+        },
+        // message "バトル報酬 (REWARD)　:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34658"
+            },
+            "replace":
+            {
+                "message": "배틀보수 (REWARD)　:"
+            }
+        },
+        // message "バトル報酬 (REWARD)　:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34659"
+            },
+            "replace":
+            {
+                "message": "배틀보수 (REWARD)　:"
+            }
+        },
+        // message "なし None"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34661"
+            },
+            "replace":
+            {
+                "message": "없음 None"
+            }
+        },
+        // message "なし None"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34662"
+            },
+            "replace":
+            {
+                "message": "없음 None"
+            }
+        },
+        // message "出現する敵 (EX ENEMY)　:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34664"
+            },
+            "replace":
+            {
+                "message": "출현하는 적 (EX ENEMY)　:"
+            }
+        },
+        // message "出現する敵 (EX ENEMY)　:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34665"
+            },
+            "replace":
+            {
+                "message": "출현하는 적 (EX ENEMY)　:"
+            }
+        },
+        // message "山の神 Dunatis"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34667"
+            },
+            "replace":
+            {
+                "message": "산의 신 Dunatis"
+            }
+        },
+        // message "山の神 Dunatis"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34668"
+            },
+            "replace":
+            {
+                "message": "산의 신 Dunatis"
+            }
+        },
+        // message "使用する技 (ENEMY SKILL)　:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34670"
+            },
+            "replace":
+            {
+                "message": "사용하는 기술 (ENEMY SKILL)　:"
+            }
+        },
+        // message "使用する技 (ENEMY SKILL)　:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34671"
+            },
+            "replace":
+            {
+                "message": "사용하는 기술 (ENEMY SKILL)　:"
+            }
+        },
+        // message "ジャッジメント - Judgment"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34673"
+            },
+            "replace":
+            {
+                "message": "저지먼트 - Judgment\n\n"
+            }
+        },
+        // message "ジャッジメント - Judgment"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34674"
+            },
+            "replace":
+            {
+                "message": "저지먼트 - Judgment\n\n"
+            }
+        },
 		
         {
             "match":
@@ -1123,7 +1315,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "<!> 倒木をどかす -- Clear away fallen trees 30 sec <!>",
+                        "overrideparam": "say <!> 倒木をどかす -- Clear away fallen trees 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1231,7 +1423,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "<!> ドアが開くまで -- Door open 40 sec <!>",
+                        "overrideparam": "say <!> ドアが開くまで -- Door open 40 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -2029,7 +2221,7 @@
                         "inputname": "Command",
                         "overrideparam": "say <!> 山の神が目覚めた！ -- The mountain god has awakened ! <!>",
                         "delay": 3.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     },
 
                     {
