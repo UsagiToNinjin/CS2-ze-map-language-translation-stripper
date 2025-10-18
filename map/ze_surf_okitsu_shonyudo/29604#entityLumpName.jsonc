@@ -1,0 +1,43 @@
+// stripper by 兎RB 25.10.18
+// map ze_surf_okitsu_shonyudo
+// workshop id 3170338275
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify":
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#][SECRET]MRS_TRIG_STAGE01"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> せんせいの人形を手に入れた！ -- Got the doll ! <!>",
+                        "delay": 0.03,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 선생님의 인형을 얻었다！ -- Got the doll ! <!>",
+                        "delay": 0.03,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}
