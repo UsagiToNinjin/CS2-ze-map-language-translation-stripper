@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.10.09
+// stripper by 兎RB 25.10.18
 // map ze_surf_okitsu_shonyudo
 // workshop id 3170338275
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -19,7 +19,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.09 by 兎RB",
+                        "overrideparam": "say language translation stripper 25.10.18 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -29,7 +29,7 @@
     ],
     "modify": // remove message output, replace point_worldtext message,origin
     [
-        // message "沖 津 鍾 乳 洞"
+        // message "沖"
         {
             "match":
             {
@@ -38,8 +38,60 @@
             },
             "replace":
             {
-                "message": "오 키 츠 동 굴",
-                "origin": "-5597.472656 10518.999023 12700"
+                "message": "오\n\n",
+                "origin": "-5805.271484 10518.999023 12697.260742"
+            }
+        },
+        // message "津"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29444"
+            },
+            "replace":
+            {
+                "message": "츠\n\n",
+                "origin": "-5701.970215 10518.999023 12697.260742"
+            }
+        },
+        // message "鍾"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29445"
+            },
+            "replace":
+            {
+                "message": "키",
+                "origin": "-5596.115723 10518.999023 12697.260742"
+            }
+        },
+        // message "乳"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29446"
+            },
+            "replace":
+            {
+                "message": "동",
+                "origin": "-5492.153809 10518.999023 12697.260742"
+            }
+        },
+        // message "洞"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29447"
+            },
+            "replace":
+            {
+                "message": "굴",
+                "origin": "-5381.769531 10518.999023 12697.260742"
             }
         },
         // message "入口"
@@ -51,7 +103,7 @@
             },
             "replace":
             {
-                "message": "입구"
+                "message": "입구\n"
             }
         },
         // message "沖 津 鍾 乳 洞"
@@ -63,7 +115,7 @@
             },
             "replace":
             {
-                "message": "오\n키\n츠\n동\n굴"
+                "message": "오\n키\n츠\n동\n굴\n"
             }
         },
         // message "歓迎"
@@ -75,7 +127,7 @@
             },
             "replace":
             {
-                "message": "환\n영"
+                "message": "환\n영\n"
             }
         },
         // message "ゾンビエスケープ"
@@ -99,7 +151,19 @@
             },
             "replace":
             {
-                "message": "오키츠 동굴 맵은 이와테현 시모헤이군\n이와이즈미정에 존재하는, 일본 3대 동굴로\n그 중「류센 동굴」을 참고해 만들어졌습니다.\n즉 가상의 동굴입니다.\n(사이타마에 그런 게 있을 리가 없잔아 멍청아)"
+                "message": "오키츠 동굴 맵은 이와테현 시모헤이군\n이와이즈미정에 존재하는, 일본 3대 동굴로\n그 중「류센 동굴」을 참고해 만들어졌습니다.\n즉 가상의 동굴입니다.\n\n"
+            }
+        },
+        // message "沖津鍾乳洞のマップは岩手県下閉伊郡"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "28915"
+            },
+            "replace":
+            {
+                "message": "오키츠 동굴 맵은 이와테현 시모헤이군\n이와이즈미정에 존재하는, 일본 3대 동굴로\n그 중「류센 동굴」을 참고해 만들어졌습니다.\n즉 가상의 동굴입니다.\n\n"
             }
         },
         // message "surf_shonyudo の歴史 (2018～) :"
@@ -111,10 +175,22 @@
             },
             "replace":
             {
-                "message": "surf_shonyudo의 역사 (2018～) :\n\nv1 - 서프 초보자 사양\nv2 - 환상 버전 most shit version\nv3 v4 - 난이도개변 서프 참격 구현\nv5 - 대폭 리메이크 가장 많이 플레이된 버전\nv6 - Last Update in CS:GO\ncs2 - 총 리메이크 오만가지 요소개변"
+                "message": "surf_shonyudo의 역사 (2018～) :\n\nv1 - 서프 초보자 사양\nv2 - 환상 버전 most shit version\nv3 v4 - 난이도개변 서프 참격 구현\nv5 - 대폭 리메이크 가장 많이 플레이된 버전\nv6 - Last Update in CS:GO\ncs2 - 총 리메이크 오만가지 요소개변\n"
             }
         },
-        // message "現管理者 (第七地底湖は除く) :"
+        // message "surf_shonyudo の歴史 (2018～) :"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "28914"
+            },
+            "replace":
+            {
+                "message": "surf_shonyudo의 역사 (2018～) :\n\nv1 - 서프 초보자 사양\nv2 - 환상 버전 most shit version\nv3 v4 - 난이도개변 서프 참격 구현\nv5 - 대폭 리메이크 가장 많이 플레이된 버전\nv6 - Last Update in CS:GO\ncs2 - 총 리메이크 오만가지 요소개변\n"
+            }
+        },
+        // message "現管理者 : 2021 ~"
         {
             "match":
             {
@@ -123,10 +199,10 @@
             },
             "replace":
             {
-                "message": "현 관리자 (제7 지하호수는 제외함) :"
+                "message": "현 관리자 : 2021 ~\n"
             }
         },
-        // message "現管理者 (第七地底湖は除く) :"
+        // message "現管理者 : 2021 ~"
         {
             "match":
             {
@@ -135,10 +211,10 @@
             },
             "replace":
             {
-                "message": "현 관리자 (제7 지하호수는 제외함) :"
+                "message": "현 관리자 : 2021 ~\n"
             }
         },
-        // message "沖津鍾乳洞 旧管理者 :"
+        // message "旧管理者 : 2018 ~ 2021"
         {
             "match":
             {
@@ -147,10 +223,10 @@
             },
             "replace":
             {
-                "message": "오키츠 동굴 구 관리자 :"
+                "message": "구 관리자 : 2018 ~ 2021"
             }
         },
-        // message "沖津鍾乳洞 旧管理者 :"
+        // message "旧管理者 : 2018 ~ 2021"
         {
             "match":
             {
@@ -159,79 +235,199 @@
             },
             "replace":
             {
-                "message": "오키츠 동굴 구 관리자 :"
+                "message": "구 관리자 : 2018 ~ 2021"
             }
         },
-        // message "ze_surf_okitsu_shonyudo 埼玉県 沖津鍾乳洞"
+        // message "現代編 - Present day"
         {
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "18614"
+                "hammeruniqueid": "29368"
             },
             "replace":
             {
-                "message": "ze_surf_okitsu_shonyudo 사이타마 오키츠동굴\n▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰"
+                "message": "　　현대편 - Present day"
             }
         },
-        // message "ze_surf_okitsu_shonyudo 埼玉県 沖津鍾乳洞"
+        // message "現代編 - Present day"
         {
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "18615"
+                "hammeruniqueid": "29369"
             },
             "replace":
             {
-                "message": "ze_surf_okitsu_shonyudo 사이타마 오키츠동굴\n▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰"
+                "message": "　　현대편 - Present day"
             }
         },
-        // message "現代編 (外伝) - Present day (Side Story)"
+        // message "有坂 詩織(16) - Shiori Arisaka"
         {
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "18579"
+                "hammeruniqueid": "29364"
             },
             "replace":
             {
-                "message": "　　현대편 (외전) - Present day (Side Story)\n    ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉\n  아리사카 시오리(16) - Shiori Arisaka"
+                "message": "아리사카 시오리(16) - Shiori Arisaka"
             }
         },
-        // message "現代編 (外伝) - Present day (Side Story)"
+        // message "有坂 詩織(16) - Shiori Arisaka"
         {
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "18580"
+                "hammeruniqueid": "29371"
             },
             "replace":
             {
-                "message": "　　현대편 (외전) - Present day (Side Story)\n    ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉\n  아리사카 시오리(16) - Shiori Arisaka"
+                "message": "아리사카 시오리(16) - Shiori Arisaka"
             }
         },
-        // message "- オカルト部に所属している霊感をもつ不思議な女子高生。"
+        // message " - オカルト部に所属している霊感をもつ不思議な女子高生。"
         {
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "18582"
+                "hammeruniqueid": "29373"
             },
             "replace":
             {
-                "message": "　- 오컬트부에 소속되어 있는 영감을 지닌 신비한 여고생。\n A mysterious high school girl with a psychic sense who belongs to the occult club.\n- 와타리기 거리에 있는 폐터널로 향하기 전에 동굴을 관광하고 있다。\n She is wandering around sightseeing before going to an abandoned tunnel in Watagi Town."
+                "message": "　- 오컬트부에 소속되어 있는 영감을 지닌 신비한 여고생。"
             }
         },
-        // message "- オカルト部に所属している霊感をもつ不思議な女子高生。"
+        // message " - オカルト部に所属している霊感をもつ不思議な女子高生。"
         {
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "18583"
+                "hammeruniqueid": "29372"
             },
             "replace":
             {
-                "message": "　- 오컬트부에 소속되어 있는 영감을 지닌 신비한 여고생。\n A mysterious high school girl with a psychic sense who belongs to the occult club.\n- 와타리기 거리에 있는 폐터널로 향하기 전에 동굴을 관광하고 있다。\n She is wandering around sightseeing before going to an abandoned tunnel in Watagi Town."
+                "message": "　- 오컬트부에 소속되어 있는 영감을 지닌 신비한 여고생。"
+            }
+        },
+        // message " - あらゆる心霊スポットで"面白いモノ"を見つけるのが趣味。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29376"
+            },
+            "replace":
+            {
+                "message": " - 온갖 심령 장소에서 '재미있는 것'을 찾는 게 취미。"
+            }
+        },
+        // message " - あらゆる心霊スポットで"面白いモノ"を見つけるのが趣味。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "29377"
+            },
+            "replace":
+            {
+                "message": " - 온갖 심령 장소에서 '재미있는 것'을 찾는 게 취미。"
+            }
+        },
+        // message "秘密ボスの案内人 - Secret guide"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30138"
+            },
+            "replace":
+            {
+                "message": "비밀 보스의 안내인 - Secret guide"
+            }
+        },
+        // message "秘密ボスの案内人 - Secret guide"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30139"
+            },
+            "replace":
+            {
+                "message": "비밀 보스의 안내인 - Secret guide"
+            }
+        },
+        // message "선생님 - Mr. S"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30141"
+            },
+            "replace":
+            {
+                "message": "せんせい - Mr. S"
+            }
+        },
+        // message "선생님 - Mr. S"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30142"
+            },
+            "replace":
+            {
+                "message": "せんせい - Mr. S"
+            }
+        },
+        // message " - どこかで見たことあるような生物だ..."
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30153"
+            },
+            "replace":
+            {
+                "message": " - 어디서 본 적 있는듯 한 생물이다..."
+            }
+        },
+        // message " - どこかで見たことあるような生物だ..."
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30154"
+            },
+            "replace":
+            {
+                "message": " - 어디서 본 적 있는듯 한 생물이다..."
+            }
+        },
+        // message " - 特定のアイテムを所持していればプレイヤーに更なる試練を与えてくれる。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30159"
+            },
+            "replace":
+            {
+                "message": " - 특정 아이템을 소유하고 있으면 플레이어에게 더 큰 시련을 가져다 준다。"
+            }
+        },
+        // message " - 特定のアイテムを所持していればプレイヤーに更なる試練を与えてくれる。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30160"
+            },
+            "replace":
+            {
+                "message": " - 특정 아이템을 소유하고 있으면 플레이어에게 더 큰 시련을 가져다 준다。"
             }
         },
         // message "M-ART - 木漏れ日の欠片 M-ART - 雫"
@@ -239,11 +435,11 @@
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "18620"
+                "hammeruniqueid": "30132"
             },
             "replace":
             {
-                "message": "\nM-ART - 木漏れ日の欠片(나뭇잎 사이로 비치는 햇살)\n\nM-ART - 雫(물방울)"
+                "message": "\nM-ART - 木漏れ日の欠片\n   (나뭇잎 사이로 비치는 햇살)\n\nM-ART - 雫(물방울)"
             }
         },
         // message "M-ART - 木漏れ日の欠片 M-ART - 雫"
@@ -251,11 +447,35 @@
             "match":
             {
                 "classname": "point_worldtext",
-                "hammeruniqueid": "18621"
+                "hammeruniqueid": "30133"
             },
             "replace":
             {
-                "message": "\nM-ART - 木漏れ日の欠片(나뭇잎 사이로 비치는 햇살)\n\nM-ART - 雫(물방울)"
+                "message": "\nM-ART - 木漏れ日の欠片\n   (나뭇잎 사이로 비치는 햇살)\n\nM-ART - 雫(물방울)"
+            }
+        },
+        // message "SaGa Emerald Beyond - 翠の宿命を背負う者"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34700"
+            },
+            "replace":
+            {
+                "message": "\nSaGa Emerald Beyond - 翠の宿命を背負う者(비취 숙명을 지닌 자)\n\nSaGa Emerald Beyond - 本気の戦い(진심의 싸움)\n\nSaGa Emerald Beyond - 勝利!(승리!)"
+            }
+        },
+        // message "SaGa Emerald Beyond - 翠の宿命を背負う者"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "34701"
+            },
+            "replace":
+            {
+                "message": "\nSaGa Emerald Beyond - 翠の宿命を背負う者(비취 숙명을 지닌 자)\n\nSaGa Emerald Beyond - 本気の戦い(진심의 싸움)\n\nSaGa Emerald Beyond - 勝利!(승리!)"
             }
         },
         // message "渡辺家"
@@ -286,7 +506,7 @@
                 "font_size": "70"
             }
         },
-        // PSE server is alive DEAD >> ALIVE
+        // message "内部問題と経営不振により会社は倒産。現地スタッフ : 不明"
         {
             "match":
             {
@@ -295,10 +515,10 @@
             },
             "replace":
             {
-                "message": "Hmn,  coboldon, Azel, tharame, tuna,\nPOSSESSION Server (ALIVE)\n"
+                "message": "내부문제와 경영부진으로 인해 회사는 타산。\n\n현지 스태프 : 불명"
             }
         },
-        // PSE server is alive DEAD >> ALIVE
+        // message "内部問題と経営不振により会社は倒産。現地スタッフ : 不明"
         {
             "match":
             {
@@ -307,7 +527,31 @@
             },
             "replace":
             {
-                "message": "Hmn,  coboldon, Azel, tharame, tuna,\nPOSSESSION Server (ALIVE)\n"
+                "message": "내부문제와 경영부진으로 인해 회사는 타산。\n\n현지 스태프 : 불명"
+            }
+        },
+        // message "現在まで新たなメンバーでの現地管理となっている。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "19124"
+            },
+            "replace":
+            {
+                "message": "현재까지 새로운 멤버로 현 관리자로 되어있다\n\n현재 스태프 : Hmn, coboldon, Noel, omoi, zErO, 鬱月N\n"
+            }
+        },
+        // message "現在まで新たなメンバーでの現地管理となっている。"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "19125"
+            },
+            "replace":
+            {
+                "message": "현재까지 새로운 멤버로 현 관리자로 되어있다\n\n현재 스태프 : Hmn, coboldon, Noel, omoi, zErO, 鬱月N\n"
             }
         },
 		
@@ -325,7 +569,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -334,7 +578,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -348,7 +592,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -357,7 +601,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -379,7 +623,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 大岩をどかす 10 秒 <!>",
+                        "overrideparam": "say <!> 大岩をどかす -- Move the large rock 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -388,7 +632,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 大岩をどかす 30 秒 <!>",
+                        "overrideparam": "say <!> 大岩をどかす -- Move the large rock 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -402,7 +646,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 큰 바위를 옮기는 데 10 초 <!>",
+                        "overrideparam": "say <!> 큰 바위를 옮깁니다 -- Move the large rock 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -411,7 +655,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 큰 바위를 옮기는 데 30 초 <!>",
+                        "overrideparam": "say <!> 큰 바위를 옮깁니다 -- Move the large rock 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -433,7 +677,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ドアが開くまで 10 秒 <!>",
+                        "overrideparam": "say <!> ドアが開くまで -- Door open 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -442,7 +686,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ドアが開くまで 30 秒 <!>",
+                        "overrideparam": "<!> ドアが開くまで -- Door open 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -456,7 +700,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 문이 열릴 때 까지 10 초 <!>",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 -- Door open 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -465,7 +709,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 문이 열릴 때 까지 30 초 <!>",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 -- Door open 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -487,7 +731,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -496,7 +740,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -510,7 +754,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -519,7 +763,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -541,7 +785,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -550,7 +794,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -564,7 +808,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -573,7 +817,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -595,7 +839,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 橋を上げるまで 10 秒 <!>",
+                        "overrideparam": "say <!> 橋を上げるまで -- Scaffolding appears 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -604,7 +848,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 橋を上げるまで 30 秒 <!>",
+                        "overrideparam": "say <!> 橋を上げるまで -- Scaffolding appears 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -618,7 +862,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 다리를 올리기 까지 10 초 <!>",
+                        "overrideparam": "say <!> 다리를 올리기 까지 -- Scaffolding appears 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -627,7 +871,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 다리를 올리기 까지 30 초 <!>",
+                        "overrideparam": "say <!> 다리를 올리기 까지 -- Scaffolding appears 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -649,7 +893,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 運搬機の起動まで 10 秒 <!>",
+                        "overrideparam": "say <!> 運搬機の起動まで -- Move ramp 10 sec <!>",
                         "delay": 30.0,
                         "timestofire": 1
                     },
@@ -658,7 +902,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 運搬機の起動まで 40 秒 <!>",
+                        "overrideparam": "say <!> 運搬機の起動まで -- Move ramp 40 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -672,7 +916,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 운반기 작동까지 10 초 <!>",
+                        "overrideparam": "say <!> 운반기 작동까지 -- Move ramp 10 sec <!>",
                         "delay": 30.0,
                         "timestofire": 1
                     },
@@ -681,7 +925,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 운반기 작동까지 40 초 <!>",
+                        "overrideparam": "say <!> 운반기 작동까지 -- Move ramp 40 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -703,7 +947,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 別の起動ボタンも必要のようだ... <!>",
+                        "overrideparam": "say <!> 別のボタンも必要だ -- Another button is also needed <!>",
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -717,7 +961,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 다른 작동 버튼도 필요한 모양이다... <!>",
+                        "overrideparam": "say <!> 다른 작동 버튼도 필요한 모양이다 -- Another button is also needed <!>",
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -728,8 +972,7 @@
         {
             "match":
             {
-                "classname": "math_counter",
-				"hammeruniqueid": "4403"
+                "targetname": "[PR#][MATH]W_TRIG01"
             },
             "delete":
             {
@@ -739,7 +982,7 @@
                         "outputname": "OnHitMax",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 50 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 50 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -748,7 +991,7 @@
                         "outputname": "OnHitMax",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 40.0,
                         "timestofire": 1
                     }
@@ -762,7 +1005,7 @@
                         "outputname": "OnHitMax",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 50 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 50 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -771,7 +1014,7 @@
                         "outputname": "OnHitMax",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 40.0,
                         "timestofire": 1
                     }
@@ -793,7 +1036,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -802,7 +1045,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -816,7 +1059,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -825,7 +1068,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -847,7 +1090,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 倒木を取り除いている 10 秒 <!>",
+                        "overrideparam": "say <!> 倒木をどかす -- Clear away fallen trees 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -856,7 +1099,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 倒木を取り除いている 30 秒 <!>",
+                        "overrideparam": "<!> 倒木をどかす -- Clear away fallen trees 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -870,7 +1113,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 쓰러진 나무를 치우고 있어 10 초 <!>",
+                        "overrideparam": "say <!> 쓰러진 나무를 옮깁니다 -- Clear away fallen trees 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -879,7 +1122,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 쓰러진 나무를 치우고 있어 30 초 <!>",
+                        "overrideparam": "say <!> 쓰러진 나무를 옮깁니다 -- Clear away fallen trees 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -901,7 +1144,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 倒木を取り除いている 10 秒 <!>",
+                        "overrideparam": "say <!> 倒木をどかす -- Clear away fallen trees 10 sec <!>",
                         "delay": 30.0,
                         "timestofire": 1
                     },
@@ -910,7 +1153,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 倒木を取り除いている 40 秒 <!>",
+                        "overrideparam": "say <!> 倒木をどかす -- Clear away fallen trees 40 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -924,7 +1167,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 쓰러진 나무를 치우고 있어 10 초 <!>",
+                        "overrideparam": "say <!> 쓰러진 나무를 옮깁니다 -- Clear away fallen trees 10 sec <!>",
                         "delay": 30.0,
                         "timestofire": 1
                     },
@@ -933,7 +1176,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 쓰러진 나무를 치우고 있어 40 초 <!>",
+                        "overrideparam": "say <!> 쓰러진 나무를 옮깁니다 -- Clear away fallen trees 40 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -955,7 +1198,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ドアが開くまで 10 秒 <!>",
+                        "overrideparam": "say <!> ドアが開くまで -- Door open 10 sec <!>",
                         "delay": 30.0,
                         "timestofire": 1
                     },
@@ -964,7 +1207,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ドアが開くまで 40 秒 <!>",
+                        "overrideparam": "<!> ドアが開くまで -- Door open 40 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -978,7 +1221,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 문이 열릴 때 까지 10 초 <!>",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 -- Door open 10 sec <!>",
                         "delay": 30.0,
                         "timestofire": 1
                     },
@@ -987,7 +1230,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 문이 열릴 때 까지 40 초 <!>",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 -- Door open 40 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1009,7 +1252,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 大岩をどかす 10 秒 <!>",
+                        "overrideparam": "say <!> 大岩をどかす -- Move the large rock 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1018,7 +1261,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 大岩をどかす 30 秒 <!>",
+                        "overrideparam": "say <!> 大岩をどかす -- Move the large rock 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1032,7 +1275,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 큰 바위를 옮기는 데 10 초 <!>",
+                        "overrideparam": "say <!> 큰 바위를 옮깁니다 -- Move the large rock 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1041,7 +1284,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 큰 바위를 옮기는 데 30 초 <!>",
+                        "overrideparam": "say <!> 큰 바위를 옮깁니다 -- Move the large rock 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1063,7 +1306,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ここが最後の防衛です！ 60 秒 <!>",
+                        "overrideparam": "say <!> ここが最後の防衛です！ -- Last Defend 60 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -1072,7 +1315,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ここが最後の防衛です！ 10 秒 <!>",
+                        "overrideparam": "say <!> ここが最後の防衛です！ -- Last Defend 10 sec <!>",
                         "delay": 50.0,
                         "timestofire": 1
                     }
@@ -1086,7 +1329,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 여기가 마지막 방어입니다！ 60 초 <!>",
+                        "overrideparam": "say <!> 여기가 마지막 방어입니다！ -- Last Defend 60 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -1095,7 +1338,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 여기가 마지막 방어입니다！ 10 초 <!>",
+                        "overrideparam": "say <!> 여기가 마지막 방어입니다！ -- Last Defend 10 sec <!>",
                         "delay": 50.0,
                         "timestofire": 1
                     }
@@ -1117,7 +1360,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1126,7 +1369,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1140,7 +1383,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1149,7 +1392,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -1179,7 +1422,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1188,7 +1431,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1202,7 +1445,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1211,7 +1454,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1233,7 +1476,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ドアが開くまで 10 秒 <!>",
+                        "overrideparam": "say <!> ドアが開くまで -- Door open 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1242,7 +1485,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ドアが開くまで 30 秒 <!>",
+                        "overrideparam": "say <!> ドアが開くまで -- Door open 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1256,7 +1499,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 문이 열릴 때 까지 10 초 <!>",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 -- Door open 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1265,7 +1508,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 문이 열릴 때 까지 30 초 <!>",
+                        "overrideparam": "say <!> 문이 열릴 때 까지 -- Door open 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1287,7 +1530,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 足場を上げるまで 10 秒 <!>",
+                        "overrideparam": "say <!> 足場を上げるまで -- Scaffolding appears 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1296,7 +1539,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 足場を上げるまで 30 秒 <!>",
+                        "overrideparam": "say <!> 足場を上げるまで -- Scaffolding appears 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1310,7 +1553,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 발판을 올리기 까지 10 초 <!>",
+                        "overrideparam": "say <!> 발판을 올리기 까지 -- Scaffolding appears 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1319,7 +1562,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 발판을 올리기 까지 30 초 <!>",
+                        "overrideparam": "say <!> 발판을 올리기 까지 -- Scaffolding appears 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1341,7 +1584,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 足場を上げるまで 10 秒 <!>",
+                        "overrideparam": "say <!> 足場を上げるまで -- Scaffolding appears 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1350,7 +1593,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 足場を上げるまで 30 秒 <!>",
+                        "overrideparam": "say <!> 足場を上げるまで -- Scaffolding appears 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1364,7 +1607,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 발판을 올리기 까지 10 초 <!>",
+                        "overrideparam": "say <!> 발판을 올리기 까지 -- Scaffolding appears 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1373,7 +1616,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 발판을 올리기 까지 30 초 <!>",
+                        "overrideparam": "say <!> 발판을 올리기 까지 -- Scaffolding appears 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1395,7 +1638,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1404,7 +1647,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1418,7 +1661,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1427,7 +1670,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1449,7 +1692,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1458,7 +1701,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1472,7 +1715,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1481,7 +1724,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -1510,7 +1753,7 @@
                         "outputname": "OnTrigger",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!>まもなくゾンビが開放されます <!>",
+                        "overrideparam": "say <!>ゾンビが開放される -- Zombies will be unleashed soon <!>",
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -1524,7 +1767,7 @@
                         "outputname": "OnTrigger",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 곧 좀비가 개방됩니다 <!>",
+                        "overrideparam": "say <!> 곧 좀비가 개방됩니다 -- Zombies will be unleashed soon <!>",
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -1546,7 +1789,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 10 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1555,7 +1798,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> ワイヤーを取り壊すまで 30 秒 <!>",
+                        "overrideparam": "say <!> ワイヤーを取り壊すまで -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1569,7 +1812,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 10 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 10 sec <!>",
                         "delay": 20.0,
                         "timestofire": 1
                     },
@@ -1578,7 +1821,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 와이어를 해체까지 30 초 <!>",
+                        "overrideparam": "say <!> 와이어를 해체까지 -- Break the wire 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1600,7 +1843,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 大岩をどかす 10 秒 <!>",
+                        "overrideparam": "say <!> 大岩をどかす -- Move the large rock 10 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1614,7 +1857,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 큰 바위를 옮기는 데 10 초 <!>",
+                        "overrideparam": "say <!> 큰 바위를 옮깁니다 -- Move the large rock 10 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1636,7 +1879,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 大岩をどかす 10 秒 <!>",
+                        "overrideparam": "say <!> 大岩をどかす -- Move the large rock 10 sec <!>",
                         "delay": 10.0,
                         "timestofire": 1
                     },
@@ -1645,7 +1888,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 大岩をどかす 20 秒 <!>",
+                        "overrideparam": "say <!> 大岩をどかす -- Move the large rock 20 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1659,7 +1902,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 큰 바위를 옮기는 데 10 초 <!>",
+                        "overrideparam": "say <!> 큰 바위를 옮깁니다 -- Move the large rock 10 sec <!>",
                         "delay": 10.0,
                         "timestofire": 1
                     },
@@ -1668,7 +1911,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 큰 바위를 옮기는 데 20 초 <!>",
+                        "overrideparam": "say <!> 큰 바위를 옮깁니다 -- Move the large rock 20 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -1676,41 +1919,6 @@
             }
 		},
 
-        {
-            "match":
-            {
-                "classname": "func_button",
-				"hammeruniqueid": "18352"
-            },
-            "delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnPressed",
-						"targetname": "[PR#][CONSOLE]",
-                        "inputname": "Command",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            },
-            "insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnPressed",
-						"targetname": "[CONSOLE]",
-                        "inputname": "Command",
-                        "overrideparam": "say *** LV2로 이행 ***",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]
-            }
-        },
-        
         {
             "match":
             {
@@ -1725,7 +1933,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 別の起動ボタンも必要のようだ... <!>",
+                        "overrideparam": "say <!> 別のボタンも必要だ -- Another button is also needed <!>",
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -1739,13 +1947,258 @@
                         "outputname": "OnPressed",
 						"targetname": "[CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "say <!> 다른 작동 버튼도 필요한 모양이다... <!>",
+                        "overrideparam": "say <!> 다른 작동 버튼도 필요한 모양이다 -- Another button is also needed <!>",
                         "delay": 0.0,
                         "timestofire": -1
                     }
                 ]
             }
-        }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#][STAGE01]MRS_COUNTER"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 洞窟から謎の悲鳴が響き渡る！ -- Mysterious screams echo from the cave ! <!>",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 동굴에서 의문의 비명이 울려 퍼진다！ -- Mysterious screams echo from the cave ! <!>",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#][STAGE02]MRS_COUNTER"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 山の神が目覚めた！ -- The mountain god has awakened ! <!>",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "delay": 8.01,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "delay": 8.3,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 산의 신이 눈을 떴다！ -- The mountain god has awakened ! <!>",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnHitMax",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say 산의 신 - Dunatis :",
+                        "delay": 8.01,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnHitMax",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say 「침입자 발견。제거하라 ! 제거하라 ! !」",
+                        "delay": 8.3,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "30313"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 防衛システムが発動する -- The defense system activates. 30 sec <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 防衛システムが発動する -- The defense system activates. 10 sec <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 방어 시스템이 작동합니다 -- The defense system activates. 30 sec <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 방어 시스템이 작동합니다 -- The defense system activates. 10 sec <!>",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "targetname": "[PR#][BOSS]ENDURANCE"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "delay": 84.01,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "delay": 84.3,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say 신의 산 - Dunatis :",
+                        "delay": 84.01,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say 「삐삐삐、진다이너 손상을 확인。기능 정지。기능 정지。」",
+                        "delay": 84.3,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "34532"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#][CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 戦闘勝利！！ <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[CONSOLE]",
+                        "inputname": "Command",
+                        "overrideparam": "say <!> 전투승리！！ <!>",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }    
     ],
     "add": // Information announcement hud
     [
