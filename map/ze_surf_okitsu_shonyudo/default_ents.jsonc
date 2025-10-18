@@ -554,6 +554,30 @@
                 "message": "현재까지 새로운 멤버로 현 관리자로 되어있다\n\n현재 스태프 : Hmn, coboldon, Noel, omoi, zErO, 鬱月N\n"
             }
         },
+        // message "私を模した人形が各地に散らばっているらしい..."
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30093"
+            },
+            "replace":
+            {
+                "message": "나를 본떠 만든 인형이 각지에 흩어져 있는 모양이다...\n창피하니까 전부 주워 와 주지 않겠니?\nIt seems dolls modeled after me are scattered all over the place...\nThis is terribly embarrassing for me, so could you please collect them all?"
+            }
+        },
+        // message "私を模した人形が各地に散らばっているらしい..."
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "30094"
+            },
+            "replace":
+            {
+                "message": "나를 본떠 만든 인형이 각지에 흩어져 있는 모양이다...\n창피하니까 전부 주워 와 주지 않겠니?\nIt seems dolls modeled after me are scattered all over the place...\nThis is terribly embarrassing for me, so could you please collect them all?"
+            }
+        },
 		
         {
             "match":
@@ -686,7 +710,7 @@
                         "outputname": "OnPressed",
 						"targetname": "[PR#][CONSOLE]",
                         "inputname": "Command",
-                        "overrideparam": "<!> ドアが開くまで -- Door open 30 sec <!>",
+                        "overrideparam": "say <!> ドアが開くまで -- Door open 30 sec <!>",
                         "delay": 0.0,
                         "timestofire": 1
                     }
