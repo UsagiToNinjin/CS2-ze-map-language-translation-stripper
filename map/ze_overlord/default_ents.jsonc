@@ -1,0 +1,610 @@
+// stripper by 兎RB 25.10.23
+// map ze_overlord
+// workshop id 3259318150
+// if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2" English:"3"
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+			},		
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "1", // please type language serial number here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.10.23 by 兎RB",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "3",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+            "case03": "3", // English
+			"io":
+			[
+                // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv4_final_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 不死者の王:終焉の時が来た!冒涜者よ,くだらないことはやめるがいい!>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "zm_item_filter_blind",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>cmd>Command>say ワールドクラスのアイテム:傾国傾城>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv4_boss_skill6_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 第六位階：炎の翼>2.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3_panding_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ナザリックの亡霊よ......我はこの地を穢すつもりなどない......安らかに眠るがいい>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv1_npc_button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say たっちㆍみ－:君はそれでもこの地に足を踏み入れるつもりか?>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv1_npc_button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say たっちㆍみ－:穢れし者,後悔するがいい>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv2_trigger7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アルベド:穢れし者,地獄の炎の中で眠るがいい>8.5>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv1_panding_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ナザリックの亡霊を墓の中に封印する>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv5_trigger2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 不死者の王:終焉の時が来た!冒涜者よ,くだらないことはやめるがいい!>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6728",
+					"inputname": "SetMessage",
+					"overrideparam": "https://afdian.com/a/xiongchj \n私に支援すれば\n多くの特典を受け取ることが出来ます",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "7744",
+					"inputname": "SetMessage",
+					"overrideparam": "迅速なリーダー\n芙宁娜B站31947551\n风铃没脑子\n小太阳雨\n德莫克卡斯\n一只露易絲\nmumu省的\nKni9ht\n雨霁",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "7562",
+					"inputname": "SetMessage",
+					"overrideparam": "マップ作者:佐贺 riggin\nversion:10.20",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // 한국어
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv4_final_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 불사의 왕:종말의 때가 왔다!모독자여,쓸데없는 짓은 그만두는 것이 좋을 것이다!>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "zm_item_filter_blind",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>cmd>Command>say 월드 클래스 아이템:경국경성>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv4_boss_skill6_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 제6위계：화염의 날개>2.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3_panding_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say 나자릭의 망령이여......나는 이 땅을 더럽힐 생각 따위는 없다......편히 잠들도록 하거라>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv1_npc_button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 터치 미:너는 그래도 이 땅에 발을 내밀 생각인가?>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv1_npc_button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 터치 미:더럽혀진 자여,후회하는 것이 좋을 것이다>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv2_trigger7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 알베도:더럽혀진 자여,지옥의 화염 속에서 잠들도록 하거라>8.5>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv1_panding_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say 나자릭의 망령을 무덤 안에 봉인한다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv5_trigger2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 불사의 왕:종말의 때가 왔다!모독자여,쓸데없는 짓은 그만두는 것이 좋을 것이다!>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6728",
+					"inputname": "SetMessage",
+					"overrideparam": "https://afdian.com/a/xiongchj \n저에게 후원하면\n많은 특전을 얻을 수 있습니다",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "7744",
+					"inputname": "SetMessage",
+					"overrideparam": "신속한 리더\n芙宁娜B站31947551\n风铃没脑子\n小太阳雨\n德莫克卡斯\n一只露易絲\nmumu省的\nKni9ht\n雨霁",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "7562",
+					"inputname": "SetMessage",
+					"overrideparam": "맵 제작:佐贺 riggin\nversion:10.20",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // English
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv4_final_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say King of the Undead:The time of the end has come!Blasphemer,you would do well to cease your foolish actions!>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "zm_item_filter_blind",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>cmd>Command>say World class item:A fatal beauty>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv4_boss_skill6_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 6th Tier：Wings of Flame>2.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_panding_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say Specter of Nazarick......I have no intention to defile this land......Rest peacefully>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv1_npc_button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Touch Me:Do you still intend to set foot on this land?>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv1_npc_button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Touch Me:Blasphemer,You’ll regret it>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Albedo:Blasphemer,Sleep in the flames of Hell>8.5>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv1_panding_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say I seal the spirit of Nazarick inside the tomb>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv5_trigger2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say King of the Undead:The time of the end has come!Blasphemer,you would do well to cease your foolish actions!>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6728",
+					"inputname": "SetMessage",
+					"overrideparam": "https://afdian.com/a/xiongchj \nIf you support me\nYou can receive many benefits",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "7744",
+					"inputname": "SetMessage",
+					"overrideparam": "Swift leader\n芙宁娜B站31947551\n风铃没脑子\n小太阳雨\n德莫克卡斯\n一只露易絲\nmumu省的\nKni9ht\n雨霁",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "7562",
+					"inputname": "SetMessage",
+					"overrideparam": "Mapper:佐贺 riggin\nversion:10.20",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		}
+    ],
+    "modify": // remove message output,add targetname
+    [
+        // message : "https://afdian.com/a/xiongchj 为我发电 获得更多权益"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "6728"
+            },
+            "replace":
+            {
+                "targetname": "6728"
+            }
+        },
+        // message : "速通指挥:"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "7744"
+            },
+            "replace":
+            {
+                "targetname": "7744"
+            }
+        },
+        // message : "地图作者:佐贺 riggin"
+        {
+            "match":
+            {
+                "classname": "point_worldtext",
+                "hammeruniqueid": "7562"
+            },
+            "replace":
+            {
+                "targetname": "7562"
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv4_final_relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 不死者之王:终焉之时到了!亵渎者,停止胡闹吧!",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]zm_item_filter_blind"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 世界级道具:倾国倾城",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv4_boss_skill6_relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 第六位阶:火焰之翼",
+                        "delay": 2.4,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3_panding_counter"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 纳萨力克的亡灵......我无意亵渎此地......愿你安息",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv1_npc_button"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 塔其米:你执意要踏足此地么?",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 塔其米:亵渎者,你会后悔的",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv2_trigger7"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 雅儿贝德:亵渎者,在地狱之火中安息吧!",
+                        "delay": 8.5,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv1_panding_counter"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 封印纳萨利里克的亡灵于坟墓之内",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv5_trigger2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 不死者之王:终焉之时到了!亵渎者,停止胡闹吧!",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
