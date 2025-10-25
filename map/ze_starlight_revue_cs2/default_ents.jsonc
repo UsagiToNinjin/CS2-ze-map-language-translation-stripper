@@ -1,8 +1,8 @@
-// stripper by 兎RB 25.10.13
+// stripper by 兎RB 25.10.25
 // map ze_starlight_revue_cs2
 // workshop id 3519985936
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
-// serial number 日本語:"1" 한국어:"2"
+// serial number 日本語:"1" 한국어:"2" English:"3"
 {
     "modify":
     [
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.13 by 兎RB",
+                        "overrideparam": "say language translation stripper 25.10.25 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -43,7 +43,7 @@
 			"classname": "math_counter",
             "startvalue": "0",
             "min": "0",
-            "max": "2",
+            "max": "3",
 			"io":
             [
 				{
@@ -61,6 +61,7 @@
 			"classname": "logic_case",
 			"case01": "1", // 日本語
 			"case02": "2", // 한국어
+			"case03": "3", // English
 			"io":
 			[
                 // 日本語
@@ -851,7 +852,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_dianti",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞엘리베이터 문이30초 후에 열립니다＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞엘리베이터 문이 30초 후에 열립니다＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -878,7 +879,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_trigger_door4",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞도서실 문이10초 후에 열립니다＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞도서실 문이 10초 후에 열립니다＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -923,7 +924,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_trigger_door6",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞도서실 뒷 문이25초 후에 열립니다＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞도서실 뒷 문이 25초 후에 열립니다＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1112,7 +1113,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_tp2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞양쪽 크리스탈을 부수지 않으면 앞으로 나아갈 수 없다先に進めない＜＜>4.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞양쪽 크리스탈을 부수지 않으면 앞으로 나아갈 수 없다＜＜>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1202,7 +1203,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_niaolong_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞두번째 철문이20초 후에 열립니다＜＜>21.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞두번째 철문이 20초 후에 열립니다＜＜>21.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1482,6 +1483,717 @@
 					"targetname": "11084",
 					"inputname": "SetMessage",
 					"overrideparam": "4스테이지\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// English
+				{
+					"outputname": "OnCase03",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞This is my first map,based on Shoujo☆Kageki Revue Starlight from the CSGO era＜＜>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞If you find any bugs in the map, please leave a comment on my Workshop page＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Enjoy＜＜>13.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Turning on the map’s music will enhance your gameplay experience＜＜>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Thank you for your leader 诺漫Normann＜＜>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "revue_lev1_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞This is not the final version＜＜>11.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Wait The back door of the classroom will open in 30 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_door",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Wait The Labyrinth Gate will open in 30 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_dianti",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The elevator doors will open in 30 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_dianti",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Stage starts in 10 seconds＜＜>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_door3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Wait The dance room door will open in 30 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_door4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The library door will open in 10 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The front door of the classroom will open in 10 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞That’s strange,Why isn’t the door closed,Let’s think of another way＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_door5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞That wall looks broken,Let’s see if we can bring it down＜＜>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_cmd1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The hallway is blocked by something,Let’s go back to the classroom＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_trigger_door6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The back door of the library will open in 25 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_button_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞The school’s main gate will open in 40 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1_button_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞That’s strange,Why can’t we enter through the school’s main gate,Let’s quickly head into the small forest on the left＜＜>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞The stage will start in 55 seconds＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_xingjianchunna",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Junna Hoshimi＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_tiantangzhenshi",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Maya Tendo＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_aichenghualian",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Karen Aijo＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_shenleguang",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Hikari Kagura＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_zhenzhou",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Mahiru Tsuyuzaki＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_hualiu",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Kaoruko Hanayagi＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_shuangye",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Futaba Isurugi＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_dina",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Claudine Saijo＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_dachangnainai",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Found Nana Daiba＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv2_trigger_cmd1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The elevator will operate once you find all 9 girls＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_end_tokyo",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The AFK teleport will activate in 5 seconds＜＜>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_end_tokyo",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞I’m!respawning!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞destroyed all the giraffes,Let’s defend for 30 seconds and wait for the stars to appear＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Let’s defend for 20 seconds,wait for the platform to come down＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_track_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The platform will start moving in 15 seconds,Watch out for the zombies on the other platform＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_counter_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞Success！Let’s hold out for 15 seconds and wait for the path to appear＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_tp2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Zombies will teleport in 3 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_tp2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞You can’t move forward unless you destroy both crystals＜＜>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_tp3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞will teleport in 20 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The ladder is open,Run quickly!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The AFK teleport will activate in 3 seconds＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The star is about to disappear,Run quickly!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The AFK teleport will activate in 15 seconds＜＜>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Wait 30 seconds in the bird basket to be teleported＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The AFK teleport will activate in 3 seconds＜＜>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The bird basket will rise in 5 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The first iron gate will open in 20 seconds＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The second iron gate will open in 20 seconds＜＜>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_niaolong_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The third iron gate will open in 5 seconds＜＜>41.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞It has been detected that the conditions to unlock the true ending are not met＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The false ending is starting......＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The laser will activate in 20 seconds＜＜>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The stage will restart soon……＜＜>41.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_bad_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The ladder is broken＜＜>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The conditions to unlock the true ending have been achieved＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The final stage will begin soon＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Let’s guard the ladder while waiting for the teleport＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_good_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞will teleport in 5 seconds＜＜>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_end_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Hold out under the light for 30 seconds, then let’s go get that star together!＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_danmu_solo_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞The one who stayed on the stage until the very end became the top star＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_danmu_solo_case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞Thank you for playing,If you find any bugs, please report them in the workshop comments＜＜>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_danmu_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Only the one who stays until the very end can become the top star＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_danmu_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Let’s give our final dance on the fateful last stage＜＜>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_door_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Wait The door will open in 10 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_door_2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Why are there 2 doors,Let’s hold out for 20 seconds and find the correct one＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_door_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Again?Let’s hold out for 20 seconds and keep finding the correct door＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_door_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Let’s hold out for 10 seconds and keep finding the correct door＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞AFK teleport will activate in 5 seconds＜＜>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Why isn’t there a door?Is there no path?＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_door_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Hold out for 5 seconds,wait for the wall to disappear＜＜>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_tp4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞AFK teleport will activate in 5 seconds＜＜>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3_trigger_tp4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Quickly get under the shelf and hold out for 15 seconds＜＜>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv4_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Survive for 180 seconds＜＜>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "3315",
+					"inputname": "SetMessage",
+					"overrideparam": "shoujo☆kageki revue starlight",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "3315",
+					"inputname": "KeyValue",
+					"overrideparam": "origin -10302 10878 95",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "8084",
+					"inputname": "SetMessage",
+					"overrideparam": "3 STAGE\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "8085",
+					"inputname": "SetMessage",
+					"overrideparam": "2 STAGE\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "8086",
+					"inputname": "SetMessage",
+					"overrideparam": "1 STAGE\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "11084",
+					"inputname": "SetMessage",
+					"overrideparam": "4 STAGE\n",
 					"delay": 0.0,
 					"timestofire": -1
 				}
