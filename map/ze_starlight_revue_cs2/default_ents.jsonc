@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.10.25
+// stripper by 兎RB 25.10.26
 // map ze_starlight_revue_cs2
 // workshop id 3519985936
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.25 by 兎RB",
+                        "overrideparam": "say language translation stripper 25.10.26 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -348,7 +348,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_end_tokyo",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞俺!リスポーンする!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞私!生まれ変わる!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -768,10 +768,19 @@
 				},
 
                 {
-					"outputname": "OnCase02",
+					"outputname": "OnCase01",
 					"targetname": "11084",
 					"inputname": "SetMessage",
 					"overrideparam": "4ステージ\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "name_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Top☆Starになりました>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1059,7 +1068,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_end_tokyo",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞나!리스폰 한다!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞난!다시 태어나는 거야!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1486,6 +1495,15 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "name_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Top☆Star가 되었습니다>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
 				// English
 				{
 					"outputname": "OnCase03",
@@ -1770,7 +1788,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_trigger_end_tokyo",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞I’m!respawning!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞I’m! being reborn!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2194,6 +2212,15 @@
 					"targetname": "11084",
 					"inputname": "SetMessage",
 					"overrideparam": "4 STAGE\n",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "name_trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say I've become Top☆Star>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -3257,7 +3284,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say >>站在舞台上的最后一人成为了Top star<<",
+                        "overrideparam": "say >>只有站到最后的那个人才能成为Top star<<",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -3266,7 +3293,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "[PR#]cmd",
                         "inputname": "Command",
-                        "overrideparam": "say >>感谢游玩,若遇到bug请在创意工坊下留言<<",
+                        "overrideparam": "say >>在最后的命运舞台献上最后一舞吧<<",
                         "delay": 2.0,
                         "timestofire": 1
                     }
@@ -3443,6 +3470,27 @@
                         "overrideparam": "say >>生存180秒<<",
                         "delay": 10.0,
                         "timestofire": 1
+                    }
+				]
+			}
+		},
+		
+		{
+            "match":
+            {
+                "targetname": "[PR#]name_trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]name_show_script",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "showName",
+                        "delay": 0.0,
+                        "timestofire": -1
                     }
 				]
 			}
