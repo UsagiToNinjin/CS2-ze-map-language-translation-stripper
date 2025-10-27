@@ -1,8 +1,8 @@
-// stripper by 兎RB,kokopekko,小彩旗 25.10.12
+// stripper by 兎RB,kokopekko,小彩旗 25.10.27
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
-// serial number 日本語:"1" 한국어:"2"
+// serial number 日本語:"1" 한국어:"2" English:"3"
 {
     "modify":
     [
@@ -29,7 +29,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.09 by 兎RB,kokopekko,小彩旗",
+                        "overrideparam": "say language translation stripper 25.10.27 by 兎RB,kokopekko,小彩旗",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -44,7 +44,7 @@
 			"classname": "math_counter",
             "startvalue": "0",
             "min": "0",
-            "max": "2",
+            "max": "3",
 			"io":
             [
 				{
@@ -62,45 +62,10 @@
 			"classname": "logic_case",
 			"case01": "1", // 日本語
 			"case02": "2", // 한국어
+			"case03": "3", // English
 			"io":
 			[
                 // 日本語
-				{
-					"outputname": "OnCase01",
-					"targetname": "hl_saying_t",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say お兄さん リンゴ買いませんか>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-                    "outputname": "OnCase01",
-					"targetname": "xm1014_kill_relay_t",
-                    "inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say あれ，捨てられちゃった 悲しくて手首切っちゃうにゃんQAQ>0.0>1",
-                    "delay": 0.0,
-                    "timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "door_mcddreams_trigger_t",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say おじさんが嘘つかないって言ったでしょ~>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "door_mcddreams_trigger_t",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ここは私の秘密基地なんだよ 早く降りて見てみて！>1.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
 				{
 					"outputname": "OnCase01",
 					"targetname": "trigger_nuke_humanfail",
@@ -2881,43 +2846,34 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "mciddreams_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>mciddreams_temp_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "hl_saying_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>t_hl_saying_temp_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "hl_xm1014_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>hl_xm1014_temp_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
                 // 한국어
-				{
-					"outputname": "OnCase02",
-					"targetname": "hl_saying_t",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 오빠 사과 안사세요?>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-                    "outputname": "OnCase02",
-					"targetname": "xm1014_kill_relay_t",
-                    "inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say 어라，버려졌어 슬퍼서 손목 자를 거야 냐아QAQ>0.0>1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "door_mcddreams_trigger_t",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 아저씨가 너 안 속인다고 말했잖아~>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "door_mcddreams_trigger_t",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 여기는 나의 비밀 기지야 어서 내려와서 구경해 봐！>1.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
 				{
 					"outputname": "OnCase02",
 					"targetname": "trigger_nuke_humanfail",
@@ -3813,7 +3769,7 @@
 					"outputname": "OnCase02",
 					"targetname": "qworliusndfgsdhbb",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say （ 항구를 지켜라 남자라면35초 방어 잘 부탁해~o( =∩ω∩= )）>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say （ 항구를 지켜라 남자라면 35초 방어 잘 부탁해~o( =∩ω∩= )）>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4398,7 +4354,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42477",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 선실이 30초후에 열립니다>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 선실이 30초 후에 열립니다>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5715,9 +5671,3344 @@
 					"overrideparam": "OnUser2>!self>SetMessage>目を閉じればまだ戻れるのかな\n눈을 감으면 아직 돌아올 수 있을까>201.8>-1",
 					"delay": 0.0,
 					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "mciddreams_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>mciddreams_temp_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "hl_saying_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>t_hl_saying_temp_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "hl_xm1014_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>hl_xm1014_temp_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// English
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_8",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_8",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_8",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_8",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_9",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_9",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_9",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_9",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "trigger_nuke_humanfail_10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48525",
+					"inputname": "SetMessage",
+					"overrideparam": "House of cat picture",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48183",
+					"inputname": "SetMessage",
+					"overrideparam": "This power is the，\nreason to become a king！",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48184",
+					"inputname": "SetMessage",
+					"overrideparam": "But I refuse！",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48367",
+					"inputname": "SetMessage",
+					"overrideparam": "Admin room",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48505",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say aa！so many beds，Aqua are you seriously do it?>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "yinpa_trigger_1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Aqua must not participate！！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "cdoor1_tree_1_nuke",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "cdoor1_tree_1_nuke",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "cdoor1_tree_1_nuke",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.6>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "cdoor1_tree_1_nuke",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say OMG!!!The zombie was kidnapping your bride Miku！！>0.9>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "hl_push_realy3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say I’ve already been drained by the little succubus~ Awawa~>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "wselgkwhnhlkj",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say kz？This is fun>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "123125412515",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Let’s take a nap together~>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "my_wifi",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Nine tails are cute nya~ Nine tails are cute nya~>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "nonono",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Satan:“Hmph, you have no manners”>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "nonono",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (It seems that a window somewhere is shaking faintly)>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48188",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Little Succubus:“Zombie? it's fun”>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48188",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Little Succubus:“Hmm，I’ll share some of my power with you for a while”>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48187",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Little Succubus:“What’s wrong？Do you want to go crazy like that person too？”>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "yesyesyes",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Little Succubus:“Pray to me，human！”>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "entrance_timeout",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say so tired...I don’t have the energy to go through the portal！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48013",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say I really feel stronger！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48013",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Movement speed bonus acquired！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "kz_tp_trohher",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say I never expected there to be a hidden portal behind the door？！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "kz_tp_trohher",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Surely someone who stays up all night working hard is showing their sweat and effort here！>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "mciddreams_fail_relay2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say Nobody’s here nya！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "mciddreams_fail_relay2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say Nobody’s here nya！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "mciddreams_fail_relay2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say Nobody’s here nya！>0.6>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "mciddreams_fail_relay2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say Hoshino has fallen asleep forever in a dream from which they can no longer awaken nya>0.9>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "111",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say It seems a rift in space time has appeared on sakura island...>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "entrance_mciddreams",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Hoshino really opened a tunnel leading to the dreamΣヽ(ﾟД ﾟ; )ﾉ>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "entrance_mciddreams",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （will teleport in 25 seconds！）>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "46977",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say A baby pig fell into the void^(*--(oo)--*)^>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "47415",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ^(*￣(oo)￣)^I forgot to delete the test button Thanks for letting me know>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "piz",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Quick look，noob seems to want some pizza ˶ᵒ ֊ ˂˶>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "cpdd!!",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say really have no choice＞ᴗ0⌯>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "cpdd!!",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say It's...It's not like i care you or anything⁄(⁄⁄•⁄ω⁄•⁄⁄)⁄I put the gift in the fish tank nya~＞ᴗ0⌯>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "cpdd",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say don’t touch that place anymore nya　face turned red nya(＊／ω＼＊)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "warm_up_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say If the number of players on the server is 45 or fewer, the trigger that causes a nuke when a zombie door hug will be removed！！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "warm_up_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say If the number of players on the server is 45 or fewer, the trigger that causes a nuke when a zombie door hug will be removed！！>0.3>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "48530",
+					"inputname": "SetMessage",
+					"overrideparam": "Look forward to it！！！\nφ(≧ω≦*)♪",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42348",
+					"inputname": "SetMessage",
+					"overrideparam": "A sage may not fall in love yet with you even wisdom falters",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42348",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 4315 -476.533630 331.672668",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42291",
+					"inputname": "SetMessage",
+					"overrideparam": "A solitary person is always skilled at observing.JPG",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42291",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 277.583649 3765 1028.006226",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42287",
+					"inputname": "SetMessage",
+					"overrideparam": "Outpost",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42285",
+					"inputname": "SetMessage",
+					"overrideparam": "Beach bar",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+		    		"outputname": "OnCase03",
+		    		"targetname": "42284",
+		    		"inputname": "SetMessage",
+		    		"overrideparam": "MinionsHian♪\nsmall house",
+		    		"delay": 0.0,
+		    		"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "41925",
+					"inputname": "SetMessage",
+					"overrideparam": "mini Wife’s House",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "41933",
+					"inputname": "SetMessage",
+					"overrideparam": "Charmander will burn\nyou all in one go！！！",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "41931",
+					"inputname": "SetMessage",
+					"overrideparam": "Oh！kurumi hot\n(＞ ＜)☆",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "41931",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 4 3110.974121 496.374573",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "41930",
+					"inputname": "SetMessage",
+					"overrideparam": "Lucky nya！luckydayฅ",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "41928",
+					"inputname": "SetMessage",
+					"overrideparam": "Soy Sauce\nWarehouse",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "41916",
+					"inputname": "SetMessage",
+					"overrideparam": "not mini\nCaptain’s Quarters",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42402",
+					"inputname": "SetMessage",
+					"overrideparam": "Featuring friendφ(≧ω≦*)♪",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42241",
+					"inputname": "SetMessage",
+					"overrideparam": "←If there’s a problem with the map\njust DM me~o( =∩ω∩= )m",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "qworliusndfgsdhbb",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say I forged this path I planted this tree(‾◡◝)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "qworliusndfgsdhbb",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say If you want to pass from here, leave something valuable behind！>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "qworliusndfgsdhbb",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （ Defend the harbor If you’re a man the 35 second defense well~o( =∩ω∩= )）>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "qworliusndfgsdhbb",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （The zombie will teleport in 10 seconds run quickly(＞▽＜)）>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Wow~(＞ ＜)☆Look Miku’s husband is here！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Come over and have a seat！I’m Miku’s little sister Miku nyanฅ>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （After surviving indoors for 60 seconds the lower chamber door will open）>4.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （The zombie will teleport to the bathroom in 12 seconds）>66.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Huh！_(:з」∠)_Something weird came out of the toilet!>78.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say zombie has teleported nyanԾ‸Ծ>64.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "41961",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say There are enemies on the other side of the sea...>68.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "nya",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Oh The portal has already closed nya！Σ(っ °Д °:)っ>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "nya",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Next time come quickly！(o≖◡≖)>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42061",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say If you stay here any longer you might get punishedο(=•ω＜=)ρ⌒☆>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "relay_tree",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say (The treehouse will open in 60 seconds)>0.5>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "relay_tree",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say (The treehouse will open in 40 seconds)>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "relay_tree",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say (The zombie will teleport in 20 seconds，Open run！）>32.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "relay_tree",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say (The treehouse will open in 5 seconds)>55.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Oh I forgot that this was a dead end！Σ( °Д °:)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ˃̶͈ ˂̶͈ we’ll have to take the ambush’s secret passage>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Let's go down right now！>32.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (The door will open in 30 seconds!）>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42043",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (The door will open in 5 seconds!）>26.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Three characters，I’ll hold on for everyone a bit longer 40 seconds(/ω＼*)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say forty seconds>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say door is open！>40.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say The thing sparkling inside the drift bottle is a keyο(=•ω＜=)ρ⌒☆>42.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (20 seconds)>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say （The harbor will open in 25 seconds！ ）>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Take us to a tavern and let us have a drink>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42393",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Oh ⊙▾⊙ The hotel’s been taken over by Vikings Better go around！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say This palace looks really complicated( ╯▽╰)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Let me think about where would be best to go！>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （Defense 20 seconds）>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say The small room on the right second floor has a bridge that leads to the outpost！>25.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42396",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say I remember correctly there was a switch next to the swing in the small room on the second floor>23.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "celu",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say The side road is closed for a while nya~( ╯▽╰)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The second floor door will open in 30 seconds！>0.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say （ The side road will open in 15 seconds ）>1.1>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Let’s go past the outpost turn around and check out the tavern！>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42412",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The second floor door will open in 10 seconds！>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Oh hotφ(゜▽゜*)♪>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Our lock picking skills boast over 17 years of tradition、picking chimneys is a piece of cake！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （Give miku 30 seconds to open the chimney）>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42432",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say This is no problem for us at all！(≧∀≦)>36.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42436",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say There is a bell behind the outpost>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42436",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Ringing that bell can draw the pirates’ attention！>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say As expected the pirates have started gathering at the shore！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Let’s walk through the outpost entrance fair and square！>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The door will open in 20 seconds>1.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42438",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The zombie will teleport in 5 seconds！>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "door14",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (The main gate will open in 25 seconds)>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "door14",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say (The door will open in 10 seconds nya~o( =∩ω∩= )m)>17.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42452",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Let’s go into the tavern and have a drink(* /ω＼*)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42453",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Boss, two cups of warm sake and a plate of fennel beans please。>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42453",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Shall we go upstairs and have a seat！>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Why are you in such a hurry to take me into the room(*/ω＼*)>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （in ten minutes）>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ⊙▽⊙The pirates are back again Let’s run away quickly>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say But the lower floor is already surrounded>7.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Looks like we’ll have to go through the window nya！>8.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (The window will break in 15 seconds）>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say All the pirates are in the tavern right now>35.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Let’s take advantage of the chance board their ship、and destroy their base♪(´∇`*)>38.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42463",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say The zombie will teleport in 5 seconds！>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42468",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Based on our long experience sailing around the world>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42468",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Wouldn’t the switch for the cabin be next to the cabin！^O^>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The cabin will open in 30 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Captain’s Quarters Infiltration Combat Startヾ(≧O≦)〃>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The cabin will open in 10 seconds>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42495",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Looks like we’ll have no choice but to go to the Captain’s Quarters through the main gate！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42495",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say There might be a secret passage（´v｀）>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Speak of the devil, there’s actually a secret passage right under our feet╰(*°▽°*)╯>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (The door will open in 30 seconds)>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (The zombie will teleport in 5 seconds)>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Rush toward the final room！>33.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "42499",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say (The door will open in 10 seconds)>23.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say If we defend this iron gate we will win(/≧▽≦)/>0.2>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （Last 30 seconds！！）>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say We did it！！!φ(≧ω≦*)♪>42.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say From now on we will conquer the Sea of Stars！！>47.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "42506",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say The end Thanks for playing！~o( =∩ω∩= )m>49.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "mcd_skip_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say （Will teleport in 5 seconds！）>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "SetMessage",
+					"overrideparam": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>3.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>6.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>8.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あー眠たい殻に篭りたい\nAー nemuritai kara ni komoritai>12.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>携帯のアラームが止まない\nkeitai no aramu ga yamanai>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ノールックで消す俺はベテラン\nnourukku de kesu ore wa beteran>17.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あーもう何もする気起きない\nAー mou nani mo suru ki okinai>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ゲームに課金しすぎたみたい\ngeimu ni kakin shisugita mitai>25.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>もっかいベッドに包まりダイブ\nmokkai beddo ni tsutsumari daibu>28.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>今日お昼からランチの予定\nkyou ohiru kara ranchi no yotei>34.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>約束してたけど既に too late oh\nyakusoku shiteta kedo sude ni too late oh>35.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴りやまない ringin′ my bell\nnariyamanai ringin′ my bell>39.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ため息が部屋に広がる\ntameiki ga heya ni hirogaru>41.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>こうなっても動じない\nkou nattemo doujinai>44.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>Uber 呼んでもはやアニメ三昧\nUber yondemo haya anime zanmai>46.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>そう背伸びはしないよ 等身大の\nsou senobi wa shinaiyo doushindai no>49.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>「俺」「俺」「俺」\n「ore」「ore」「ore」>52.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM>54.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>56.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>59.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>62.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM>65.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM>67.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>72.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>あぁこりゃまたボッチだね\nAa korya mata botti dane>76.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>またブッチでプチっとオッコだね\nmata butti de buttito okko dane>78.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>でも部屋から出れない\ndemo heya kara derenai>81.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ビックマウス許してくれなきゃ\nbikkumausu yurushite kurenakya>82.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ブレイクアップだぜ\nbureikuappu daze>84.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>独り言サイファー無限ループで\nhitorigoto saifa mugen rupu de>87.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>続くlike a マシンガントークの\ntsuzuku like a mashingantouku no>89.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>お供にはそう my ハピーターンと\notomo niwa sou my hapitan to>92.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>冷たいお茶で欠席裁判\ntsumetai ocha de kessekisaiban>94.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>無罪放免です\nmuzanhoumen desu>98.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>しつこくしすぎな奴は裏目に出る\nshikoshiku sugina yatsu ha urame ni deru>100.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>部屋に飾るシクラメン\nheya ni kazaru shikuramen>103.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ため息で花びらが揺れる\ntameiki de hanabira ga yureru>105.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ああもう連絡もしない\nAA mou renraku mo shinai>108.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>怒られることには\nokorareru koto niwa>110.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>そう耐性ないから\nsou naisei nai kara>112.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>嫌いになったつもりではないのよ\nkirai ni natta tsumori dewa nainoyo>113.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>「メンゴ」「メンゴ」「メン...」\n「mengo」「mengo」「men...」>116.1>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM>118.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>120.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>123.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>126.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM>129.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM>131.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM>133.9>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>136.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>憂いな日々に錆びて\nurei na hibi ni sabite>2.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>私の名前も忘れていく\nwatashi no namae mo wasurete iku>7.9>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>綺麗な嘘ごと\nkirei na uso goto>13.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>自分を騙し続けて\njibun wo damashi tsuzukete>16.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>今夢で会える\nima yume de aeru>21.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>霧が晴れない\nkiri ga harenai>49.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>足跡を隠すように\nashiato wo kakusu you ni>52.1>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>森に迷った振りして\nmori ni mayotta furi shite>55.1>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ただ前に進めない\ntada mae ni susumenai>61.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>明日は来なくていい\nashita wa konakute ii>63.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>深い眠りに落ちていく\nfukai nemuri ni ochite iku>66.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>お休み 今日は終わらせて\noyasumi kyou wa owarasete>71.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>お休み 長い夜に\noyasumi nagai yoru ni>77.1>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>初めて自分を許していい\nhajimete jibun wo yurushite ii>82.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>懐かしいのに\nnatsukashii noni>89.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>また話をかけてもいい\nmata hanashi wo kaketemo ii>120.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>悪い夢から連れ出して\nwarui yume kara tsuredashite>124.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>羽ペンで一緒に絵描こう\nhana pen de issyo ni e egakou>131.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ふたりぼっちで夜空を\nfutari botti de yozora wo>135.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>お休み 今日は終わらせて\noyasumi kyou wa owarasete>142.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>お休み 長い夜に\noyasumi nagai yoru ni>147.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>夜明けまで魔法よ解けないで\nyoake made mahou yo tokenaide>153.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>眠る森のお姫\nnemuru mori no ohime>160.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>涙がそっと\nnamida ga sotto>191.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>雨音に合わせてく\nameoto ni awasete ku>197.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>悲しみを水に溶けて\nkanashimi wo mizu ni tokete>202.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>暖かい夢に変わる\natatakai yume ni kawaru>206.6>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>消えそうな時に\nkiesou na toki ni>212.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>私を抱きしめて\nwatashi wo takishimete>218.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>緩やかに世界は回る\nyuruyaka ni sekai wa mawaru>224.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>明日もきっと会える\nashita mo kitto aeru>229.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>まだ君想うながら\nmada kimi wo omou nagara>26.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>自分に向き合いたくない\njibun ni mukiaitakunai>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>思いを重いと\nomoi wo omoi to>34.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>君に思われたくないでも\nkimi ni omowaretakunai demo>37.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>まだ君を探そうと\nmada kimi wo sagasou to>43.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>水色の世界に落ちる\nmizuiro no sekai ni ochiru>47.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>このまま黙ると思うと\nkono mama damaru to omou to>54.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>心が曇るみたいに\nkokoro ga kumoru mitai ni>60.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>その時に\nsono toki ni>67.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>偶然と降ってきた\nguuzen to futte kita>70.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>狐雨と言う\nkitsuneame to iu>73.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>晴れてた空なのに\nhareteta sora nanoni>78.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>わがままで降らせたい\nwagamama de furasetai>81.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>こんな偶然 運命と呼ぼう\nkonna guuzen unmei to yobou>86.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>Didida dida 夢の中\nDidida dida yume no naka>92.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>君が起こすまで\nkimi ga okosu made>96.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>見惚れてた空なのに\nmitoreteta sora nanoni>158.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>このままで離せたい\nkono mama de hanasetai>161.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>傘なんか要らないから\nkasa nanka iranai kara>165.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>Didida dida 夢の中\nDidida dida yume no naka>172.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>起こしてくるまで\nokoshite kuru made>175.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>静かな世界で\nshizukana sekai de>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>私だけ\nwatashi dake>19.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>記憶の狭間に君を探す\nkioku no hazama ni kimi wo sagasu>21.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ねえ 聞こえるかな\nnee kikoeru kana>28.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>空中揺れてる光が\nkuucyuu yureteru hikari ga>33.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>歩いている冷たい風の中\naruiteru tsumetai kaze no naka>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>雪の結晶が空へ舞い落ちる\nyuki no kessyou ga sora e maiochiru>46.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>星の光を集めて\nhoshi no hikari wo atsumete>53.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>思い重ねたある夢は\nomoikasaneta aru yume wa>59.1>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>オーロラ\nourora>64.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>海の彼方も\numi no kanata mo>93.2>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>空の向こうも\nsora no mukou mo>96.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>世界の果てにも\nsekai no hate nimo>100.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>君はいない\nkimi wa inai>103.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>ねえ 夢は終わる\nnee yume wa owaru>106.7>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>溢れていた星の涙\nafureteita hoshi no namida>111.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>沈んでいる深い闇の中\nshizunde iru fukai yami no naka>117.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>遠くの声が私を呼んでいた\ntooku no koe ga watashi wo yonde ita>124.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>その声を辿れるなら\nsono koe wo tadoreru nara>130.3>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>冬の奇跡に祈る\nfuyu no kiseki ni inoru>137.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>願いが叶うなら\nnegai ga kanau nara>171.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>もう一度抱きしめて欲しい\nmou ichido takishimete hoshii>177.5>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>止まらないの\ntomaranai no>185.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>時の流れ\ntoki no nagare>188.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>全て忘れそう\nsubete wasuresou>191.4>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>長くなれる距離\nnagaku nareru kyori>198.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>!self>SetMessage>目を閉じればまだ戻れるのかな\nme wo tojireba mada modoreru nokana>201.8>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "mciddreams_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>mciddreams_temp_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "hl_saying_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>t_hl_saying_temp_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "hl_xm1014_temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>hl_xm1014_temp_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
 				}
             ]
-        }
+        },
+		
+		{
+			"targetname": "mciddreams_temp_relay",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "door_mcddreams_trigger*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say おじさんが嘘つかないって言ったでしょ~>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "door_mcddreams_trigger*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say ここは私の秘密基地なんだよ 早く降りて見てみて！>1.0>1",
+					"delay": 1.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "door_mcddreams_trigger*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 아저씨가 너 안 속인다고 말했잖아~>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "door_mcddreams_trigger*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 여기는 나의 비밀 기지야 어서 내려와서 구경해 봐！>1.0>1",
+					"delay": 1.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "door_mcddreams_trigger*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say The man said wouldn’t lie to you~>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "door_mcddreams_trigger*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say This is my secret base. Come down and take a look！>1.0>1",
+					"delay": 1.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "t_hl_saying_temp_relay",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "hl_saying*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say お兄さん リンゴ買いませんか?>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "hl_saying*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say 오빠 사과 안사세요?>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "hl_saying*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>cmd>Command>say Hey aren’t you buying apples?>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+		
+		{
+			"targetname": "hl_xm1014_temp_relay",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "xm1014_kill_relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say あれ，捨てられちゃった 悲しくて手首切っちゃうにゃんQAQ>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "xm1014_kill_relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say 어라，버려졌어 슬퍼서 손목 자를 거야 냐아QAQ>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "xm1014_kill_relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>cmd>Command>say Huh，I’ve been abandoned cut my wrists nyaQAQ>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},	
+		// add lyric entity
+		// In My Room
+        {
+			"targetname": "lyric_inmyroom",
+			"classname": "trigger_multiple",
+			"origin": "1096 -436 236",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+            "wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
+			"io":
+			[
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_inmyroom_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+
+        {
+			"targetname": "lyric_inmyroom_hud",
+			"classname": "env_hudhint",
+			"message": "In My Room",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "Wait, oh wait, oh wait, oh wait",
+					"delay": 20.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "Wait, oh wait, oh wait, oh wait",
+					"delay": 30.9,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "All day, oh my, all day, oh my in my room",
+					"delay": 140.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 159.0,
+					"timestofire": -1
+				}
+            ]
+		},
+		// Good Dream
+        {
+			"targetname": "lyric_good_dream",
+			"classname": "trigger_multiple",
+			"origin": "1096 -436 236",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+            "wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
+			"io":
+			[
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_good_dream_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+
+        {
+			"targetname": "lyric_good_dream_hud",
+			"classname": "env_hudhint",
+			"message": "Good Dream",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 233.0,
+					"timestofire": -1
+				}
+            ]
+		},
+		// Sunny Rain
+        {
+			"targetname": "lyric_sunny_rain",
+			"classname": "trigger_multiple",
+			"origin": "1096 -436 236",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+            "wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
+			"io":
+			[
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_sunny_rain_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+
+        {
+			"targetname": "lyric_sunny_rain_hud",
+			"classname": "env_hudhint",
+			"message": "Sunny Rain",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Dancin for u，dancin for felicity",
+					"delay": 99.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Dancin for u，dancin for felicity",
+					"delay": 179.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 181.0,
+					"timestofire": -1
+				}
+            ]
+		},
+		// Aurora VIP
+        {
+			"targetname": "lyric_aurora_vip",
+			"classname": "trigger_multiple",
+			"origin": "1096 -436 236",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+            "wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
+			"io":
+			[
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_aurora_vip_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+
+        {
+			"targetname": "lyric_aurora_vip_hud",
+			"classname": "env_hudhint",
+			"message": "Aurora VIP",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "You and me",
+					"delay": 142.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "I miss you",
+					"delay": 182.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "I need you",
+					"delay": 195.2,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 208.0,
+					"timestofire": -1
+				}
+            ]
+		}
     ],
     "modify": // remove message output, add targetname/output
     [
@@ -8222,103 +11513,8 @@
                 ]
             }
         },
-
+		// add lyric output
 		{
-            "match":
-            {
-                "targetname": "[PR#]mciddreams_temp"
-			},
-			"insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnEntitySpawned",
-						"targetname": "door_mcddreams_trigger_t",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-				]
-			}
-		},
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]hl_xm1014_temp"
-			},
-			"insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnEntitySpawned",
-						"targetname": "xm1014_kill_relay&*",
-                        "inputname": "AddOutPut",
-						"overrideparam": "OnUser1>xm1014_kill_relay_t>FireUser1>>0>1",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-				]
-			}
-		},
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]hl_saying_temp"
-			},
-			"insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnEntitySpawned",
-						"targetname": "hl_saying_t",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-				]
-			}
-		}
-    ],
-	"add": // trigger to replace point_template
-    [
-		// mciddreams_temp(47716#entityLumpName)
-        {
-			"targetname": "door_mcddreams_trigger_t",
-			"classname": "trigger_multiple",
-			"origin": "-396 3064 362",
-			"angles": "0 0 0",
-			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_minecraft_sakura/entities/door_mcddreams_trigger_47798.vmdl"
-		},
-        // hl_xm1014_temp(48200#entityLumpName)
-		{
-			"targetname": "xm1014_kill_relay_t",
-			"classname": "logic_relay"
-		},
-		// 52857#entityLumpName(hl_saying_temp)
-        {
-			"targetname": "hl_saying_t",
-			"classname": "trigger_multiple",
-			"origin": "-704 3102 426",
-			"angles": "0 0 0",
-			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_minecraft_sakura/entities/hl_saying_52856.vmdl"
-		}
-	],
-    "modify": // add music lyric output
-    [
-        {
             "match":
             {
                 "targetname": "[PR#]inmyroom1"
@@ -8433,361 +11629,5 @@
                 ]
             }
         }
-    ],
-    "add": // music lyric hud
-    [
-		// In My Room
-        {
-			"targetname": "lyric_inmyroom",
-			"classname": "trigger_multiple",
-			"origin": "1096 -436 236",
-			"angles": "0 0 0",
-			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
-			"io":
-			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "FireUser1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
-					"timestofire": -1
-				}
-            ]
-        },
-
-        {
-			"targetname": "lyric_inmyroom_hud",
-			"classname": "env_hudhint",
-			"message": "In My Room",
-            "io":
-			[
-			    {
-					"outputname": "OnUser1",
-					"targetname": "!self",
-					"inputname": "ShowHudHint",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser1",
-					"targetname": "!self",
-					"inputname": "FireUser1",
-					"delay": 0.01,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "SetMessage",
-                    "overrideparam": "Wait, oh wait, oh wait, oh wait",
-					"delay": 20.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "SetMessage",
-                    "overrideparam": "Wait, oh wait, oh wait, oh wait",
-					"delay": 30.9,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "SetMessage",
-                    "overrideparam": "All day, oh my, all day, oh my in my room",
-					"delay": 140.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 159.0,
-					"timestofire": -1
-				}
-            ]
-		},
-		// Good Dream
-        {
-			"targetname": "lyric_good_dream",
-			"classname": "trigger_multiple",
-			"origin": "1096 -436 236",
-			"angles": "0 0 0",
-			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
-			"io":
-			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "FireUser1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
-					"timestofire": -1
-				}
-            ]
-        },
-
-        {
-			"targetname": "lyric_good_dream_hud",
-			"classname": "env_hudhint",
-			"message": "Good Dream",
-            "io":
-			[
-			    {
-					"outputname": "OnUser1",
-					"targetname": "!self",
-					"inputname": "ShowHudHint",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser1",
-					"targetname": "!self",
-					"inputname": "FireUser1",
-					"delay": 0.01,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 233.0,
-					"timestofire": -1
-				}
-            ]
-		},
-		// Sunny Rain
-        {
-			"targetname": "lyric_sunny_rain",
-			"classname": "trigger_multiple",
-			"origin": "1096 -436 236",
-			"angles": "0 0 0",
-			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
-			"io":
-			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "FireUser1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
-					"timestofire": -1
-				}
-            ]
-        },
-
-        {
-			"targetname": "lyric_sunny_rain_hud",
-			"classname": "env_hudhint",
-			"message": "Sunny Rain",
-            "io":
-			[
-			    {
-					"outputname": "OnUser1",
-					"targetname": "!self",
-					"inputname": "ShowHudHint",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser1",
-					"targetname": "!self",
-					"inputname": "FireUser1",
-					"delay": 0.01,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "SetMessage",
-					"overrideparam": "Dancin for u，dancin for felicity",
-					"delay": 99.3,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "SetMessage",
-					"overrideparam": "Dancin for u，dancin for felicity",
-					"delay": 179.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 181.0,
-					"timestofire": -1
-				}
-            ]
-		},
-		// Aurora VIP
-        {
-			"targetname": "lyric_aurora_vip",
-			"classname": "trigger_multiple",
-			"origin": "1096 -436 236",
-			"angles": "0 0 0",
-			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
-			"io":
-			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "FireUser1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
-					"timestofire": -1
-				}
-            ]
-        },
-
-        {
-			"targetname": "lyric_aurora_vip_hud",
-			"classname": "env_hudhint",
-			"message": "Aurora VIP",
-            "io":
-			[
-			    {
-					"outputname": "OnUser1",
-					"targetname": "!self",
-					"inputname": "ShowHudHint",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser1",
-					"targetname": "!self",
-					"inputname": "FireUser1",
-					"delay": 0.01,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "SetMessage",
-					"overrideparam": "You and me",
-					"delay": 142.5,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "SetMessage",
-					"overrideparam": "I miss you",
-					"delay": 182.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "SetMessage",
-					"overrideparam": "I need you",
-					"delay": 195.2,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser2",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 208.0,
-					"timestofire": -1
-				}
-            ]
-		}
     ]
 }
-
