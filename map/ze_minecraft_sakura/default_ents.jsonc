@@ -1,4 +1,4 @@
-// stripper by 兎RB,kokopekko,小彩旗 25.10.27
+// stripper by 兎RB,kokopekko,小彩旗 25.10.28
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -29,7 +29,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.27 by 兎RB,kokopekko,小彩旗",
+                        "overrideparam": "say language translation stripper 25.10.28 by 兎RB,kokopekko,小彩旗",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -718,7 +718,7 @@
 					"outputname": "OnCase01",
 					"targetname": "46977",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ある子豚さんが虚空の中に落ちてしまいました^(*--(oo)--*)^>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ある子豚さんが虚空の中に落ちてしまいました^(*--(oo)--*)^>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3526,7 +3526,7 @@
 					"outputname": "OnCase02",
 					"targetname": "46977",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say 어느 아기 돼지가 허공 속으로 떨어졌어요^(*--(oo)--*)^>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say 어느 아기 돼지가 허공 속으로 떨어졌어요^(*--(oo)--*)^>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -6352,7 +6352,7 @@
 					"outputname": "OnCase03",
 					"targetname": "46977",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say A baby pig fell into the void^(*--(oo)--*)^>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say A baby pig fell into the void^(*--(oo)--*)^>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -10526,7 +10526,7 @@
                         "inputname": "Command",
                         "overrideparam": "say 有小猪掉入了虚空^(*--(oo)--*)^",
                         "delay": 0.0,
-                        "timestofire": 1
+                        "timestofire": -1
                     }
                 ]
             }
@@ -11631,3 +11631,4 @@
         }
     ]
 }
+
