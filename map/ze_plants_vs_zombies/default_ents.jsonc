@@ -20,8 +20,7 @@
         {
             "match":
             {
-                "classname": "logic_auto",
-				"hammeruniqueid": "9036"
+                "classname": "logic_auto"
             },
 			"delete": // remove unnecessary output
             {
@@ -6387,4 +6386,5 @@
             }
         }
     ]
+
 }
