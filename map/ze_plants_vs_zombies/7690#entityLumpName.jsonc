@@ -1,0 +1,68 @@
+// stripper by 兎RB 25.10.31
+// map ze_plants_vs_zombies
+// workshop id 3555222611
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]item_disco_skill1_relay&0000"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]item_disco_skill1_cd_text&0000",
+                        "inputname": "SetMessage",
+                        "overrideparam": "舞王召唤：CD",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]item_disco_skill1_cd_text&0000",
+                        "inputname": "SetMessage",
+                        "overrideparam": "舞王召唤：ready",
+                        "delay": 60.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]item_disco_skill2_relay&0000"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]item_disco_skill2_cd_text&0000",
+                        "inputname": "SetMessage",
+                        "overrideparam": "僵尸舞步：CD",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]item_disco_skill2_cd_text&0000",
+                        "inputname": "SetMessage",
+                        "overrideparam": "僵尸舞步：ready",
+                        "delay": 40.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}
