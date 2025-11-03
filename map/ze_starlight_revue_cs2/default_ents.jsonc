@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.11.02
+// stripper by 兎RB 25.11.03
 // map ze_starlight_revue_cs2
 // workshop id 3519985936
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.11.02 by 兎RB",
+                        "overrideparam": "say language translation stripper 25.11.03 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -5188,7 +5188,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lyric_re_create_hud",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>間奏中\n約92.2秒>112.5>-1",
+					"overrideparam": "OnUser2>!self>SetMessage>Instrumental break\napproximately 92.2 seconds>112.5>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5251,7 +5251,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lyric_re_create_hud",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>間奏中\n約60.6秒>231.0>-1",
+					"overrideparam": "OnUser2>!self>SetMessage>Instrumental break\napproximately 60.6 seconds>231.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5539,7 +5539,7 @@
   				  "outputname": "OnCase03",
   				  "targetname": "lyric_koi_hud",
   				  "inputname": "AddOutPut",
-  				  "overrideparam": "OnUser2>!self>SetMessage>間奏中\n約62.3秒>197.7>-1",
+  				  "overrideparam": "OnUser2>!self>SetMessage>Instrumental break\napproximately 62.3 seconds>197.7>-1",
   				  "delay": 0.0,
   				  "timestofire": -1
   				},
@@ -5755,7 +5755,7 @@
   				  "outputname": "OnCase03",
   				  "targetname": "lyric_koi_hud",
   				  "inputname": "AddOutPut",
-  				  "overrideparam": "OnUser2>!self>SetMessage>間奏中\n約100秒>333.7>-1",
+  				  "overrideparam": "OnUser2>!self>SetMessage>Instrumental break\napproximately 100 seconds>333.7>-1",
   				  "delay": 0.0,
   				  "timestofire": -1
   				},
