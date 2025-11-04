@@ -3,6 +3,7 @@
 // workshop id 3247766438
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
+// + fix bug L1526 L1605
 {
 	"filter": // remove unnecessary entity
 	[
@@ -1582,13 +1583,12 @@
     ],
     "modify": 
     [
-		// remove message output
         {
             "match":
             {
                 "targetname": "[PR#]lv4_kart_final_trigger"
             },
-            "delete":
+            "delete": // remove message output
             {
                 "io":
                 [
@@ -1601,9 +1601,42 @@
                         "timestofire": 1
                     }
 				]	
+            },
+			"insert": // add fix kart(prop) KB bug output
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "disable_nade",
+                        "inputname": "Disable",
+                        "delay": 30.0,
+                        "timestofire": -1
+                    }
+				]	
             }
         },
-		// add fix kart(prop) KB bug output
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv3_kart_final_trigger"
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "disable_nade",
+                        "inputname": "Disable",
+                        "delay": 30.0,
+                        "timestofire": -1
+                    }
+				]	
+            }
+        },
+		
 		{
             "match":
             {
@@ -1638,26 +1671,6 @@
 						"targetname": "disable_nade",
                         "inputname": "Enable",
                         "delay": 40.0,
-                        "timestofire": -1
-                    }
-				]	
-            }
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]lv_kart_finished_tp"
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnTrigger",
-						"targetname": "disable_nade",
-                        "inputname": "Disable",
-                        "delay": 30.0,
                         "timestofire": -1
                     }
 				]	
