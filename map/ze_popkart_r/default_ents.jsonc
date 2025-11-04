@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.11.03
+// stripper by 兎RB 25.11.04
 // map ze_popkart_r
 // workshop id 3247766438
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -52,7 +52,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.11.03 by 兎RB",
+                        "overrideparam": "say language translation stripper 25.11.04 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -1532,62 +1532,6 @@
 			[
 				{
                     "outputname": "OnTimer",
-					"targetname": "weapon_decoy",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "weapon_flashbang",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "weapon_hegrenade",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "weapon_incgrenade",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "weapon_molotov",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "weapon_smokegrenade",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "weapon_tagrenade",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
 					"targetname": "flashbang_projectile",
                     "inputname": "Kill",                       
                     "delay": 0.0,
@@ -1673,7 +1617,7 @@
                         "outputname": "OnTrigger",
 						"targetname": "disable_nade",
                         "inputname": "Enable",
-                        "delay": 0.0,
+                        "delay": 40.0,
                         "timestofire": -1
                     }
 				]	
@@ -1693,7 +1637,7 @@
                         "outputname": "OnTrigger",
 						"targetname": "disable_nade",
                         "inputname": "Enable",
-                        "delay": 0.0,
+                        "delay": 40.0,
                         "timestofire": -1
                     }
 				]	
@@ -1713,7 +1657,7 @@
                         "outputname": "OnTrigger",
 						"targetname": "disable_nade",
                         "inputname": "Disable",
-                        "delay": 0.0,
+                        "delay": 30.0,
                         "timestofire": -1
                     }
 				]	
