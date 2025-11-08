@@ -1,0 +1,254 @@
+// stripper by 兎RB 25.11.05
+// map ze_bh3rd_nagazoracity_z
+// workshop id 3423221710
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl2_Relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 根据资料显示,这附近还有一个办事处和一个仓库.",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 这辆大巴挡住了去路.守住这里,直到c4爆炸!",
+                        "delay": 40.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]part2zombechack"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 该死!死士上直升机了,任务失败!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl2_Tr_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 守住这里,直到梯子落下!",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 死士从另一边来了!",
+                        "delay": 70.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl2_Tr_3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 电梯已抵达!",
+                        "delay": 15.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 已呼叫电梯.",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl2_Tr_4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 正在搜查办事处资料......",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say ME社......雷电龙马......经济犯罪......",
+                        "delay": 20.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 资料搜集完毕!",
+                        "delay": 25.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl2_Tr_5"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 正在破解仓库安保系统!",
+                        "delay": 10.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 安保系统已破解!",
+                        "delay": 45.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 守住这里,直到调查完毕!",
+                        "delay": 70.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 逆熵......激进派......可可利亚......",
+                        "delay": 85.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 仓库调查完毕.最后一块拼图已经集齐!",
+                        "delay": 100.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 跳!",
+                        "delay": 103.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl2_Tr_6"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 已经呼叫撤退直升机,撑住!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 直升机即将到达,我们撤退!",
+                        "delay": 30.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}

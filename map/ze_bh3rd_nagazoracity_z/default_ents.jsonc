@@ -1,0 +1,2132 @@
+// stripper by 兎RB 25.11.08
+// map ze_bh3rd_nagazoracity_z
+// workshop id 3423221710
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2" English:"3"
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto",
+				"hammeruniqueid": "3513"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "1", // please type language serial number here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "juben",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.11.08 by 兎RB",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "3",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+			"case03": "3", // English
+			"io":
+			[
+                // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "Lvl1_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Lvl1_Tem_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Lvl2_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Lvl2_Tem_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "ZM_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>ZM_Tem_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "JudahOath_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Sakura_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Sakura_Tem_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "3692",
+					"inputname": "SetMessage",
+					"overrideparam": "ステージ1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "3693",
+					"inputname": "SetMessage",
+					"overrideparam": "ステージ2",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Level_Case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnDefault>juben>Command>say ＜＜＜間違っているステージです，作者に連絡してください＞＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "3695",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **管理者がステージを1に変更しました**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "3696",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **管理者がステージを2に変更しました**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "3697",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **管理者がステージをZMに変更しました**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "4157",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜現在のバージョン番号は005です＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "4157",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜バグの報告はDiscordチャンネルへお願いします＞＞>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// 한국어
+				{
+					"outputname": "OnCase02",
+					"targetname": "Lvl1_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Lvl1_Tem_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Lvl2_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Lvl2_Tem_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "ZM_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>ZM_Tem_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "JudahOath_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Sakura_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Sakura_Tem_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "3692",
+					"inputname": "SetMessage",
+					"overrideparam": "스테이지1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "3693",
+					"inputname": "SetMessage",
+					"overrideparam": "스테이지2",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Level_Case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnDefault>juben>Command>say ＜＜＜잘못되어 있는 스테이지입니다，작자에게 연락해 주세요＞＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "3695",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **관리자가 스테이지 1로 변경하였습니다**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "3696",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **관리자가 스테이지 2로 변경하였습니다**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "3697",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **관리자가 스테이지 ZM로 변경하였습니다**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "4157",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜현재 버전번호는 005입니다＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "4157",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜버그 보고는 Discord 채널에 부탁드립니다＞＞>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				// English
+				{
+					"outputname": "OnCase03",
+					"targetname": "Lvl1_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Lvl1_Tem_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Lvl2_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Lvl2_Tem_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "ZM_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>ZM_Tem_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "JudahOath_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Sakura_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Sakura_Tem_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "3692",
+					"inputname": "SetMessage",
+					"overrideparam": "STAGE1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "3693",
+					"inputname": "SetMessage",
+					"overrideparam": "STAGE2",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Level_Case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnDefault>juben>Command>say ＜＜＜This stage is incorrect，Please contact the creator＞＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "3695",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **Admin changed the stage to 1**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "3696",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **Admin changed the stage to 2**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "3697",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say **Admin changed the stage to ZM**>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "4157",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜The current version number is 005＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "4157",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜Please report bugs in the Discord channel＞＞>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+
+		{
+			"targetname": "Lvl1_Tem_relay",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 実験室の資料を収集しています!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 征服の宝石......第三の律者......移植手術......>35.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 実験室の資料検索完了.速やかに配電室に入りなさい!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 内部ネットワークのIPを分析しています!>10.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 分析完了!>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say このドアは長く持ちません,裏口から逃げましょう!>22.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい,c4が爆発するまで!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 橋はもう破壊されてる,撤退!>55.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 死士が向こうから降りてきた!>63.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 守りなさい,車を指定の位置に移すまで!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 車が指定の位置に移動した!>25.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 神社の下で生命反応が検出された!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say おおお,これは学園長じゃないですか?数日会わなかったらこんなにだらしなくなって~>13.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 擬似律者を討伐してるときにやられたの?君らしいね>16.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 学園長を守りなさい,巫女さんの治療が完了するまで(ゾンビをテレサと八重桜に触れさせないでください)>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say とりあえず死士を撃退して,速やかにセーフハウスに入りなさい!>60.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say セーフハウスのドアが開きました,速やかに入りなさい!>71.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 情報を入手しました,神社の下の実験室は大崩壊に関わっている可能性があります!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 長空壁の放水弁が開いた!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 水中の崩壊能濃度が下がるのを待ちなさい!>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 水中の崩壊能濃度が安全水準に達しました!>50.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "part1zombiecheack*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 死士が入ってきたのを探知,殲滅プログラム起動!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "savedls*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 学園長を守れなかった,任務失敗!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 실험실의 자료를 수집하고 있습니다!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 정복의 보석......제3의 율자......이식수술......>35.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 실험실 자료탐색완료.신속히 배전실로 들어가세요!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 내부 네트워크IP를 분석하고 있습니다!>10.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 분석완료!>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 이 문은 오래 버티지 못합니다,뒷 문으로부터 도망갑시다!>22.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요,c4가 폭발할 때까지!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 다리는 이미 파괴되어 있다,철수!>55.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 망자가 반대편에서 내려왔다!>63.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 지키세요,차를 지정위치로 이동시킬때 까지!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 차가 지정위치로 이동했다!>25.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 신사 아래에서 생명반응이 검출되었습니다!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 오오오,이건 학원장 아니신가요? 며칠 동안 안만났더니 이렇게 흐트러져서~>13.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 의사 율자를 토벌할 때 실패한거야?너 답네>16.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 학원장을 지키세요,무녀의 치료가 완료될때 까지(좀비를 테레사와 아예 사쿠라에게 닿지 않게 해 주세요)>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 일단 망자를 격퇴해,신속히 안전 쉘터에 들어가세요!>60.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 안전 쉘터문이 열렸습니다,신속히 들어가세요!>71.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 정보를 입수했습니다,신사 아래의 실험실은 대붕괴와 관련되어 있을 가능성이 있습니다!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 장공벽의 방수밸브가 열렸다!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 수중의 붕괴능 농도가 내려가는 것을 기다리세요!>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 수중의 붕괴능 농도가 안전수준에 달하였습니다!>50.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "part1zombiecheack*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 망자가 들어온 것을 탐지,전멸 프로그램 가동!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "savedls*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 학원장을 지키지 못 하였다,임무실패!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say I’m collecting data from the lab!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Gem of Conquest......the Third Herrscher......implantation surgery......>35.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Laboratory data search complete.Enter the electrical room immediately!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say I am analyzing the internal network IP!>10.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Analysis complete!>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_2*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say This door won’t hold for long,Let’s escape through the back door!>22.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Hold this position,until the C4 explodes!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say The bridge has already been destroyed,Retreat!>55.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say The revenant has come down from the opposite side!>63.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Hold this position,until the car reaches the designated location!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say The car has reached the designated location!>25.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Life signs have been detected under the shrine!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Oh wow,isn’t this the principal? We haven’t seen each other for a few days, and you’ve gotten so disheveled~>13.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Did you fail to subdue Pseudo Herrscher?Typical of you>16.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Protect the principal,until the shrine maiden’s treatment is complete(Don’t let the zombies touch Theresa and Yae Sakura)>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say First repel the revenant,then quickly get into a safe shelter!>60.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say The safe shelter door is open,Enter quickly!>71.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Got information,The lab under the shrine might be connected to the Great Collapse!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say The waterproof valve on the bulkhead has been opened!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Wait for the decay-capable concentration in the water to decrease!>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl1_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say The decay-capable concentration in the water has reached a safe level!>50.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "part1zombiecheack*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say Revenant intrusion detected,activating extermination program!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "savedls*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Failed to protect the principal,Mission failed!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "Lvl2_Tem_relay",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 資料によると,この付近には事務所と倉庫があります.>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say このバスが道を塞いでいる.ここを守りなさい,c4が爆発するまで!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "part2zombechack*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 畜生!死士がヘリに乗っちゃった,任務失敗>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい,ハシゴが降りるまで!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 死士が向こうから来た!>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say エレベーターが到着しました!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say エレベーターを呼び出しました.>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 事務所の資料を捜査しています......>2.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ME社......雷電龍馬......経済犯罪......>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 資料収集完了>25.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 倉庫の警備システムをハッキングしています!>10.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 警備システムをハッキングしました!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい,調査が完了するまで!>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 逆熵......急進派......カカリア......>85.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 倉庫の調査完了.最後のピースも揃った!>100.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ジャンプ>103.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_6*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say すでに撤退用のヘリコプターを呼びました,持ちこたえなさい!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Lvl2_Tr_6*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say ヘリコプターがもうすぐ到着する,撤退せよ!>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 자료에 따르면,이 부근에는 사무소와 창고가 있습니다.>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 이 버스가 길을 막고 있다.이곳을 지키세요,c4가 폭발할때 까지!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "part2zombechack*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 이런!망자가 헬리콥터에 타버렸다,임무실패!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요,사다리가 내려올때 까지!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 망자가 반대편에서 왔다!>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 엘리베이터가 도착했습니다!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 엘리베이터를 호출했습니다.>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 사무소의 자료를 조사하고 있습니다......>2.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ME사......라이덴 료마......경제범죄......>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 자료수집완료>25.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 창고의 경비시스템을 해킹하고 있습니다!>10.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 경비시스템을 해킹했습니다!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요,조사가 완료할때 까지!>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 네겐트로피......급진파......쿠쿠리아......>85.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 창고조사완료.마지막 조각도 모였다!>100.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 점프>103.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_6*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 이미 철수용 헬리콥터를 불렸습니다,계속 버티세요!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Lvl2_Tr_6*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 헬리콥터가 곧 도착한다,철수!>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say According to the data,there is an office and a warehouse in this area.>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say This bus is blocking the road.Hold this position,until the c4 explodes!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "part2zombechack*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say Damn!The revenant got on the helicopter,Mission failed!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Hold this position,Until the ladder is lowered!>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_1*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say The revenant is coming from over there!>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say The elevator has arrived!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_3*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Called the elevator.>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Investigating the office documents......>2.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ME company......Raiden Ryoma......Economic crime......>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_4*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Data collection completed>25.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Hacking the warehouse security system!>10.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Hacked the security system!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Hold this position,Until the investigation is complete!>70.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Anti-Entropy......extremist group......Cocolia.....>85.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Warehouse investigation complete.The final piece has also been gathered!>100.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_5*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Jump>103.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_6*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say already called the retreat helicopter,Hang on!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Lvl2_Tr_6*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say The helicopter will arrive soon,Fall back!>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+		
+		{
+			"targetname": "ZM_Tem_relay",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "ZM_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ＜＜生存130秒＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ZM_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ＜＜생존 130초＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "ZM_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ＜＜survival 130 seconds＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+		
+		{
+			"targetname": "JudahOath_Tem_relay",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "JudahOath_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===準備完了===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "JudahOath_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===準備完了===>92.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "JudahOath_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===준비완료===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "JudahOath_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===준비완료===>92.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "JudahOath_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===Ready===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "JudahOath_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===Ready===>92.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "Sakura_Tem_relay",
+			"classname": "logic_relay",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "Sakura_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===準備完了===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "Sakura_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>Sakura_Text*>SetMessage>===準備完了===>62.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Sakura_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===준비완료===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Sakura_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>Sakura_Text*>SetMessage>===준비완료===>62.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Sakura_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===Ready===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "Sakura_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>Sakura_Text*>SetMessage>===Ready===>62.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+		// add lyric entity
+		// RE:CREATE
+        {
+			"targetname": "lyric_dacapo",
+			"classname": "trigger_multiple",
+			"origin": "10647.8125 -544.000061 -3614.8125",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+            "wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_bh3rd_nagazoracity_z/entities/cthurt_3616.vmdl",
+			"io":
+			[
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_dacapo_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_dacapo_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+
+        {
+			"targetname": "lyric_dacapo_hud",
+			"classname": "env_hudhint",
+			"message": "Da Capo",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "When good old friends are going away",
+					"delay": 1.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Will you wish them to remember your name?",
+					"delay": 6.9,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "When good old days are passing away",
+					"delay": 14.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Will you promise your heart remains the same?",
+					"delay": 19.9,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Never can we suspend the time",
+					"delay": 27.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Having to leave the tracks behind",
+					"delay": 34.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "There is a longer way ahead",
+					"delay": 40.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "After all",
+					"delay": 48.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "There used to be a storyteller",
+					"delay": 54.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Who always painted the sunshine and the rain",
+					"delay": 60.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "One has to eventually grow up",
+					"delay": 67.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Spending a lifetime to taste the love and pain",
+					"delay": 73.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Never can we suspend the time",
+					"delay": 81.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Having to leave the tracks behind",
+					"delay": 87.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "There is a longer way ahead",
+					"delay": 94.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "After all",
+					"delay": 101.9,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "If it's too hard to say goodbye",
+					"delay": 107.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Give us a try to sing a rhyme",
+					"delay": 113.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "May you, the beauty of this world always shine",
+					"delay": 120.0,
+					"timestofire": -1
+				},
+
+				{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "Kill",
+    			    "delay": 130.0,
+    			    "timestofire": -1
+    			}
+			]
+		}
+    ],
+    "modify": // remove message output, add targetname
+    [
+		// message "第一关"
+		{
+            "match":
+            {
+                "classname": "point_worldtext",
+				"hammeruniqueid": "3692"
+            },
+			"replace":
+			{
+				"targetname": "3692"
+			}
+        },
+		// message "第二关"
+		{
+            "match":
+            {
+                "classname": "point_worldtext",
+				"hammeruniqueid": "3693"
+            },
+			"replace":
+			{
+				"targetname": "3693"
+			}
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Level_Case"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnDefault",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say <<<这是个错误关卡，请联系作者>>>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+		
+		{
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "3695"
+            },
+			"replace":
+			{
+				"targetname": "3695"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say **管理员将关卡更改为第一关**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "3696"
+            },
+			"replace":
+			{
+				"targetname": "3696"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say **管理员将关卡更改为第二关**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "3697"
+            },
+			"replace":
+			{
+				"targetname": "3697"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say **管理员将关卡更改为ZM**",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "4157"
+            },
+			"replace":
+			{
+				"targetname": "4157"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say <<当前版本号码为005>>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say <<BUG反馈请前往Dc频道>>",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+		// add lyric output
+		// Da Capo
+		{
+            "match":
+            {
+                "targetname": "[PR#]ZM_BGM"
+            },
+            "insert":
+            {
+                "io":
+                [
+				    {
+                        "outputname": "SoundEventGuid",
+						"targetname": "lyric_dacapo",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "SoundEventGuid",
+						"targetname": "juben",
+                        "inputname": "Command",
+                        "overrideparam": "say ♪ MUSIC [ 蔡近翰 Zoe (HOYO-MiX) : Da Capo ]",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }
+    ]
+}

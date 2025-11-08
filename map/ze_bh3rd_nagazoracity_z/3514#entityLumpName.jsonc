@@ -1,0 +1,311 @@
+// stripper by 兎RB 25.11.05
+// map ze_bh3rd_nagazoracity_z
+// workshop id 3423221710
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl1_Tr_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 正在收集实验室资料!",
+                        "delay": 15.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 征服宝石......第三律者......植入手术......",
+                        "delay": 35.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 实验室资料搜索完毕.速度进入配电房!",
+                        "delay": 45.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl1_Tr_2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 正在分析内网IP!",
+                        "delay": 10.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 分析完成!",
+                        "delay": 19.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 这扇门坚持不了多久,从后门逃离!",
+                        "delay": 22.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl1_Tr_3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 守住这里,直到c4爆炸!",
+                        "delay": 40.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 桥已炸毁,撤退!",
+                        "delay": 55.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 死士从另一边下来了!",
+                        "delay": 63.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl1_Tr_4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 守住,直到把汽车移动到指定位置!",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 汽车已移动到指定位置!",
+                        "delay": 25.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl1_Tr_5"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 检测到神社下方有生命特征!",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 哟哟哟,这不是学援长吗?几天不见这么拉了~",
+                        "delay": 13.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 征讨拟似律者的时候翻车了?不愧是你",
+                        "delay": 16.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 保护学院长,直到巫女小姐治疗完毕(别让僵尸碰到德莉莎和八重樱)",
+                        "delay": 19.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 暂时击退死士,速度进入安全屋!",
+                        "delay": 60.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 安全屋门已经打开,速度进入!",
+                        "delay": 71.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Lvl1_Relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 接到线报,神社下面的实验室可能和大崩坏有关!",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 已经打开长空壁的泄洪阀!",
+                        "delay": 15.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 等待水中崩坏能浓度下降!",
+                        "delay": 18.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 水中崩坏能浓度已达到安全水平!",
+                        "delay": 50.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]part1zombiecheack"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 检测到有死士进入,灭杀程序启动!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]savedls"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 没有保护好学援长,任务失败!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}
