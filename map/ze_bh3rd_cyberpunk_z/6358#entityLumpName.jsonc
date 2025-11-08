@@ -1,0 +1,68 @@
+// stripper by 兎RB 25.11.08
+// map ze_bh3rd_cyberpunk_z
+// workshop id 3427624001
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Rita_Weapon"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 看来找到的不止是钥匙.",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 天命的女武神?被神城医药暗算?现在被追杀?.",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 行吧,反正和神城医药的梁子已经结下,也不差多惹一个麻烦!",
+                        "delay": 2.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Rita_Text_Relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]Rita_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "===已就绪===",
+                        "delay": 92.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}
