@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.11.01
+// stripper by 兎RB 25.11.09
 // map ze_plants_vs_zombies
 // workshop id 3555222611
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -52,7 +52,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.11.01 by 兎RB",
+                        "overrideparam": "say language translation stripper 25.11.09 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -340,6 +340,15 @@
 
 				{
 					"outputname": "OnCase01",
+					"targetname": "lv3_block6_path_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>lv3_chat_jp>InValue>8>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
 					"targetname": "lv4_block1_trigger",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>lv4_chat_jp>InValue>1>0.0>1",
@@ -568,24 +577,6 @@
 					"targetname": "lv3_nuke_trigger",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnStartTouch>cmd>Command>say “ゾンビが安全区域に入っちゃった，早く植物を植えてやつらをやっつけろ”>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lv3_block6_path_4",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say “ゾンビが船を乗って川を渡った，早く橋から降りて，囲まれないようにしよう”>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lv3_block6_path_4",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＜＜10秒後にゾンビがテレポートされます＞＞>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1345,6 +1336,15 @@
 
 				{
 					"outputname": "OnCase02",
+					"targetname": "lv3_block6_path_4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>lv3_chat_kr>InValue>8>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
 					"targetname": "lv4_block1_trigger",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>lv4_chat_kr>InValue>1>0.0>1",
@@ -1573,24 +1573,6 @@
 					"targetname": "lv3_nuke_trigger",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnStartTouch>cmd>Command>say “좀비가 안전구역에 들어와 버렸다，빨리 식물을 심어 녀석들을 해치우자”>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lv3_block6_path_4",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say “좀비가 배에 타 강을 건넜다，빨리 다리에서 내려서，포위되지 않도록 하자”>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lv3_block6_path_4",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＜＜10초 후에 좀비가 텔레포트 됩니다＞＞>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2150,137 +2132,12 @@
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnCase03",
-					"targetname": "lv3_block6_path_4",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say “The zombies have crossed the river by boat，Quickly get off the bridge，and avoid being surrounded”>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lv3_block6_path_4",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＜＜The zombie will teleport in 10 seconds＞＞>1.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare1",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnEqualTo>cmd>Command>say ＜＜Peashooter has been upgraded to a Twin Shooter＞＞>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare1",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnEqualTo>cmd>Command>say ＜＜Upgraded plants will take effect from the next round＞＞>1.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare1",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnGreaterThan>cmd>Command>say ＜＜Peashooter has been upgraded to a Twin Shooter＞＞>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare1",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnGreaterThan>cmd>Command>say ＜＜Upgraded plants will take effect from the next round＞＞>1.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_compare2",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnEqualTo>cmd>Command>say ＜＜Corn cannon has been unlocked＞＞>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_compare2",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnGreaterThan>cmd>Command>say ＜＜Corn cannon has been unlocked＞＞>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
 
 				{
 					"outputname": "OnCase03",
 					"targetname": "lv1_human_fail_trigger",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>cmd>Command>say ＜＜Mission Failed＞＞>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare2",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnEqualTo>cmd>Command>say ＜＜Twin Shooter has been upgraded to a Gatling Shooter＞＞>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare2",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnEqualTo>cmd>Command>say ＜＜Upgraded plants will take effect from the next round＞＞>1.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare2",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnGreaterThan>cmd>Command>say ＜＜Twin Shooter has been upgraded to a Gatling Shooter＞＞>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare2",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnGreaterThan>cmd>Command>say ＜＜Upgraded plants will take effect from the next round＞＞>1.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare2",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnEqualTo>hub_shop_text1>SetMessage>Sold Out>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "hub_shop_peashooter_compare2",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnGreaterThan>hub_shop_text1>SetMessage>Sold Out>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3362,6 +3219,7 @@
 			"case05": "5",
 			"case06": "6",
 			"case07": "7",
+			"case08": "8",
 			"io":
 			[
 			    {
@@ -3622,6 +3480,24 @@
 			        "inputname": "Command",
 			        "overrideparam": "say “ゾンビを防いで，彼らをドアの外に閉じ込めよう”",
 			        "delay": 25.0,
+			        "timestofire": -1
+			    },
+
+				{
+			        "outputname": "OnCase08",
+			        "targetname": "cmd",
+			        "inputname": "Command",
+			        "overrideparam": "say “ゾンビが船を乗って川を渡った，早く橋から降りて，囲まれないようにしよう”",
+			        "delay": 0.0,
+			        "timestofire": -1
+			    },
+
+				{
+			        "outputname": "OnCase08",
+			        "targetname": "cmd",
+			        "inputname": "Command",
+			        "overrideparam": "say <<10秒後にゾンビがテレポートされます>>",
+			        "delay": 1.0,
 			        "timestofire": -1
 			    }
 			]
@@ -5292,6 +5168,7 @@
 			"case05": "5",
 			"case06": "6",
 			"case07": "7",
+			"case08": "8",
 			"io":
 			[
 			    {
@@ -5552,6 +5429,24 @@
 			        "inputname": "Command",
 			        "overrideparam": "say “좀비를 막고，그들을 문 밖으로 가두자”",
 			        "delay": 25.0,
+			        "timestofire": -1
+			    },
+
+				{
+			        "outputname": "OnCase08",
+			        "targetname": "cmd",
+			        "inputname": "Command",
+			        "overrideparam": "say “좀비가 배에 타 강을 건넜다，빨리 다리에서 내려서，포위되지 않도록 하자”",
+			        "delay": 0.0,
+			        "timestofire": -1
+			    },
+
+				{
+			        "outputname": "OnCase08",
+			        "targetname": "cmd",
+			        "inputname": "Command",
+			        "overrideparam": "say <<10초 후에 좀비가 텔레포트 됩니다>>",
+			        "delay": 1.0,
 			        "timestofire": -1
 			    }
 			]
@@ -6953,114 +6848,6 @@
 		{
             "match":
             {
-                "targetname": "[PR#]lv3_block6_path_4"
-            },
-            "delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnPass",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say “僵尸坐船过河了，我们赶紧下桥，别被他们围住了”",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnPass",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<僵尸将在10秒后传送>>",
-                        "delay": 1.0,
-                        "timestofire": 1
-                    }
-                ]
-            }
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]hub_shop_peashooter_compare1"
-            },
-            "delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnEqualTo",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<已升级豌豆射手为双发射手>>",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnEqualTo",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<升级的植物将在下一回合生效>>",
-                        "delay": 1.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnGreaterThan",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<已升级豌豆射手为双发射手>>",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnGreaterThan",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<升级的植物将在下一回合生效>>",
-                        "delay": 1.0,
-                        "timestofire": 1
-                    }
-                ]
-            }
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]hub_shop_compare2"
-            },
-            "delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnEqualTo",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<已解锁玉米加农炮>>",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnGreaterThan",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<已解锁玉米加农炮>>",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
-            }
-        },
-
-		{
-            "match":
-            {
                 "targetname": "[PR#]lv1_human_fail_trigger"
             },
             "delete":
@@ -7088,42 +6875,6 @@
             {
                 "io":
                 [
-					{
-                        "outputname": "OnEqualTo",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<已升级双发射手为机枪射手>>",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnEqualTo",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<升级的植物将在下一回合生效>>",
-                        "delay": 1.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnGreaterThan",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<已升级双发射手为机枪射手>>",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnGreaterThan",
-						"targetname": "[PR#]cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say <<升级的植物将在下一回合生效>>",
-                        "delay": 1.0,
-                        "timestofire": 1
-                    },
-
 					{
                         "outputname": "OnEqualTo",
 						"targetname": "[PR#]hub_shop_text1",
