@@ -9,7 +9,8 @@
         {
             "match":
             {
-                "classname": "logic_auto"
+                "classname": "logic_auto",
+				"hammeruniqueid": "9598"
             },
             "insert":
             {
