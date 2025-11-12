@@ -1,0 +1,1816 @@
+// stripper by 兎RB 25.11.12
+// map ze_arknights_sows
+// workshop id 3347418203
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2" English:"3"
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "1", // please type language serial number here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.11.12 by 兎RB",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "3",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+			"case03": "3", // English
+			"io":
+			[
+                // 日本語
+                {
+					"outputname": "OnCase01",
+					"targetname": "7545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ：今回は大荒城へ向かう，博士の協力もあるから，旅は楽になるだろう>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "9471",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，前方の道路の開放まであと20秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9475",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:洞窟の入口の開放まであと30秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，前方の道路が片付くまであと20秒です，ここのツタは登れます，足元に気を付けてください>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9481",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，洞窟の出口が片付くまであと30秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9484",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，この前が大荒城です，道が開くまであと30秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv1_button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ズオ・ラウ:大荒城の正門が20秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv1_button2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ズオ・ラウ:前方のドアが30秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase01",
+					"targetname": "ancestral button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 祖先ランチャーは15秒以内にチャージが完了する，爆撃区域から離れよう>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:俺たちはすでに大荒城に入りました>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ：天災や邪悪な汚染の影響で，大荒城の農地では区画化された可動式耕作地を使用しています，さらにドローンで作物の生育状況を精密に監視しています>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:この前が大荒城で毎年祭祀に使われる広場です，40秒後に道路が開放されます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:毎年 働く人々はここで神農に祈りを捧げ，来年の豊作と天候の順調を願います>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:前方の道路は工事中みたいです，隣の祭壇を通りましょう>43.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9697",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，俺についてきてください，大荒城は初めてでしょうから，勝手に歩き回らない方がいいです>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，祭壇の上は人が多いですね，20秒ぐらい待ちましょう>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:祭壇の上にある建物は，伝説の神農が使っていた神農の錠だそうです>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:神農の錠のほかに，神農は万物を癒すことができる神農の尺も持っています，時間があったらまた博士とゆっくり話しましょう>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9718",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，前方の道路の開放まであと20秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，この前が農地区域です，道路の開放まであと30秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:前方の稲田の監視ドローンが何かおかしいです，博士気をつけてください>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，気をつけてください，前に駆除した邪悪な汚染がまだ残っています>33.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:この水田はすでに汚染されています>36.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9735",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，次の扉が開くまであと30秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9735",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:俺たちの力だけではこの汚染を解決できません，急いで大荒城のコアに行って浄化装置を起動する必要があります>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9746",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，次の扉が開くまであと20秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9746",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:実験室の大きなドアを開ける鍵は実験室の中にあるはずです，しっかり探してみましょう>23.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9752",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，次の扉が開くまであと30秒です>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9755",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ズオ・ラウ:ドアの鍵はここにあります>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9771",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，前方の区域の開放まであと20秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9784",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，前方の区域の開放まであと20秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9784",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，この前が大荒城の核心城です，時間を無駄にしないでください>23.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv2_button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ズオ・ラウ:前方の移動ブロックが下降するまであと30秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9848",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，前方の区域の開放まであと20秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv2_button2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ズオ・ラウ:核心城のドアが開くまで30秒必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "9859",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ズオ・ラウ:博士，前方の区域の開放まであと20秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "shu3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS：浄化装置が15秒後に作動します>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // 한국어
+                {
+					"outputname": "OnCase02",
+					"targetname": "7545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락：이번에는 대황성으로 향한다，박사님의 협력도 있으니，여행은 편해질 것이다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "9471",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，전방의 도로 개방 까지 앞으로 20초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9475",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:동굴의 입구 개방까지 앞으로 30초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，전방의 도로가 정리될때 까지 앞으로 20초 남았습니다，여기의 덩굴은 올라갈 수 있습니다，발밑에 주의하세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9481",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，동굴의 출구가 정리될때 까지 앞으로 30초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9484",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，이 앞이 대황성 입니다，길이 열리기 까지 앞으로 30초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv1_button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 좌락:대황성의 정문이 20초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv1_button2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 좌락:전방의 문이 30초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase02",
+					"targetname": "ancestral button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 선조 런처는 15초 이내에 충전이 완료된다，폭격구역으로부터 떨어지자>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:우리들은 이미 대황성에 들어왔습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락：자연재해와 사악한 오염의 영향으로，대황성의 농지에서는 구획화된 이동식 경작지를 사용하고 있습니다，게다가 드론으로 작물의 성장상황을 정밀하게 감시하고 있습니다>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:이 앞이 대황성에서 매년 제사로 사용되는 광장 입니다，40초 후에 도로가 개방됩니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:매년 일하는 사람들은 여기서 신농에게 기도를 바쳐，내년의 풍작의 날씨의 순조로움을 기원합니다>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:전방의 도로는 공사중인 것 같습니다，옆 제단을 지나갑시다>43.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9697",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，저에게 따라오세요，대황성은 처음이시니，함부로 돌아다나지 않는 편이 좋습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，제단 위는 사람이 많네요，20초 정도 기다립시다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:제단 위에 있는 건물은，전설의 신농이 사용했었던 신농의 자물쇠인듯 합니다>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:신농의 자물쇠 외에，신농은 만물을 치유할 수 있는 신농의 척도 가지고 있습니다，시간이 있으면 다시 박사님과 느긋히 이야기 합시다>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9718",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，전방의 도로 개방까지 앞으로 20초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，이 앞이 농지구역 입니다，도로 개방까지 앞으로 30초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:전방의 논밭의 감시드론이 무언가 이상합니다，박사님 조심하세요>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，조심하세요，전에 제거한 사악한 오염이 아직 남아있습니다>33.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:이 논은 이미 오염되어 있습니다>36.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9735",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，다음 문이 열리기까지 앞으로 30초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9735",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:우리들을 힘만으로는 오염을 해결할 수 없습니다，서둘러 대황성의 코어로 가서 정화장치를 가동할 필요가 있습니다>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9746",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，다음 문이 열리기까지 앞으로 20초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9746",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:실험실의 커다란 문을 여는 열쇠는 실험실 안에 있을겁니다，꼼꼼히 찾아봅시다>23.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9752",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，다음 문이 열리기까지 앞으로 30초 남았습니다>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9755",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 좌락:문 열쇠는 여기에 있습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9771",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，전방의 구역 개방까지 앞으로 20초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9784",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，전방의 구역 개방까지 앞으로 20초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9784",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，이 앞이 대황성의 핵심성 입니다，시간을 허비하지 말아주세요>23.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv2_button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 좌락:전방의 이동 블럭이 하강하기까지 앞으로 30초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9848",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，전방의 구역 개방까지 앞으로 20초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv2_button2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 좌락:핵심성의 문이 열리기까지 30초 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "9859",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 좌락:박사님，전방의 구역 개방까지 앞으로 20초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "shu3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS：정화장치가 15초 후에 작동합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // English
+                {
+					"outputname": "OnCase03",
+					"targetname": "7545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le：This time we’re heading to the Great Barrens，with the Doctor’s help，traveling will be much easier>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "9471",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor, there are 20 seconds left until the road ahead opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9475",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:There are 30 seconds left until the cave entrance opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9477",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，there are 20 seconds left until the road ahead is cleared，can climb these vines，watch your step>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9481",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，There are 30 seconds left until the cave exit is cleared>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9484",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，up ahead is the Great Barrens，There are 30 seconds left until the path opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv1_button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Zuo Le:The main gate of the Great Barrens will open in 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv1_button2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Zuo Le:The gate ahead will open in 30 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase03",
+					"targetname": "ancestral button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The Ancestor Launcher will be fully charged in 15 seconds，Let’s move out of the bombardment zone>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:We’ve already entered the Great Barrens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9677",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le：Due to the effects of natural disasters and evil contamination，the farmlands in the Great Barrens use partitioned movable cultivation plots，Additionally drones are employed to closely monitor the growth of the crops>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Up ahead is the plaza in the Great Barrens used for annual rituals，The road opens in 40 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Every year the workers offer prayers to Shennong here，wishing for favorable weather and a bountiful harvest in the coming year>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9679",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:It seems the road ahead is under construction，Let’s go past the altar beside>43.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9697",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，follow me，since it's your first time in the Great Barrens，it's best not to wander around carelessly>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，There are a lot of people at the altar，Let’s wait for about 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:The building on the altar seems to be Shennong’s Lock, which the legendary Shennong once used>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9710",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Apart from Shennong’s Lock，Shennong also wields Shennong’s Measure capable of healing all living things，If we have time let’s talk with the Doctor again at a relaxed pace>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9718",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，20 seconds remain until the road ahead opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，The area ahead is a farmland zone，30 seconds remain until the road opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Something is wrong with the surveillance drone over the rice fields ahead，Doctor watch out>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，watch out，the evil contamination we previously cleared is still lingering>33.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9724",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:This rice field is already contaminated>36.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9735",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，30 seconds remain until the next door opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9735",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:We can’t solve the contamination with strength alone，Hurry to the core of the Great Barrens and start the purification device>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9746",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，20 seconds remain until the next door opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9746",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:The key to the big lab door is likely somewhere inside the laboratory，find thoroughly>23.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9752",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，30 seconds remain until the next door opens>2.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9755",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Zuo Le:The door key is here>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9771",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，20 seconds remain until the area ahead opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9784",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，20 seconds remain until the area ahead opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9784",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，Ahead is the core of Great Barrens，don’t waste any time>23.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv2_button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Zuo Le:30 seconds remain until the moving block ahead descends>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9848",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，20 seconds remain until the area ahead opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv2_button2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Zuo Le:30 seconds are needed before the central keep’s door opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "9859",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Zuo Le:Doctor，20 seconds remain until the area ahead opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "shu3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS：The purification device will activate in 15 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		}	      
+    ],
+    "modify": // remove message output, add targetname
+    [
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "7545"
+            },
+			"replace":
+			{
+				"targetname": "7545"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：此次前赴大荒城，有博士协助，想必路途会轻松不少",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9471"
+            },
+			"replace":
+			{
+				"targetname": "9471"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐:博士，前方道路开放还有20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9475"
+            },
+			"replace":
+			{
+				"targetname": "9475"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐:山洞的入口还需要30s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9477"
+            },
+			"replace":
+			{
+				"targetname": "9477"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐:博士，前方的道路还有20s清理，这里的藤蔓可以攀爬，注意脚下",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9481"
+            },
+			"replace":
+			{
+				"targetname": "9481"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐:博士，山洞的出口还需要30s清理",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9484"
+            },
+			"replace":
+			{
+				"targetname": "9484"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐:博士，前面就是大荒城了，道路还有30s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv1_button1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：大荒城大门还有20s打开",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv1_button2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：前方门还有30s打开",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]ancestral button"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 祖宗发射器将在15s内充能完毕，请远离轰炸区域",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9677"
+            },
+			"replace":
+			{
+				"targetname": "9677"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，我们已经进入大荒城",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：由于天灾和邪魔污染等原因，大荒城农田耕种使用划分好的移动地块，以及密切监测农作物生长状态的无人机",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9679"
+            },
+			"replace":
+			{
+				"targetname": "9679"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，前方就是大荒城每年祭祀使用的广场了，道路还有40s开放。",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：每年劳作人民都会在此向神农祈福，以求来年风调雨顺",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：前方的道路好像正在施工，我们走旁边的祭祀台吧",
+                        "delay": 43.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9697"
+            },
+			"replace":
+			{
+				"targetname": "9697"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，跟紧我，你是第一次来大荒城，最好不要乱跑",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9710"
+            },
+			"replace":
+			{
+				"targetname": "9710"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，祭祀台上的人有些多，我们稍等20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：祭祀台上的建筑，据说是传说中的神农使用的神农锁",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：除了神农锁，神农还拥有一把可医治万物的神农尺，以后有时间再和博士慢慢道来",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9718"
+            },
+			"replace":
+			{
+				"targetname": "9718"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，前方的道路还有20s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9724"
+            },
+			"replace":
+			{
+				"targetname": "9724"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，前方就是农田区域了，道路还有30s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：前方稻田的监测无人机似乎有些不对劲，博士请小心",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士小心，之前清除的邪魔污染还有残留",
+                        "delay": 33.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：这里的水田已经被污染了",
+                        "delay": 36.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9735"
+            },
+			"replace":
+			{
+				"targetname": "9735"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，下一扇门打开还有30s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：只靠我们的力量无法解决这些污染，需要尽快前往大荒城核心启动净化装置",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9746"
+            },
+			"replace":
+			{
+				"targetname": "9746"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，下一扇门打开还有20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：打开实验室大门的钥匙应该就在实验室里面，仔细找一找吧",
+                        "delay": 23.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9752"
+            },
+			"replace":
+			{
+				"targetname": "9752"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，下一扇门打开还有30s",
+                        "delay": 2.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "9755"
+            },
+			"replace":
+			{
+				"targetname": "9755"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：大门钥匙在这里",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9771"
+            },
+			"replace":
+			{
+				"targetname": "9771"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，前方区域还有20s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9784"
+            },
+			"replace":
+			{
+				"targetname": "9784"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，前方区域还有20s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，前面就是大荒城的核心城了，我们要抓紧时间",
+                        "delay": 23.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv2_button1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：前方移动地块下降还有30s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9848"
+            },
+			"replace":
+			{
+				"targetname": "9848"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，前方区域还有20s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv2_button2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：核心城门打开还需要30s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "9859"
+            },
+			"replace":
+			{
+				"targetname": "9859"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 左乐：博士，前方区域还有20s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]shu3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS：净化装置将在15s后运行",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
