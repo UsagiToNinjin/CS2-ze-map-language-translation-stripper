@@ -1,0 +1,4458 @@
+// stripper by 兎RB,ELvEN 25.11.19
+// map ze_arknights_initium
+// workshop id 3330894823
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2" English:"3"
+// + fix bug L2583
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto",
+				"hammeruniqueid": "6902"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "1", // please type language serial number here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.11.19 by 兎RB,ELvEN",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "3",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+			"case03": "3", // English
+			"io":
+			[
+                // 日本語
+                {
+					"outputname": "OnCase01",
+					"targetname": "1415",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：前方の道が10秒後に開放されます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1417",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ドクター，レユニオンがここを見つけました，早く撤退しなければなりません>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1387",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ドクター，そばの震撼装置をうまく使えば，レユニオンの攻勢が和らげられるかもしれません>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1385",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ドクター，水上プラットフォームを設置しますので20秒だけください，落ちないでください>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1407",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：皆さん10秒防衛してください，この前が1-7ステージです>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnCase01",
+					"targetname": "ancestral button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ご祖先ランチャーは10秒以内にチャージが完了する，爆撃区域から離れよう>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1488",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ウィシャデル姉さんと緊急連絡中です，まもなく支援が届きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1413",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：任務完了まであと15秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1 3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：ロドスアイランドの正門が15秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：レユニオンが10秒後に空挺攻撃を行います，前方の震撼装置の爆破まであと15秒必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "lv1 1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：正門が30秒後に開きます，もう少し持ちこたえてください>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "2543",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ドクター，地上出口はあそこです>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "2545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：大変です，ここはもうレユニオンに囲まれています>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "2545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：ドクター，聞こえますか，15秒後に壁を爆破します，避難してください>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "2567",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ドクター，この前には巨大な源石で，もう進める道がありません>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "2567",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：マンホールの下はチェルノボーグに通じる排水管みたいです>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "2581",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：ドクター，できるだけ早く換気口を破壊してください，レユニオンが50秒後に空挺攻撃を行います>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "downstairs1 button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ACE：ドクター，このマンホールを開けるのに少し時間が必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "downstairs1 button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ACE：よし，開けた>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "fan clip",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say ACE：もうすぐ空挺攻撃です，ドクター，しっかり掴まってください>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "6488",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS:前の信号は15秒間赤です，龍門の交通規則を遵守しなさい>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "6508",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 龍門近衛局の正門が15秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "6510",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ウェイ・イエンウ：俺に認められたいなら，まず近衛局の警衛たちと手合わせしてみせろ>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6512",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ウェイ・イエンウ：ロドスアイランド，俺が同盟者を選ぶ時に重視するのはただ一つだけ>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6512",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ウェイ・イエンウ：それは俺と肩を並べられる実力を持つことだ>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6514",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：前方の区域が20秒後に開放されます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6523",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：事務室の正門が20秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6525",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：事務室の小さいドアが20秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6536",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：ウェイ警官の部屋の鍵を見つけたみたいです>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6537",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：他の道はないみたいです>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6537",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say チェン：記憶が正しければ，この壁の向こうはウェイ警官の事務室に通じている>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase01",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say チェン：違う，外はもう近衛局に囲まれている>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say チェン：周りに使えるものがあるかどうか探してみよう>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：緑の箱の中にいくつかの爆薬が入っています>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "boom_box",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say チェン：博士，爆破するのに20秒必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv2 indoor7 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ウェイ警官の事務室のドアが30秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv2 indoor7 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ウェイ・イエンウ：ロドスアイランドの実力を認める，今後の協力が円滑に進むことを期待する>52.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv2 indoor9 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：前方の区域が10秒後に開放されます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6602",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS:任務完了，20秒後に次の作戦へ突入する>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6607",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：前方の道が30秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6611",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ドアが20秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6617",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：この扉が開くまで20秒必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6620",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：横に次の部屋へ通じるパイプがあるみたいです>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：正門が開くまで20秒必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：前方の木箱が除去されるまで20秒必要です，レユニオンの空挺攻撃まであと7秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6632",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：換気口が開くまで20秒必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：シャッターが開くまで20秒必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ドクター，周りの温度が急に下がってます，警戒してください>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say フロストリーフ：ドクター，私はかつて氷原にウルサスの小隊がいることを聞いたことがあります，彼らは氷の魔法の使用に長けています>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say フロストリーフ：特に彼らの隊長は，源石技術に非常に優れており，とても危険です，皆さん気を付けてください>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：ドアが開くまで30秒必要です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：このドアの向こうが地上へ通じる通路です，皆さんまた30秒持ちこたえください>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "final door trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ：皆さんあと10秒頑張ってください，次のドアがもうすぐ開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6700",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ドクター，私たちはもう龍門に到着しました>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6700",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：今最も急ぐべきは龍門のリーダーウェイ・イエンウと交渉して龍門の協力を得ることです，それができたらレユニオンの攻撃に対抗する機会を得られます>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:龍門の影衛がすでに戦場へ到着している，彼らが通った場所には感染者が一人も残らなかった，あの恐ろしいスノーデビル小隊さえ彼らの前では抗うこともできまい>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:もうすぐ偽りの結末の道が開く>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:各位 龍門の増援が到着するまで耐えなさい，次のドアは15秒後に開く>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:フロストノヴァががもう死んでいる，私たちは影衛から救い出せなかった，バッドエンド>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:レユニオンリーダーの情報はもう揃ってる>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:もうすぐ真の結末の道が開く>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:各位 準備せよ，次のドアは15秒後に開く>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:周りの温度が急速に下がっています，私たちはレユニオンのスノーデビル小隊のリーダー，フロストノヴァと遭遇する可能性が高いので，皆さん注意してください>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:“風前の灯火” “Extinguished Flames”>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6713",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ:このドアは鍵がないと開かないみたいです，他の所を探してみましょう>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6716",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:あるドアを開ける鍵を見つけたみたいです>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:2階のドアが20秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:1階のドアが20秒後に開きます>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 8",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:エレベーターのドアが開くまであと30秒です,レユニオンの空挺攻撃まであと15秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ:ドクター最終戦闘に備え，防衛できる場所を探してください>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 博士：フロストノヴァ，よければ，ロドスアイランドに参加してみないか>70.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say フロストノヴァ：……次に会ったときに君たちが私に勝てたら，ロドスアイランドに加わろう>75.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：あとは貴方に頼るしかないですね……ケルシー>83.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ケルシー：でも，君はどうするの?>87.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：彼らは私と一緒に行きます>90.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：それは……>93.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ：ロドスオペレーター>95.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 9",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:次のドアが開くまであと15秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:次のドアが開くまであと30秒です>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "lv3 10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:ドクター，この前がチェルノボーグの中心地です>32.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "ancestral button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ご祖先ランチャーは15秒以内にチャージが完了する，爆撃区域から離れよう>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "trueend1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say レユニオンリーダーの情報1を手に入れた>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "trueend1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say アーミヤ:ドクター，もしレユニオンリーダーに関する情報を収集すれば，次の作戦に役に立つかもしれません>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "trueend2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say レユニオンリーダーの情報2を手に入れた>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "trueend3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say レユニオンリーダーの情報3を手に入れた>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "trueend4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say レユニオンリーダーの情報4を手に入れた>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "15539",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say 震撼装置が起動された，装置周辺の八マスの敵は5秒間気絶する>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "15902",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say アーミヤ:ドクター，私たちはチェルノボーグに到着しました，注意して行動してください>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "16060",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS:寒冷效果,範囲内のオペレーターの移動速度が30秒間低下する，レユニオンが10秒後に空挺攻撃を行う>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "25801",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say 震撼装置が起動された，装置周辺の八マスの敵は5秒間気絶する>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "25806",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say 震撼装置が起動された，装置周辺の八マスの敵は5秒間気絶する>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "fan break",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say ACE:もうすぐ空挺降下する，博士，しっかり掴まって>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "27088",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say 震撼装置が起動された，装置周辺の八マスの敵は5秒間気絶する>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // 한국어
+                {
+					"outputname": "OnCase02",
+					"targetname": "1415",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：전방의 길이 10초 후에 개방됩니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1417",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：닥터，리유니온 이곳을 찾았습니다，빨리 철수해야 합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1387",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：닥터，옆의 충격장치를 잘 이용하면，리유니온의 공격이 누그러질지도 모릅니다>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1385",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：닥터，수상 플랫폼을 설치하니 20초만 주세요，떨어지지 말아주세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1407",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：여러분 10초 방어 해주세요，이 앞이 1-7스테이지 입니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnCase02",
+					"targetname": "ancestral button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 조상발사기 10초 이내에 충전이 완료된다，폭격구역으로부터 떨어지자>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1488",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：위셔델 언니와 긴급연락중 입니다，곧 지원이 도착합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1413",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：임무완료까지 앞으로 15초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1 3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：로도스 아일랜드의 정문이 15초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：리유니온가 10초 후에 공수 공격을 행합니다，전방의 충격장치 폭파까지 앞으로 15초 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "lv1 1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：정문이 30초 후에 열립니다，조금만 더 버텨 주세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "2543",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：닥터，지상출구는 저기 입니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "2545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：큰일입니다，여기는 이미 리유니온에게 포위되어 있습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "2545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：닥터，들리십니까，15초 후에 벽을 폭파합니다，피난하세요>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "2567",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：닥터，이 앞은 거대한 원석으로，더 이상 나아갈 수 있는 길이 없습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "2567",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：맨 홀 밑은　체르노보그에 통하는 배수관인 것 같습니다>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "2581",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：닥터，되도록이면 빨리 환풍구를 파괴해 주세요，리유니온가 50초 후에 공수 공격을 행합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "downstairs1 button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ACE：닥터，이 맨 홀을 여는데 시간이 조금 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "downstairs1 button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ACE：좋아，열었어>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "fan clip",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say ACE：곧 공수 공격 입니다，닥터，꽉 붙잡아 주세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "6488",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS:앞의 신호는 15초간 빨간불 입니다，용문 교통규칙에 준수하세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "6508",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 용문 근위국의 정문이 15초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "6510",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 웨이 옌우：나에게 인정받고 싶으면，먼저 근위국의 경위들과 한번 겨뤄봐라>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6512",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 웨이 옌우：로도스 아일랜드，내가 동맹자를 고를 때 중시하는 것은 단 하나뿐>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6512",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 웨이 옌우：그것은 나와 어깨를 나란히 할 수 있는 실력을 갖추는 것이다>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6514",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：전방의 구역이 20초 후에 개방됩니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6523",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：사무실의 정문이 20초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6525",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：사무실의 작은 문이 20초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6536",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：웨이 경관의 방 열쇠를 찾은 것 같습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6537",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：다른 길은 없는 것 같습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6537",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 첸：기억이 맞다면，이 벽 건너편은 웨이 경관의 사무실과 연결되어 있지>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase02",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 첸：틀렸어，밖은 이미 근위국에게 포위되어 있어>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 첸：주변에 사용할 수 있는 것이 있는지 찾아보자>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：초록색 상자 안에 몇 개의 폭약이 들어 있습니다>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "boom_box",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 첸：박사님，폭파하는데 20초 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv2 indoor7 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：웨이 경관의 사무실 문이 30초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv2 indoor7 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 웨이 옌우：로도스 아일랜드의 실력 인정한다，앞으로의 헙력이 원활히 나아가는 것을 기대하지>52.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv2 indoor9 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：전방의 구역이 10초 후에 개방됩니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6602",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS:임무완료，20초 후에 다음 작전으로 돌입한다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6607",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：전방의 길이 30초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6611",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：문이 20초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6617",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：이 문이 열리기까지 20초 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6620",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：옆에 다음 방으로 통하는 파이프가 있는 것 같습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：정문이 열리기까지 20초 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：전방의 나무상자가 제거되기까지 20초 필요합니다，리유니온의 공수 공격까지 앞으로 7초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6632",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：환풍구가 열리기까지 20초 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：셔터가 열리기까지 20초 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：닥터，주변의 온도가 급격히 내려가고 있습니다，경계하세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 프로스트리프：닥터，저는 일찍이 빙원에 우르수스 소대가 있는 것을 들은 적이 있습니다，그들은 얼음 마법사용에 뛰어납니다>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 프로스트리프：특히 그들의 대장은，원석기술에 매우 우수하며，무척이나 위험합니다，여러분 조심하세요>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：문이 열리기까지 30초 필요합니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：이 문 건너편이 지상으로 통하는 통로입니다，여러분 다시 30초 버텨 주세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "final door trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야：여러분 앞으로 10초 힘내 주세요，다음 문이 곧 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6700",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：닥터，우리들은 이미 용문에 도착했습니다>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6700",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：지금 가장 서둘러야 할 것은 용문 리더 웨이 옌우와 교섭해 용문의 협력을 얻는 것 입니다，그게 가능하면 리유니온 공격에 저항할 기회를 얻을 수 있습니다>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:용문의 그림자 부대가 이미 전장에 도착해 있다，그들이 지나간 장소에는 감염자가 한명도 남지 않았다，저 무시무시한 설괴 소대조차 그들의 앞에선 저항하는 것도 못하지>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:곧 거짓의 결말의 길이 열린다>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:여러분 용문의 지원이 도착할 때까지 버티세요，다음 문은 15초 후에 열린다>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:프로스트노바가 이미 죽어 있다，우리들은 그림자 부대로부터 구출하지 못하였다，배드 엔딩>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:리유니온 리더의 정보는 이미 모여 있다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:곧 참의 결말의 길이 열린다>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:모두 준비하십시오，다음 문은 15초 후에 열린다>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:주변의 온도가 급속히 내려가고 있습니다，우리들은 리유니온의 설괴 소대 리더，프로스트노바와 조우할 가능성이 높으므로，모두들 주의해 주세요>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:“풍전등화” “Extinguished Flames”>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6713",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야:이 문은 열쇠가 없으면 안열리는것 같습니다，다른 곳을 찾아봅시다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6716",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:어느 문을 여는 열쇠를 찾은것 같습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:2층의 문이 20초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:1층의 문이 20초 후에 열립니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 8",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:엘리베이터 문이 열리기까지 앞으로 30초 남았습니다,리유니온의 공수 공격까지 앞으로 15초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야:닥터，최종전투에 정비하여，방어가 가능한 장소를 찾아주세요>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 박사：프로스트노바，괜찮다면，로도스 아일랜드에 참가해 보시지 않겠는가>70.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 프로스트노바：……다음에 만났을때 너희들이 이긴다면，로도스 아일랜드에 합류하지>75.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：나머진 당신에게 기댈 수 밖에 없네요……켈시>83.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 켈시：그치만，너는 어떡해?>87.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：그들은 저와 같이 가겠습니다>90.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：그건……>93.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야：로도스 오퍼레이터>95.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 9",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:다음 문이 열리기까지 앞으로 15초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:다음 문이 열리기까지 앞으로 30초 남았습니다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "lv3 10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:닥터，이 앞이 체르노보그 중심지 입니다>32.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "ancestral button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 조상발사기 15초 이내에 충전이 완료된다，폭격구역으로부터 떨어지자>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "trueend1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 리유니온 리더의 정보1을 얻었다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "trueend1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 아미야:닥터，혹시 리유니온 리더와 관하는 정보를 수집하면，다음 작전에 도움이 될지도 모릅니다>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "trueend2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 리유니온 리더의 정보2를 얻었다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "trueend3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 리유니온 리더의 정보3을 얻었다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "trueend4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say 리유니온 리더의 정보4를 얻었다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "15539",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say 충격장치가 작동되었다, 장치주변의 8칸 적은 5초간 기절한다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "15902",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아미야:닥터，우리들은 체르노보그에 도착했습니다，주의해서 행동해 주세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "16060",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS:한랭효과,범위내 오퍼레이터의 이동속도가 30초간 저하한다，리유니온이 10초 후에 공수 공격을 행한다>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "25801",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say 충격장치가 작동되었다, 장치주변의 8칸 적은 5초간 기절한다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "25806",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say 충격장치가 작동되었다, 장치주변의 8칸 적은 5초간 기절한다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "fan break",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say ACE:곧 공수 강하한다，박사님，꼭 붙잡으세요>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "27088",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say 충격장치가 작동되었다, 장치주변의 8칸 적은 5초간 기절한다>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // English
+                {
+					"outputname": "OnCase03",
+					"targetname": "1415",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：The path ahead will open in 10 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "1417",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Doctor，Reunion has found this place，We need to retreat quickly>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "1387",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Doctor，If we make good use of the shock device nearby，Reunion’s attacks might be weakened>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "1385",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Doctor，I’ve set up the floating platform just give me 20 seconds，Please don’t fall!>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "1407",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Everyone hold the defense for 10 seconds，Ahead is Stage 1-7>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+				
+				{
+					"outputname": "OnCase03",
+					"targetname": "ancestral button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The Ancestor Launcher will be fully charged in 10 seconds，Let’s move out of the bombardment zone>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "1488",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：I’m in urgent contact with Wiš'adel，Support will arrive soon>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "1413",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：15 seconds remaining until mission complete>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1 3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：The main gate of Rhodes Island will open in 15 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "1338",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Reunion will launch an airborne assault in 10 seconds，We need 15 seconds to blow up the shock device ahead>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "lv1 1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：The main gate will open in 30 seconds，Hold on a little longer>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "2543",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Doctor，The ground exit is over there>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "2545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Omg，This area is already surrounded by Reunion>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "2545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：Doctor，Can you hear me，The wall will explode in 15 seconds，Evacuate immediately>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "2567",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Doctor，Ahead is a massive mineral，there is no path forward>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "2567",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：It seems that the manhole leads to a drainage pipe connected to Chernobog>15.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "2581",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say ACE：Doctor，Please destroy the vent as quickly as possible，Reunion will launch an airborne assault in 50 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "downstairs1 button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ACE：Doctor，It will take a little time to open this manhole>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "downstairs1 button",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say ACE：Alright，it’s open>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "fan clip",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say ACE：airborne assault is coming soon，Doctor，Hang on tight>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "6488",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS:The traffic light will stay red for 15 seconds，Please follow Lungmen traffic rules>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "6508",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say The main gate of Lungmen Garrison will open in 15 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "6510",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Wei Yenwu：If you want to earn my recognition，try challenging the guards of the Garrison first>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6512",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Wei Yenwu：Rhodes Island，When I choose an ally there’s only one thing that matters>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6512",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Wei Yenwu：It's possessing the ability to match me in strength and skill>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6514",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：The forward zone will open in 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6523",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：The main entrance of the office will open in 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6525",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：The small door of the office will open in 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6536",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：It seems I’ve found Officer Wei’s room key>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6537",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：It seems there’s no other way>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6537",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Ch’en：If I remember correctly，the other side of this wall connects to Officer Wei’s office>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                
+                {
+					"outputname": "OnCase03",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Ch’en：No，the outside is already surrounded by Garrison>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Ch’en：Let’s see if there’s anything around we can use>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6545",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：There are some explosives inside the green box>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "boom_box",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Ch’en：Doctor，we need 20 seconds to detonate it>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv2 indoor7 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Officer Wei’s office door will open in 30 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv2 indoor7 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Wei Yenwu：I recognize Rhodes Island，hope for seamless collaboration in the future>52.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv2 indoor9 trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：The forward zone will open in 10 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6602",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS:Mission complete，We will commence the next operation in 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6607",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：The path ahead will open in 30 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6611",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：The door will open in 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6617",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：This door will take 20 seconds to open>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6620",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：It seems there’s a pipe next to us that leads to the next room>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：The main gate will take 20 seconds to open>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：It will take 20 seconds to remove the crate ahead，7 seconds remain until Reunion’s airborne assault>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6632",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：The vent will take 20 seconds to open>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：The shutter will take 20 seconds to open>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Doctor，The surrounding temperature is falling sharply，Stay alert>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Frostleaf：Doctor，I’ve heard that there’s a Ursus squad in the Frostlands, they excel at ice magic>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6646",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Frostleaf：Especially their leader is highly skilled in Originium technology and extremely dangerous, Be careful everyone>20.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：This door will take 30 seconds to open>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 5",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：The passage beyond this door leads to the ground，Hold out for another 30 seconds everyone>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "final door trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：Hold on everyone just 10 more seconds，the next door will open soon>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6700",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Doctor，We have already arrived at Lungmen>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6700",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：What we must hurry to do now is negotiate with Lungmen’s leader Wei Yenwu and secure their cooperation，If we succeed we’ll gain a chance to resist the Reunion assault>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:Lungmen’s Shadow Guard has already arrived on the battlefield，Not a single infected remains where they’ve passed，even the fearsome Yeti Squad can’t put up a fight against them>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:The path to the False Ending will soon open>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:Hold out until Lungmen’s reinforcements arrive，The next door will open in 15 seconds>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "false end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:FrostNova is already dead，We couldn’t save him from the Shadow Guard，Bad Ending>30.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:We already have the information on the Reunion leader>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:The path to the True Ending will soon open>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:Everyone get ready，the next door will open in 15 seconds>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya:The surrounding temperature is falling sharply，We’re likely to encounter FrostNova the leader of Reunion’s Yeti Squad，Everyone be on your guard>21.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "true end",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say PRTS:“Extinguished Flames”>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6713",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya:It seems this door won’t open without a key，Let’s look somewhere else>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6716",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya:It looks like we’ve found a key for a door>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 6",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya:The door on the second floor will open in 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 7",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya:The door on the first floor will open in 20 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 8",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya:30 seconds until the elevator doors open,15 seconds until the Reunion airborne assault>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya:Doctor，Prepare for the final battle and find a defensible position>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Doctor：FrostNova，f it’s alright with you，would you like to join Rhodes Island>70.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say FrostNova：……If you win the next time we meet，I’ll join Rhodes Island>75.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：We’ll have to rely on you for the rest……Kal'tsit>83.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Kal'tsit：But，what about you?>87.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：They’re going to go with me>90.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：That’s……>93.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "6777",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Rhodes Operator>95.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 9",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：15 seconds until the next door opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：30 seconds until the next door opens>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "lv3 10",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：Doctor，Ahead is the center of Chernobog>32.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "ancestral button1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say The Ancestor Launcher will be fully charged in 15 seconds，Let’s move out of the bombardment zone>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "trueend1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Obtained Intel 1 on the Reunion leader>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "trueend1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Amiya：Doctor，If we gather information on the Reunion leader，it might help with the next operation>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "trueend2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Obtained Intel 2 on the Reunion leader>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "trueend3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Obtained Intel 3 on the Reunion leader>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "trueend4",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>cmd>Command>say Obtained Intel 4 on the Reunion leader>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "15539",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say Shock device activated, Enemies within the 8 tiles surrounding the device are stunned for 5 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "15902",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say Amiya：Doctor，We’ve arrived in Chernobog，Please act carefully>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "16060",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>cmd>Command>say PRTS：Cold effect,Movement speed of operators in the range decreases for 30 seconds，Reunion will launch an airborne assault in 10 seconds>5.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "25801",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say Shock device activated, Enemies within the 8 tiles surrounding the device are stunned for 5 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "25806",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say Shock device activated, Enemies within the 8 tiles surrounding the device are stunned for 5 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "fan break",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say ACE:Airborne drop incoming，Doctor，hold on tight>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "27088",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnBreak>cmd>Command>say Shock device activated, Enemies within the 8 tiles surrounding the device are stunned for 5 seconds>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+		// penetration prop bug scales value issue, add prop more
+		{
+            "targetname": "lv2 indoor7",
+            "classname": "prop_dynamic",
+            "origin": "13012 4384 2699",
+            "angles": "0 270 0",
+			"scales": "1 1 1",
+			"solid": "6",
+			"startdisabled": "0",
+			"breakablecontentstype": "BC_DEFAULT",
+			"modelscale": "1",
+			"minanimtime": "5",
+			"maxanimtime": "10",
+			"fadescale": "1",
+			"clothscale": "1",
+			"idleanimationloopmode": "ANIM_LOOP_MODE_NOT_LOOPING",
+			"startinganimationloopmode": "ANIM_LOOP_MODE_NOT_LOOPING",
+			"use_animgraph": "1",
+			"glowteam": "-1",
+			"fademindist": "-1",
+			"rendercolor": "255 255 255",
+			"renderamt": "0",
+			"burstscale": "100",
+			"model":"models/cs_italy/doors/italy_wood_door_2.vmdl"
+        },
+
+		{
+            "targetname": "lv2 indoor7",
+            "classname": "prop_dynamic",
+            "origin": "13012 4391 2699",
+            "angles": "0 90 0",
+			"scales": "1 1 1",
+			"solid": "6",
+			"startdisabled": "0",
+			"breakablecontentstype": "BC_DEFAULT",
+			"modelscale": "1",
+			"minanimtime": "5",
+			"maxanimtime": "10",
+			"fadescale": "1",
+			"clothscale": "1",
+			"idleanimationloopmode": "ANIM_LOOP_MODE_NOT_LOOPING",
+			"startinganimationloopmode": "ANIM_LOOP_MODE_NOT_LOOPING",
+			"use_animgraph": "1",
+			"glowteam": "-1",
+			"fademindist": "-1",
+			"rendercolor": "255 255 255",
+			"renderamt": "0",
+			"burstscale": "100",
+			"model":"models/cs_italy/doors/italy_wood_door_2.vmdl"
+        }
+    ],
+    "modify": // remove message output, add targetname
+    [
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1415"
+            },
+			"replace":
+			{
+				"targetname": "1415"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：前方的道路还有10s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1417"
+            },
+			"replace":
+			{
+				"targetname": "1417"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，整合运动已经发现了这里，我们需要尽快撤离",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1387"
+            },
+			"replace":
+			{
+				"targetname": "1387"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅:博士，旁边的震撼装置如果利用得当，或许可以缓解整合运动的攻势",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1385"
+            },
+			"replace":
+			{
+				"targetname": "1385"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，请给我20s的时间部署水上平台，不要掉下去了哦",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1407"
+            },
+			"replace":
+			{
+				"targetname": "1407"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：请大家再防守10s，前方就是1-7关卡了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]ancestral button"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 祖宗发射器将在10s内充能完毕，请远离轰炸区域",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1488"
+            },
+			"replace":
+			{
+				"targetname": "1488"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：正在紧急联系维什戴尔小姐，马上就能获得支援了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1413"
+            },
+			"replace":
+			{
+				"targetname": "1413"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：距离任务完成还剩下15s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1 3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：罗德岛大门还有15s打开",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1338"
+            },
+			"replace":
+			{
+				"targetname": "1338"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：整合运动还有10s进行空降，前方的震撼装置还需要15s进行爆破",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv1 1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：大门还有30s打开，请再坚持一下",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "2543"
+            },
+			"replace":
+			{
+				"targetname": "2543"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，地面出口就在那里",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "2545"
+            },
+			"replace":
+			{
+				"targetname": "2545"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：糟糕，这里已经被整合运动包围了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ACE：博士，听得到吗，15s后我将进行墙壁爆破，请注意躲避",
+                        "delay": 15.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "2567"
+            },
+			"replace":
+			{
+				"targetname": "2567"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，前面是巨大的源石丛，我们已经无路可走了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ACE：井盖下方似乎通往切尔诺伯格的排水管道",
+                        "delay": 15.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "2581"
+            },
+			"replace":
+			{
+				"targetname": "2581"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ACE：博士，请尽快破坏通风口，整合运动将在50s后空降",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]downstairs1 button"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ACE:博士，我需要一点时间打开这个井盖",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ACE:好，打开了",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]fan clip"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnBreak",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ACE:即将空降，博士，抓稳了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6488"
+            },
+			"replace":
+			{
+				"targetname": "6488"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:前方红灯15s，请遵守龙门交规",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6508"
+            },
+			"replace":
+			{
+				"targetname": "6508"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 距离龙门近卫局大门打开还有15s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6510"
+            },
+			"replace":
+			{
+				"targetname": "6510"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 魏彦吾：想要得到我的认可，就先和近卫局的警卫们过几招吧",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6512"
+            },
+			"replace":
+			{
+				"targetname": "6512"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 魏彦吾：罗德岛，我在选择盟友时只看重一点",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 魏彦吾：那就是要拥有与我并肩的实力",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6514"
+            },
+			"replace":
+			{
+				"targetname": "6514"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：前方的区域还有20s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6523"
+            },
+			"replace":
+			{
+				"targetname": "6523"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：办公室大门还有20s打开",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6525"
+            },
+			"replace":
+			{
+				"targetname": "6525"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：办公室小门还有20s打开",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "6536"
+            },
+			"replace":
+			{
+				"targetname": "6536"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：似乎找到了魏警官房门的钥匙",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6537"
+            },
+			"replace":
+			{
+				"targetname": "6537"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：好像没有别的道路了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 陈：没记错的话，这面墙的后面直通魏长官的办公室",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6545"
+            },
+			"replace":
+			{
+				"targetname": "6545"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 陈：不对，外面已经被近卫局包围了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 陈：试试找一找周围有没有能用的东西",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：绿色箱子里有一些炸药",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]boom_box"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 陈：博士，我需要20s的时间来引爆",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv2 indoor7 trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：魏警官的办公室门还有30s打开",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 魏彦吾：博士，我已经认可了罗德岛的实力，希望接下来合作愉快",
+                        "delay": 52.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv2 indoor9 trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：前方的区域还有10s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6602"
+            },
+			"replace":
+			{
+				"targetname": "6602"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:任务已完成，将在20s后进入下一作战",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6607"
+            },
+			"replace":
+			{
+				"targetname": "6607"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：前方道路还有30s开放",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6611"
+            },
+			"replace":
+			{
+				"targetname": "6611"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：距离门开还有20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6617"
+            },
+			"replace":
+			{
+				"targetname": "6617"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：这扇门开还需要20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6620"
+            },
+			"replace":
+			{
+				"targetname": "6620"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：旁边似乎有一个管道可以通向下一个房间",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 1"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：距离大门打开还需要20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 2"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：前方的木箱子还需要20s移除，整合运动还有7s空降",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6632"
+            },
+			"replace":
+			{
+				"targetname": "6632"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：通风管道口打开还需要20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 3"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：打开卷帘门还需要20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6646"
+            },
+			"replace":
+			{
+				"targetname": "6646"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，周围的温度正在急剧下降，请保持警惕",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 霜叶：博士，我曾听说过冰原上的一支乌萨斯小队，擅长使用凝冰法术",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 霜叶：尤其是他们的队长，源石技艺炉火纯青，威胁极大，请大家小心",
+                        "delay": 20.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 4"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：门开还需要30s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 5"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：这道门后面就是通向地面的通道了，大家再坚持30s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]final door trigger"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：大家再坚持10s，下一扇门马上就能打开了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6700"
+            },
+			"replace":
+			{
+				"targetname": "6700"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，我们已经到达龙门了",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：当务之急是与龙门领袖魏彦吾谈判并取得与龙门的合作，我们才有机会抵御整合运动的进攻",
+                        "delay": 6.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]false end"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:龙门黑蓑影卫已经抵达战场，所过之处没有任何感染者幸存，或许那恐怖的雪怪小队在他们面前也是不堪一击吧",
+                        "delay": 21.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:即将开启假结局道路",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:各位请坚持到龙门增援的到来，下一道门将在15s后开放",
+                        "delay": 6.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:霜星已经死亡，我们未能从黑蓑影卫手中救下，达成bad end",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]true end"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:整合运动领袖情报已集齐",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:即将开启真结局道路",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:请各位做好准备，下一道门将在15s后打开",
+                        "delay": 6.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：周围的温度正在急速下降，我们很有可能遭遇整合运动雪怪小队领袖霜星，请各位注意",
+                        "delay": 21.0,
+                        "timestofire": 1
+                    },
+                    // PRTS:“灯火将熄” "Extinguished Flames"
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "delay": 9.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6713"
+            },
+			"replace":
+			{
+				"targetname": "6713"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：这扇门好像需要钥匙才能打开，去其他地方找一找吧",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "6716"
+            },
+			"replace":
+			{
+				"targetname": "6716"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：似乎找到了打开某个门的钥匙",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 6"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：二楼门打开还有20s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 7"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：一楼门还有20s打开",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 8"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：距离电梯门打开还剩30s,整合运动还有15s空降",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "6777"
+            },
+			"replace":
+			{
+				"targetname": "6777"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，请准备好迎接最终的战斗，寻找一个可以防守的地点",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 博士：霜星，如果可以的话，能否考虑一下加入罗德岛",
+                        "delay": 70.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 霜星：……如果下一次见面你们能打赢我的话，那我愿意加入罗德岛",
+                        "delay": 75.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：接下来就要靠你了……凯尔希",
+                        "delay": 83.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 凯尔希：但是，你该怎么办？",
+                        "delay": 87.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：他们会与我一起走下去",
+                        "delay": 90.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：那可是……",
+                        "delay": 93.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：方舟的骑士",
+                        "delay": 95.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 9"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：距离下一个门开还剩15s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]lv3 10"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：距离下一个门开还剩30s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，前方就是切尔诺伯格主城区了",
+                        "delay": 32.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]ancestral button1"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 祖宗发射器将在15s内充能完毕，请远离轰炸区域",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]trueend1"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 已获得整合运动领袖情报1",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，如果能搜集一些整合运动领袖的情报，或许有助于我们接下来的行动",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]trueend2"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 已获得整合运动领袖情报2",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]trueend3"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 已获得整合运动领袖情报3",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]trueend4"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 已获得整合运动领袖情报4",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+           "match":
+            {
+                "classname": "func_breakable",
+				"hammeruniqueid": "15539"
+            },
+			"replace":
+			{
+				"targetname": "15539"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnBreak",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 震撼装置已启动，装置周围八格敌人晕眩5s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+           "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "15902"
+            },
+			"replace":
+			{
+				"targetname": "15902"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 阿米娅：博士，我们已经抵达切尔诺伯格分城区，请小心行动",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+           "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "16060"
+            },
+			"replace":
+			{
+				"targetname": "16060"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say PRTS:寒冷效果,范围内干员减速30s，整合运动还有10s空降",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+           "match":
+            {
+                "classname": "func_breakable",
+				"hammeruniqueid": "25801"
+            },
+			"replace":
+			{
+				"targetname": "25801"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnBreak",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 震撼装置已启动，装置周围八格敌人晕眩5s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+           "match":
+            {
+                "classname": "func_breakable",
+				"hammeruniqueid": "25806"
+            },
+			"replace":
+			{
+				"targetname": "25806"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnBreak",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 震撼装置已启动，装置周围八格敌人晕眩5s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]fan break"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnBreak",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ACE:即将空降，博士，抓稳了",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+           "match":
+            {
+                "classname": "func_breakable",
+				"hammeruniqueid": "27088"
+            },
+			"replace":
+			{
+				"targetname": "27088"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnBreak",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 震撼装置已启动，装置周围八格敌人晕眩5s",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
