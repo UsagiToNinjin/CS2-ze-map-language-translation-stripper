@@ -105,7 +105,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：我の名はバートリー ＊＊>42.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：我が名はバートリー ＊＊>42.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
