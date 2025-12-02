@@ -1,4 +1,4 @@
-// stripper by 兎RB,kokopekko 25.10.18
+// stripper by 兎RB,kokopekko 25.12.02
 // map ze_purification_a1
 // workshop id 3128279930
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.18 by 兎RB,kokopekko",
+                        "overrideparam": "say language translation stripper 25.12.02 by 兎RB,kokopekko",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -105,7 +105,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：我の名はバルトリ ＊＊>42.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：我の名はバートリー ＊＊>42.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -114,7 +114,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：ここの三つの教会は奇跡を生み出すことが出来る ＊＊>47.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：ここの三つの教会は奇跡を生み出すことが出来る ＊＊>47.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -123,7 +123,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：それらの力を手に入れなさい，我が最後にそなた達に力を貸してあげよう ＊＊>51.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：それらの力を手に入れなさい，我が最後にそなた達に力を貸してあげよう ＊＊>51.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -132,7 +132,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バルトリ：我は今でも手遅れないように祈りましょう ＊＊>55.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：我は今でも手遅れないように祈りましょう ＊＊>55.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -168,7 +168,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そなた達は我を失望させませんでした ＊＊>140.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：そなた達は我を失望させませんでした ＊＊>140.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -177,7 +177,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：今，浄化！ ＊＊>201.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：今，浄化！ ＊＊>201.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -186,7 +186,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：我に力を感じる ＊＊>179.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：我に力を感じる ＊＊>179.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -267,7 +267,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：此処は永寂星淵，我々の領域である ＊＊>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：此処は永寂星淵，我々の領域である ＊＊>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -276,7 +276,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：次はそなた達を解決する番ですね ＊＊>23.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：次はそなた達を解決する番ですね ＊＊>23.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -285,7 +285,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：問題がもう解決された以上 ＊＊>19.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：問題がもう解決された以上 ＊＊>19.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -294,7 +294,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：此処で静かに過ごしながら，絶望の中で朽ち果てなさい ＊＊>28.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：此処で静かに過ごしながら，絶望の中で朽ち果てなさい ＊＊>28.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -357,7 +357,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：ああ ＊＊>13.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：ああ ＊＊>13.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -375,7 +375,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：ふむ，自分から受難を選ぶのですね ＊＊>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：ふむ，自分から受難を選ぶのですね ＊＊>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -384,7 +384,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：??? ＊＊>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：??? ＊＊>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -393,7 +393,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そなたが此処まで来ておるとは ＊＊>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：そなたが此処まで来ておるとは ＊＊>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -402,7 +402,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 目標：バルトリ 撃破 ＊＊>26.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 目標：バートリー 撃破 ＊＊>26.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -411,7 +411,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：この我の手で直接そなた達を終わらせて差し上げよう ＊＊>22.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：この我の手で直接そなた達を終わらせて差し上げよう ＊＊>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -483,7 +483,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そんな！ ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：そんな！ ＊＊>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -528,7 +528,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バルトリ：そなたよ　終わったと思ってるんですか？ ＊＊>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：そなたよ　終わったと思ってるんですか？ ＊＊>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -645,7 +645,7 @@
 					"outputname": "OnCase02",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 소녀：나의 이름은 바르톨리 ＊＊>42.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 소녀：나의 이름은 바토리 ＊＊>42.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -654,7 +654,7 @@
 					"outputname": "OnCase02",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：이곳의 세 개의 교회는 기적을 창조해 낼 수가 있지 ＊＊>47.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 바토리：이곳의 세 개의 교회는 기적을 창조해 낼 수가 있지 ＊＊>47.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -663,7 +663,7 @@
 					"outputname": "OnCase02",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：그것들의 힘을 얻으면，내가 마지막에 그대들에게 도움을 주겠다 ＊＊>51.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 바토리：그것들의 힘을 얻으면，내가 마지막에 그대들에게 도움을 주겠다 ＊＊>51.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -672,7 +672,7 @@
 					"outputname": "OnCase02",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 바르톨리：나는 지금이라도 너무 늦지 않기를 바란다 ＊＊>55.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 바토리：나는 지금이라도 너무 늦지 않기를 바란다 ＊＊>55.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -708,7 +708,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：그대들은 저를 실망시키지 않으셨군요 ＊＊>140.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：그대들은 저를 실망시키지 않으셨군요 ＊＊>140.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -717,7 +717,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：지금，정화！ ＊＊>201.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：지금，정화！ ＊＊>201.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -726,7 +726,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：나에게 힘이 느껴지는구나 ＊＊>179.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：나에게 힘이 느껴지는구나 ＊＊>179.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -807,7 +807,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이곳은 영적성연，우리들의 영역입니다 ＊＊>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：이곳은 영적성연，우리들의 영역입니다 ＊＊>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -816,7 +816,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：다음은 그대들을 해결할 차례이군요 ＊＊>23.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：다음은 그대들을 해결할 차례이군요 ＊＊>23.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -825,7 +825,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：문제가 이미 해결된 이상 ＊＊>19.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：문제가 이미 해결된 이상 ＊＊>19.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -834,7 +834,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이곳에서 잘 지내면서，절망 속에서 썩어가십시오 ＊＊>28.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：이곳에서 잘 지내면서，절망 속에서 썩어가십시오 ＊＊>28.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -897,7 +897,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：아아 ＊＊>13.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：아아 ＊＊>13.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -915,7 +915,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：흠，스스로 사서 고생하군요 ＊＊>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：흠，스스로 사서 고생하군요 ＊＊>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -924,7 +924,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：??? ＊＊>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：??? ＊＊>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -933,7 +933,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：그대가 여기까지 오다니 ＊＊>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：그대가 여기까지 오다니 ＊＊>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -942,7 +942,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 목표：바르톨리 격파 ＊＊>26.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 목표：바토리 격파 ＊＊>26.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -951,7 +951,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：제 손으로 직접 그대들을 끝내겠습니다 ＊＊>22.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：제 손으로 직접 그대들을 끝내겠습니다 ＊＊>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1023,7 +1023,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：이럴수가！ ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：이럴수가！ ＊＊>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1068,7 +1068,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바르톨리：그대여 끝났다고 생각하셨나요？ ＊＊>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 바토리：그대여 끝났다고 생각하셨나요？ ＊＊>2.0>1",
 					"delay": 0.0,
 			  	    "timestofire": -1
 				},
@@ -1185,7 +1185,7 @@
 					"outputname": "OnCase03",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ Girl：My name is Bartoli ＊＊>42.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ Girl：My name is Bathory ＊＊>42.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1194,7 +1194,7 @@
 					"outputname": "OnCase03",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ Bartoli：The three churches here can create miracles ＊＊>47.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ Bathory：The three churches here can create miracles ＊＊>47.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1203,7 +1203,7 @@
 					"outputname": "OnCase03",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ Bartoli：If I gain their power, I will help you all in the end ＊＊>51.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ Bathory：If I gain their power, I will help you all in the end ＊＊>51.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1212,7 +1212,7 @@
 					"outputname": "OnCase03",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ Bartoli：I hope it’s not too late even now ＊＊>55.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ Bathory：I hope it’s not too late even now ＊＊>55.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1248,7 +1248,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：You have not disappointed me ＊＊>140.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：You have not disappointed me ＊＊>140.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1257,7 +1257,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：Now，purification！ ＊＊>201.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：Now，purification！ ＊＊>201.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1266,7 +1266,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：I can feel the power flowing through me ＊＊>179.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：I can feel the power flowing through me ＊＊>179.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1347,7 +1347,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：This is the Eternal Silent Star Abyss，This is our realm ＊＊>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：This is the Eternal Silent Star Abyss，This is our realm ＊＊>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1356,7 +1356,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：Now it's time to finish you ＊＊>23.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：Now it's time to finish you ＊＊>23.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1365,7 +1365,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：Now that the problem has already been solved ＊＊>19.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：Now that the problem has already been solved ＊＊>19.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1374,7 +1374,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：Stay here and rot away in despair ＊＊>28.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：Stay here and rot away in despair ＊＊>28.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1437,7 +1437,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：aa ＊＊>13.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：aa ＊＊>13.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1455,7 +1455,7 @@
 					"outputname": "OnCase03",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：Well，you’re making things hard for yourself ＊＊>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：Well，you’re making things hard for yourself ＊＊>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1464,7 +1464,7 @@
 					"outputname": "OnCase03",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：??? ＊＊>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：??? ＊＊>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1473,7 +1473,7 @@
 					"outputname": "OnCase03",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：You’ve come all the way here ＊＊>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：You’ve come all the way here ＊＊>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1482,7 +1482,7 @@
 					"outputname": "OnCase03",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Objective：Defeat Bartoli ＊＊>26.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Objective：Defeat Bathory ＊＊>26.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1491,7 +1491,7 @@
 					"outputname": "OnCase03",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：I'll take care of you myself ＊＊>22.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：I'll take care of you myself ＊＊>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1563,7 +1563,7 @@
 					"outputname": "OnCase03",
 					"targetname": "boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：omg！ ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：omg！ ＊＊>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1608,7 +1608,7 @@
 					"outputname": "OnCase03",
 					"targetname": "boss_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bartoli：Did you think it was over？ ＊＊>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ Bathory：Did you think it was over？ ＊＊>2.0>1",
 					"delay": 0.0,
 			  	    "timestofire": -1
 				},
@@ -2526,4 +2526,5 @@
 		}			
     ]
 }
+
 
