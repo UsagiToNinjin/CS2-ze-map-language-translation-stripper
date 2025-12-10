@@ -1656,7 +1656,7 @@
 				},
 
                 {
-					"outputname": "OnUser01",
+					"outputname": "OnUser1",
 					"targetname": "JudahOath_Text_Relay*",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===準備完了===>92.0>-1",
@@ -1674,7 +1674,7 @@
 				},
 
                 {
-					"outputname": "OnUser02",
+					"outputname": "OnUser2",
 					"targetname": "JudahOath_Text_Relay*",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===준비완료===>92.0>-1",
@@ -1692,7 +1692,7 @@
 				},
 
                 {
-					"outputname": "OnUser03",
+					"outputname": "OnUser3",
 					"targetname": "JudahOath_Text_Relay*",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===Ready===>92.0>-1",
