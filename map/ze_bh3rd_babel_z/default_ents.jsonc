@@ -1,0 +1,2243 @@
+// stripper by 兎RB 25.12.11
+// map ze_bh3rd_babel_z
+// workshop id 3399954774
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2" English:"3"
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "delete": // remove message output
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 我们已经进入了琪亚娜的记忆中",
+                        "delay": 10.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 环境数据匹配中.....",
+                        "delay": 15.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 环境数据匹配完成",
+                        "delay": 20.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 匹配结果:巴比伦实验室!!!!!",
+                        "delay": 21.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 该死,琪亚娜怎么会有巴比伦实验室的记忆?",
+                        "delay": 22.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 检测到大量死士出没!",
+                        "delay": 24.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 准备迎战坚守到舱门关闭!",
+                        "delay": 25.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 舱门已成功关闭!",
+                        "delay": 50.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 检测到大量死士从后方接近中......",
+                        "delay": 55.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 该死!这些死士到底是从哪里来的?",
+                        "delay": 58.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 是第二律者,她正向我们这边传送死士!",
+                        "delay": 60.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 往上跑,快快快!",
+                        "delay": 62.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 该死,上面也有死士出现!",
+                        "delay": 130.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 快到桥上!",
+                        "delay": 135.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 趁下一波攻击到来前,赶紧离开这里",
+                        "delay": 166.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "1", // please type language serial number here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "juben",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 25.12.11 by 兎RB",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "3",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+			"case03": "3", // English
+			"io":
+			[
+                // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "1474",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 上部は未知の力により封鎖されている,現在 解除を試みている>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "1474",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 封鎖が解除された！>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say 早く飛行機に乗れ！>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say 私たちは生き残った>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say では,親愛なる司教様にこれは一体どういうことなのかしっかり説明していただかないといけませんね>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ゲートが閉まっている データ転送中......>8.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 畜生!彼女が私たちを見つけちゃった>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 守って,データ転送完了まで待機>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say データ転送完了!>65.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 崩壊炉の停止プログラム起動中!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 崩壊炉が停止した>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ここを守れ,崩壊炉が完全に停止するまで>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 虚数空間の波動を感知 大量の死士が接近中!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part2door2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 制御センターへ行って何が起きているのか調べてみよう!>85.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part2door2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say エレベーターを呼び出した! 40秒待機>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "p3a4d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 持ちこたえろ!エレベーターが来るまで待機!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "p3a3d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say この中が制御センターだ ゲートの解除が完了するまで持ちこたえろ!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "p3a3d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say コンソールを使ってゲートを閉めよう>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part3door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 早く撤退!早く撤退!急いでエレベーターに乗れ!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part3door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ここを守れ!エレベーターが来るまで待機!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ドアが鍵がかかっている,カードキーがないから解除するには時間がかかる!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ゲート解除完了!>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say こんなに高い崩壊能濃度は一体どういうことだ!>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 安全システムを起動して崩壊能濃度を下げろ そうしないと先に進めない!>26.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say システム起動中……崩壊能濃度低下中……>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 崩壊能濃度が安全レベルまで下がった!>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say よし!今からあのクソったれの崩壊炉を止めに行く,さもなければ第二律者が更に強くなる>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 私たちはすでにキアナの記憶の中に入った>9.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 環境データを同期中……>14.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 環境データ 同期完了>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 適合結果:バビロン実験室!!!!!>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say くそっ,キアナがどうしてバビロン実験室の記憶を持っているんだ>21.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 大量の死士の出没を感知!>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 戦闘準備完了 ハッチが閉まるまで防御!>24.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say ハッチは無事に閉まりました!>49.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 大量の死士が後方から接近中……>54.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say くそっ!この死士たちは一体どこから来たんだ?>57.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 第二律者だ,彼女が私たちの方に死士を送り込んでいる>59.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 上に逃げろ,早く早く早く!>61.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say くそっ,上にも死士が出現した!>129.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 早く橋の上へ!>134.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 次の攻撃が来る前に,急いでここを離れよう!>165.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "auto_relay",
+					"inputname": "Trigger",
+					"delay": 1.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say キアナだ!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 彼女の様子がおかしい!>3.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 彼女が私たちに攻撃を仕掛けてきた!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 早く反撃しろ 彼女は第二律者だ!>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "7485",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜現在のバージョン番号は007です＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "7485",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜バグの報告はDiscordチャンネルへお願いします＞＞>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "JudahOath_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Kiana_HP_Counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>boss_death>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // 한국어
+				{
+					"outputname": "OnCase02",
+					"targetname": "1474",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 상부는 미지의 힘에 의해 봉쇄되어 있다,현재 해제를 시도하고 있다>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "1474",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say 봉쇄가 해제되었어！>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say 빨리 비행기에 타！>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say 우리들은 살아 남았다>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say 그럼,친애하는 주교님께서 이것이 어떻게 된 것인지 잘 설명해 주서야겠군요>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 게이트가 닫혀 있다 데이터 전송중......>8.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 젠장!그녀가 우리들을 찾아버렸어>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 지켜 줘,데이터 전송완료까지 대기>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 데이터 전송완료!>65.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 붕괴로 정지 프로그램 가동중!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 붕괴로가 정지했다>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 이곳을 지켜,붕괴로가 완전히 정지할 때까지>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 허수공간의 파동을 감지 대량의 사도가 접근중!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part2door2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 제어센터로 가서 무엇이 일어나고 있는지 조사해 보자!>85.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part2door2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 엘리베이터를 불렀다! 40초 대기>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "p3a4d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 버텨 내!엘리베이터가 올 때까지 대기!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "p3a3d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 이 안이 제어센터다 게이트 해제가 완료되기까지 버텨 내자!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "p3a3d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 콘솔을 사용해 게이트를 닫자>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part3door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 빠르게 철수!빠르게 철수!서둘러 엘리베이터에 타!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part3door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 이곳을 지켜!엘리베이터가 올 때까지 대기!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 문이 잠겨 있다,카드 키가 없어 해제하기에는 시간이 걸린다!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 게이트 해제완료!>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 이렇게 높은 붕괴능 농도는 도대체 무슨 일이야!>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 안전 시스템을 가동하여 붕괴능 농도를 내리자 그렇지 않으면 앞으로 나아갈 수 없다!>26.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 시스템 가동중……붕괴능 농도 저하중……>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 붕괴능 농도가 안전 레벨까지 내려갔다!>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say 좋아!지금부터 저 망할 붕괴로를 막으러 간다,그렇지 않으면 제2 율자가 더욱 강해진다>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 우리들은 이미 키아나의 기억 안으로 들어갔다>9.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 환경 데이터를 동기중……>14.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 환경 데이터 동기완료>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 적합결과:바빌론 실험실!!!!!>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 젠장,키아나가 어째서 바빌론 실험실의 기억을 가지고 있는거야>21.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 대량의 사도의 출몰을 감지!>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 전투준비 완료 해치가 닫힐 때까지 방어!>24.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 해치가 성공적으로 닫혔습니다!>49.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 대량의 사도가 후방으로부터 접근중……>54.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 젠장!이 사도들은 도대체 어디서 온거지?>57.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 제2 율자다,그녀가 우리들쪽으로 사도를 보내고 있다>59.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 위로 도망가,빨리 빨리 빨리!>61.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 젠장,위에도 사도가 출몰했다!>129.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 빨리 다리 위로!>134.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 다음 공격이 오기 전에,서둘러 이곳을 떠나자!>165.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "auto_relay",
+					"inputname": "Trigger",
+					"delay": 1.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 키아나다!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 그녀의 상태가 이상하다!>3.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 그녀가 우리들에게 공격을 가했다!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say 빨리 반격하자 그녀는 제2 율자다!>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "7485",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜현재 버전번호는 007 입니다＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "7485",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜버그 보고는 Discord 채널에 부탁드립니다＞＞>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "JudahOath_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Kiana_HP_Counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>boss_death>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // English
+				{
+					"outputname": "OnCase03",
+					"targetname": "1474",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say The upper section has been sealed by an unknown force,we are attempting to unlock it>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "1474",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>juben>Command>say The lockdown has been lifted！>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say Get on the plane quickly！>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say We survived>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "fly3",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>juben>Command>say Then,our dear Bishop will have to explain exactly what happened>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say The gate is closed data transfer in progress......>8.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Damn it! She’s found us>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Defend,Wait until the data transfer finishes>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "1665",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Data transfer complete!>65.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Honkai Reactor shutdown program is starting!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Honkai Reactor has stopped>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Hold this position,until the Honkai Reactor comes to a complete stop>5.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "fyl",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Imaginary space fluctuations detected A horde of zombies is approaching!>45.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part2door2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Let’s go to the control center and find out what’s happening!>85.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part2door2",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say called Elevator! Wait 40 seconds>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "p3a4d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Hold position! Wait until the elevator arrives!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "p3a3d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say This is the control center Hold on until the gate is fully unlocked!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "p3a3d1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Use the console to close the gate>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part3door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Fall back!Fall back!Get on the elevator fast!>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part3door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Hold this position! Wait until the elevator arrives!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say The door is locked,without a keycard it will take time to unlock!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Gate unlocked!>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Why is the decay-capable concentration so high!>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part1door4x",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Activate the safety system to lower the decay-capable concentration. Otherwise, we won’t be able to move forward!>26.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say System running……decay-capable concentration decreasing……>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say decay-capable concentration has dropped to a safe level!>30.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "part1door1",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say Alright!From now on we’re going to stop that damn Honkai Reactor,Otherwise the Herrscher of Reason will grow even stronger>40.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say We’ve already entered Kiana’s memories>9.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Currently syncing Environmental data……>14.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Environmental data synchronization complete>19.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Suitable result:Babylon Laboratory!!!!!>20.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Damn it,why does Kiana have memories of the Babylon Laboratory>21.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Detected a large number of zombies!>23.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Battle ready Defend until the hatch closes!>24.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say The hatch has been successfully closed!>49.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say A large number of zombies are approaching from the rear……>54.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Damn it! Where on earth did these zombies come from?>57.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say It’s Herrscher of Reason,She’s sending zombies our way>59.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Run upstairs, quick quick quick!>61.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Damn it, zombies have appeared above as well!>129.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Quick get onto the bridge!>134.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Before the next attack comes, leave this place quickly!>165.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "auto_relay",
+					"inputname": "Trigger",
+					"delay": 1.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say It’s Kiana!>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Her condition is abnormal!>3.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say She attacked us!>15.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "7319",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>juben>Command>say Counterattack quickly She’s the Herrscher of Reason!>18.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "7485",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜The current version number is 007＞＞>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "7485",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPressed>juben>Command>say ＜＜Please report bugs in the Discord channel＞＞>1.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "JudahOath_Tem",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Kiana_HP_Counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>boss_death>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "auto_relay",
+			"classname": "logic_relay"
+		},
+		
+		{
+			"targetname": "boss_death",
+			"classname": "logic_relay",
+			"io":
+            [
+                // 日本語
+                {
+					"outputname": "OnUser1",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 私たちは彼女を倒した!",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 今,ここを守れ!",
+					"delay": 5.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 返送要求に応答した!",
+					"delay": 15.0,
+					"timestofire": -1
+				},
+				// 한국어
+                {
+					"outputname": "OnUser2",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 우리들은 그녀를 쓰러뜨렸다!",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 지금,여기를 지켜!",
+					"delay": 5.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 반송요구에 응답했다!",
+					"delay": 15.0,
+					"timestofire": -1
+				},
+				// English
+                {
+					"outputname": "OnUser3",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say We’ve defeated her!",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say Now, Hold this position!",
+					"delay": 5.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say Return request acknowledged!",
+					"delay": 15.0,
+					"timestofire": -1
+				}
+			]	
+		},
+
+        {
+			"targetname": "JudahOath_Tem_relay",
+			"classname": "logic_relay",
+            "io":
+            [
+                // 日本語
+                {
+					"outputname": "OnUser1",
+					"targetname": "JudahOath_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===準備完了===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "JudahOath_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===準備完了===>92.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // 한국어
+                {
+					"outputname": "OnUser2",
+					"targetname": "JudahOath_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===준비완료===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "JudahOath_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===준비완료===>92.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // English
+                {
+					"outputname": "OnUser3",
+					"targetname": "JudahOath_Text*",
+					"inputname": "SetMessage",
+					"overrideparam": "===Ready===",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser3",
+					"targetname": "JudahOath_Text_Relay*",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>JudahOath_Text*>SetMessage>===Ready===>92.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+		}
+    ],
+    "modify": // remove message output, add targetname
+    [
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "1474"
+            },
+			"replace":
+			{
+				"targetname": "1474"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 上面被不知名的力量封锁了,正在尝试破解",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 封锁已解除！ ",
+                        "delay": 45.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]fly3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 赶紧上飞机！",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 我们成功活下来了",
+                        "delay": 15.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 现在,我们得让亲爱的主教大人好好解释一下这是怎么回事  ",
+                        "delay": 18.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "1665"
+            },
+			"replace":
+			{
+				"targetname": "1665"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 闸门已关闭数据传输中......",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 该死!她发现我们了",
+                        "delay": 15.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 守住,等待数据传输完成",
+                        "delay": 20.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 数据传输已完成!",
+                        "delay": 65.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]fyl"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 崩坏炉关闭程序启动中!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 崩坏炉已关闭",
+                        "delay": 30.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 守住这里,直到崩坏炉彻底关闭!",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 检测到虚数空间波动大量死士接近中!",
+                        "delay": 45.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]part2door2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 去控制中心调查一下是怎么回事!",
+                        "delay": 85.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 已呼叫电梯！等待40秒",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]p3a4d1"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 守住!等待电梯到来!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]p3a3d1"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 里面就是控制中心了坚持到闸门破解完成!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 快利用控制台关闭闸门",
+                        "delay": 40.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]part3door1"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 快撤!快撤!赶紧进电梯!",
+                        "delay": 40.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 守住这里!等待电梯到来",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]part1door4x"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 门被锁住了,我们没有磁卡需要时间破解!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 闸门破解完成!",
+                        "delay": 20.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 这么高的崩坏能浓度是怎么回事!",
+                        "delay": 23.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 快启动安全系统降低崩坏能浓度不然我们无法继续前进!",
+                        "delay": 26.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]part1door1"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 系统启动中.......崩坏能浓度正在下降......",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 崩坏能浓度已降低至安全水平!",
+                        "delay": 30.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say ok!现在我们去把那个该死的崩坏炉关掉否者第二律者会更加强大",
+                        "delay": 40.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+				"hammeruniqueid": "7319"
+            },
+			"replace":
+			{
+				"targetname": "7319"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 是琪亚娜!",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 她的情况不对劲！",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 她向我们发动攻击了！ ",
+                        "delay": 15.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 快还击她是第二律者！",
+                        "delay": 18.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+		// targetname duplication caution
+        {
+            "match":
+            {
+                "targetname": "[PR#]boss_death",
+				"hammeruniqueid": "7414"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 我们击败她了",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 现在,守住这里!",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say 返回请求已应答！",
+                        "delay": 15.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "func_button",
+				"hammeruniqueid": "7485"
+            },
+			"replace":
+			{
+				"targetname": "7485"
+			},
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say <<当前版本号码为007>>",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]juben",
+                        "inputname": "Command",
+                        "overrideparam": "say <<BUG反馈请前往Dc频道>>",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ]
+}
