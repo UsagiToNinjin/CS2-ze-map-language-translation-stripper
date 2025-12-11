@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.12.10
+// stripper by 兎RB 25.12.11
 // map ze_bh3rd_bable_z
 // workshop id 3399954774
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -168,7 +168,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "juben",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.12.10 by 兎RB",
+                        "overrideparam": "say language translation stripper 25.12.11 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -629,33 +629,6 @@
 
                 {
 					"outputname": "OnCase01",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 私たちは彼女を倒した!>0.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 今,ここを守れ!>5.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 返送要求に応答した!>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
 					"targetname": "7485",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnPressed>juben>Command>say ＜＜現在のバージョン番号は007です＞＞>0.0>-1",
@@ -677,6 +650,15 @@
 					"targetname": "JudahOath_Tem",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser1>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Kiana_HP_Counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>boss_death>FireUser1>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1105,33 +1087,6 @@
 
                 {
 					"outputname": "OnCase02",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 우리들은 그녀를 쓰러뜨렸다!>0.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 지금,여기를 지켜!>5.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 반송요구에 응답했다!>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
 					"targetname": "7485",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnPressed>juben>Command>say ＜＜현재 버전번호는 007 입니다＞＞>0.0>-1",
@@ -1153,6 +1108,15 @@
 					"targetname": "JudahOath_Tem",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Kiana_HP_Counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>boss_death>FireUser2>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1581,33 +1545,6 @@
 
                 {
 					"outputname": "OnCase03",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say We’ve defeated her!>0.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Now, Hold this position!>5.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "boss_death",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Return request acknowledged!>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
 					"targetname": "7485",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnPressed>juben>Command>say ＜＜The current version number is 007＞＞>0.0>-1",
@@ -1631,6 +1568,15 @@
 					"overrideparam": "OnEntitySpawned>JudahOath_Tem_relay>FireUser3>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Kiana_HP_Counter",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnHitMax>boss_death>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
 				}
 			]
 		},
@@ -1638,6 +1584,95 @@
 		{
 			"targetname": "auto_relay",
 			"classname": "logic_relay"
+		},
+		
+		{
+			"targetname": "boss_death",
+			"classname": "logic_relay",
+			"io":
+            [
+                // 日本語
+                {
+					"outputname": "OnUser1",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 私たちは彼女を倒した!",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 今,ここを守れ!",
+					"delay": 5.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 返送要求に応答した!",
+					"delay": 15.0,
+					"timestofire": -1
+				},
+				// 한국어
+                {
+					"outputname": "OnUser2",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 우리들은 그녀를 쓰러뜨렸다!",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 지금,여기를 지켜!",
+					"delay": 5.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say 반송요구에 응답했다!",
+					"delay": 15.0,
+					"timestofire": -1
+				},
+				// English
+                {
+					"outputname": "OnUser3",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say We’ve defeated her!",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say Now, Hold this position!",
+					"delay": 5.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "juben",
+					"inputname": "Command",
+					"overrideparam": "say Return request acknowledged!",
+					"delay": 15.0,
+					"timestofire": -1
+				}
+			]	
 		},
 
         {
@@ -2129,11 +2164,12 @@
                 ]
             }
         },
-
+		// targetname duplication caution
         {
             "match":
             {
-                "targetname": "[PR#]boss_death"
+                "targetname": "[PR#]boss_death",
+				"hammeruniqueid": "7414"
             },
             "delete":
             {
