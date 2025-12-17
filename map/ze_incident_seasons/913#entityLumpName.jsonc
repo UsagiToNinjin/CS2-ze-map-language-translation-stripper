@@ -1,0 +1,38 @@
+// stripper by 兎RB 25.12.02
+// map ze_incident_seasons
+// workshop id 3472606171
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]bath_weapon"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say *** 巴托莉会帮助我们 ***",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say *** 她是使用冰气魔法的强大魔法使  ***",
+                        "delay": 2.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}
