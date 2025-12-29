@@ -1,4 +1,4 @@
-// stripper by 兎RB,kokopekko 25.12.02
+// stripper by 兎RB,kokopekko 25.12.29
 // map ze_purification_a1
 // workshop id 3128279930
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.12.02 by 兎RB,kokopekko",
+                        "overrideparam": "say language translation stripper 25.12.29 by 兎RB,kokopekko",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -339,7 +339,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ 彼女を会いに行かなきゃ ＊＊>303.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ 彼女に会いに行かなきゃ ＊＊>303.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2526,3 +2526,4 @@
 		}			
     ]
 }
+
