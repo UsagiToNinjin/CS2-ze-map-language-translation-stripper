@@ -1,0 +1,29 @@
+// stripper by 兎RB 25.12.26
+// map ze_ffxiv_great_gubal_library
+// workshop id 3373306757
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, change targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Ravana_ded_relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 僵尸将在13s后传送至后方平台 **",
+                        "delay": 46.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}

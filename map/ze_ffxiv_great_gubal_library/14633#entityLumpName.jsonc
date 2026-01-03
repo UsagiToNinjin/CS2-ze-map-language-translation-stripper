@@ -1,0 +1,198 @@
+// stripper by 兎RB 25.12.26
+// map ze_ffxiv_great_gubal_library
+// workshop id 3373306757
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, split duplicate targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Hard_Trigger",
+                "hammeruniqueid": "15045"
+            },
+            "replace":
+            {
+                "targetname": "Hard_Trigger_1"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住20s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Hard_Trigger",
+                "hammeruniqueid": "15047"
+            },
+            "replace":
+            {
+                "targetname": "Hard_Trigger_2"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住32s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Hard_Trigger",
+                "hammeruniqueid": "15121"
+            },
+            "replace":
+            {
+                "targetname": "Hard_Trigger_3"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住22s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Hard_Trigger",
+                "hammeruniqueid": "15122"
+            },
+            "replace":
+            {
+                "targetname": "Hard_Trigger_4"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住25s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+                    // add lyric output
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "lyric_z_hud",
+                        "inputname": "Kill",
+                        "delay": 24.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Hard_Trigger",
+                "hammeruniqueid": "24457"
+            },
+            "replace":
+            {
+                "targetname": "Hard_Trigger_5"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住25s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Hard_Trigger",
+                "hammeruniqueid": "24472"
+            },
+            "replace":
+            {
+                "targetname": "Hard_Trigger_6"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住25s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Hard_Trigger",
+                "hammeruniqueid": "24890"
+            },
+            "replace":
+            {
+                "targetname": "Hard_Trigger_7"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住20s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}

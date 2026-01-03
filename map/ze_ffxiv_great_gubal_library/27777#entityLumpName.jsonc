@@ -1,0 +1,177 @@
+// stripper by 兎RB 26.01.02
+// map ze_ffxiv_great_gubal_library
+// workshop id 3373306757
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, split duplicate targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Viod_Trigger",
+                "hammeruniqueid": "27849"
+            },
+            "replace":
+            {
+                "targetname": "Viod_Trigger_1"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住30s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Viod_Trigger",
+                "hammeruniqueid": "27851"
+            },
+            "replace":
+            {
+                "targetname": "Viod_Trigger_2"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住20s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Viod_Trigger",
+                "hammeruniqueid": "27889"
+            },
+            "replace":
+            {
+                "targetname": "Viod_Trigger_3"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住25s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Viod_Trigger",
+                "hammeruniqueid": "27891"
+            },
+            "replace":
+            {
+                "targetname": "Viod_Trigger_4"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住45s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Viod_Trigger",
+                "hammeruniqueid": "27897"
+            },
+            "replace":
+            {
+                "targetname": "Viod_Trigger_5"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住15s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Viod_Trigger",
+                "hammeruniqueid": "27903"
+            },
+            "replace":
+            {
+                "targetname": "Viod_Trigger_6"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 在此处等待传送35s **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert": // add lyric output
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "lyric_bloody_f8_hud",
+                        "inputname": "Kill",
+                        "delay": 35.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}

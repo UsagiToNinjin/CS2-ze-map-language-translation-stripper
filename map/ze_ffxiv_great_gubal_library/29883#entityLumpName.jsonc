@@ -1,0 +1,38 @@
+// stripper by 兎RB 25.12.28
+// map ze_ffxiv_great_gubal_library
+// workshop id 3373306757
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]End_Exdeath_relay"
+            },    
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 所有的僵尸神器已被禁用 **",
+                        "delay": 27.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnSpawn",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say > 免抓已生效 <",
+                        "delay": 20.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}           
+	]
+}

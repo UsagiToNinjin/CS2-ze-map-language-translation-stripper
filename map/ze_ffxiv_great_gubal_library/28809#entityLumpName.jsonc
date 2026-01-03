@@ -1,0 +1,104 @@
+// stripper by 兎RB 25.12.28
+// map ze_ffxiv_great_gubal_library
+// workshop id 3373306757
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]ZM_Viod_knife"
+            },    
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 无之力已被拾取 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 效果：无之力会消除已生成的所有元素神器效果，并获取最后一个元素施加强化效果（第一次使用消除元素效果，光球出现时使用会获得对应光球的效果。如没有光球也需再次使用一次使其进入CD） **",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]ZM_Viod_case"
+            },    
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase02",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 无之力获取了火元素 **",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 无之力获取了风元素 **",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 无之力获取了冰元素 **",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 无之力获取了电元素 **",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase06",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 无之力获取了黑洞 **",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 没有获取任何元素 **",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }            
+	]
+}

@@ -1,0 +1,112 @@
+// stripper by 兎RB 25.12.24
+// map ze_ffxiv_great_gubal_library
+// workshop id 3373306757
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, split duplicate targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Normal_Trigger",
+                "hammeruniqueid": "14769"
+            },
+            "replace":
+            {
+                "targetname": "Normal_Trigger_1"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住30s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Normal_Trigger",
+                "hammeruniqueid": "14774"
+            },
+            "replace":
+            {
+                "targetname": "Normal_Trigger_2"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住30s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Normal_Trigger",
+                "hammeruniqueid": "14849"
+            },
+            "replace":
+            {
+                "targetname": "Normal_Trigger_3"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住25s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Normal_Trigger",
+                "hammeruniqueid": "24899"
+            },
+            "replace":
+            {
+                "targetname": "Normal_Trigger_4"
+            },  
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say * 在此处守住25s *",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}
