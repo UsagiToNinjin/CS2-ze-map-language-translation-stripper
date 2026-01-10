@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.01.03
+// stripper by 兎RB,Frame 26.01.10
 // map ze_ffxiv_great_gubal_library
 // workshop id 3373306757
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
 						"outputname": "OnMapSpawn",
 						"targetname": "cmd",
 						"inputname": "Command",
-						"overrideparam": "say language translation stripper 26.01.03 by 兎RB,Frame",
+						"overrideparam": "say language translation stripper 26.01.10 by 兎RB,Frame",
 						"delay": 5.0,
 						"timestofire": -1
 					}
@@ -2314,6 +2314,411 @@
 				    "delay": 0.0,
 				    "timestofire": -1
 				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>崩れ落ちてく見慣れた景色\nKuzureochiteku minareta keshiki>12.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>幸せの意味 苦しみの色\nShiawase no imi kurushimi no iro>18.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>目に映るものがすべてだと\nMe ni utsuru mono ga subete da to>24.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>疑うことすら知らずにいた\nUtagau koto sura shirazu ni ita>30.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>何にもなれない曖昧な私\nNanimo narenai aimai na watashi>36.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>愛のかたち 虚ろなジレンマ\nAi no katachi utsuro na jirenma>42.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>この胸の奥\nKono mune no oku>48.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>深くに燻った\nFukaku ni kusubutta>51.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>淡い燈は何？\nAwai tomoshibi wa nani?>54.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>朧げに霞む\nOboroge ni kasumu>62.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>心の輪郭線を\nKokoro no rinkakusen wo>66.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>なぞれなくて 掴みたくて\nNazorenakute tsukamitakute>71.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>宙を漂う\nSora wo tadayou>77.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>もどかしい感情が示す\nModokashii kanjou ga shimesu>79.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\nWatashi no arika>82.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>傍に居ながら気づけぬ脆さ\nSoba ni inagara kizukenu morosa>90.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>足元に落ちる か細い光\nAshimoto ni ochiru kasoi hikari>96.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>手に触れることがこれほどにも\nTe ni fureru koto ga kore hodo ni mo>102.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>寂しさ伴うものだなんて\nSabishisa tomonau mono da nante>108.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>浮かんでは消える\nUkande wa kieru>114.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>不安と苛立ち\nFuan to iradachi>117.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>救われるような\nSukuwareru you na>120.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>確かな温もり\nTashika na nukumori>122.9>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>刹那に交わした言葉が\nSetsuna ni kawashita kotoba ga>126.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>灯す瞬きの中で\nTomosu matataki no naka de>131.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>思い通り真実に\nOmoidori shinjitsu ni>140.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>生きる対角線を\nIkiru taikakusen wo>145.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>辿れなくて 描きたくて\nTadorenakute egakitakute>149.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>底深くを這う生温い\nSoko fukaku wo hau namanurui>155.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>感傷に沈む\nKanshou ni shizumu>158.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\nWatashi no arika>160.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>戸惑いの狭間に希望を抱いて\nTomadoi no hazama ni kibou wo idaite>163.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>憂い濡らす瞳に理想を燃やして\nUrei nurasu hitomi ni risou wo moyashite>169.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>一条の夢に明日を繋いで\nHitosuji no yume ni asu wo tsunaide>175.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>命 砕けど\nInochi kudakedo>181.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>朧げに霞む\nOboroge ni kasumu>188.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>心の輪郭線を\nKokoro no rinkakusen wo>192.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>なぞれなくて 掴みたくて\nNazorenakute tsukamitakute>197.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>宙を漂う\nSora wo tadayou>203.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>もどかしい感情が示す\nModokashii kanjou ga shimesu>205.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\nWatashi no arika>208.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>戸惑いの狭間に希望を抱いて\nTomadoi no hazama ni kibou wo idaite>210.9>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>憂い濡らす瞳に理想を燃やして\nUrei nurasu hitomi ni risou wo moyashite>217.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>一条の夢に明日を繋いで\nHitosuji no yume ni asu wo tsunaide>223.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase01",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>命 砕けど 儚い陽炎\nInochi kudakedo hakanai kagero>229.1>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
 				// 한국어
 				{
 					"outputname": "OnCase02",
@@ -4564,6 +4969,411 @@
 				    "delay": 0.0,
 				    "timestofire": -1
 				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>崩れ落ちてく見慣れた景色\n무너져 내려가는 익숙한 경치>12.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>幸せの意味 苦しみの色\n행복의 의미 고통의 색>18.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>目に映るものがすべてだと\n눈에 비치는 게 전부인 줄만 알고>24.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>疑うことすら知らずにいた\n의심할 줄조차 모른채 있었어>30.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>何にもなれない曖昧な私\n무엇도 될 수 없는 애매한 나>36.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>愛のかたち 虚ろなジレンマ\n사랑의 형태 공허한 딜레마>42.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>この胸の奥\n이 가슴속>48.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>深くに燻った\n깊숙이 그을린>51.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>淡い燈は何？\n어렴풋한 등불은 뭐지?>54.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>朧げに霞む\n몽롱하게 흐릿해지는>62.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>心の輪郭線を\n마음의 윤곽선을>66.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>なぞれなくて 掴みたくて\n따라갈 수가 없어서 붙잡고 싶어서>71.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>宙を漂う\n허공을 떠도는>77.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>もどかしい感情が示す\n갑갑한 감정이 가리키는>79.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\n나의 위치>82.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>傍に居ながら気づけぬ脆さ\nSoba ni inagara kizukenu morosa>90.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>足元に落ちる か細い光\n발밑에 떨어지는 가느다란 빛>96.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>手に触れることがこれほどにも\n손에 닿는 것이 이렇게나도>102.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>寂しさ伴うものだなんて\n쓸쓸함을 동반하는 것 일줄이야>108.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>浮かんでは消える\n떠오르곤 사리지는>114.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>不安と苛立ち\n불안과 초조함>117.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>救われるような\n구원받는 듯한>120.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>確かな温もり\n확실히 느껴지는 따뜻함>122.9>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>刹那に交わした言葉が\n짧은 순간에 나눈 말이>126.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>灯す瞬きの中で\n빛을 밝히는 순간 속에서>131.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>思い通り真実に\n생각한 대로 진실에>140.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>生きる対角線を\n살아가는 대각선을>145.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>辿れなくて 描きたくて\n따라갈 수 없기에 그리고 싶어서>149.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>底深くを這う生温い\n밑바닥 깊숙이 기어가는 미지근한>155.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>感傷に沈む\n감상에 빠지는>158.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\n나의 위치>160.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>戸惑いの狭間に希望を抱いて\n망설임의 틈에 희망을 안고선>163.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>憂い濡らす瞳に理想を燃やして\n근심에 젖은 눈동자에 이상을 불태우며>169.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>一条の夢に明日を繋いで\n한 줄기의 꿈에 내일을 이으며>175.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>命 砕けど\n삶이 부서진다 해도>181.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>朧げに霞む\n몽롱하게 흐릿해지는>188.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>心の輪郭線を\n마음의 윤곽선을>192.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>なぞれなくて 掴みたくて\n따라갈 수가 없어서 붙잡고 싶어서>197.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>宙を漂う\n허공을 떠도는>203.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>もどかしい感情が示す\n갑갑한 감정이 가리키는>205.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\n나의 위치>208.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>戸惑いの狭間に希望を抱いて\n망설임의 틈에 희망을 안고선>210.9>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>憂い濡らす瞳に理想を燃やして\n근심에 젖은 눈동자에 이상을 불태우며>217.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>一条の夢に明日を繋いで\n한 줄기의 꿈에 내일을 이으며>223.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase02",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>命 砕けど 儚い陽炎\n삶이 부서진다 해도 덧없는 아지랑이야>229.1>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
 				// English
 				{
 					"outputname": "OnCase03",
@@ -6813,7 +7623,412 @@
 				    "overrideparam": "OnUser2>!self>SetMessage>二人 歌を続けるんだね\nFutari uta wo tsuzukerunda ne>237.5>-1",
 				    "delay": 0.0,
 				    "timestofire": -1
-				}
+				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>崩れ落ちてく見慣れた景色\nKuzureochiteku minareta keshiki>12.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>幸せの意味 苦しみの色\nShiawase no imi kurushimi no iro>18.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>目に映るものがすべてだと\nMe ni utsuru mono ga subete da to>24.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>疑うことすら知らずにいた\nUtagau koto sura shirazu ni ita>30.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>何にもなれない曖昧な私\nNanimo narenai aimai na watashi>36.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>愛のかたち 虚ろなジレンマ\nAi no katachi utsuro na jirenma>42.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>この胸の奥\nKono mune no oku>48.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>深くに燻った\nFukaku ni kusubutta>51.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>淡い燈は何？\nAwai tomoshibi wa nani?>54.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>朧げに霞む\nOboroge ni kasumu>62.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>心の輪郭線を\nKokoro no rinkakusen wo>66.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>なぞれなくて 掴みたくて\nNazorenakute tsukamitakute>71.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>宙を漂う\nSora wo tadayou>77.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>もどかしい感情が示す\nModokashii kanjou ga shimesu>79.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\nWatashi no arika>82.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>傍に居ながら気づけぬ脆さ\nSoba ni inagara kizukenu morosa>90.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>足元に落ちる か細い光\nAshimoto ni ochiru kasoi hikari>96.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>手に触れることがこれほどにも\nTe ni fureru koto ga kore hodo ni mo>102.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>寂しさ伴うものだなんて\nSabishisa tomonau mono da nante>108.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>浮かんでは消える\nUkande wa kieru>114.7>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>不安と苛立ち\nFuan to iradachi>117.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>救われるような\nSukuwareru you na>120.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>確かな温もり\nTashika na nukumori>122.9>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>刹那に交わした言葉が\nSetsuna ni kawashita kotoba ga>126.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>灯す瞬きの中で\nTomosu matataki no naka de>131.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>思い通り真実に\nOmoidori shinjitsu ni>140.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>生きる対角線を\nIkiru taikakusen wo>145.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>辿れなくて 描きたくて\nTadorenakute egakitakute>149.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>底深くを這う生温い\nSoko fukaku wo hau namanurui>155.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>感傷に沈む\nKanshou ni shizumu>158.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+				
+  				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\nWatashi no arika>160.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>戸惑いの狭間に希望を抱いて\nTomadoi no hazama ni kibou wo idaite>163.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>憂い濡らす瞳に理想を燃やして\nUrei nurasu hitomi ni risou wo moyashite>169.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>一条の夢に明日を繋いで\nHitosuji no yume ni asu wo tsunaide>175.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>命 砕けど\nInochi kudakedo>181.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>朧げに霞む\nOboroge ni kasumu>188.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>心の輪郭線を\nKokoro no rinkakusen wo>192.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>なぞれなくて 掴みたくて\nNazorenakute tsukamitakute>197.6>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>宙を漂う\nSora wo tadayou>203.2>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>もどかしい感情が示す\nModokashii kanjou ga shimesu>205.4>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>私の在り処\nWatashi no arika>208.5>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>戸惑いの狭間に希望を抱いて\nTomadoi no hazama ni kibou wo idaite>210.9>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>憂い濡らす瞳に理想を燃やして\nUrei nurasu hitomi ni risou wo moyashite>217.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>一条の夢に明日を繋いで\nHitosuji no yume ni asu wo tsunaide>223.0>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnCase03",
+  				    "targetname": "lyric_kokoro_hud",
+  				    "inputname": "AddOutPut",
+  				    "overrideparam": "OnUser2>!self>SetMessage>命 砕けど 儚い陽炎\nInochi kudakedo hakanai kagero>229.1>-1",
+  				    "delay": 0.0,
+  				    "timestofire": -1
+  				}
 			]
 		},
 
@@ -10007,7 +11222,8 @@
 				}
 			]
 		},
-		// A Letter
+		// music "A letter" was changed to "心の在り処" in the map update 26/01/05
+		// This entity will be left untouched
         {
 			"targetname": "lyric_letter",
 			"classname": "trigger_multiple",
@@ -10045,7 +11261,8 @@
 				}
             ]
         },
-
+		// music "A letter" was changed to "心の在り処" in the map update 26/01/05
+		// This entity will be left untouched
         {
 			"targetname": "lyric_letter_hud",
 			"classname": "env_hudhint",
@@ -11430,6 +12647,103 @@
 					"timestofire": -1
 				}
 			]
+		},
+		// 心の在り処
+		{
+			"targetname": "lyric_kokoro",
+			"classname": "trigger_multiple",
+			"origin": "2396 -541 1834",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+            "wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
+			"io":
+			[
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+			    {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_kokoro_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_kokoro_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+        },
+		
+        {
+			"targetname": "lyric_kokoro_hud",
+			"classname": "env_hudhint",
+			"message": "心の在り処",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "What does shake my heart?",
+					"delay": 59.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "What does shake my heart?",
+					"delay": 137.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "What does shake my heart?",
+					"delay": 185.5,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 238.0,
+					"timestofire": -1
+				}
+			]
 		}		
 	],
 	"modify": // remove message output, split duplicate targetname
@@ -11902,7 +13216,7 @@
                 [
 					{
                         "outputname": "SoundEventGuid",
-						"targetname": "lyric_letter",
+						"targetname": "lyric_kokoro",
                         "inputname": "Enable",
                         "delay": 0.0,
                         "timestofire": 1
@@ -11912,7 +13226,7 @@
                         "outputname": "SoundEventGuid",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 澤野弘之 : A Letter(nZk Ver.) ]",
+                        "overrideparam": "say ♪ MUSIC [ 澤野弘之,沢城みゆき : 心の在り処 ]",
                         "delay": 0.0,
                         "timestofire": 1
                     }
