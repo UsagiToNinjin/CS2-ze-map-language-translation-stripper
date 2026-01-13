@@ -1,0 +1,29 @@
+// stripper by 兎RB 26.01.09
+// map ze_ffxiv_pharos_sirius
+// workshop id 3435645851
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Magic_Silence_WP"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+                        "inputname": "Command",
+                        "overrideparam": "say > 一名玩家学会了沉默魔法",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}
