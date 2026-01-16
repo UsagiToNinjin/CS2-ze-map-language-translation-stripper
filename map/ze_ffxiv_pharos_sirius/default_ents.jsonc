@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.01.13
+// stripper by 兎RB,Frame 26.01.16
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
 						"outputname": "OnSpawn",
 						"targetname": "Server",
 						"inputname": "Command",
-						"overrideparam": "say language translation stripper 26.01.13 by 兎RB,Frame",
+						"overrideparam": "say language translation stripper 26.01.16 by 兎RB,Frame",
 						"delay": 6.0,
 						"timestofire": -1
 					}
@@ -567,969 +567,6 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>願いは永遠 悟りて\nNegai wa towa satori te>91.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>幾年 まだ届かず\nIkutose mada todokazu>101.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>荒ぶる炎 騒ぎて\nAraburu honoo sawagite>131.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>止められぬ鼓動 焦がして\nTomerarenu kodou kogashite>141.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>踊るように\nOdoru you ni>152.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>舞い落ちる桜雪よ\nMai ochiru sakura yuki yo>155.9>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>抗うように紡ぐ声 駆け上らん\nAragau you ni tsumugu koe kakenoboran>162.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>何度も繰り返し\nNando mo kurikaeshi>172.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>燃え上がりし憂いに\nMoeagari shi urei ni>177.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>戦い祈りしは泡沫\nTatakai inorishi wa utakata>182.6>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>見果てぬ宙 十六夜\nMihatenu sora izayoi>202.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>歴史の風 誘う\nRekishi no kaze izanau>212.6>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>神の意志さえ欺いて\nKami no ishi sae azamuite>222.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>手を伸ばした\nTe wo nobashita>230.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>微睡むような懐かしき\nMadoromu you na natsukashiki>233.0>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>その姿\nSono sugata>240.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>儚き魂が\nHakanaki tamashii ga>243.1>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>古の記憶が\nInishie no kioku ga>248.0>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>無常に甦る\nMujou ni yomigaeru>253.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>許されんと知りながら\nYurusaren to shirinagara>263.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>身体が求める誓い\nKarada ga motomeru chikai>268.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>灯火がひとひら\nTomoshibi ga hitohira>277.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>奏でる愛言葉\nKanaderu aikotoba>289.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>委ねる君の側\nYudaneru kimi no soba>299.4>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>眠り続けていたい\nNemuri tsuzukete itai>305.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>いつまでもこの時間が\nItsumademo kono toki ga>311.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>続くようにと願った\nTsuzuku you ni to negatta>316.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>輪廻に導かれ\nRinne ni michibikare>321.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>儚き魂が\nHakanaki tamashii ga>331.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>古の記憶が\nInishie no kioku ga>336.4>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>無常に甦る\nMujou ni yomigaeru>341.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>何度も繰り返し\nNando mo kurikaeshi>351.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>燃え上がりし憂いに\nMoeagari shi urei ni>356.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase01",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>戦い祈りしは泡沫\nTatakai inorishi wa utakata>361.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>記憶の層に隠れてしまう\nKioku no sou ni kakurete shimau>38.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>夢の色に憧れた君は\nYume no iro ni akogareta kimi wa>44.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>強さを装った大人の陰を\nTsuyosa wo yosootta otona no kage wo>50.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>踏まないように光を探した\nFumanai you ni hikari wo sagashita>56.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>時計の針に押されそうな\nTokei no hari ni osaresou na>61.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>負け惜しみなどいらない\nMakeoshimi nado iranai>67.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誰かの手を掴みそうに\nDareka no te wo tsukamisou ni>72.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れていくなら\nTaorete iku nara>78.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>痛みと立ち上がっていく涙で描く\nItami to tachiagatteku namida de egaku>83.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>埃と空の間を\nHokori to osore no aida wo>89.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>落ちかけている子供の丘で\nOchikakete iru kodomo no oka de>99.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>逃げた理由を背中に隠してる\nNigeta riyuu wo senaka ni kakushiteru>105.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>未来の声に脅かされそうで\nMirai no koe ni odokasaresou de>111.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>僕を守る君は震えていた\nBoku wo mamoru kimi wa furuete ita>116.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>後悔に慣れた独り言\nKoukai ni nareta hitorigoto>122.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>歩き出す音で消した\nArukidasu oto de keshita>127.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>答えを出せない過去達に\nKotae o dasenai kakotachi ni>133.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>庇われるなら\nKabawareru nara>139.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>知らない明日を着て転べばいい\nShiranai ashita wo kite korobeba ii>144.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>無邪気に咲いた願いと\nMujaki ni saita negai to>150.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>わがままな希望\nWagamama na kibou>180.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>幼い顔で笑う\nOsanai kao de warau>182.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>怯える怒りが\nObieru ikari ga>186.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>この身体を支えてる\nKono karada wo sasaeteru>188.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>言葉ばかりの雨に\nKotoba bakari no ame ni>191.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>消されないように\nKesarenai you ni>195.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>今の灯りを\nIma no akari wo>197.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目の前の答えとつなぐ\nMe no mae no kotae to tsunagu>199.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誰かの手を掴みそうに\nDareka no te wo tsukamisou ni>205.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れていくなら\nTaorete iku nara>211.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>痛みと立ち上がっていく涙で描く\nItami to tachiagatteku namida de egaku>216.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>埃と空の間を\nHokori to osore no aida wo>223.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>わがままな希望\nWagamama na kibou>229.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>幼い顔で笑う\nOsanai kao de warau>231.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>怯える怒りが\nObieru ikari ga>235.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>この身体を支えてる\nKono karada wo sasaeteru>237.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>言葉ばかりの雨に\nKotoba bakari no ame ni>240.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>消されないように\nKesarenai you ni>244.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>今の灯りを\nIma no akari wo>246.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目の前の答えとつなぐ\nMe no mae no kotae wo tsunagu>249.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>後ろに残した跡は\nUshiro ni nokoshita ato wa>11.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>時間の砂に消されて\nJikan no suna ni kesarete>14.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>記憶を繋ぐ景色も歪んで\nKioku wo tsunagu keshiki mo yugande>17.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>違く見えていく\nChikaku miete iku>20.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>爪先で止めている悲しみが\nTsumasaki de tometeiru kanashimi ga>23.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ズルさを巻く正義に\nZurusa wo maku seigi ni>28.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>手を伸ばそうとしている\nTe wo nobasou to shiteiru>31.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目を閉じ立ち止まっても\nMe wo toji tachidomattemo>34.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>未来の顔を触れない\nMirai no kao wo sawarenai>39.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い望んでも追いかけても\nNegai nozondemo oikaketemo>44.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>抱きたい声が遠く消される\nDakitai koe ga tooku kesareru>50.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\nDakedo bokura wa wasureteinai>55.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れても立つ子供の影\nTaoretemo tatsu kodomo no kage>61.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>かき分けた蜘蛛の糸は\nKakiwaketa kumo no ito wa>94.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>気付かずに絡まっている\nKizukazu ni karamatteiru>97.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>焦りもがき騒いでても\nAseri mogaki sawaidetemo>100.1>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>視界が白く閉じていく\nShikai ga shiroku tojite iku>102.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>嘘つきと怒鳴っている人が\nUsotsuki to donatteru hito ga>111.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>嘘を隠している\nUso wo kakushiteru>115.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>あの日の声はすくえない\nAno hi no koe wa sukuenai>122.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い叫んでも問いかけても\nNegai sakendemo toikaketemo>127.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誤魔化した手に落とされていく\nGomakashita te ni odosarete iku>132.9>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\nDakedo bokura wa wasureteinai>138.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>終わりを嫌う子供の影\nOwari wo kirau kodomo no kage>144.0>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>問い質していく声が\nToitadashite iku koe ga>178.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ドアを叩いてる\nDoa wo tataiteru>181.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>SILENCEとCRY>189.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い望んでも追いかけても\nNegai nozondemo oikaketemo>193.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>抱きたい声が遠く消される\nDakitai koe ga tooku kesareru>199.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\nDakedo bokura wa wasureteinai>204.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れても立つ子供の影\nTaoretemo tatsu kodomo no kage>210.1>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>問い質していく声が\nToitadashite iku koe ga>244.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase01",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ドアを叩いてる\nDoa wo tataiteru>247.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
 				// 한국어
 				{
 					"outputname": "OnCase02",
@@ -2033,969 +1070,6 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>願いは永遠 悟りて\n소원은 영원을 깨닫고>91.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>幾年 まだ届かず\n몇 해가 아직 닿지 않는채>101.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>荒ぶる炎 騒ぎて\n거칠게 날뛰는 불꽃이 요동치며>131.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>止められぬ鼓動 焦がして\n멈출 수 없는 고동을 태워>141.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>踊るように\n춤추듯이>152.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>舞い落ちる桜雪よ\n흩날리며 떨어지는 벚꽃 눈이여>155.9>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>抗うように紡ぐ声 駆け上らん\n저항하듯이 자아내는 목소리 치솟아 오르리라>162.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>何度も繰り返し\n몇 번이고 되풀이하며>172.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>燃え上がりし憂いに\n타오르는 슬픔 속에서>177.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>戦い祈りしは泡沫\n싸우며 기도했던 것은 물거품>182.6>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>見果てぬ宙 十六夜\n끝없이 펼쳐진 하늘 이자요이의 밤>202.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>歴史の風 誘う\n역사의 바람이 이끄는>212.6>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>神の意志さえ欺いて\n신의 의지조차 사기치며>222.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>手を伸ばした\n손을 뻗었어>230.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>微睡むような懐かしき\n잠에 겨운 듯한 그리운>233.0>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>その姿\n그 모습>240.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>儚き魂が\n덧없는 영혼이>243.1>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>古の記憶が\n태고의 기억이>248.0>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>無常に甦る\n무상하게 되살아나네>253.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>許されんと知りながら\n용서받지 못할 것을 알면서>263.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>身体が求める誓い\n몸이 원하는 맹세의>268.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>灯火がひとひら\n등불이 한 조각으로>277.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>奏でる愛言葉\n연주하는 사랑의 말>289.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>委ねる君の側\n몸과 마음을 맡기는 너의 곁에서>299.4>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>眠り続けていたい\n계속 잠들어 있고 싶어>305.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>いつまでもこの時間が\n언제까지나 이 시간이>311.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>続くようにと願った\n계속되기를 빌었어>316.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>輪廻に導かれ\n윤회에 이끌려>321.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>儚き魂が\n덧없는 영혼이>331.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>古の記憶が\n태고의 기억이>336.4>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>無常に甦る\n무상하게 되살아나네>341.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>何度も繰り返し\n몇 번이고 되풀이하며>351.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>燃え上がりし憂いに\n타오르는 슬픔 속에서>356.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase02",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>戦い祈りしは泡沫\n싸우며 기도했던 것은 물거품>361.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>記憶の層に隠れてしまう\n기억의 층에 숨어 버린>38.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>夢の色に憧れた君は\n꿈의 색을 동경한 너는>44.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>強さを装った大人の陰を\n강함을 위장한 어른의 그림자를>50.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>踏まないように光を探した\n밟지 않도록 빛을 찾았어>56.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>時計の針に押されそうな\n시곗바늘이 밀려나듯한>61.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>負け惜しみなどいらない\n패배에 불복 따위 필요 없어>67.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誰かの手を掴みそうに\n누군가의 손을 붙잡으려다>72.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れていくなら\n쓰러져 간다면>78.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>痛みと立ち上がっていく涙で描く\n아픔과 함께 다시 일어서서 눈물로 그리는>83.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>埃と空の間を\n먼지와 하늘 사이를>89.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>落ちかけている子供の丘で\n추락하기 직전인 아이의 언덕에서>99.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>逃げた理由を背中に隠してる\n도망친 이유를 등 뒤에 숨기고 있어>105.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>未来の声に脅かされそうで\n미래의 목소리에 위협 당할 것만 같아서>111.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>僕を守る君は震えていた\n나를 지키는 너는 떨고 있었지>116.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>後悔に慣れた独り言\n후회에 익숙해진 혼잣말>122.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>歩き出す音で消した\n내딛은 발소리로 덮었어>127.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>答えを出せない過去達に\n정답을 낼 수 없는 과거들이>133.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>庇われるなら\n감싸 준다면>139.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>知らない明日を着て転べばいい\n모르는 내일을 두르고 구르면 돼>144.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>無邪気に咲いた願いと\n순수하게 피어난 소원과>150.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>わがままな希望\n제멋대로 구는 희망은>180.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>幼い顔で笑う\n어린아이 같은 얼굴로 웃어>182.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>怯える怒りが\n두려움에 떠는 분노가>186.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>この身体を支えてる\n이 몸을 지탱해>188.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>言葉ばかりの雨に\n말로만 가득한 비에>191.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>消されないように\n사라지지 않도록>195.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>今の灯りを\n지금 이 빛을>197.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目の前の答えとつなぐ\n눈앞의 답과 잇자>199.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誰かの手を掴みそうに\n누군가의 손을 붙잡으려다>205.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れていくなら\n쓰러져 간다면>211.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>痛みと立ち上がっていく涙で描く\n아픔과 함께 다시 일어서서 눈물로 그리는>216.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>埃と空の間を\n먼지와 하늘 사이를>223.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>わがままな希望\n제멋대로 구는 희망은>229.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>幼い顔で笑う\n어린아이 같은 얼굴로 웃어>231.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>怯える怒りが\n두려움에 떠는 분노가>235.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>この身体を支えてる\n이 몸을 지탱해>237.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>言葉ばかりの雨に\n말로만 가득한 비에>240.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>消されないように\n사라지지 않도록>244.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>今の灯りを\n지금 이 빛을>246.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目の前の答えとつなぐ\n눈앞의 답과 잇자>249.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>後ろに残した跡は\n뒤에 남겨둔 흔적은>11.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>時間の砂に消されて\n시간의 모래에 지워지고>14.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>記憶を繋ぐ景色も歪んで\n기억을 이어주는 경치도 일그러져>17.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>違く見えていく\n달라지는 게 보여>20.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>爪先で止めている悲しみが\n발끝으로 멈추고 있는 슬픔이>23.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ズルさを巻く正義に\n교활함을 두른 정의에>28.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>手を伸ばそうとしている\n손을 뻗으려 하고 있어>31.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目を閉じ立ち止まっても\n눈을 감고 멈춰 서도>34.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>未来の顔を触れない\n미래의 얼굴을 만질 수 없어>39.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い望んでも追いかけても\n소원을 빌며 쫓아가도>44.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>抱きたい声が遠く消される\n안고 싶은 소리가 멀리 사라져>50.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\n하지만 우리는 잊지 않았어>55.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れても立つ子供の影\n쓰러져도 다시 선 아이의 그림자>61.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>かき分けた蜘蛛の糸は\n옆으로 헤친 거미줄은>94.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>気付かずに絡まっている\n눈치 채지 못한 채 얽혀 있었어>97.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>焦りもがき騒いでても\n초조함에 방황해도>100.1>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>視界が白く閉じていく\n시야가 하얗게 닫혀가>102.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>嘘つきと怒鳴っている人が\n거짓말쟁이라며 소리치는 사람이>111.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>嘘を隠している\n거짓말을 감추고 있어>115.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>あの日の声はすくえない\n그날의 목소리는 구할 수 없어>122.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い叫んでも問いかけても\n바램을 외치며 물어봐도>127.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誤魔化した手に落とされていく\n거짓을 꾸미는 손에 속아 넘어가>132.9>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\n하지만 우리는 잊지 않았어>138.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>終わりを嫌う子供の影\n끝을 싫어하는 아이의 그림자>144.0>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>問い質していく声が\n추궁하는 소리가>178.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ドアを叩いてる\n문을 두드리고 있어>181.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>SILENCE와CRY>189.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い望んでも追いかけても\n소원을 빌며 쫓아가도>193.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>抱きたい声が遠く消される\n안고 싶은 소리가 멀리 사라져>199.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\n하지만 우리는 잊지 않았어>204.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れても立つ子供の影\n쓰러져도 다시 선 아이의 그림자>210.1>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>問い質していく声が\n추궁하는 소리가>244.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase02",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ドアを叩いてる\n문을 두드리고 있어>247.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
 				// English
 				{
 					"outputname": "OnCase03",
@@ -3498,970 +1572,7 @@
 					"overrideparam": "OnEntitySpawned>Temp_Magic_Teleport_relay>FireUser3>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
-				},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>願いは永遠 悟りて\nNegai wa towa satori te>91.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>幾年 まだ届かず\nIkutose mada todokazu>101.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>荒ぶる炎 騒ぎて\nAraburu honoo sawagite>131.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>止められぬ鼓動 焦がして\nTomerarenu kodou kogashite>141.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>踊るように\nOdoru you ni>152.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>舞い落ちる桜雪よ\nMai ochiru sakura yuki yo>155.9>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>抗うように紡ぐ声 駆け上らん\nAragau you ni tsumugu koe kakenoboran>162.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>何度も繰り返し\nNando mo kurikaeshi>172.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>燃え上がりし憂いに\nMoeagari shi urei ni>177.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>戦い祈りしは泡沫\nTatakai inorishi wa utakata>182.6>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>見果てぬ宙 十六夜\nMihatenu sora izayoi>202.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>歴史の風 誘う\nRekishi no kaze izanau>212.6>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>神の意志さえ欺いて\nKami no ishi sae azamuite>222.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>手を伸ばした\nTe wo nobashita>230.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>微睡むような懐かしき\nMadoromu you na natsukashiki>233.0>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>その姿\nSono sugata>240.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>儚き魂が\nHakanaki tamashii ga>243.1>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>古の記憶が\nInishie no kioku ga>248.0>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>無常に甦る\nMujou ni yomigaeru>253.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>許されんと知りながら\nYurusaren to shirinagara>263.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>身体が求める誓い\nKarada ga motomeru chikai>268.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>灯火がひとひら\nTomoshibi ga hitohira>277.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>奏でる愛言葉\nKanaderu aikotoba>289.2>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>委ねる君の側\nYudaneru kimi no soba>299.4>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>眠り続けていたい\nNemuri tsuzukete itai>305.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>いつまでもこの時間が\nItsumademo kono toki ga>311.3>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>続くようにと願った\nTsuzuku you ni to negatta>316.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>輪廻に導かれ\nRinne ni michibikare>321.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>儚き魂が\nHakanaki tamashii ga>331.5>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>古の記憶が\nInishie no kioku ga>336.4>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>無常に甦る\nMujou ni yomigaeru>341.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>何度も繰り返し\nNando mo kurikaeshi>351.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>燃え上がりし憂いに\nMoeagari shi urei ni>356.8>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-    			{
-    			    "outputname": "OnCase03",
-    			    "targetname": "lyric_utakata_hud",
-    			    "inputname": "AddOutPut",
-    			    "overrideparam": "OnUser2>!self>SetMessage>戦い祈りしは泡沫\nTatakai inorishi wa utakata>361.7>-1",
-    			    "delay": 0.0,
-    			    "timestofire": -1
-    			},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>記憶の層に隠れてしまう\nKioku no sou ni kakurete shimau>38.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>夢の色に憧れた君は\nYume no iro ni akogareta kimi wa>44.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>強さを装った大人の陰を\nTsuyosa wo yosootta otona no kage wo>50.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>踏まないように光を探した\nFumanai you ni hikari wo sagashita>56.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>時計の針に押されそうな\nTokei no hari ni osaresou na>61.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>負け惜しみなどいらない\nMakeoshimi nado iranai>67.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誰かの手を掴みそうに\nDareka no te wo tsukamisou ni>72.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れていくなら\nTaorete iku nara>78.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>痛みと立ち上がっていく涙で描く\nItami to tachiagatteku namida de egaku>83.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>埃と空の間を\nHokori to osore no aida wo>89.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>落ちかけている子供の丘で\nOchikakete iru kodomo no oka de>99.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>逃げた理由を背中に隠してる\nNigeta riyuu wo senaka ni kakushiteru>105.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>未来の声に脅かされそうで\nMirai no koe ni odokasaresou de>111.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>僕を守る君は震えていた\nBoku wo mamoru kimi wa furuete ita>116.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>後悔に慣れた独り言\nKoukai ni nareta hitorigoto>122.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>歩き出す音で消した\nArukidasu oto de keshita>127.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>答えを出せない過去達に\nKotae o dasenai kakotachi ni>133.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>庇われるなら\nKabawareru nara>139.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>知らない明日を着て転べばいい\nShiranai ashita wo kite korobeba ii>144.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>無邪気に咲いた願いと\nMujaki ni saita negai to>150.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>わがままな希望\nWagamama na kibou>180.3>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>幼い顔で笑う\nOsanai kao de warau>182.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>怯える怒りが\nObieru ikari ga>186.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>この身体を支えてる\nKono karada wo sasaeteru>188.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>言葉ばかりの雨に\nKotoba bakari no ame ni>191.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>消されないように\nKesarenai you ni>195.1>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>今の灯りを\nIma no akari wo>197.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目の前の答えとつなぐ\nMe no mae no kotae to tsunagu>199.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誰かの手を掴みそうに\nDareka no te wo tsukamisou ni>205.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れていくなら\nTaorete iku nara>211.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>痛みと立ち上がっていく涙で描く\nItami to tachiagatteku namida de egaku>216.8>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>埃と空の間を\nHokori to osore no aida wo>223.0>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>わがままな希望\nWagamama na kibou>229.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>幼い顔で笑う\nOsanai kao de warau>231.7>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>怯える怒りが\nObieru ikari ga>235.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>この身体を支えてる\nKono karada wo sasaeteru>237.2>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-				
-  				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>言葉ばかりの雨に\nKotoba bakari no ame ni>240.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>消されないように\nKesarenai you ni>244.5>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>今の灯りを\nIma no akari wo>246.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_narrative_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目の前の答えとつなぐ\nMe no mae no kotae wo tsunagu>249.6>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>後ろに残した跡は\nUshiro ni nokoshita ato wa>11.9>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>時間の砂に消されて\nJikan no suna ni kesarete>14.4>-1",
-  				    "delay": 0.0,
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>記憶を繋ぐ景色も歪んで\nKioku wo tsunagu keshiki mo yugande>17.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>違く見えていく\nChikaku miete iku>20.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>爪先で止めている悲しみが\nTsumasaki de tometeiru kanashimi ga>23.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ズルさを巻く正義に\nZurusa wo maku seigi ni>28.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>手を伸ばそうとしている\nTe wo nobasou to shiteiru>31.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>目を閉じ立ち止まっても\nMe wo toji tachidomattemo>34.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>未来の顔を触れない\nMirai no kao wo sawarenai>39.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い望んでも追いかけても\nNegai nozondemo oikaketemo>44.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>抱きたい声が遠く消される\nDakitai koe ga tooku kesareru>50.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\nDakedo bokura wa wasureteinai>55.8>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れても立つ子供の影\nTaoretemo tatsu kodomo no kage>61.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>かき分けた蜘蛛の糸は\nKakiwaketa kumo no ito wa>94.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>気付かずに絡まっている\nKizukazu ni karamatteiru>97.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>焦りもがき騒いでても\nAseri mogaki sawaidetemo>100.1>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>視界が白く閉じていく\nShikai ga shiroku tojite iku>102.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>嘘つきと怒鳴っている人が\nUsotsuki to donatteru hito ga>111.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>嘘を隠している\nUso wo kakushiteru>115.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>あの日の声はすくえない\nAno hi no koe wa sukuenai>122.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い叫んでも問いかけても\nNegai sakendemo toikaketemo>127.6>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>誤魔化した手に落とされていく\nGomakashita te ni odosarete iku>132.9>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\nDakedo bokura wa wasureteinai>138.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>終わりを嫌う子供の影\nOwari wo kirau kodomo no kage>144.0>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>問い質していく声が\nToitadashite iku koe ga>178.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ドアを叩いてる\nDoa wo tataiteru>181.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>SILENCEとCRY>189.3>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>願い望んでも追いかけても\nNegai nozondemo oikaketemo>193.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>抱きたい声が遠く消される\nDakitai koe ga tooku kesareru>199.2>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>だけど僕らは忘れていない\nDakedo bokura wa wasureteinai>204.7>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>倒れても立つ子供の影\nTaoretemo tatsu kodomo no kage>210.1>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-                {
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>問い質していく声が\nToitadashite iku koe ga>244.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				},
-
-				{
-  				    "outputname": "OnCase03",
-  				    "targetname": "lyric_cry_hud",
-  				    "inputname": "AddOutPut",
-  				    "overrideparam": "OnUser2>!self>SetMessage>ドアを叩いてる\nDoa wo tataiteru>247.5>-1",
-  				    "delay": 0.0, 
-  				    "timestofire": -1
-  				}
+				}
 			]
 		},
 		
@@ -6463,11 +3574,317 @@
   				    "timestofire": -1
   				},
 
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Negai wa towa satori te\n願いは永遠 悟りて",
+  				    "delay": 91.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Ikutose mada todokazu\n幾年 まだ届かず",
+  				    "delay": 101.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Araburu honoo sawagite\n荒ぶる炎 騒ぎて",
+  				    "delay": 131.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Tomerarenu kodou kogashite\n止められぬ鼓動 焦がして",
+  				    "delay": 141.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Odoru you ni\n踊るように",
+  				    "delay": 152.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Mai ochiru sakura yuki yo\n舞い落ちる桜雪よ",
+  				    "delay": 155.9,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Aragau you ni tsumugu koe kakenoboran\n抗うように紡ぐ声 駆け上らん",
+  				    "delay": 162.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Nando mo kurikaeshi\n何度も繰り返し",
+  				    "delay": 172.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Moeagari shi urei ni\n燃え上がりし憂いに",
+  				    "delay": 177.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Tatakai inorishi wa utakatai\n戦い祈りしは泡沫",
+  				    "delay": 182.6,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Mihatenu sora izayoi\n見果てぬ宙 十六夜",
+  				    "delay": 202.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Rekishi no kaze izanau\n歴史の風 誘う",
+  				    "delay": 212.6,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kami no ishi sae azamuite\n神の意志さえ欺いて",
+  				    "delay": 222.8,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Te wo nobashita\n手を伸ばした",
+  				    "delay": 230.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Madoromu you na natsukashiki\n微睡むような懐かしき",
+  				    "delay": 233.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Sono sugata\nその姿",
+  				    "delay": 240.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Hakanaki tamashii ga\n儚き魂が",
+  				    "delay": 243.1,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Inishie no kioku ga\n古の記憶が",
+  				    "delay": 248.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Mujou ni yomigaeru\n無常に甦る",
+  				    "delay": 253.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Yurusaren to shirinagara\n許されんと知りながら",
+  				    "delay": 263.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Karada ga motomeru chikai\n身体が求める誓い",
+  				    "delay": 268.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Tomoshibi ga hitohira\n灯火がひとひら",
+  				    "delay": 277.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kanaderu aikotoba\n奏でる愛言葉",
+  				    "delay": 289.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Yudaneru kimi no soba\n委ねる君の側",
+  				    "delay": 299.4,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Nemuri tsuzukete itai\n眠り続けていたい",
+  				    "delay": 305.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Itsumademo kono toki ga\nいつまでもこの時間が",
+  				    "delay": 311.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Tsuzuku you ni to negatta\n続くようにと願った",
+  				    "delay": 316.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Rinne ni michibikare\n輪廻に導かれ",
+  				    "delay": 321.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Hakanaki tamashii ga\n儚き魂が",
+  				    "delay": 331.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Inishie no kioku ga\n古の記憶が",
+  				    "delay": 336.4,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Mujou ni yomigaeru\n無常に甦る",
+  				    "delay": 341.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Nando mo kurikaeshi\n何度も繰り返し",
+  				    "delay": 351.8,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Moeagari shi urei ni\n燃え上がりし憂いに",
+  				    "delay": 356.8,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Tatakai inorishi wa utakata\n戦い祈りしは泡沫",
+  				    "delay": 361.7,
+  				    "timestofire": -1
+  				},
+
                 {
   				    "outputname": "OnUser2",
   				    "targetname": "!self",
   				    "inputname": "Kill",
-  				    "delay": 376.0,
+  				    "delay": 375.0,
   				    "timestofire": -1
   				}
 			]
@@ -6534,10 +3951,370 @@
 				},
 
 				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kioku no sou ni kakurete shimau\n記憶の層に隠れてしまう",
+  				    "delay": 38.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Yume no iro ni akogareta kimi wa\n夢の色に憧れた君は",
+  				    "delay": 44.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Tsuyosa wo yosootta otona no kage wo\n強さを装った大人の陰を",
+  				    "delay": 50.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Fumanai you ni hikari wo sagashita\n踏まないように光を探した",
+  				    "delay": 56.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Tokei no hari ni osaresou na\n時計の針に押されそうな",
+  				    "delay": 61.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Makeoshimi nado iranai\n負け惜しみなどいらない",
+  				    "delay": 67.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Dareka no te wo tsukamisou ni\n誰かの手を掴みそうに",
+  				    "delay": 72.6,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Taorete iku nara\n倒れていくなら",
+  				    "delay": 78.8,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Itami to tachiagatteku namida de egaku\n痛みと立ち上がっていく涙で描く",
+  				    "delay": 83.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Hokori to sora no aida wo\n埃と空の間を",
+  				    "delay": 89.9,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Ochikakete iru kodomo no oka de\n落ちかけている子供の丘で",
+  				    "delay": 99.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Nigeta riyuu wo senaka ni kakushiteru\n逃げた理由を背中に隠してる",
+  				    "delay": 105.1,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Mirai no koe ni odokasaresou de\n未来の声に脅かされそうで",
+  				    "delay": 111.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Boku wo mamoru kimi wa furuete ita\n僕を守る君は震えていた",
+  				    "delay": 116.8,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Koukai ni nareta hitorigoto\n後悔に慣れた独り言",
+  				    "delay": 122.1,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Arukidasu oto de keshita\n歩き出す音で消した",
+  				    "delay": 127.9,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kotae wo dasenai kakotachi ni\n答えを出せない過去達に",
+  				    "delay": 133.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kabawareru nara\n庇われるなら",
+  				    "delay": 139.4,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Shiranai ashita wo kite korobeba ii\n知らない明日を着て転べばいい",
+  				    "delay": 144.4,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Mujaki ni saita negai to\n無邪気に咲いた願いと",
+  				    "delay": 150.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Wagamama na kibou\nわがままな希望",
+  				    "delay": 180.3,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Osanai kao de warau\n幼い顔で笑う",
+  				    "delay": 182.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Obieru ikari ga\n怯える怒りが",
+  				    "delay": 186.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kono karada wo sasaeteru\nこの身体を支えてる",
+  				    "delay": 188.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kotoba bakari no ame ni\n言葉ばかりの雨に",
+  				    "delay": 191.8,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kesarenai you ni\n消されないように",
+  				    "delay": 195.1,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Ima no akari wo\n今の灯りを",
+  				    "delay": 197.6,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Me no mae no kotae to tsunagu\n目の前の答えとつなぐ",
+  				    "delay": 199.9,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Dareka no te wo tsukamisou ni\n誰かの手を掴みそうに",
+  				    "delay": 205.6,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Taorete iku nara\n倒れていくなら",
+  				    "delay": 211.8,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Itami to tachiagatteku namida de egaku\n痛みと立ち上がっていく涙で描く",
+  				    "delay": 216.8,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Hokori to sora no aida wo\n埃と空の間を",
+  				    "delay": 223.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Wagamama na kibou\nわがままな希望",
+  				    "delay": 229.4,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Osanai kao de warau\n幼い顔で笑う",
+  				    "delay": 231.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Obieru ikari ga\n怯える怒りが",
+  				    "delay": 235.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kono karada wo sasaeteru\nこの身体を支えてる",
+  				    "delay": 237.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kotoba bakari no ame ni\n言葉ばかりの雨に",
+  				    "delay": 240.9,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Kesarenai you ni\n消されないように",
+  				    "delay": 244.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Ima no akari wo\n今の灯りを",
+  				    "delay": 246.9,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+					"overrideparam": "Me no mae no kotae to tsunagu\n目の前の答えとつなぐ",
+  				    "delay": 249.5,
+  				    "timestofire": -1
+  				},
+
+				{
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "Kill",
-					"delay": 255.0,
+					"delay": 253.0,
 					"timestofire": -1
 				}
 			]
@@ -6607,6 +4384,123 @@
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
+					"overrideparam": "Ushiro ni nokoshita ato wa\n後ろに残した跡は",
+					"delay": 11.9,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Jikan no suna ni kesarete\n時間の砂に消されて",
+					"delay": 14.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kioku wo tsunagu keshiki mo yugande\n記憶を繋ぐ景色も歪んで",
+					"delay": 17.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Chikaku miete iku\n違く見えていく",
+					"delay": 20.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Tsumasaki de tometeiru kanashimi ga\n爪先で止めている悲しみが",
+					"delay": 23.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Zurusa wo maku seigi ni\nズルさを巻く正義に",
+					"delay": 28.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Te wo nobasou to shiteiru\n手を伸ばそうとしている",
+					"delay": 31.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Me wo toji tachidomattemo\n目を閉じ立ち止まっても",
+					"delay": 34.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Mirai no kao wo sawarenai\n未来の顔を触れない",
+					"delay": 39.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Negai nozondemo oikaketemo\n願い望んでも追いかけても",
+					"delay": 44.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Dakitai koe ga tooku kesareru\n抱きたい声が遠く消される",
+					"delay": 50.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Dakedo bokura wa wasureteinai\nだけど僕らは忘れていない",
+					"delay": 55.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Taoretemo tatsu kodomo no kage\n倒れても立つ子供の影",
+					"delay": 61.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
 					"overrideparam": "But I must know the end\n(I'm calling in the rain)",
 					"delay": 66.8,
 					"timestofire": -1
@@ -6643,8 +4537,35 @@
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
-					"overrideparam": "I was looking for other reasons to turn back",
-					"delay": 106.0,
+					"overrideparam": "Kakiwaketa kumo no ito wa\nかき分けた蜘蛛の糸は",
+					"delay": 94.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kizukazu ni karamatteiru\n気付かずに絡まっている",
+					"delay": 97.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Aseri mogaki sawaidetemo\n焦りもがき騒いでても",
+					"delay": 100.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Shikai ga shiroku tojite iku\n視界が白く閉じていく",
+					"delay": 102.6,
 					"timestofire": -1
 				},
 
@@ -6654,6 +4575,24 @@
 					"inputname": "SetMessage",
 					"overrideparam": "I was looking for other reasons to turn back",
 					"delay": 106.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Usotsuki to donatteru hito ga\n嘘つきと怒鳴っている人が",
+					"delay": 111.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Uso wo kakushiteru\n嘘を隠している",
+					"delay": 115.3,
 					"timestofire": -1
 				},
 
@@ -6663,6 +4602,51 @@
 					"inputname": "SetMessage",
 					"overrideparam": "Silhouette will never fade away",
 					"delay": 117.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Ano hi no koe wa sukuenai\nあの日の声はすくえない",
+					"delay": 122.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Negai sakendemo toikaketemo\n願い叫んでも問いかけても",
+					"delay": 127.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Gomakashita te ni odosarete iku\n誤魔化した手に落とされていく",
+					"delay": 132.9,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Dakedo bokura wa wasureteinai\nだけど僕らは忘れていない",
+					"delay": 138.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Owari wo kirau kodomo no kage\n終わりを嫌う子供の影",
+					"delay": 144.0,
 					"timestofire": -1
 				},
 
@@ -6715,8 +4699,80 @@
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
+					"overrideparam": "Toitadashite iku koe ga\n問い質していく声が",
+					"delay": 178.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Doa wo tataiteru\nドアを叩いてる",
+					"delay": 181.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
 					"overrideparam": "Children wait forever in the dark to be caressed",
 					"delay": 183.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Doa wo tataiteru\nドアを叩いてる",
+					"delay": 181.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "SILENCE to CRY\nSILENCEとCRY",
+					"delay": 189.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Negai nozondemo oikaketemo\n願い望んでも追いかけても",
+					"delay": 193.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Dakitai koe ga tooku kesareru\n抱きたい声が遠く消される",
+					"delay": 199.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Dakedo bokura wa wasureteinai\nだけど僕らは忘れていない",
+					"delay": 204.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Taoretemo tatsu kodomo no kage\n倒れても立つ子供の影",
+					"delay": 210.0,
 					"timestofire": -1
 				},
 
@@ -6762,6 +4818,24 @@
 					"inputname": "SetMessage",
 					"overrideparam": "Cry so hard the words were torn apart inside my chest",
 					"delay": 238.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Toitadashite iku koe ga\n問い質していく声が",
+					"delay": 244.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Doa wo tataiteru\nドアを叩いてる",
+					"delay": 247.5,
 					"timestofire": -1
 				},
 
