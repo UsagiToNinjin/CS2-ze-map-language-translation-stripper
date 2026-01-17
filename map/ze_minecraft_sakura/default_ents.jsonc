@@ -1,4 +1,4 @@
-// stripper by 兎RB,kokopekko,小彩旗 25.10.28
+// stripper by 兎RB,kokopekko,小彩旗 26.01.17
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -29,7 +29,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.28 by 兎RB,kokopekko,小彩旗",
+                        "overrideparam": "say language translation stripper 26.01.17 by 兎RB,kokopekko,小彩旗",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -1664,1185 +1664,6 @@
 					"targetname": "mcd_skip_relay",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnTrigger>cmd>Command>say （5秒後テレポートされます！）>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "SetMessage",
-					"overrideparam": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>3.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>6.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>8.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あー眠たい殻に篭りたい\nAー nemuritai kara ni komoritai>12.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>携帯のアラームが止まない\nkeitai no aramu ga yamanai>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ノールックで消す俺はベテラン\nnourukku de kesu ore wa beteran>17.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あーもう何もする気起きない\nAー mou nani mo suru ki okinai>23.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ゲームに課金しすぎたみたい\ngeimu ni kakin shisugita mitai>25.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>もっかいベッドに包まりダイブ\nmokkai beddo ni tsutsumari daibu>28.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>今日お昼からランチの予定\nkyou ohiru kara ranchi no yotei>34.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>約束してたけど既に too late oh\nyakusoku shiteta kedo sude ni too late oh>35.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴りやまない ringin′ my bell\nnariyamanai ringin′ my bell>39.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ため息が部屋に広がる\ntameiki ga heya ni hirogaru>41.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>こうなっても動じない\nkou nattemo doujinai>44.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Uber 呼んでもはやアニメ三昧\nUber yondemo haya anime zanmai>46.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>そう背伸びはしないよ 等身大の\nsou senobi wa shinaiyo doushindai no>49.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>「俺」「俺」「俺」\n「ore」「ore」「ore」>52.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM>54.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>56.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>59.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>62.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM>65.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM>67.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM>70.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>72.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あぁこりゃまたボッチだね\nAa korya mata botti dane>76.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>またブッチでプチっとオッコだね\nmata butti de buttito okko dane>78.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>でも部屋から出れない\ndemo heya kara derenai>81.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ビックマウス許してくれなきゃ\nbikkumausu yurushite kurenakya>82.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ブレイクアップだぜ\nbureikuappu daze>84.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>独り言サイファー無限ループで\nhitorigoto saifa mugen rupu de>87.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>続くlike a マシンガントークの\ntsuzuku like a mashingantouku no>89.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お供にはそう my ハピーターンと\notomo niwa sou my hapitan to>92.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>冷たいお茶で欠席裁判\ntsumetai ocha de kessekisaiban>94.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>無罪放免です\nmuzanhoumen desu>98.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>しつこくしすぎな奴は裏目に出る\nshikoshiku sugina yatsu ha urame ni deru>100.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>部屋に飾るシクラメン\nheya ni kazaru shikuramen>103.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ため息で花びらが揺れる\ntameiki de hanabira ga yureru>105.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ああもう連絡もしない\nAA mou renraku mo shinai>108.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>怒られることには\nokorareru koto niwa>110.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>そう耐性ないから\nsou naisei nai kara>112.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>嫌いになったつもりではないのよ\nkirai ni natta tsumori dewa nainoyo>113.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>「メンゴ」「メンゴ」「メン...」\n「mengo」「mengo」「men...」>116.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM>118.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>120.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>123.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>126.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM>129.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM>131.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM>133.9>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>136.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>憂いな日々に錆びて\nurei na hibi ni sabite>2.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私の名前も忘れていく\nwatashi no namae mo wasurete iku>7.9>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>綺麗な嘘ごと\nkirei na uso goto>13.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>自分を騙し続けて\njibun wo damashi tsuzukete>16.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>今夢で会える\nima yume de aeru>21.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>霧が晴れない\nkiri ga harenai>49.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>足跡を隠すように\nashiato wo kakusu you ni>52.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>森に迷った振りして\nmori ni mayotta furi shite>55.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ただ前に進めない\ntada mae ni susumenai>61.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>明日は来なくていい\nashita wa konakute ii>63.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>深い眠りに落ちていく\nfukai nemuri ni ochite iku>66.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 今日は終わらせて\noyasumi kyou wa owarasete>71.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 長い夜に\noyasumi nagai yoru ni>77.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>初めて自分を許していい\nhajimete jibun wo yurushite ii>82.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>懐かしいのに\nnatsukashii noni>89.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>また話をかけてもいい\nmata hanashi wo kaketemo ii>120.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>悪い夢から連れ出して\nwarui yume kara tsuredashite>124.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>羽ペンで一緒に絵描こう\nhana pen de issyo ni e egakou>131.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ふたりぼっちで夜空を\nfutari botti de yozora wo>135.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 今日は終わらせて\noyasumi kyou wa owarasete>142.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 長い夜に\noyasumi nagai yoru ni>147.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>夜明けまで魔法よ解けないで\nyoake made mahou yo tokenaide>153.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>眠る森のお姫\nnemuru mori no ohime>160.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>涙がそっと\nnamida ga sotto>191.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>雨音に合わせてく\nameoto ni awasete ku>197.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>悲しみを水に溶けて\nkanashimi wo mizu ni tokete>202.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>暖かい夢に変わる\natatakai yume ni kawaru>206.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>消えそうな時に\nkiesou na toki ni>212.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私を抱きしめて\nwatashi wo takishimete>218.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>緩やかに世界は回る\nyuruyaka ni sekai wa mawaru>224.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>明日もきっと会える\nashita mo kitto aeru>229.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>まだ君想うながら\nmada kimi wo omou nagara>26.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>自分に向き合いたくない\njibun ni mukiaitakunai>30.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>思いを重いと\nomoi wo omoi to>34.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君に思われたくないでも\nkimi ni omowaretakunai demo>37.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>まだ君を探そうと\nmada kimi wo sagasou to>43.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>水色の世界に落ちる\nmizuiro no sekai ni ochiru>47.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>このまま黙ると思うと\nkono mama damaru to omou to>54.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>心が曇るみたいに\nkokoro ga kumoru mitai ni>60.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>その時に\nsono toki ni>67.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>偶然と降ってきた\nguuzen to futte kita>70.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>狐雨と言う\nkitsuneame to iu>73.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>晴れてた空なのに\nhareteta sora nanoni>78.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>わがままで降らせたい\nwagamama de furasetai>81.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>こんな偶然 運命と呼ぼう\nkonna guuzen unmei to yobou>86.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Didida dida 夢の中\nDidida dida yume no naka>92.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君が起こすまで\nkimi ga okosu made>96.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>見惚れてた空なのに\nmitoreteta sora nanoni>158.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>このままで離せたい\nkono mama de hanasetai>161.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>傘なんか要らないから\nkasa nanka iranai kara>165.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Didida dida 夢の中\nDidida dida yume no naka>172.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>起こしてくるまで\nokoshite kuru made>175.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>静かな世界で\nshizukana sekai de>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私だけ\nwatashi dake>19.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>記憶の狭間に君を探す\nkioku no hazama ni kimi wo sagasu>21.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ねえ 聞こえるかな\nnee kikoeru kana>28.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>空中揺れてる光が\nkuucyuu yureteru hikari ga>33.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>歩いている冷たい風の中\naruiteru tsumetai kaze no naka>40.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>雪の結晶が空へ舞い落ちる\nyuki no kessyou ga sora e maiochiru>46.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>星の光を集めて\nhoshi no hikari wo atsumete>53.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>思い重ねたある夢は\nomoikasaneta aru yume wa>59.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>オーロラ\nourora>64.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>海の彼方も\numi no kanata mo>93.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>空の向こうも\nsora no mukou mo>96.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>世界の果てにも\nsekai no hate nimo>100.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君はいない\nkimi wa inai>103.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ねえ 夢は終わる\nnee yume wa owaru>106.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>溢れていた星の涙\nafureteita hoshi no namida>111.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>沈んでいる深い闇の中\nshizunde iru fukai yami no naka>117.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>遠くの声が私を呼んでいた\ntooku no koe ga watashi wo yonde ita>124.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>その声を辿れるなら\nsono koe wo tadoreru nara>130.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>冬の奇跡に祈る\nfuyu no kiseki ni inoru>137.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>願いが叶うなら\nnegai ga kanau nara>171.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>もう一度抱きしめて欲しい\nmou ichido takishimete hoshii>177.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>止まらないの\ntomaranai no>185.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>時の流れ\ntoki no nagare>188.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>全て忘れそう\nsubete wasuresou>191.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>長くなれる距離\nnagaku nareru kyori>198.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>目を閉じればまだ戻れるのかな\nme wo tojireba mada modoreru nokana>201.8>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4494,1185 +3315,6 @@
 					"timestofire": -1
 				},
 
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "SetMessage",
-					"overrideparam": "出かけないで ALL DAY IN MY ROOM\n나가지 말아 줘 ALL DAY IN MY ROOM",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\n울리지 말아 줘 ALL DAY IN MY ROOM>3.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\n말하지 말아 줘 ALL DAY IN MY ROOM>6.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>8.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あー眠たい殻に篭りたい\n아ー 자고 싶어 껍데기에 틀어박히고 싶어>12.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>携帯のアラームが止まない\n휴대폰 알람이 멈추질 않아>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ノールックで消す俺はベテラン\n노루크로 지우는 나는 베테랑>17.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あーもう何もする気起きない\n아ー 더 이상 아무것도 할 의욕이 안생겨>23.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ゲームに課金しすぎたみたい\n게임에 과금을 너무 많이 한거 같아>25.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>もっかいベッドに包まりダイブ\n다시 침대에 둘러싸여 다이브>28.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>今日お昼からランチの予定\n오늘 점심부터 런치 예정>34.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>約束してたけど既に too late oh\n약속했는데 이미 too late oh>35.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴りやまない ringin′ my bell\n그치지 않는 알람 ringin′ my bell>39.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ため息が部屋に広がる\n한숨이 방으로 펼쳐지네>41.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>こうなっても動じない\n이렇게 되도 동요하질 않아>44.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Uber 呼んでもはやアニメ三昧\nUber 불러도 애니 삼매경>46.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>そう背伸びはしないよ 等身大の\n그렇게 애쓰지는 않아 있는 그대로의>49.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>「俺」「俺」「俺」\n「나」「나」「나」>52.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\n나가지 말아 줘 ALL DAY IN MY ROOM>54.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\n울리지 말아 줘 ALL DAY IN MY ROOM>56.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\n말하지 말아 줘 ALL DAY IN MY ROOM>59.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>62.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\n돌아오지 말아 줘 ALL DAY IN MY ROOM>65.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\n찾지 말아 줘 ALL DAY IN MY ROOM>67.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\n건들지 말아 줘 ALL DAY IN MY ROOM>70.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>72.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あぁこりゃまたボッチだね\n아아 이거 또 혼자네>76.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>またブッチでプチっとオッコだね\n또 풀이 죽어버렸네>78.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>でも部屋から出れない\n그래도 방에서 못 나가겠어>81.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ビックマウス許してくれなきゃ\n빅 마우스를 용서해 주지 않으면>82.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ブレイクアップだぜ\n브레이크업 이야>84.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>独り言サイファー無限ループで\n혼잣말 사이퍼 무한 루프로>87.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>続くlike a マシンガントークの\n계속되는 like a 머신건 토크의>89.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お供にはそう my ハピーターンと\n함께는 그렇게 my 해피 턴과>92.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>冷たいお茶で欠席裁判\n차가운 차로 결석재판>94.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>無罪放免です\n무죄방면 입니다>98.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>しつこくしすぎな奴は裏目に出る\n칠흑적인 녀석은 예상이 틀어지지>100.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>部屋に飾るシクラメン\n방에 꾸며둔 시클라면>103.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ため息で花びらが揺れる\n한숨으로 꽃잎이 흔들려>105.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ああもう連絡もしない\n아아 이젠 연락도 안해>108.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>怒られることには\n혼나는 것에는>110.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>そう耐性ないから\n그다지 내성이 없으니깐>112.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>嫌いになったつもりではないのよ\n싫어하게 될 생각은 아니야>113.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>「メンゴ」「メンゴ」「メン...」\n「안미」「안미」「안...」>116.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\n나가지 말아 줘 ALL DAY IN MY ROOM>118.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\n울리지 말아 줘 ALL DAY IN MY ROOM>120.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\n말하지 말아 줘 ALL DAY IN MY ROOM>123.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>126.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\n돌아오지 말아 줘 ALL DAY IN MY ROOM>129.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\n찾지 말아 줘 ALL DAY IN MY ROOM>131.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\n건들지 말아 줘 ALL DAY IN MY ROOM>133.9>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase02",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\n혼자 있게 해 줘>136.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>憂いな日々に錆びて\n우울한 날들에 녹이 슬고>2.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私の名前も忘れていく\n내 이름 조차 잊혀져 가>7.9>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>綺麗な嘘ごと\n깔끔한 거짓말로>13.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>自分を騙し続けて\n자신을 계속해서 속여가>16.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>今夢で会える\n지금 꿈에서 만날 수 있어>21.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>霧が晴れない\n안개가 걷히지 않고>49.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>足跡を隠すように\n발자국을 숨기듯>52.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>森に迷った振りして\n숲에서 길을 잃은 척 하며>55.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ただ前に進めない\n그저 앞으로 나아갈 수 없어>61.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>明日は来なくていい\n내일은 오지 않아도 돼>63.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>深い眠りに落ちていく\n깊은 잠에 빠져 가>66.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 今日は終わらせて\n잘 자요 오늘은 끝내 줘>71.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 長い夜に\n잘 자요 기다 긴 밤에>77.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>初めて自分を許していい\n처음으로 내 자신을 용서해도 괜찮아>82.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>懐かしいのに\n무척 그리운데>89.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>また話をかけてもいい\n다시 말을 걸어도 괜찮아>120.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>悪い夢から連れ出して\n악몽으로부터 데려가 줘>124.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>羽ペンで一緒に絵描こう\n깃털 펜으로 함께 그림을 그리자>131.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ふたりぼっちで夜空を\n단 둘이서 밤하늘을>135.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 今日は終わらせて\n잘 자요 오늘은 끝내 줘>142.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 長い夜に\n잘 자요 기다 긴 밤에>147.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>夜明けまで魔法よ解けないで\n아침이 밝을 때까지 마법이 풀리지 말아 줘>153.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>眠る森のお姫\n잠든 숲의 공주여>160.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>涙がそっと\n눈물이 살포시>191.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>雨音に合わせてく\n비 소리에 맞춰가네>197.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>悲しみを水に溶けて\n슬픔을 물에 녹이고>202.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>暖かい夢に変わる\n따스한 꿈으로 변하네>206.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>消えそうな時に\n사라질 듯한 시간에>212.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私を抱きしめて\n날 안아줘>218.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>緩やかに世界は回る\n천천히 세상이 돌아가>224.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>明日もきっと会える\n내일은 분명 만날 수 있겠지>229.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>まだ君想うながら\n아직 너를 그리워하면서도>26.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>自分に向き合いたくない\n자기 자신과 마주하고 싶지 않아>30.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>思いを重いと\n이 마음을 무겁게>34.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君に思われたくないでも\n너에게 생각나게 하고 싶지 않아 하지만>37.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>まだ君を探そうと\n아직 너를 찾으려 해>43.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>水色の世界に落ちる\n물빛 세계에 떨어지며>47.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>このまま黙ると思うと\n이대로 침묵할 거라 생각하면>54.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>心が曇るみたいに\n마음이 흐려지는 것 처럼>60.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>その時に\n그 때>67.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>偶然と降ってきた\n우연처럼 내려온>70.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>狐雨と言う\n여우비 라고 해>73.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>晴れてた空なのに\n맑았던 하늘인데도>78.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>わがままで降らせたい\n제멋대로 비를 내리게 하고 싶어>81.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>こんな偶然 運命と呼ぼう\n이런 우연 운명이라고 부르자>86.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Didida dida 夢の中\nDidida dida 꿈 속>92.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君が起こすまで\n네가 깨울 때까지>96.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>見惚れてた空なのに\n매료됐던 하늘인데도>158.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>このままで離せたい\n이대로 떨어지고 싶어>161.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>傘なんか要らないから\n우산 같은 건 필요 없으니까>165.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Didida dida 夢の中\nDidida dida 꿈 속>172.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>起こしてくるまで\n깨우러 올 때까지>175.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>静かな世界で\n조용한 세상에서>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私だけ\n단 나 혼자>19.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>記憶の狭間に君を探す\n기억의 틈 사이에서 너를 찾아>21.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ねえ 聞こえるかな\n있지 들리고 있을까>28.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>空中揺れてる光が\n공중에서 흔들리고 있는 빛이>33.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>歩いている冷たい風の中\n걷고 있어 차가운 바람 속을>40.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>雪の結晶が空へ舞い落ちる\n눈 결정이 하늘로 흩날리고>46.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>星の光を集めて\n별빛을 모아>53.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>思い重ねたある夢は\n쌓아온 어느 꿈은>59.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>オーロラ\n오로라>64.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>海の彼方も\n바다 너머도>93.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>空の向こうも\n하늘 저편도>96.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>世界の果てにも\n세상의 끝에도>100.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君はいない\n너가 없어>103.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ねえ 夢は終わる\n있지 꿈은 끝나>106.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>溢れていた星の涙\n넘쳐흐르던 별의 눈물>111.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>沈んでいる深い闇の中\n가라앉아 있는 깊은 어둠 속>117.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>遠くの声が私を呼んでいた\n멀리서 목소리가 나를 부르고 있었어>124.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>その声を辿れるなら\n그 목소리를 닿을 수 있다면>130.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>冬の奇跡に祈る\n겨울의 기적에 기도해>137.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>願いが叶うなら\n소원이 이뤄진다면>171.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>もう一度抱きしめて欲しい\n다시 한 번 안아줬으면 해>177.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>止まらないの\n멈추지 않는>185.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>時の流れ\n시간의 흐름>188.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>全て忘れそう\n모든 걸 잊어버릴 것 같아>191.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>長くなれる距離\n멀어지는 거리>198.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>目を閉じればまだ戻れるのかな\n눈을 감으면 아직 돌아올 수 있을까>201.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
 				{
 					"outputname": "OnCase02",
 					"targetname": "mciddreams_temp",
@@ -7320,1185 +4962,6 @@
 					"timestofire": -1
 				},
 
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "SetMessage",
-					"overrideparam": "出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>3.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>6.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>8.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あー眠たい殻に篭りたい\nAー nemuritai kara ni komoritai>12.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>携帯のアラームが止まない\nkeitai no aramu ga yamanai>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ノールックで消す俺はベテラン\nnourukku de kesu ore wa beteran>17.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あーもう何もする気起きない\nAー mou nani mo suru ki okinai>23.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ゲームに課金しすぎたみたい\ngeimu ni kakin shisugita mitai>25.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>もっかいベッドに包まりダイブ\nmokkai beddo ni tsutsumari daibu>28.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>今日お昼からランチの予定\nkyou ohiru kara ranchi no yotei>34.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>約束してたけど既に too late oh\nyakusoku shiteta kedo sude ni too late oh>35.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴りやまない ringin′ my bell\nnariyamanai ringin′ my bell>39.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ため息が部屋に広がる\ntameiki ga heya ni hirogaru>41.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>こうなっても動じない\nkou nattemo doujinai>44.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Uber 呼んでもはやアニメ三昧\nUber yondemo haya anime zanmai>46.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>そう背伸びはしないよ 等身大の\nsou senobi wa shinaiyo doushindai no>49.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>「俺」「俺」「俺」\n「ore」「ore」「ore」>52.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM>54.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>56.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>59.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>62.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM>65.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM>67.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM>70.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>72.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>あぁこりゃまたボッチだね\nAa korya mata botti dane>76.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>またブッチでプチっとオッコだね\nmata butti de buttito okko dane>78.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>でも部屋から出れない\ndemo heya kara derenai>81.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ビックマウス許してくれなきゃ\nbikkumausu yurushite kurenakya>82.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ブレイクアップだぜ\nbureikuappu daze>84.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>独り言サイファー無限ループで\nhitorigoto saifa mugen rupu de>87.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>続くlike a マシンガントークの\ntsuzuku like a mashingantouku no>89.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お供にはそう my ハピーターンと\notomo niwa sou my hapitan to>92.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>冷たいお茶で欠席裁判\ntsumetai ocha de kessekisaiban>94.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>無罪放免です\nmuzanhoumen desu>98.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>しつこくしすぎな奴は裏目に出る\nshikoshiku sugina yatsu ha urame ni deru>100.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>部屋に飾るシクラメン\nheya ni kazaru shikuramen>103.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ため息で花びらが揺れる\ntameiki de hanabira ga yureru>105.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ああもう連絡もしない\nAA mou renraku mo shinai>108.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>怒られることには\nokorareru koto niwa>110.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>そう耐性ないから\nsou naisei nai kara>112.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>嫌いになったつもりではないのよ\nkirai ni natta tsumori dewa nainoyo>113.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>「メンゴ」「メンゴ」「メン...」\n「mengo」「mengo」「men...」>116.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>出かけないで ALL DAY IN MY ROOM\ndekakenaide ALL DAY IN MY ROOM>118.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>鳴らさないで ALL DAY IN MY ROOM\nnarasanaide ALL DAY IN MY ROOM>120.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>喋らないで ALL DAY IN MY ROOM\nshaberanaide ALL DAY IN MY ROOM>123.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>126.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>戻らないで ALL DAY IN MY ROOM\nmodoranaide ALL DAY IN MY ROOM>129.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>探さないで ALL DAY IN MY ROOM\nsagasanaide ALL DAY IN MY ROOM>131.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>触らないで ALL DAY IN MY ROOM\nsawaranaide ALL DAY IN MY ROOM>133.9>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "lyric_inmyroom_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>一人きりで居させてよね\nhitori kiri de isasete yone>136.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>憂いな日々に錆びて\nurei na hibi ni sabite>2.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私の名前も忘れていく\nwatashi no namae mo wasurete iku>7.9>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>綺麗な嘘ごと\nkirei na uso goto>13.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>自分を騙し続けて\njibun wo damashi tsuzukete>16.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>今夢で会える\nima yume de aeru>21.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>霧が晴れない\nkiri ga harenai>49.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>足跡を隠すように\nashiato wo kakusu you ni>52.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>森に迷った振りして\nmori ni mayotta furi shite>55.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ただ前に進めない\ntada mae ni susumenai>61.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>明日は来なくていい\nashita wa konakute ii>63.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>深い眠りに落ちていく\nfukai nemuri ni ochite iku>66.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 今日は終わらせて\noyasumi kyou wa owarasete>71.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 長い夜に\noyasumi nagai yoru ni>77.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>初めて自分を許していい\nhajimete jibun wo yurushite ii>82.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>懐かしいのに\nnatsukashii noni>89.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>また話をかけてもいい\nmata hanashi wo kaketemo ii>120.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>悪い夢から連れ出して\nwarui yume kara tsuredashite>124.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>羽ペンで一緒に絵描こう\nhana pen de issyo ni e egakou>131.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ふたりぼっちで夜空を\nfutari botti de yozora wo>135.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 今日は終わらせて\noyasumi kyou wa owarasete>142.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>お休み 長い夜に\noyasumi nagai yoru ni>147.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>夜明けまで魔法よ解けないで\nyoake made mahou yo tokenaide>153.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>眠る森のお姫\nnemuru mori no ohime>160.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>涙がそっと\nnamida ga sotto>191.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>雨音に合わせてく\nameoto ni awasete ku>197.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>悲しみを水に溶けて\nkanashimi wo mizu ni tokete>202.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>暖かい夢に変わる\natatakai yume ni kawaru>206.6>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>消えそうな時に\nkiesou na toki ni>212.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私を抱きしめて\nwatashi wo takishimete>218.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>緩やかに世界は回る\nyuruyaka ni sekai wa mawaru>224.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_good_dream_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>明日もきっと会える\nashita mo kitto aeru>229.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>まだ君想うながら\nmada kimi wo omou nagara>26.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>自分に向き合いたくない\njibun ni mukiaitakunai>30.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>思いを重いと\nomoi wo omoi to>34.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君に思われたくないでも\nkimi ni omowaretakunai demo>37.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>まだ君を探そうと\nmada kimi wo sagasou to>43.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>水色の世界に落ちる\nmizuiro no sekai ni ochiru>47.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>このまま黙ると思うと\nkono mama damaru to omou to>54.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>心が曇るみたいに\nkokoro ga kumoru mitai ni>60.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>その時に\nsono toki ni>67.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>偶然と降ってきた\nguuzen to futte kita>70.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>狐雨と言う\nkitsuneame to iu>73.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>晴れてた空なのに\nhareteta sora nanoni>78.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>わがままで降らせたい\nwagamama de furasetai>81.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>こんな偶然 運命と呼ぼう\nkonna guuzen unmei to yobou>86.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Didida dida 夢の中\nDidida dida yume no naka>92.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君が起こすまで\nkimi ga okosu made>96.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>見惚れてた空なのに\nmitoreteta sora nanoni>158.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>このままで離せたい\nkono mama de hanasetai>161.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>傘なんか要らないから\nkasa nanka iranai kara>165.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>Didida dida 夢の中\nDidida dida yume no naka>172.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>起こしてくるまで\nokoshite kuru made>175.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>静かな世界で\nshizukana sekai de>15.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>私だけ\nwatashi dake>19.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>記憶の狭間に君を探す\nkioku no hazama ni kimi wo sagasu>21.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ねえ 聞こえるかな\nnee kikoeru kana>28.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>空中揺れてる光が\nkuucyuu yureteru hikari ga>33.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>歩いている冷たい風の中\naruiteru tsumetai kaze no naka>40.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>雪の結晶が空へ舞い落ちる\nyuki no kessyou ga sora e maiochiru>46.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>星の光を集めて\nhoshi no hikari wo atsumete>53.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>思い重ねたある夢は\nomoikasaneta aru yume wa>59.1>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>オーロラ\nourora>64.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>海の彼方も\numi no kanata mo>93.2>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>空の向こうも\nsora no mukou mo>96.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>世界の果てにも\nsekai no hate nimo>100.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>君はいない\nkimi wa inai>103.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>ねえ 夢は終わる\nnee yume wa owaru>106.7>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>溢れていた星の涙\nafureteita hoshi no namida>111.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>沈んでいる深い闇の中\nshizunde iru fukai yami no naka>117.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>遠くの声が私を呼んでいた\ntooku no koe ga watashi wo yonde ita>124.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>その声を辿れるなら\nsono koe wo tadoreru nara>130.3>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>冬の奇跡に祈る\nfuyu no kiseki ni inoru>137.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>願いが叶うなら\nnegai ga kanau nara>171.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>もう一度抱きしめて欲しい\nmou ichido takishimete hoshii>177.5>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>止まらないの\ntomaranai no>185.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>時の流れ\ntoki no nagare>188.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>全て忘れそう\nsubete wasuresou>191.4>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>長くなれる距離\nnagaku nareru kyori>198.0>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase03",
-					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser2>!self>SetMessage>目を閉じればまだ戻れるのかな\nme wo tojireba mada modoreru nokana>201.8>-1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
 				{
 					"outputname": "OnCase03",
 					"targetname": "mciddreams_temp",
@@ -8718,6 +5181,69 @@
 					"timestofire": -1
 				},
 
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "dekakenaide ALL DAY IN MY ROOM\n出かけないで ALL DAY IN MY ROOM",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+                    "overrideparam": "narasanaide ALL DAY IN MY ROOM\n鳴らさないで ALL DAY IN MY ROOM",
+					"delay": 3.3,
+					"timestofire": -1
+				},
+
+				{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "shaberanaide ALL DAY IN MY ROOM\n喋らないで ALL DAY IN MY ROOM",
+  					"delay": 6.0,
+  					"timestofire": -1
+				},		
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hitori kiri de isasete yone\n一人きりで居させてよね",
+  					"delay": 8.6,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "A- nemuritai kara ni komoritai\nあー眠たい殻に篭りたい",
+  					"delay": 12.3,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "keitai no aramu ga yamanai\n携帯のアラームが止まない",
+  					"delay": 15.0,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "nourukku de kesu ore wa beteran\nノールックで消す俺はベテラン",
+  					"delay": 17.6,
+  					"timestofire": -1
+				},
+
                 {
 					"outputname": "OnUser2",
 					"targetname": "!self",
@@ -8727,6 +5253,33 @@
 					"timestofire": -1
 				},
 
+				{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "A- mou nani mo suru ki okinai\nあーもう何もする気起きない",
+  					"delay": 23.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "geimu ni kakin shisugita mitai\nゲームに課金しすぎたみたい",
+  					"delay": 25.7,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mokkai beddo ni tsutsumari daibu\nもっかいベッドに包まりダイブ",
+  					"delay": 28.3,
+  					"timestofire": -1
+				},
+
                 {
 					"outputname": "OnUser2",
 					"targetname": "!self",
@@ -8734,6 +5287,384 @@
                     "overrideparam": "Wait, oh wait, oh wait, oh wait",
 					"delay": 30.9,
 					"timestofire": -1
+				},
+
+				{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kyou ohiru kara ranchi no yotei\n今日お昼からランチの予定",
+  					"delay": 34.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "yakusoku shiteta kedo sude ni too late oh\n約束してたけど既に too late oh",
+  					"delay": 35.8,
+  					"timestofire": -1
+				},
+									
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "nariyamanai ringin' my bell\n鳴りやまない ringin′ my bell",
+  					"delay": 39.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "tameiki ga heya ni hirogaru\nため息が部屋に広がる",
+  					"delay": 41.0,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kou nattemo doujinai\nこうなっても動じない",
+  					"delay": 44.3,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "Uber yondemo haya anime zanmai\nUber 呼んでもはやアニメ三昧",
+  					"delay": 46.5,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sou senobi wa shinaiyo doushindai no\nそう背伸びはしないよ 等身大の",
+  					"delay": 49.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "「ore」「ore」「ore」\n「俺」「俺」「俺」",
+  					"delay": 52.0,
+  					"timestofire": -1
+				},					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "dekakenaide ALL DAY IN MY ROOM\n出かけないで ALL DAY IN MY ROOM",
+  					"delay": 54.0,
+  					"timestofire": -1
+				},	
+								
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "narasanaide ALL DAY IN MY ROOM\n鳴らさないで ALL DAY IN MY ROOM",
+  					"delay": 56.8,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "shaberanaide ALL DAY IN MY ROOM\n喋らないで ALL DAY IN MY ROOM",
+  					"delay": 59.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hitori kiri de isasete yone\n一人きりで居させてよね",
+  					"delay": 62.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "modoranaide ALL DAY IN MY ROOM\n戻らないで ALL DAY IN MY ROOM",
+  					"delay": 65.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sagasanaide ALL DAY IN MY ROOM\n探さないで ALL DAY IN MY ROOM",
+  					"delay": 67.5,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sawaranaide ALL DAY IN MY ROOM\n触らないで ALL DAY IN MY ROOM",
+  					"delay": 70.0,
+  					"timestofire": -1
+				},		
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hitori kiri de isasete yone\n一人きりで居させてよね",
+  					"delay": 72.5,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "Aa korya mata botti dane\nあぁこりゃまたボッチだね",
+  					"delay": 76.5,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mata butti de buttito okko dane\nまたブッチでプチっとオッコだね",
+  					"delay": 78.5,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "demo heya kara derenai\nでも部屋から出れない",
+  					"delay": 81.0,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "bikkumausu yurushite kurenakya\nビックマウス許してくれなきゃ",
+  					"delay": 82.5,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "bureikuappu daze\nブレイクアップだぜ",
+  					"delay": 84.8,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hitorigoto saifa mugen rupu de\n独り言サイファー無限ループで",
+  					"delay": 87.5,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "tsuzuku like a mashingantouku no\n続くlike a マシンガントークの",
+  					"delay": 89.6,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "otomo niwa sou my hapitan to\nお供にはそう my ハピーターンと",
+  					"delay": 92.6,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "tsumetai ocha de kessekisaiban\n冷たいお茶で欠席裁判",
+  					"delay": 94.2,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "muzanhoumen desu\n無罪放免です",
+  					"delay": 98.0,
+  					"timestofire": -1
+				},		
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "shikoshiku sugina yatsu ha urame ni deru\nしつこくしすぎな奴は裏目に出る",
+  					"delay": 100.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "heya ni kazaru shikuramen\n部屋に飾るシクラメン",
+  					"delay": 103.0,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "tameiki de hanabira ga yureru\nため息で花びらが揺れる",
+  					"delay": 105.0,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "AA mou renraku mo shinai\nああもう連絡もしない",
+  					"delay": 108.5,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "okorareru koto niwa\n怒られることには",
+  					"delay": 110.3,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sou naisei nai kara\nそう耐性ないから",
+  					"delay": 112.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kirai ni natta tsumori dewa nainoyo\n嫌いになったつもりではないのよ",
+  					"delay": 113.2,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "「mengo」「mengo」「men...」\n「メンゴ」「メンゴ」「メン...」",
+  					"delay": 116.1,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "dekakenaide ALL DAY IN MY ROOM\n出かけないで ALL DAY IN MY ROOM",
+  					"delay": 118.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "narasanaide ALL DAY IN MY ROOM\n鳴らさないで ALL DAY IN MY ROOM",
+  					"delay": 120.8,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "shaberanaide ALL DAY IN MY ROOM\n喋らないで ALL DAY IN MY ROOM",
+  					"delay": 123.0,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hitori kiri de isasete yone\n一人きりで居させてよね",
+  					"delay": 126.0,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "modoranaide ALL DAY IN MY ROOM\n戻らないで ALL DAY IN MY ROOM",
+  					"delay": 129.0,
+  					"timestofire": -1
+				},		
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sagasanaide ALL DAY IN MY ROOM\n探さないで ALL DAY IN MY ROOM",
+  					"delay": 131.5,
+  					"timestofire": -1
+				},	
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sawaranaide ALL DAY IN MY ROOM\n触らないで ALL DAY IN MY ROOM",
+  					"delay": 133.9,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hitori kiri de isasete yone\n一人きりで居させてよね",
+  					"delay": 136.6,
+  					"timestofire": -1
 				},
 
                 {
@@ -8814,6 +5745,285 @@
 					"delay": 0.01,
 					"timestofire": -1
 				},
+				
+				{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "urei na hibi ni sabite\n憂いな日々に錆びて",
+  					"delay": 2.7,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "watashi no namae mo wasurete iku\n私の名前も忘れていく",
+  					"delay": 7.9,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kirei na uso goto\n綺麗な嘘ごと",
+  					"delay": 13.8,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "jibun wo damashi tsuzukete\n自分を騙し続けて",
+  					"delay": 16.3,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "ima yume de aeru\n今夢で会える",
+  					"delay": 21.0,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kiri ga harenai\n霧が晴れない",
+  					"delay": 49.4,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "ashiato wo kakusu you ni\n足跡を隠すように",
+  					"delay": 52.1,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mori ni mayotta furi shite\n森に迷った振りして",
+  					"delay": 55.1,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "tada mae ni susumenai\nただ前に進めない",
+  					"delay": 61.2,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "ashita wa konakute ii\n明日は来なくていい",
+  					"delay": 63.6,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "fukai nemuri ni ochite iku\n深い眠りに落ちていく",
+  					"delay": 66.4,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "oyasumi kyou wa owarasete\nお休み 今日は終わらせて",
+  					"delay": 71.5,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "oyasumi nagai yoru ni\nお休み 長い夜に",
+  					"delay": 77.1,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hajimete jibun wo yurushite ii\n初めて自分を許していい",
+  					"delay": 82.8,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "natsukashii noni\n懐かしいのに",
+  					"delay": 89.3,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mata hanashi wo kaketemo ii\nまた話をかけてもいい",
+  					"delay": 120.2,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "warui yume kara tsuredashite\n悪い夢から連れ出して",
+  					"delay": 124.7,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hana pen de issyo ni e egakou\n羽ペンで一緒に絵描こう",
+  					"delay": 131.5,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "futari botti de yozora wo\nふたりぼっちで夜空を",
+  					"delay": 135.8,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "oyasumi kyou wa owarasete\nお休み 今日は終わらせて",
+  					"delay": 142.0,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "oyasumi nagai yoru ni\nお休み 長い夜に",
+  					"delay": 147.7,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "yoake made mahou yo tokenaide\n夜明けまで魔法よ解けないで",
+  					"delay": 153.3,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "nemuru mori no ohime\n眠る森のお姫",
+  					"delay": 160.6,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "namida ga sotto\n涙がそっと",
+  					"delay": 191.4,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "ameoto ni awasete ku\n雨音に合わせてく",
+  					"delay": 197.2,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kanashimi wo mizu ni tokete\n悲しみを水に溶けて",
+  					"delay": 202.6,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "atatakai yume ni kawaru\n暖かい夢に変わる",
+  					"delay": 206.6,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kiesou na toki ni\n消えそうな時に",
+  					"delay": 212.7,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "watashi wo takishimete\n私を抱きしめて",
+  					"delay": 218.0,
+  					"timestofire": -1
+                },					
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "yuruyaka ni sekai wa mawaru\n緩やかに世界は回る",
+  					"delay": 224.0,
+  					"timestofire": -1
+                },
+
+                {					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "ashita mo kitto aeru\n明日もきっと会える",
+  					"delay": 229.2,
+  					"timestofire": -1
+                },
 
                 {
 					"outputname": "OnUser2",
@@ -8886,6 +6096,150 @@
 				},
 
 				{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mada kimi wo omou nagara\nまだ君想うながら",
+  					"delay": 26.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "jibun ni mukiaitakunai\n自分に向き合いたくない",
+  					"delay": 30.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "omoi wo omoi to\n思いを重いと",
+  					"delay": 34.5,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kimi ni omowaretakunai demo\n君に思われたくないでも",
+  					"delay": 37.2,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mada kimi wo sagasou to\nまだ君を探そうと",
+  					"delay": 43.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mizuiro no sekai ni ochiru\n水色の世界に落ちる",
+  					"delay": 47.7,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kono mama damaru to omou to\nこのまま黙ると思うと",
+  					"delay": 54.4,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kokoro ga kumoru mitai ni\n心が曇るみたいに",
+  					"delay": 60.7,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sono toki ni\nその時に",
+  					"delay": 67.5,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "guuzen to futte kita\n偶然と降ってきた",
+  					"delay": 70.5,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kitsuneame to iu\n狐雨と言う",
+  					"delay": 73.8,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hareteta sora nanoni\n晴れてた空なのに",
+  					"delay": 78.4,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "wagamama de furasetai\nわがままで降らせたい",
+  					"delay": 81.8,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "konna guuzen unmei to yobou\nこんな偶然 運命と呼ぼう",
+  					"delay": 86.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "Didida dida yume no naka\nDidida dida 夢の中",
+  					"delay": 92.8,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kimi ga okosu made\n君が起こすまで",
+  					"delay": 96.0,
+  					"timestofire": -1
+				},
+
+				{
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
@@ -8893,6 +6247,141 @@
 					"delay": 99.3,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": " ",
+					"delay": 120.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "S",
+					"delay": 120.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Su",
+					"delay": 120.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sun",
+					"delay": 121.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sunn",
+					"delay": 121.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sunny",
+					"delay": 122.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sunny R",
+					"delay": 122.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sunny Ra",
+					"delay": 122.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sunny Rai",
+					"delay": 123.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sunny Rain",
+					"delay": 123.6,
+					"timestofire": -1
+				},
+
+				{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mitoreteta sora nanoni\n見惚れてた空なのに",
+  					"delay": 158.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kono mama de hanasetai\nこのままで離せたい",
+  					"delay": 161.3,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kasa nanka iranai kara\n傘なんか要らないから",
+  					"delay": 165.5,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "Didida dida yume no naka\nDidida dida 夢の中",
+  					"delay": 172.0,
+  					"timestofire": -1
+				},
+
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "okoshite kuru made\n起こしてくるまで",
+  					"delay": 175.3,
+  					"timestofire": -1
+				},					
 
 				{
 					"outputname": "OnUser2",
@@ -8974,31 +6463,281 @@
 				},
 
 				{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "shizukana sekai de\n静かな世界で",
+  					"delay": 15.0,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "watashi dake\n私だけ",
+  					"delay": 19.4,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kioku no hazama ni kimi wo sagasu\n記憶の狭間に君を探す",
+  					"delay": 21.7,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "nee kikoeru kana\nねえ 聞こえるかな",
+  					"delay": 28.8,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kuucyuu yureteru hikari ga\n空中揺れてる光が",
+  					"delay": 33.3,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "aruiteru tsumetai kaze no naka\n歩いている冷たい風の中",
+  					"delay": 40.0,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "yuki no kessyou ga sora e maiochiru\n雪の結晶が空へ舞い落ちる",
+  					"delay": 46.0,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "hoshi no hikari wo atsumete\n星の光を集めて",
+  					"delay": 53.0,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "omoikasaneta aru yume wa\n思い重ねたある夢は",
+  					"delay": 59.1,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "ourora\nオーロラ",
+  					"delay": 64.4,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "umi no kanata mo\n海の彼方も",
+  					"delay": 93.2,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sora no mukou mo\n空の向こうも",
+  					"delay": 96.8,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sekai no hate nimo\n世界の果てにも",
+  					"delay": 100.0,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "kimi wa inai\n君はいない",
+  					"delay": 103.5,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "nee yume wa owaru\nねえ 夢は終わる",
+  					"delay": 106.7,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "afureteita hoshi no namida\n溢れていた星の涙",
+  					"delay": 111.3,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "shizunde iru fukai yami no naka\n沈んでいる深い闇の中",
+  					"delay": 117.5,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "tooku no koe ga watashi wo yonde ita\n遠くの声が私を呼んでいた",
+  					"delay": 124.0,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "sono koe wo tadoreru nara\nその声を辿れるなら",
+  					"delay": 130.3,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "fuyu no kiseki ni inoru\n冬の奇跡に祈る",
+  					"delay": 137.0,
+  					"timestofire": -1
+				},
+
+
+								{
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
 					"overrideparam": "You and me",
 					"delay": 142.5,
 					"timestofire": -1
+								},
+
+
+								{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "negai ga kanau nara\n願いが叶うなら",
+  					"delay": 171.0,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "mou ichido takishimete hoshii\nもう一度抱きしめて欲しい",
+  					"delay": 177.5,
+  					"timestofire": -1
 				},
 
-				{
+
+								{
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
 					"overrideparam": "I miss you",
 					"delay": 182.0,
 					"timestofire": -1
+								},
+
+
+								{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "tomaranai no\n止まらないの",
+  					"delay": 185.4,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "toki no nagare\n時の流れ",
+  					"delay": 188.8,
+  					"timestofire": -1
+				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "subete wasuresou\n全て忘れそう",
+  					"delay": 191.4,
+  					"timestofire": -1
 				},
 
-				{
+
+								{
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
 					"overrideparam": "I need you",
 					"delay": 195.2,
 					"timestofire": -1
+								},
+
+
+								{
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "nagaku nareru kyori\n長くなれる距離",
+  					"delay": 198.0,
+  					"timestofire": -1
 				},
+					
+				{					
+  					"outputname": "OnUser2",
+  					"targetname": "!self",
+  					"inputname": "SetMessage",
+  					"overrideparam": "me wo tojireba mada modoreru nokana\n目を閉じればまだ戻れるのかな",
+  					"delay": 201.8,
+  					"timestofire": -1
+				},
+
 
                 {
 					"outputname": "OnUser2",
@@ -9010,7 +6749,7 @@
             ]
 		}
     ],
-    "modify": // remove message output, add targetname/output
+    "modify": // remove message output, add targetname
     [
 		// message "友情出演φ(≧ω≦*)♪"
 		{
@@ -11631,4 +9370,3 @@
         }
     ]
 }
-
