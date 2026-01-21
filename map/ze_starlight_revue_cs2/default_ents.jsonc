@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.01.17
+// stripper by 兎RB 26.01.21
 // map ze_starlight_revue_cs2
 // workshop id 3519985936
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.01.17 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.01.21 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -2734,7 +2734,7 @@
   					"targetname": "!self",
   					"inputname": "SetMessage",
   					"overrideparam": " ",
-  					"delay": 30.0,
+  					"delay": 29.6,
   					"timestofire": -1
 				},
 
@@ -5733,3 +5733,4 @@
         }
     ]
 }
+
