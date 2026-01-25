@@ -53,7 +53,7 @@
 						"targetname": "cmd",
                         "inputname": "Command",
                         "overrideparam": "say language translation stripper 26.01.25 by 兎RB",
-                        "delay": 5.0,
+                        "delay": 6.0,
                         "timestofire": -1
                     }
                 ]
