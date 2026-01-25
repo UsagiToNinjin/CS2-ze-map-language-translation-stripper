@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.01.23
+// stripper by 兎RB 26.01.25
 // map ze_plants_vs_zombies
 // workshop id 3555222611
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -52,8 +52,8 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.01.23 by 兎RB",
-                        "delay": 1.0,
+                        "overrideparam": "say language translation stripper 26.01.25 by 兎RB",
+                        "delay": 5.0,
                         "timestofire": -1
                     }
                 ]
