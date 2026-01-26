@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.01.25
+// stripper by 兎RB 26.01.26
 // map ze_plants_vs_zombies
 // workshop id 3555222611
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -52,7 +52,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.01.25 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.01.26 by 兎RB",
                         "delay": 6.0,
                         "timestofire": -1
                     }
@@ -2254,7 +2254,7 @@
 					"outputname": "OnCase03",
 					"targetname": "item_doomshroom_weapon_temp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>item_doomshroom_text*>SetMessage>Now Sunlight：\n남은횟수：>0.0>-1",
+					"overrideparam": "OnEntitySpawned>item_doomshroom_text*>SetMessage>Now Sunlight：\nremaining uses：>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
