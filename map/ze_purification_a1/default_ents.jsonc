@@ -1,4 +1,4 @@
-// stripper by 兎RB,kokopekko 25.12.29
+// stripper by 兎RB,kokopekko 26.01.29
 // map ze_purification_a1
 // workshop id 3128279930
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -26,10 +26,10 @@
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
-						"targetname": "severadmin",
+						"targetname": "command",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.12.29 by 兎RB,kokopekko",
-                        "delay": 1.0,
+                        "overrideparam": "say language translation stripper 26.01.29 by 兎RB,kokopekko",
+                        "delay": 2.0,
                         "timestofire": -1
                     }
                 ]
@@ -96,7 +96,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：そなた達よ　ついに来ましたか ＊＊>39.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 少女：よくぞ来ましたね ＊＊>39.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -114,7 +114,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：ここの三つの教会は奇跡を生み出すことが出来る ＊＊>47.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：ここにある三つの教会は奇跡を生み出すことができますの ＊＊>47.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -123,7 +123,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：それらの力を手に入れなさい，我が最後にそなた達に力を貸してあげよう ＊＊>51.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：それらの力を手に入れなさい，最後にそなた達に力を貸してあげましょう ＊＊>51.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -132,7 +132,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3734",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：我は今でも手遅れないように祈りましょう ＊＊>55.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ バートリー：わたくしはまだ手遅れにならないことを祈りましょう ＊＊>55.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -150,7 +150,7 @@
 					"outputname": "OnCase01",
 					"targetname": "3815",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ ここは二番目の教会です ＊＊>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ ここは二番目の教会だ ＊＊>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -168,7 +168,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_final",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：そなた達は我を失望させませんでした ＊＊>140.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：あなたたちはわたくしを失望させませんでしたわ ＊＊>140.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -267,7 +267,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：此処は永寂星淵，我々の領域である ＊＊>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：此処は永寂星淵，わたくしの領域です ＊＊>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -276,7 +276,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_lvl2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：次はそなた達を解決する番ですね ＊＊>23.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：次はあなたたちを始末する番です ＊＊>23.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -393,7 +393,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：そなたが此処まで来ておるとは ＊＊>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：ここまで辿り着くとは ＊＊>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -411,7 +411,7 @@
 					"outputname": "OnCase01",
 					"targetname": "boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：この我の手で直接そなた達を終わらせて差し上げよう ＊＊>22.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ＊＊ バートリー：この手でわたくしが直々に終わらせて差し上げますわ ＊＊>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -690,7 +690,7 @@
 					"outputname": "OnCase02",
 					"targetname": "3815",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 여기는 두 번째 교회입니다 ＊＊>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say ＊＊ 여기는 두 번째 교회다 ＊＊>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1676,7 +1676,232 @@
 					"timestofire": -1
 				}
             ]
-        }
+        },
+		// add lyric entity
+		// Burn
+		{
+			"targetname": "lyric_burn",
+			"classname": "trigger_multiple",
+			"origin": "8982 -8206 6200",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+			"wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_purification_a1/entities/hurt_3916.vmdl",
+			"io":
+			[
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_burn_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_burn_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "lyric_burn_hud",
+			"classname": "env_hudhint",
+			"message": "Burn",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+                {
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Living in a crowded dream",
+  				    "delay": 1.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Searching for the quiet that you need to breathe",
+  				    "delay": 3.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Gave up on your sanity to hide behind your shadow",
+  				    "delay": 6.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "While you tried to take the sun down",
+  				    "delay": 11.1,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Hearts will never change to gold",
+  				    "delay": 14.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Out there thinking that you're in the world alone",
+  				    "delay": 16.2,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "No one ever told you that you'll have to fight for something",
+  				    "delay": 19.6,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Or you'll never learn to balance",
+  				    "delay": 24.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "It’s too cold",
+  				    "delay": 27.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Standing in the middle of the downfall",
+  				    "delay": 29.4,
+  				    "timestofire": -1
+  				},
+
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Looking the mirror cuz it’s only you",
+  				    "delay": 32.7,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "It’s too cold",
+  				    "delay": 40.5,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Standing in the middle of the downfall",
+  				    "delay": 42.4,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "Looking the mirror cuz it’s only you",
+  				    "delay": 45.6,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "When you crash and burn",
+  				    "delay": 50.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "That you have to lose",
+  				    "delay": 68.4,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "SetMessage",
+  				    "overrideparam": "When you crash and burn",
+  				    "delay": 76.0,
+  				    "timestofire": -1
+  				},
+
+				{
+  				    "outputname": "OnUser2",
+  				    "targetname": "!self",
+  				    "inputname": "Kill",
+  				    "delay": 78.0,
+  				    "timestofire": -1
+  				}
+			]
+		}		
     ],
     "modify": // remove message output, add targetname
     [
@@ -2523,7 +2748,35 @@
                     }
 				]
 			}
+		},
+		// add lyric output
+		{
+			"match":
+			{
+				"targetname": "[PR#]burn"
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "lyric_burn",
+						"inputname": "Enable",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "command",
+						"inputname": "Command",
+						"overrideparam": "say ♪ MUSIC [ NceS : Burn ]",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			}
 		}			
     ]
 }
-
