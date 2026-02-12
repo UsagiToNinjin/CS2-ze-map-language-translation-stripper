@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.01.16
+// stripper by 兎RB,Frame 26.02.12
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
 						"outputname": "OnSpawn",
 						"targetname": "Server",
 						"inputname": "Command",
-						"overrideparam": "say language translation stripper 26.01.16 by 兎RB,Frame",
+						"overrideparam": "say language translation stripper 26.02.12 by 兎RB,Frame",
 						"delay": 6.0,
 						"timestofire": -1
 					}
@@ -5393,6 +5393,499 @@
 					"timestofire": -1
 				}
             ]
+        },
+		// n01r
+		{
+			"targetname": "lyric_n01r",
+			"classname": "trigger_multiple",
+			"origin": "-768 512 4864",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"startdisabled": "1",
+			"wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
+			"io":
+			[
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_n01r_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_n01r_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "lyric_n01r_hud",
+			"classname": "env_hudhint",
+			"message": "N01R",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Furihodoita toki no kage ni\n振りほどいた時の影に",
+  				  	"delay": 25.5,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Kakureta kizu ga yume wo miteiru\n隠れた傷が夢を見ている",
+  				  	"delay": 31.7,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Machi no otode me wo sameshiteha\n街のおとでめを冷めしては",
+  				  	"delay": 37.8,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Ano hi no mamade itami dasu\nあの費のママで痛み出す",
+  				  	"delay": 43.8,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Arosoi no korasu ga sekai wo daitemo\nあろ沿いのコラスが世界を抱いても",
+  				  	"delay": 49.3,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Yubi no sukima de namida ga tsutau\n指の隙間で涙が伝う",
+  				  	"delay": 55.5,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "The gift, you learn",
+  				  	"delay": 60.6,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Was always waiting there",
+  				  	"delay": 62.5,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "And if I turned",
+  				  	"delay": 66.7,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Your eyes would break my stare",
+  				  	"delay": 68.8,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "All of my riches waiting here for you",
+  				  	"delay": 73.7,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Just touch me like you do",
+  				  	"delay": 79.4,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "What of the precious dust?",
+  				  	"delay": 86.4,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "The light it carries us",
+  				  	"delay": 89.4,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "I’ve never felt so alone",
+  				  	"delay": 92.5,
+  				  	"timestofire": -1
+  				},
+                
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Yet so connected",
+  				  	"delay": 94.6,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "I roar into the night",
+  				  	"delay": 98.3,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "And pray to never rust",
+  				  	"delay": 101.6,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "I might be good in a fight",
+  				  	"delay": 104.7,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "But I am empty",
+  				  	"delay": 106.7,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Harmony",
+  				  	"delay": 110.0,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Achieved through melding",
+  				  	"delay": 111.2,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Woman and machine",
+  				  	"delay": 112.9,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Freedom is the scary place",
+  				  	"delay": 116.2,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "You have never seen",
+  				  	"delay": 119.2,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "The gift, you learn",
+  				  	"delay": 121.2,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Was always waiting there",
+  				  	"delay": 123.3,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "And if I turned",
+  				  	"delay": 127.3,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Your eyes would break my stare",
+  				  	"delay": 129.4,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "All of my riches waiting here for you",
+  				  	"delay": 134.4,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Just touch me like you do",
+  				  	"delay": 139.9,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Musekinin na koe de tatakattemo\n無責任な声で戦っても",
+  				  	"delay": 146.0,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Kaze wo kittadake no kotaeda\n風を切っただけの答えだ",
+  				  	"delay": 152.0,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Sorezore no kao de sawaru inochi wa\nそれぞれの顔で触る命わ",
+  				  	"delay": 158.2,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Osonai tega sagashiteta hajimari no you\n遅ない手が探してた始まりの用",
+  				  	"delay": 164.4,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "The gift, you learn",
+  				  	"delay": 172.8,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Was always waiting there",
+  				  	"delay": 174.9,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "And if I turned",
+  				  	"delay": 178.8,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Your eyes would break my stare",
+  				  	"delay": 181.1,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "All of my riches waiting here for you",
+  				  	"delay": 186.0,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Just touch me like you do",
+  				  	"delay": 191.7,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "The gift, you learn",
+  				  	"delay": 197.2,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Was always waiting there",
+  				  	"delay": 199.3,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "And if I turned",
+  				  	"delay": 203.3,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Your eyes would break my stare",
+  				  	"delay": 205.4,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "All of my riches waiting here for you",
+  				  	"delay": 210.4,
+  				  	"timestofire": -1
+  				},
+
+                {
+  				  	"outputname": "OnUser2",
+  				  	"targetname": "!self",
+  				  	"inputname": "SetMessage",
+  				  	"overrideparam": "Just touch me like you do",
+  				  	"delay": 216.0,
+  				  	"timestofire": -1
+  				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 222.0,
+					"timestofire": -1
+				}
+            ]
         }
 	],
 	"modify": // remove message output
@@ -6529,6 +7022,35 @@
 						"targetname": "Server",
 						"inputname": "Command",
 						"overrideparam": "say ♪ MUSIC [ 祖堅正慶 : Scream ]",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+
+		{
+			"match":
+			{
+				"targetname": "[PR#]Music_Extra_Start"
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "lyric_n01r",
+						"inputname": "Enable",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say ♪ MUSIC [ 澤野弘之 : N01R(feat.Tielle) ]",
 						"delay": 0.0,
 						"timestofire": 1
 					}
