@@ -1,0 +1,355 @@
+// stripper by 兎RB 26.02.15
+// map ze_aot_trost_v6r
+// workshop id 3262920150
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+    "modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]round_relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 调查兵团战败",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 调查兵团战败",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 调查兵团战败",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 调查兵团战败",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 调查兵团战败",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 调查兵团战败",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 调查兵团战败",
+                        "delay": 7.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 调查兵团战败",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					// 日本語
+                    {
+				    	"outputname": "OuUser1",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 調査兵団敗北>0.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OuUser1",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 調査兵団敗北>1.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OuUser1",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 調査兵団敗北>2.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OuUser1",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 調査兵団敗北>3.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OuUser1",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 調査兵団敗北>5.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OuUser1",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 調査兵団敗北>6.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OuUser1",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 調査兵団敗北>7.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OuUser1",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 調査兵団敗北>8.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+				    // 한국어
+				    {
+				    	"outputname": "OnUser2",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 조사병단 패배>0.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser2",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 조사병단 패배>1.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser2",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 조사병단 패배>2.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser2",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 조사병단 패배>3.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser2",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 조사병단 패배>5.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser2",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 조사병단 패배>6.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser2",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 조사병단 패배>7.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser2",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say 조사병단 패배>8.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+				    // English
+				    {
+				    	"outputname": "OnUser3",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say Survey Corps Defeat>0.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+                
+				    {
+				    	"outputname": "OnUser3",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say Survey Corps Defeat>1.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser3",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say Survey Corps Defeat>2.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser3",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say Survey Corps Defeat>3.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser3",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say Survey Corps Defeat>5.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser3",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say Survey Corps Defeat>6.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser3",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say Survey Corps Defeat>7.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+				    {
+				    	"outputname": "OnUser3",
+				    	"targetname": "!self",
+				    	"inputname": "AddOutPut",
+				    	"overrideparam": "OnTrigger>cmd>Command>say Survey Corps Defeat>8.0>-1",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]all_item_relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say 检测到当前为二周目，开启全神器模式。",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+        
+        {
+            "match":
+            {
+                "targetname": "[PR#]round_counter"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMax",
+						"targetname": "round_relay_tl",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+    ]
+}

@@ -1,0 +1,189 @@
+// stripper by 兎RB 26.02.03
+// map ze_aot_trost_v6r
+// workshop id 3262920150
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]item_ltjd_w_case&0000"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]item_ltjd_w_text&0000",
+                        "inputname": "SetMessage",
+                        "overrideparam": "当前气体：■□",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnCase02",
+						"targetname": "[PR#]item_ltjd_w_text&0000",
+                        "inputname": "SetMessage",
+                        "overrideparam": "当前气体：■■",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnCase32",
+						"targetname": "[PR#]item_ltjd_w_text&0000",
+                        "inputname": "SetMessage",
+                        "overrideparam": "当前气体：□□",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	],
+    "add":
+    [
+        {
+			"targetname": "item_ltjd_w_vip_tl_relay&0000",
+			"classname": "logic_relay",
+			"io":
+            [
+                // 日本語
+				{
+                    "outputname": "OnUser1",
+                    "targetname": "item_ltjd_w_text&0000",
+                    "inputname": "SetMessage",
+                    "overrideparam": "現在ガス：□□",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+    			    "outputname": "OnUser1",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase01>item_ltjd_w_text&0000>SetMessage>現在ガス：■□>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+				{
+    			    "outputname": "OnUser1",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase02>item_ltjd_w_text&0000>SetMessage>現在ガス：■■>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+				{
+    			    "outputname": "OnUser1",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase32>item_ltjd_w_text&0000>SetMessage>現在ガス：□□>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+                {
+    			    "outputname": "OnUser1",
+    			    "targetname": "!self",
+    			    "inputname": "Kill",
+    			    "delay": 0.05,
+    			    "timestofire": 1
+    			},
+				// 한국어
+				{
+                    "outputname": "OnUser2",
+                    "targetname": "item_ltjd_w_text&0000",
+                    "inputname": "SetMessage",
+                    "overrideparam": "현재 가스：□□",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+    			    "outputname": "OnUser2",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase01>item_ltjd_w_text&0000>SetMessage>현재 가스：■□>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+				{
+    			    "outputname": "OnUser2",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase02>item_ltjd_w_text&0000>SetMessage>현재 가스：■■>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+				{
+    			    "outputname": "OnUser2",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase32>item_ltjd_w_text&0000>SetMessage>현재 가스：□□>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+                {
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "Kill",
+    			    "delay": 0.05,
+    			    "timestofire": 1
+    			},
+				// English
+				{
+                    "outputname": "OnUser3",
+                    "targetname": "item_ltjd_w_text&0000",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Current gas：□□",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+    			    "outputname": "OnUser3",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase01>item_ltjd_w_text&0000>SetMessage>Current gas：■□>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+				{
+    			    "outputname": "OnUser3",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase02>item_ltjd_w_text&0000>SetMessage>Current gas：■■>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+				{
+    			    "outputname": "OnUser3",
+    			    "targetname": "item_ltjd_w_case&0000",
+    			    "inputname": "AddOutPut",
+    			    "overrideparam": "OnCase32>item_ltjd_w_text&0000>SetMessage>Current gas：□□>0.0>-1",
+    			    "delay": 0.0,
+    			    "timestofire": 1
+    			},
+
+                {
+    			    "outputname": "OnUser3",
+    			    "targetname": "!self",
+    			    "inputname": "Kill",
+    			    "delay": 0.05,
+    			    "timestofire": 1
+    			}
+            ]
+        }
+    ]            
+}
