@@ -10,11 +10,11 @@
 	[
 		// vscripts/aot_v6_2r/juren2_info.lua
 		{
-			"targetname": "[PR#]map_info_script" // refer to L799
+			"targetname": "[PR#]map_info_script" // refer to L705
 		},
 		// vscripts/aot_v6_2r/timeleft.lua
 		{
-			"targetname": "[PR#]timeleft" // refer to L1525
+			"targetname": "[PR#]timeleft" // refer to L1431
 		}
 	],
     "modify":
@@ -32,7 +32,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "language_counter",
                         "inputname": "SetValue",
-                        "overrideparam": "3", // please type language serial number here
+                        "overrideparam": "1", // please type language serial number here
                         "delay": 0.0,
                         "timestofire": -1
                     },
