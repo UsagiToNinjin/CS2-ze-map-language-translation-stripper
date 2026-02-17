@@ -48,7 +48,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "language_counter",
                         "inputname": "SetValue",
-                        "overrideparam": "3", // please type language serial number here
+                        "overrideparam": "1", // please type language serial number here
                         "delay": 0.0,
                         "timestofire": -1
                     },
