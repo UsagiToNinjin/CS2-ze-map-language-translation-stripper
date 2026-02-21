@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.12.17
+// stripper by 兎RB 26.02.21
 // map ze_incident_seasons
 // workshop id 3472606171
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -51,7 +51,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "command",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.12.17 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.02.21 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -2396,7 +2396,7 @@
 					"outputname": "OnCase02",
 					"targetname": "s4_d1_timer0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTimer>command>Command>say *** 사토하루「사월의 샤먼」***>0.0>1",
+					"overrideparam": "OnTimer>command>Command>say *** 고향의 봄「사월의 샤먼」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2405,7 +2405,7 @@
 					"outputname": "OnCase02",
 					"targetname": "s4_d2_timer0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTimer>command>Command>say *** 사토아키「계절을 벗어난 광풍」***>0.0>1",
+					"overrideparam": "OnTimer>command>Command>say *** 고향의 가을「계절을 벗어난 광풍」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2423,7 +2423,7 @@
 					"outputname": "OnCase02",
 					"targetname": "s4_d4_g_relay0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 사토후유「한상칠성의 검」***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 고향의 겨울「한상칠성의 검」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2441,7 +2441,7 @@
 					"outputname": "OnCase02",
 					"targetname": "s4_d6_g_relay0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 사토나츠「초특급 냉방열차」***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 고향의 여름「초특급 냉방열차」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4151,7 +4151,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_d1_timer0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTimer>command>Command>say *** SatoHaru「April’s Witch」***>0.0>1",
+					"overrideparam": "OnTimer>command>Command>say *** Hometown Spring「April’s Witch」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4160,7 +4160,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_d2_timer0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTimer>command>Command>say *** SatoAki「Unseasonal Gale」***>0.0>1",
+					"overrideparam": "OnTimer>command>Command>say *** Hometown Autumn「Unseasonal Gale」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4178,7 +4178,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_d4_g_relay0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** SatoFuyu「Sword of the Seven Frost Stars」***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Hometown Winter「Sword of the Seven Frost Stars」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4196,7 +4196,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_d6_g_relay0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** SatoNatsu「Super Express Cooling Train」***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Winter Summer「Super Express Cooling Train」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5426,7 +5426,994 @@
 			"renderamt": "255",
 			"rendermode": "kRenderNormal",
 			"renderfx": "kRenderFxNone"
-		}
+		},
+		// add lyric entity
+		// Nameless Passion
+		{
+			"targetname": "lyric_nameless",
+			"classname": "trigger_multiple",
+			"origin": "13935 -2155 8000",
+			"angles": "0 0 0",
+			"scales": "9 9 9",
+			"startdisabled": "1",
+			"wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_incident_seasons/entities/unnamed_11449.vmdl",
+			"io":
+			[
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_nameless_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_nameless_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "lyric_nameless_hud",
+			"classname": "env_hudhint",
+			"message": "Nameless Passion",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Slave grenia",
+					"delay": 2.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Disgrow maila drv",
+					"delay": 4.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Feribea nizel duory",
+					"delay": 7.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Cralty grenia",
+					"delay": 11.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Oveltary miztrv laia",
+					"delay": 14.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "kuukyo ni somerareta kokoro\n空虚に染められた心",
+					"delay": 31.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Toki no ame wa tada\n時の雨はただ",
+					"delay": 34.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Haiiro no sekai kasumaseru dake\n灰色の世界 霞ませるだけ",
+					"delay": 38.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kako ni toraware kidzuita\n過去に囚われ気付いた",
+					"delay": 41.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Tsuioku no imi mo\n追憶の意味も",
+					"delay": 43.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Itsunomanika wasureteita\nいつの間にか忘れていた",
+					"delay": 47.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Nigirareta itsuwari no honshou\n握られた偽りの本性",
+					"delay": 50.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Shiru koto mo nai darou\n知る事も無いだろう",
+					"delay": 53.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Hansha shita egao sura mo\n反射した笑顔すらも",
+					"delay": 56.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kasuka ni kagayaita\n微かに輝いた",
+					"delay": 59.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Nibiiro no namida ni wakare wo tsugete\n鈍色の涙に別れを告げて",
+					"delay": 61.8,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kodou ga kasoku suru\n鼓動が加速する",
+					"delay": 67.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Shousei no signal\n鐘声のsignal",
+					"delay": 78.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Tomadoi to kage no kairou\n戸惑いと影の回廊",
+					"delay": 80.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Iro aseta mirai ni matsu sadame\n色褪せた未来に待つ定め",
+					"delay": 83.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kousai no testament\n光彩のtestament",
+					"delay": 87.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Mou ichido mezameru nara\nもう一度目覚めるなら",
+					"delay": 89.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Oboeteite itoshii namae wo\n覚えていて愛しい名前を",
+					"delay": 92.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Wasurenaide anata no kotoba wo\n忘れないで貴方の言葉を",
+					"delay": 97.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kaimei no destiny\n晦冥のdestiny",
+					"delay": 121.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Shousou to akenai yoru\n焦燥と明けない夜",
+					"delay": 123.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Iro aseta hoho ni te wo soete\n色褪せた頬に手を添えて",
+					"delay": 126.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Ganbou no testament\n願望のtestament",
+					"delay": 131.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Mou ichido kikoeru nara\nもう一度聞こえるなら",
+					"delay": 133.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Oboeteite watashi no namae wo\n覚えていて私の名前を",
+					"delay": 135.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Cralty grenia",
+					"delay": 141.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Oveltary miztrv laia",
+					"delay": 143.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 151.0,
+					"timestofire": -1
+				}
+			]
+		},
+		// Nameless Passion Extend ver.
+		{
+			"targetname": "lyric_nameless_ext",
+			"classname": "trigger_multiple",
+			"origin": "-12000 -13150 -14120",
+			"angles": "0 0 0",
+			"scales": "9 9 9",
+			"startdisabled": "1",
+			"wait": "1",
+			"spawnflags": "4097",
+			"model": "maps/ze_incident_seasons/entities/unnamed_11449.vmdl",
+			"io":
+			[
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_nameless_ext_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnStartTouch",
+					"targetname": "lyric_nameless_ext_hud",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "lyric_nameless_ext_hud",
+			"classname": "env_hudhint",
+			"message": "Nameless Passion",
+			"io":
+			[
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Yume ni mita\n夢に見た",
+					"delay": 2.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kagayaki terasu futari wa\n輝き照らす二人は",
+					"delay": 3.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kanau koto mo naku ochiteiku\n叶うこともなく堕ちていく",
+					"delay": 6.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kowareta sekai wa\n壊れた世界は",
+					"delay": 11.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Dare no mono darou\n誰の物だろう",
+					"delay": 13.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "kodoku no naka watashi wa mezameru...\n孤独の中 私は目覚める...",
+					"delay": 16.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Slave grenia",
+					"delay": 23.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Disgrow maila drv",
+					"delay": 26.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Feribea nizel duory",
+					"delay": 28.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Cralty grenia",
+					"delay": 33.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Oveltary miztrv laia",
+					"delay": 35.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "kuukyo ni somerareta kokoro\n空虚に染められた心",
+					"delay": 53.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Toki no ame wa tada\n時の雨はただ",
+					"delay": 55.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Haiiro no sekai kasumaseru dake\n灰色の世界 霞ませるだけ",
+					"delay": 59.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kako ni toraware kidzuita\n過去に囚われ気付いた",
+					"delay": 62.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Tsuioku no imi mo\n追憶の意味も",
+					"delay": 65.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Itsunomanika wasureteita\nいつの間にか忘れていた",
+					"delay": 68.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Nigirareta itsuwari no honshou\n握られた偽りの本性",
+					"delay": 72.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Shiru koto mo nai darou\n知る事も無いだろう",
+					"delay": 74.9,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Hansha shita egao sura mo\n反射した笑顔すらも",
+					"delay": 78.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kasuka ni kagayaita\n微かに輝いた",
+					"delay": 81.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Nibiiro no namida ni wakare wo tsugete\n鈍色の涙に別れを告げて",
+					"delay": 82.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kodou ga kasoku suru\n鼓動が加速する",
+					"delay": 88.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Shousei no signal\n鐘声のsignal",
+					"delay": 100.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Tomadoi to kage no kairou\n戸惑いと影の回廊",
+					"delay": 102.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Iro aseta mirai ni matsu sadame\n色褪せた未来に待つ定め",
+					"delay": 104.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kousai no testament\n光彩のtestament",
+					"delay": 109.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Mou ichido mezameru nara\nもう一度目覚めるなら",
+					"delay": 111.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Oboeteite itoshii namae wo\n覚えていて愛しい名前を",
+					"delay": 114.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Wasurenaide anata no kotoba wo\n忘れないで貴方の言葉を",
+					"delay": 119.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Flosen salve our deo",
+					"delay": 144.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Nigstorm lacrany",
+					"delay": 148.9,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Cralty bellze fyden",
+					"delay": 154.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Bye miztrv laia",
+					"delay": 157.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kieru koto no nai kizuato\n消えることのない傷跡",
+					"delay": 166.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Ayamachi sura mada\n過ちすらまだ",
+					"delay": 168.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Samayou kiri no naka gomakasu dake\n彷徨う霧の中 誤魔化すだけ",
+					"delay": 172.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kaketa michi tadori shitta\n欠けた道辿り知った",
+					"delay": 175.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sekai no houkai mo\n世界の崩壊も",
+					"delay": 178.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Itsu no ma ni ka wasureteita\nいつの間にか忘れていた",
+					"delay": 181.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Ikiba motome mi ni matou shoudou\n行き場求め身に纏う衝動",
+					"delay": 185.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Shiru koto mo nai darou\n知る事も無いだろう",
+					"delay": 187.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kawaita namida no imi mo\n乾いた涙の意味も",
+					"delay": 191.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Azayaka ni irodoru doukei no naka\n鮮やかに彩る憧憬の中",
+					"delay": 194.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Egaita anata no sugata\n描いた貴方の姿",
+					"delay": 197.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kioku no hate\n記憶の果て",
+					"delay": 201.3,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kaimei no destiny\n晦冥のdestiny",
+					"delay": 203.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Shousou to akenai yoru\n焦燥と明けない夜",
+					"delay": 204.9,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Iro aseta hoho ni te wo soete\n色褪せた頬に手を添えて",
+					"delay": 208.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Ganbou no testament\n願望のtestament",
+					"delay": 212.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Mou ichido kikoeru nara\nもう一度聞こえるなら",
+					"delay": 214.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Oboeteite watashi no namae wo\n覚えていて私の名前を",
+					"delay": 217.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kouhai ni furi sosogu\n荒廃に降り注ぐ",
+					"delay": 222.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Kakera tachi wa\n欠片たちは",
+					"delay": 225.6,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Haiiro no watashi wo terasu hikari\n灰色の私を照らす光",
+					"delay": 227.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Rinne ga nemuri ni tsuku toki\n輪廻が眠りにつく時",
+					"delay": 233.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Anata ni tsugeru yo\n貴方に告げるよ",
+					"delay": 237.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Wakare no kotoba wo\n別れの言葉を",
+					"delay": 239.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Aa sayounara itooshii hito\n嗚呼 さようなら 愛しい人",
+					"delay": 244.2,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Sekai ga hajimaru sono hi made...\n世界が始まる その日まで...",
+					"delay": 251.5,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Cralty grenia",
+					"delay": 261.4,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "SetMessage",
+					"overrideparam": "Oveltary miztrv laia",
+					"delay": 263.7,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 271.2,
+					"timestofire": -1
+				}
+			]
+		}		
     ],
     "modify": // remove message output, add targetname
     [
@@ -7899,6 +8886,64 @@
                     }
 				]
 			}
-		}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]sound_s4_3"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "SoundEventGuid",
+						"targetname": "lyric_nameless",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "SoundEventGuid",
+						"targetname": "command",
+                        "inputname": "Command",
+                        "overrideparam": "say ♪ MUSIC [ 天束 : Nameless Passion(feat.Sennzai) ]",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]sound_rtv"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "SoundEventGuid",
+						"targetname": "lyric_nameless_ext",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "SoundEventGuid",
+						"targetname": "command",
+                        "inputname": "Command",
+                        "overrideparam": "say ♪ MUSIC [ 天束 : Nameless Passion(feat.Sennzai) Extend ver. ]",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        }
     ]
 }
