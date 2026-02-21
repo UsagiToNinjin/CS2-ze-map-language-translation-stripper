@@ -4196,7 +4196,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_d6_g_relay0",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Winter Summer「Super Express Cooling Train」***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Hometown Summer「Super Express Cooling Train」***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -8947,3 +8947,4 @@
         }
     ]
 }
+
