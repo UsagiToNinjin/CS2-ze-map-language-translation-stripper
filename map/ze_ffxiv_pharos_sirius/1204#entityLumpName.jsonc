@@ -1,0 +1,28 @@
+// stripper by 兎RB 26.02.22
+// map ze_ffxiv_pharos_sirius
+// workshop id 3435645851
+{
+	"modify": // fix an issue where the maximum HP does not reach 256
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Release_Heal_TR&0000"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "max_health 256",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}
