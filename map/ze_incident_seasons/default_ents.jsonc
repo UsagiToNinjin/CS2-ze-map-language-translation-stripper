@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.02.21
+// stripper by 兎RB 26.02.22
 // map ze_incident_seasons
 // workshop id 3472606171
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -51,7 +51,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "command",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.02.21 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.02.22 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -5629,7 +5629,7 @@
 					"targetname": "!self",
 					"inputname": "SetMessage",
 					"overrideparam": "Nibiiro no namida ni wakare wo tsugete\n鈍色の涙に別れを告げて",
-					"delay": 61.8,
+					"delay": 62.0,
 					"timestofire": -1
 				},
 
@@ -8947,4 +8947,3 @@
         }
     ]
 }
-
