@@ -3,7 +3,7 @@
 // workshop id 3247766438
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L1508 L1587
+// + fix bug L1508 L1547
 {
 	"filter": // remove unnecessary entity
 	[
@@ -1505,7 +1505,7 @@
 				}
             ]
         },
-		// kart(prop) can get nade KB bug, disable nade 
+		// karts(func_phybox) are affected by grenade knockback, disable grenade explosions in racing mode 
 		{
 			"targetname": "disable_nade",
             "classname": "logic_timer",
@@ -1515,47 +1515,7 @@
 			[
 				{
                     "outputname": "OnTimer",
-					"targetname": "flashbang_projectile",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
 					"targetname": "hegrenade_projectile",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "molotov_projectile",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "smokegrenade_projectile",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "decoy_projectile",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-				{
-                    "outputname": "OnTimer",
-					"targetname": "tagrenade_projectile",
                     "inputname": "Kill",                       
                     "delay": 0.0,
                     "timestofire": -1
@@ -1584,7 +1544,7 @@
                     }
 				]	
             },
-			"insert": // add fix kart(prop) KB bug output
+			"insert": // add disable grenade explosions logic
             {
                 "io":
                 [
