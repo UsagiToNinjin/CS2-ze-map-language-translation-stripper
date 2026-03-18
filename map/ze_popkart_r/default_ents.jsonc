@@ -1,9 +1,9 @@
-// stripper by 兎RB 25.11.04
+// stripper by 兎RB 26.03.18
 // map ze_popkart_r
 // workshop id 3247766438
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L1526 L1605
+// + fix bug L1508 L1587
 {
 	"filter": // remove unnecessary entity
 	[
@@ -53,7 +53,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.11.04 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.03.18 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -638,15 +638,6 @@
 					"outputname": "OnCase01",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say <<車が動けなくなった場合は，スペースキーで降りて乗り直してください>>",
-					"delay": 10.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "cmd",
-					"inputname": "Command",
 					"overrideparam": "say <<では，今からカートに乗りましょう>>",
 					"delay": 20.0,
 					"timestofire": -1
@@ -692,8 +683,8 @@
 					"outputname": "OnCase01",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say <<視点の位置がずれた場合は，右クリックで元に戻してください>>",
-					"delay": 11.0,
+					"overrideparam": "say <<Rキーで一人称，三人称視点を切り替えられます>>",
+					"delay": 10.0,
 					"timestofire": -1
 				},
 
@@ -1247,15 +1238,6 @@
 					"outputname": "OnCase01",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say <<차가 못 움직이게 될 경우，스페이스바 키로 내리고 다시 타 주세요>>",
-					"delay": 10.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "cmd",
-					"inputname": "Command",
 					"overrideparam": "say <<그럼，지금 부터 카트에 승차합시다>>",
 					"delay": 20.0,
 					"timestofire": -1
@@ -1301,8 +1283,8 @@
 					"outputname": "OnCase01",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say <<시점 위치가 엇갈린 경우，오른쪽 클릭으로 원래대로 되돌려 주세요>>",
-					"delay": 11.0,
+					"overrideparam": "say <<R 키로 1인칭，3인칭 시점을 전환할 수 있습니다>>",
+					"delay": 10.0,
 					"timestofire": -1
 				},
 
