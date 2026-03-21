@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.02.17
+// stripper by 兎RB 26.03.21
 // map ze_bang_dream_mygo
 // workshop id 3600074056
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -57,7 +57,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.02.17 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.03.21 by 兎RB",
                         "delay": 6.0,
                         "timestofire": -1
                     },
@@ -1623,6 +1623,15 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "rank_text",
+					"inputname": "SetMessage",
+					"overrideparam": "クリア順位",
+					"delay": 0.0,
+					"timestofire": -1
+				},
 				// 한국어
 				{
 					"outputname": "OnCase02",
@@ -3168,6 +3177,15 @@
 					"targetname": "4262",
 					"inputname": "SetMessage",
 					"overrideparam": "RTV3（미완공）",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "rank_text",
+					"inputname": "SetMessage",
+					"overrideparam": "클리어 순위",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4734,6 +4752,15 @@
 					"targetname": "4262",
 					"inputname": "SetMessage",
 					"overrideparam": "RTV3\n(Unfinished)",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "rank_text",
+					"inputname": "SetMessage",
+					"overrideparam": "Clear Ranking",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -7315,5 +7342,5 @@
 				]
 			}
 		}
-    ]
+    ]	
 }
