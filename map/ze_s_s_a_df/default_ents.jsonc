@@ -3,7 +3,8 @@
 // workshop id 3634790579
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L5364 L5394 
+// + fix bug L5390 L5420
+// + improvement L41
 {
     "modify":
     [
@@ -35,6 +36,21 @@
                         "timestofire": -1
                     }
                 ]
+            }
+        },
+		// remove the logic that forcibly changes the primary weapon to m4a1, when human get item
+		{
+            "match":
+            {
+                "targetname": "[PR#]item_drop"
+            },
+			"replace":
+            {
+				"spawnflags": "1"
+            },
+            "delete":
+            {
+				"weapon0": "weapon_m4a1_silencer"
             }
         }
     ],
@@ -575,7 +591,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lxy_relayR",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say say ＜  シャークキャノン  ＞>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say ＜  シャークキャノン  ＞>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1016,7 +1032,7 @@
 					"outputname": "OnCase01",
 					"targetname": "11462",
 					"inputname": "SetMessage",
-					"overrideparam": "アリス:掴み防御不可\n       右キー連打:少量の体力を回復, 周囲のゾンビを周期的に弾き飛ばす CD:60秒\n       Eキー 激流旋渦:その場に減速エリアを残す CD:60秒",
+					"overrideparam": "アリス:掴み防御不可\n       右キー連打:少量の体力を回復,\n       周囲のゾンビを周期的に弾き飛ばす CD:60秒\n       Eキー 激流旋渦:その場に減速エリアを残す CD:60秒",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1052,7 +1068,7 @@
 					"outputname": "OnCase01",
 					"targetname": "11467",
 					"inputname": "SetMessage",
-					"overrideparam": "カイラ:HP400\n       Eキー:超究武神覇斬を発動, 多段ダメージを与えた後にゾンビを仕留める\n       右キー:エネルギー突進, 短時間無敵とゾンビを斬る, ゾンビを斬って右キーのエネルギーを回復可能\n       左キー:斬撃",
+					"overrideparam": "カイラ:HP400\n       Eキー:超究武神覇斬を発動,\n       多段ダメージを与えた後にゾンビを仕留める\n       右キー:エネルギー突進, 短時間無敵とゾンビを斬る,\n       ゾンビを斬って右キーのエネルギーを回復可能\n       左キー:斬撃",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1061,7 +1077,7 @@
 					"outputname": "OnCase01",
 					"targetname": "11468",
 					"inputname": "SetMessage",
-					"overrideparam": "騎士:HP400\n     Eキー:エネルギーバーストを発動, チャージ後に高ダメージを与える\n     右キー:短時間無敵\n     無敵中にまた右キーで無敵時間を延長, 反撃するゾンビを防ぐ\n     左キー:斬撃",
+					"overrideparam": "騎士:HP400\n     Eキー:エネルギーバーストを発動,\n     チャージ後に高ダメージを与える\n     右キー:短時間無敵\n     無敵中にまた右キーで無敵時間を延長,\n     反撃するゾンビを防ぐ\n     左キー:斬撃",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1070,7 +1086,7 @@
 					"outputname": "OnCase01",
 					"targetname": "11469",
 					"inputname": "SetMessage",
-					"overrideparam": "ブラックマジシャンガール:掴み防御不可\n       Eキー:六芒星の呪縛を発動, ゾンビを拘束 CD:90秒\n       右キー:黒魔導爆裂破を発動, 長時間ゾンビを燃焼 CD:90秒\n       左キー:斬撃",
+					"overrideparam": "ブラックマジシャンガール:掴み防御不可\n       Eキー:六芒星の呪縛を発動,\n       ゾンビを拘束 CD:90秒\n       右キー:黒魔導爆裂破を発動,\n       長時間ゾンビを燃焼 CD:90秒\n       左キー:斬撃",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1781,7 +1797,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lxy_relayR",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say say ＜  샤크캐논  ＞>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say ＜  샤크캐논  ＞>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2222,7 +2238,7 @@
 					"outputname": "OnCase02",
 					"targetname": "11462",
 					"inputname": "SetMessage",
-					"overrideparam": "아리스:잡기 방어불가\n       우측 키 연타:소량의 체력을 회복, 주위의 좀비를 주기적으로 팅겨냄 CD:60초\n       E 키 급류 소용돌이:제자리에 감속 영역을 남긴다 CD:60초",
+					"overrideparam": "아리스:잡기 방어불가\n       우측 키 연타:소량의 체력을 회복,\n       주위의 좀비를 주기적으로 팅겨냄 CD:60초\n       E 키 급류 소용돌이:제자리에 감속 영역을 남긴다 CD:60초",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2258,7 +2274,7 @@
 					"outputname": "OnCase02",
 					"targetname": "11467",
 					"inputname": "SetMessage",
-					"overrideparam": "카이라:HP400\n       E 키:구무신패참을 발동, 다단 데미지를 준 후 좀비를 해치움\n       우측 키:에너지 돌진, 단시간 무적과 좀비를 벰, 좀비를 베어 우측 키의 에너지를 회복가능\n       좌측 키:참격",
+					"overrideparam": "카이라:HP400\n       E 키:구무신패참을 발동, 다단 데미지를 준 후 좀비를 해치움\n       우측 키:에너지 돌진, 단시간 무적과 좀비를 벰,\n       좀비를 베어 우측 키의 에너지를 회복가능\n       좌측 키:참격",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2267,7 +2283,7 @@
 					"outputname": "OnCase02",
 					"targetname": "11468",
 					"inputname": "SetMessage",
-					"overrideparam": "기사:HP400\n     E 키:에너지 버스터를 발동, 차징 후에 높은 데미지를 부여함\n     우측 키:단시간 무적\n     무적중에 다시 우측 키로 무적시간을 연장, 반격하는 좀비를 막음\n     좌측 키:참격",
+					"overrideparam": "기사:HP400\n     E 키:에너지 버스터를 발동,\n     차징 후에 높은 데미지를 부여함\n     우측 키:단시간 무적\n     무적중에 다시 우측 키로 무적시간을 연장,\n     반격하는 좀비를 막음\n     좌측 키:참격",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2276,7 +2292,7 @@
 					"outputname": "OnCase02",
 					"targetname": "11469",
 					"inputname": "SetMessage",
-					"overrideparam": "블랙 매지션 걸:잡기 방어불가\n       E 키:육망성의 저주를 발동, 좀비를 구속 CD:90초\n       우측 키:흑마도폭열파를 발동, 장시간 좀비를 연소 CD:90초\n       좌측 키:참격",
+					"overrideparam": "블랙 매지션 걸:잡기 방어불가\n       E 키:육망성의 저주를 발동,\n       좀비를 구속 CD:90초\n       우측 키:흑마도폭열파를 발동,\n       장시간 좀비를 연소 CD:90초\n       좌측 키:참격",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2987,7 +3003,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lxy_relayR",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say say ＜  Shark Cannon  ＞>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say ＜  Shark Cannon  ＞>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3428,7 +3444,7 @@
 					"outputname": "OnCase03",
 					"targetname": "11462",
 					"inputname": "SetMessage",
-					"overrideparam": "Alice:Seize defense not allowed\n       Right key Spam Click:Restores a small amount of health, periodically knocks back surrounding zombies CD:60Sec\n       E key Torrent Vortex:Leaves a slowing field at the current location CD:60Sec",
+					"overrideparam": "Alice:Seize defense not allowed\n       Right key Spam Click:Restores a small amount of health,\n       periodically knocks back surrounding zombies CD:60Sec\n       E key Torrent Vortex:Leaves a slowing field at the current location CD:60Sec",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3455,7 +3471,7 @@
 					"outputname": "OnCase03",
 					"targetname": "11465",
 					"inputname": "SetMessage",
-					"overrideparam": "Lacia:HP300\n       E key:Shoot Energy Beam\n       Overhead E key:Transform, During transformation all skill cooldowns are halved\n       Right key:Launches a Black hole\n       ADADLeft key:Release Black Hole and deal damage",
+					"overrideparam": "Lacia:HP300\n       E key:Shoot Energy Beam\n       Overhead E key:Transform,\n       During transformation all skill cooldowns are halved\n       Right key:Launches a Black hole\n       ADADLeft key:Release Black Hole and deal damage",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3464,7 +3480,16 @@
 					"outputname": "OnCase03",
 					"targetname": "11467",
 					"inputname": "SetMessage",
-					"overrideparam": "Kaila:HP400\n       E key:Activate Omnislash, Deals multiple hits and then finishes zombies\n       Right key:Energy Dash, Briefly invincible and slashes zombies, Slashing zombies restores Right key energy \n       Left key:Slash",
+					"overrideparam": "Kaila:HP400\n       E key:Activate Omnislash,\n       Deals multiple hits and then finishes zombies\n       Right key:Energy Dash,\n       Briefly invincible and slashes zombies,\n       Slashing zombies restores Right key energy \n       Left key:Slash",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "11467",
+					"inputname": "KeyValue",
+					"overrideparam": "origin -12352.256836 -6040.312500 -11908.006836",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3473,7 +3498,7 @@
 					"outputname": "OnCase03",
 					"targetname": "11468",
 					"inputname": "SetMessage",
-					"overrideparam": "Knight:HP400\n     E key:Activate Energy Burst, Deals high damage after charging\n     Right key:Brief invincibility\n     Right Key again while invincible to extend invincibility, Blocks counterattacking zombies\n     Left key:Slash",
+					"overrideparam": "Knight:HP400\n     E key:Activate Energy Burst, \n     Deals high damage after charging\n     Right key:Brief invincibility\n     Right Key again while invincible to extend invincibility,\n     Blocks counterattacking zombies\n     Left key:Slash",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3482,7 +3507,7 @@
 					"outputname": "OnCase03",
 					"targetname": "11469",
 					"inputname": "SetMessage",
-					"overrideparam": "Black magician girl:Seize defense not allowed\n       E key:Activate Spellbinding Circle, bind zombie CD:90Sec\n       Right key:Active Dark Burning Attack, Keep the zombie burning for a long time CD:90Sec\n       Left key:Slash",
+					"overrideparam": "Black magician girl:Seize defense not allowed\n       E key:Activate Spellbinding Circle,\n       bind zombie CD:90Sec\n       Right key:Active Dark Burning Attack,\n       Keep the zombie burning for a long time CD:90Sec\n       Left key:Slash",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3572,7 +3597,7 @@
 					"outputname": "OnCase03",
 					"targetname": "12544",
 					"inputname": "SetMessage",
-					"overrideparam": "Asuna:HP400\n      E key:Activate Blade of Light CD:10Sec\n      Overhead E key:Stops in place for 5 seconds, then unleashes massive damage CD:120Sec",
+					"overrideparam": "Asuna:HP400\n      E key:Activate Blade of Light CD:10Sec\n      Overhead E key:Stops in place for 5 seconds,\n      then unleashes massive damage CD:120Sec",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3722,7 +3747,7 @@
             ]
         }        
     ],
-    "modify": // remove message output, add targetname
+    "modify": // remove message output, add targetname, reposition origin
     [
         // message : "爱丽丝:不防抓"
         {
@@ -3733,7 +3758,8 @@
             },
             "replace":
             {
-                "targetname": "11462"
+                "targetname": "11462",
+				"origin": "-12905.696289 -8888 -11960.901367"
             }
         },
         // message : "蕾西亚:不防抓"
@@ -5633,4 +5659,4 @@
             }
         }
     ]
-}                
+}
