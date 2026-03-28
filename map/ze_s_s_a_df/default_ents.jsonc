@@ -3,7 +3,7 @@
 // workshop id 3634790579
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L5385 L5415
+// + fix bug L5390 L5420
 {
     "modify":
     [
@@ -21,7 +21,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "language_counter",
                         "inputname": "SetValue",
-                        "overrideparam": "1", // please type language serial number here
+                        "overrideparam": "2", // please type language serial number here
                         "delay": 0.0,
                         "timestofire": -1
                     },
@@ -1241,7 +1241,7 @@
 					"outputname": "OnCase01",
 					"targetname": "hmdtxt",
 					"inputname": "SetMessage",
-					"overrideparam": "ブラックマジシャンガール:掴み防御不可\n       Eキー:六芒星の呪縛を発動, ゾンビを拘束 CD:90秒\n       右キー:黒魔導爆裂破を発動, 長時間ゾンビを燃焼 CD:90秒\n       左キー:斬撃",
+					"overrideparam": "ブラックマジシャンガール:掴み防御不可\n       Eキー:六芒星の呪縛を発動,\n       ゾンビを拘束 CD:90秒\n       右キー:黒魔導爆裂破を発動,\n       長時間ゾンビを燃焼 CD:90秒\n       左キー:斬撃",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1268,7 +1268,7 @@
 					"outputname": "OnCase01",
 					"targetname": "qishitxt",
 					"inputname": "SetMessage",
-					"overrideparam": "騎士; Eキー:エネルギーバーストを発動, チャージ後に高ダメージを与える\n     右キー:短時間無敵\n     無敵中にまた右キーで無敵時間を延長, 反撃するゾンビを防ぐ\n     左キー:斬撃",
+					"overrideparam": "騎士; Eキー:エネルギーバーストを発動,\n     チャージ後に高ダメージを与える\n     右キー:短時間無敵\n     無敵中にまた右キーで無敵時間を延長,\n     反撃するゾンビを防ぐ\n     左キー:斬撃",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2447,7 +2447,7 @@
 					"outputname": "OnCase02",
 					"targetname": "hmdtxt",
 					"inputname": "SetMessage",
-					"overrideparam": "블랙 매지션 걸:잡기 방어불가\n       E 키:육망성의 저주를 발동, 좀비를 구속 CD:90초\n       우측 키:흑마도폭열파를 발동, 장시간 좀비를 연소 CD:90초\n       좌측 키:참격",
+					"overrideparam": "블랙 매지션 걸:잡기 방어불가\n       E 키:육망성의 저주를 발동,\n       좀비를 구속 CD:90초\n       우측 키:흑마도폭열파를 발동,\n       장시간 좀비를 연소 CD:90초\n       좌측 키:참격",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2474,7 +2474,7 @@
 					"outputname": "OnCase02",
 					"targetname": "qishitxt",
 					"inputname": "SetMessage",
-					"overrideparam": "기사; E 키:에너지 버스터를 발동, 차징 후에 높은 데미지를 부여함\n     우측 키:단시간 무적\n     무적중에 다시 우측 키로 무적시간을 연장, 반격하는 좀비를 막음\n     좌측 키:참격",
+					"overrideparam": "기사; E 키:에너지 버스터를 발동,\n     차징 후에 높은 데미지를 부여함\n     우측 키:단시간 무적\n     무적중에 다시 우측 키로 무적시간을 연장,\n     반격하는 좀비를 막음\n     좌측 키:참격",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3662,7 +3662,7 @@
 					"outputname": "OnCase03",
 					"targetname": "hmdtxt",
 					"inputname": "SetMessage",
-					"overrideparam": "Black magician girl:Seize Defense Not Allowed\n       E key:Activate Spellbinding Circle, Bind zombie CD:90Sec\n       Right key:Active Dark Burning Attack, Keep the zombie burning for a long time CD:90Sec\n       Left key:Slash",
+					"overrideparam": "Black magician girl:Seize Defense Not Allowed\n       E key:Activate Spellbinding Circle,\n       Bind zombie CD:90Sec\n       Right key:Active Dark Burning Attack,\n       Keep the zombie burning for a long time CD:90Sec\n       Left key:Slash",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3689,7 +3689,7 @@
 					"outputname": "OnCase03",
 					"targetname": "qishitxt",
 					"inputname": "SetMessage",
-					"overrideparam": "Knight; E key:Activate Energy Burst, Deals high damage after charging\n     Right key:Brief invincibility\n     Right Key again while invincible to extend invincibility, Blocks counterattacking zombies\n     Left key:Slash",
+					"overrideparam": "Knight; E key:Activate Energy Burst,\n     Deals high damage after charging\n     Right key:Brief invincibility\n     Right Key again while invincible to extend invincibility,\n     Blocks counterattacking zombies\n     Left key:Slash",
 					"delay": 0.0,
 					"timestofire": -1
 				}
