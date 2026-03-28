@@ -1,10 +1,9 @@
-// stripper by 兎RB 26.03.26
+// stripper by 兎RB 26.03.28
 // map ze_s_s_a_df
 // workshop id 3634790579
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L5390 L5420
-// + improvement L41
+// + fix bug L5385 L5415
 {
     "modify":
     [
@@ -31,26 +30,11 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "juben",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.03.26 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.03.28 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
                 ]
-            }
-        },
-		// remove the logic that forcibly changes the primary weapon to m4a1, when human get item
-		{
-            "match":
-            {
-                "targetname": "[PR#]item_drop"
-            },
-			"replace":
-            {
-				"spawnflags": "1"
-            },
-            "delete":
-            {
-				"weapon0": "weapon_m4a1_silencer"
             }
         }
     ],
@@ -996,7 +980,7 @@
 					"outputname": "OnCase01",
 					"targetname": "iliya_R",
 					"inputname": "SetMessage",
-					"overrideparam": "右キー:(エネルギーが0になってから満タンになる必要あり)",
+					"overrideparam": "右キー:\n(エネルギーが0になってから満タンになる必要あり)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1005,7 +989,7 @@
 					"outputname": "OnCase01",
 					"targetname": "iliya_Top",
 					"inputname": "SetMessage",
-					"overrideparam": "頭上Eキー:(エネルギーが0になってから満タンになる必要あり)",
+					"overrideparam": "頭上Eキー:\n(エネルギーが0になってから満タンになる必要あり)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1194,7 +1178,7 @@
 					"outputname": "OnCase01",
 					"targetname": "kirito_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "生命力:(一度捕まると少しずつ減り 0になると死亡)",
+					"overrideparam": "生命力:\n(一度捕まると少しずつ減り 0になると死亡)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1203,7 +1187,7 @@
 					"outputname": "OnCase01",
 					"targetname": "asuna_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "生命力:(一度捕まると少しずつ減り 0になると死亡)",
+					"overrideparam": "生命力:\n(一度捕まると少しずつ減り 0になると死亡)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1239,7 +1223,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lyl_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "生命力:(一度捕まると少しずつ減り 0になると死亡)",
+					"overrideparam": "生命力:\n(一度捕まると少しずつ減り 0になると死亡)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2202,7 +2186,7 @@
 					"outputname": "OnCase02",
 					"targetname": "iliya_R",
 					"inputname": "SetMessage",
-					"overrideparam": "우측 키:(에너지가 0으로 돌아간 후 가득 차야 한다)",
+					"overrideparam": "우측 키:\n(에너지가 0으로 돌아간 후 가득 차야 한다)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2211,7 +2195,7 @@
 					"outputname": "OnCase02",
 					"targetname": "iliya_Top",
 					"inputname": "SetMessage",
-					"overrideparam": "머리 위 E키:(에너지가 0으로 돌아간 후 가득 차야 한다)",
+					"overrideparam": "머리 위 E키:\n(에너지가 0으로 돌아간 후 가득 차야 한다)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2400,7 +2384,7 @@
 					"outputname": "OnCase02",
 					"targetname": "kirito_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "생명력:(한 번 잡히면 조금씩 줄어듬 0이 되면 사망)",
+					"overrideparam": "생명력:\n(한 번 잡히면 조금씩 줄어듬 0이 되면 사망)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2409,7 +2393,7 @@
 					"outputname": "OnCase02",
 					"targetname": "asuna_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "생명력:(한 번 잡히면 조금씩 줄어듬 0이 되면 사망)",
+					"overrideparam": "생명력:\n(한 번 잡히면 조금씩 줄어듬 0이 되면 사망)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2445,7 +2429,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lyl_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "생명력:(한 번 잡히면 조금씩 줄어듬 0이 되면 사망)",
+					"overrideparam": "생명력:\n(한 번 잡히면 조금씩 줄어듬 0이 되면 사망)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3408,7 +3392,7 @@
 					"outputname": "OnCase03",
 					"targetname": "iliya_R",
 					"inputname": "SetMessage",
-					"overrideparam": "Right key:(Energy must drop to 0 before it can be fully restored)",
+					"overrideparam": "Right key:\n(Energy must drop to 0 before it can be fully restored)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3417,7 +3401,7 @@
 					"outputname": "OnCase03",
 					"targetname": "iliya_Top",
 					"inputname": "SetMessage",
-					"overrideparam": "Overhead E key:(Energy must drop to 0 before it can be fully restored)",
+					"overrideparam": "Overhead E key:\n(Energy must drop to 0 before it can be fully restored)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3480,7 +3464,7 @@
 					"outputname": "OnCase03",
 					"targetname": "11467",
 					"inputname": "SetMessage",
-					"overrideparam": "Kaila:HP400\n       E key:Activate Omnislash,\n       Deals multiple hits and then finishes zombies\n       Right key:Energy Dash,\n       Briefly invincible and slashes zombies,\n       Slashing zombies restores Right key energy \n       Left key:Slash",
+					"overrideparam": "Kaila:HP400\n       E key:Activate Omnislash,\n       Deals multiple hits and then finishes zombies\n       Right key:Energy Dash,\n       Briefly invincible and slashes zombies,\n       Slashing zombies restores Right key energy\n       Left key:Slash",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3498,7 +3482,7 @@
 					"outputname": "OnCase03",
 					"targetname": "11468",
 					"inputname": "SetMessage",
-					"overrideparam": "Knight:HP400\n     E key:Activate Energy Burst, \n     Deals high damage after charging\n     Right key:Brief invincibility\n     Right Key again while invincible to extend invincibility,\n     Blocks counterattacking zombies\n     Left key:Slash",
+					"overrideparam": "Knight:HP400\n     E key:Activate Energy Burst,\n     Deals high damage after charging\n     Right key:Brief invincibility\n     Right Key again while invincible to extend invincibility,\n     Blocks counterattacking zombies\n     Left key:Slash",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3615,7 +3599,7 @@
 					"outputname": "OnCase03",
 					"targetname": "kirito_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "Health:(Decreases little by little once caught, death occurs when it reaches 0)",
+					"overrideparam": "Health:\n(Decreases little by little once caught, death occurs when it reaches 0)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3624,7 +3608,7 @@
 					"outputname": "OnCase03",
 					"targetname": "asuna_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "Health:(Decreases little by little once caught, death occurs when it reaches 0)",
+					"overrideparam": "Health:\n(Decreases little by little once caught, death occurs when it reaches 0)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3660,7 +3644,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lyl_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "Health:(Decreases little by little once caught, death occurs when it reaches 0)",
+					"overrideparam": "Health:\n(Decreases little by little once caught, death occurs when it reaches 0)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3904,6 +3888,17 @@
             "replace":
             {
                 "targetname": "12545"
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]iliya_R"
+            },
+            "replace":
+            {
+                "origin": "-3657.372559 5457.627441 7816"
             }
         },
 
