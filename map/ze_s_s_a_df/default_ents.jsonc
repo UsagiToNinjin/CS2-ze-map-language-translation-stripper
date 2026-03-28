@@ -3,7 +3,7 @@
 // workshop id 3634790579
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L5390 L5420
+// + fix bug L5397 L5427
 {
     "modify":
     [
@@ -21,7 +21,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "language_counter",
                         "inputname": "SetValue",
-                        "overrideparam": "2", // please type language serial number here
+                        "overrideparam": "1", // please type language serial number here
                         "delay": 0.0,
                         "timestofire": -1
                     },
@@ -1034,7 +1034,7 @@
 					"outputname": "OnCase01",
 					"targetname": "11464",
 					"inputname": "SetMessage",
-					"overrideparam": "ゼロ:HP300\n     Eキー:形態を切り替える, デフォルト火の形態はCD:7秒\n     頭上Eキー:閃刀亜式回想の門 1回限定\n     火:右キー 突進, 形態切り替え時前方に回転する炎を発射\n     風:右キー 直線風, 形態切り替え時一定時間加速と掴み無効\n     水:右キー 減速, 形態切り替え時周囲のゾンビを減速\n     共同:ADAD左キー 強力なダメージと減速",
+					"overrideparam": "ゼロ:HP300\n     Eキー:形態を切り替える,\n     デフォルト火の形態はCD:7秒\n     頭上Eキー:閃刀亜式回想の門 1回限定\n     火:右キー 突進,\n     形態切り替え時前方に回転する炎を発射\n     風:右キー 直線風,\n     形態切り替え時一定時間加速と掴み無効\n     水:右キー 減速,\n     形態切り替え時周囲のゾンビを減速\n     共同:ADAD左キー 強力なダメージと減速",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1259,7 +1259,7 @@
 					"outputname": "OnCase01",
 					"targetname": "linglutxt",
 					"inputname": "SetMessage",
-					"overrideparam": "ゼロ; Eキー:形態を切り替える, デフォルト火の形態はCD:7秒\n     頭上Eキー:閃刀亜式回想の門 1回限定\n     火:右キー 突進, 形態切り替え時前方に回転する炎を発射\n     風:右キー 直線風, 形態切り替え時一定時間加速と掴み無効\n     水:右キー 減速, 形態切り替え時周囲のゾンビを減速\n     共同:ADAD左キー 強力なダメージと減速",
+					"overrideparam": "ゼロ; Eキー:形態を切り替える,\n     デフォルト火の形態はCD:7秒\n     頭上Eキー:閃刀亜式回想の門 1回限定\n     火:右キー 突進,\n     形態切り替え時前方に回転する炎を発射\n     風:右キー 直線風,\n     形態切り替え時一定時間加速と掴み無効\n     水:右キー 減速,\n     形態切り替え時周囲のゾンビを減速\n     共同:ADAD左キー 強力なダメージと減速",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2235,12 +2235,13 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
+
 				
                 {
 					"outputname": "OnCase02",
 					"targetname": "11464",
 					"inputname": "SetMessage",
-					"overrideparam": "제로:HP300\n     E 키:형태를 전환, 디폴트 불의 형태는CD:7초\n     머리 위 E키:섬도아식 회상의 문 1회한정\n     불:우측 키 돌진, 형태변환 시 회전하는 화염을 발사\n     바람:우측 키 직선풍, 형태변환 시 일정시간 가속과 잡기 무효\n     물:우측 키 감속, 형태변환 시 주위의 좀비를 감속\n     공통:ADAD좌측 키 강력한 데미지와 감속",
+					"overrideparam": "제로:HP300\n     E 키:형태를 전환,\n     디폴트 불의 형태는CD:7초\n     머리 위 E키:섬도아식 회상의 문 1회한정\n     불:우측 키 돌진,\n     형태변환 시 회전하는 화염을 발사\n     바람:우측 키 직선풍,\n     형태변환 시 일정시간 가속과 잡기 무효\n     물:우측 키 감속,\n     형태변환 시 주위의 좀비를 감속\n     공통:ADAD좌측 키 강력한 대미지와 감속",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2249,7 +2250,7 @@
 					"outputname": "OnCase02",
 					"targetname": "11465",
 					"inputname": "SetMessage",
-					"overrideparam": "레이시아 :HP300\n       E 키:에너지 빔 발사\n       머리 위 E키:변신, 변신중 모든 스킬 CD가 반감\n       우측 키:끌어들이는 블랙홀을 발사\n       ADAD좌측 키:블랙홀과 데미지를 발동",
+					"overrideparam": "레이시아 :HP300\n       E 키:에너지 빔 발사\n       머리 위 E키:변신, 변신중 모든 스킬 CD가 반감\n       우측 키:끌어들이는 블랙홀을 발사\n       ADAD좌측 키:블랙홀과 대미지를 발동",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2258,7 +2259,7 @@
 					"outputname": "OnCase02",
 					"targetname": "11467",
 					"inputname": "SetMessage",
-					"overrideparam": "카이라:HP400\n       E 키:구무신패참을 발동, 다단 데미지를 준 후 좀비를 해치움\n       우측 키:에너지 돌진, 단시간 무적과 좀비를 벰,\n       좀비를 베어 우측 키의 에너지를 회복가능\n       좌측 키:참격",
+					"overrideparam": "카이라:HP400\n       E 키:구무신패참을 발동, 다단 대미지를 준 후 좀비를 해치움\n       우측 키:에너지 돌진, 단시간 무적과 좀비를 벰,\n       좀비를 베어 우측 키의 에너지를 회복가능\n       좌측 키:참격",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2267,7 +2268,7 @@
 					"outputname": "OnCase02",
 					"targetname": "11468",
 					"inputname": "SetMessage",
-					"overrideparam": "기사:HP400\n     E 키:에너지 버스터를 발동,\n     차징 후에 높은 데미지를 부여함\n     우측 키:단시간 무적\n     무적중에 다시 우측 키로 무적시간을 연장,\n     반격하는 좀비를 막음\n     좌측 키:참격",
+					"overrideparam": "기사:HP400\n     E 키:에너지 버스터를 발동,\n     차징 후에 높은 대미지를 부여함\n     우측 키:단시간 무적\n     무적중에 다시 우측 키로 무적시간을 연장,\n     반격하는 좀비를 막음\n     좌측 키:참격",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2366,7 +2367,7 @@
 					"outputname": "OnCase02",
 					"targetname": "12544",
 					"inputname": "SetMessage",
-					"overrideparam": "아스나:HP400\n      E 키:빛의 검을 발동 CD:10초\n      머리 위 E키:제자리에서 5초 정지 후 초절 데미지를 방출 CD:120초",
+					"overrideparam": "아스나:HP400\n      E 키:빛의 검을 발동 CD:10초\n      머리 위 E키:제자리에서 5초 정지 후 초절 대미지를 방출 CD:120초",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2375,7 +2376,7 @@
 					"outputname": "OnCase02",
 					"targetname": "12545",
 					"inputname": "SetMessage",
-					"overrideparam": "키리토:HP400\n       E 키 또는 머리 위 E키:추첨 3개의 음성 4개의 스킬\n       일식,스타버스트 스트림,일곱 개의 대죄,호리전틀 스퀘어 CD:70초\n       각 스킬은 뽑히면 우측 키로 발동가능, 그 동안\n       음속공격은 사용할 수 없다, 사용 후 다시 사용할 수 있음\n       우측 키:음속공격, 데미지와 넉백은 없음\n       좌측 키:참격, 인간에게는 체력 10을 회복 반대로 좀비에게는 그것의 100배",
+					"overrideparam": "키리토:HP400\n       E 키 또는 머리 위 E키:추첨 3개의 음성 4개의 스킬\n       일식,스타버스트 스트림,일곱 개의 대죄,호리전틀 스퀘어 CD:70초\n       각 스킬은 뽑히면 우측 키로 발동가능, 그 동안\n       음속공격은 사용할 수 없다, 사용 후 다시 사용할 수 있음\n       우측 키:음속공격, 대미지와 넉백은 없음\n       좌측 키:참격, 인간에게는 체력 10을 회복 반대로 좀비에게는 그것의 100배",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2465,7 +2466,7 @@
 					"outputname": "OnCase02",
 					"targetname": "linglutxt",
 					"inputname": "SetMessage",
-					"overrideparam": "제로; E 키:형태를 전환, 디폴트 불의 형태는CD:7초\n     머리 위 E키:섬도아식 회상의 문 1회한정\n     불:우측 키 돌진, 형태변환 시 회전하는 화염을 발사\n     바람:우측 키 직선풍, 형태변환 시 일정시간 가속과 잡기 무효\n     물:우측 키 감속, 형태변환 시 주위의 좀비를 감속\n     공통:ADAD좌측 키 강력한 데미지와 감속",
+					"overrideparam": "제로; E 키:형태를 전환, 디폴트 불의 형태는CD:7초\n     머리 위 E키:섬도아식 회상의 문 1회한정\n     불:우측 키 돌진, 형태변환 시 회전하는 화염을 발사\n     바람:우측 키 직선풍, 형태변환 시 일정시간 가속과 잡기 무효\n     물:우측 키 감속, 형태변환 시 주위의 좀비를 감속\n     공통:ADAD좌측 키 강력한 대미지와 감속",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2474,7 +2475,7 @@
 					"outputname": "OnCase02",
 					"targetname": "qishitxt",
 					"inputname": "SetMessage",
-					"overrideparam": "기사; E 키:에너지 버스터를 발동,\n     차징 후에 높은 데미지를 부여함\n     우측 키:단시간 무적\n     무적중에 다시 우측 키로 무적시간을 연장,\n     반격하는 좀비를 막음\n     좌측 키:참격",
+					"overrideparam": "기사; E 키:에너지 버스터를 발동,\n     차징 후에 높은 대미지를 부여함\n     우측 키:단시간 무적\n     무적중에 다시 우측 키로 무적시간을 연장,\n     반격하는 좀비를 막음\n     좌측 키:참격",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3428,7 +3429,7 @@
 					"outputname": "OnCase03",
 					"targetname": "11462",
 					"inputname": "SetMessage",
-					"overrideparam": "Alice:Seize defense not allowed\n       Right key Spam Click:Restores a small amount of health,\n       periodically knocks back surrounding zombies CD:60Sec\n       E key Torrent Vortex:Leaves a slowing field at the current location CD:60Sec",
+					"overrideparam": "Alice:Seize defense not allowed\n       Right key Spam Click:Restores a small amount of health,\n       periodically knocks back surrounding zombies CD:60Sec\n       E key Torrent Vortex:\n       Leaves a slowing field at the current location CD:60Sec",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3446,7 +3447,7 @@
 					"outputname": "OnCase03",
 					"targetname": "11464",
 					"inputname": "SetMessage",
-					"overrideparam": "Zero:HP300\n     E key:Switch form, default form Fire is CD:7Sec\n     Overhead E key:Sky Striker Special Maneuver Recall Gate, One-time only\n     Fire:Right key Dash, Launches spinning flames forward when switching forms\n     Wind:Right key Straight Wind, temporary speed boost and grab immunity when switching forms\n     Ice:Right key Slow, Slows surrounding zombies when switching forms\n     Common:ADADLeft key High damage and slow",
+					"overrideparam": "Zero:HP300\n     E key:Switch form,\n     default form Fire is CD:7Sec\n     Overhead E key:Sky Striker Special Maneuver Recall Gate, One-time only\n     Fire:Right key Dash,\n     Launches spinning flames forward when switching forms\n     Wind:Right key Straight Wind,\n     temporary speed boost and grab immunity when switching forms\n     Ice:Right key Slow,\n     Slows surrounding zombies when switching forms\n     Common:ADADLeft key High damage and slow",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3599,7 +3600,7 @@
 					"outputname": "OnCase03",
 					"targetname": "kirito_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "Health:\n(Decreases little by little once caught, death occurs when it reaches 0)",
+					"overrideparam": "Health:\n(Decreases little by little once caught,\ndeath occurs when it reaches 0)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3608,7 +3609,7 @@
 					"outputname": "OnCase03",
 					"targetname": "asuna_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "Health:\n(Decreases little by little once caught, death occurs when it reaches 0)",
+					"overrideparam": "Health:\n(Decreases little by little once caught,\ndeath occurs when it reaches 0)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3644,7 +3645,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lyl_lf",
 					"inputname": "SetMessage",
-					"overrideparam": "Health:\n(Decreases little by little once caught, death occurs when it reaches 0)",
+					"overrideparam": "Health:\n(Decreases little by little once caught,\ndeath occurs when it reaches 0)",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3680,7 +3681,7 @@
 					"outputname": "OnCase03",
 					"targetname": "linglutxt",
 					"inputname": "SetMessage",
-					"overrideparam": "Zero; E key:Switch form, default form Fire is CD:7Sec\n     Overhead E key:Sky Striker Special Maneuver Recall Gate, One-time only\n     Fire:Right key Dash, Launches spinning flames forward when switching forms\n     Wind:Right key Straight Wind, temporary speed boost and grab immunity when switching forms\n     Ice:Right key Slow, Slows surrounding zombies when switching forms\n     Common:ADADLeft key High damage and slow",
+					"overrideparam": "Zero; E key:Switch form,\n     default form Fire is CD:7Sec\n     Overhead E key:Sky Striker Special Maneuver Recall Gate, One-time only\n     Fire:Right key Dash,\n     Launches spinning flames forward when switching forms\n     Wind:Right key Straight Wind,\n     temporary speed boost and grab immunity when switching forms\n     Ice:Right key Slow,\n     Slows surrounding zombies when switching forms\n     Common:ADADLeft key High damage and slow",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3899,6 +3900,17 @@
             "replace":
             {
                 "origin": "-3657.372559 5457.627441 7816"
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]kaila_RJ"
+            },
+            "replace":
+            {
+                "origin": "-4487.683594 -1033.316406 7818"
             }
         },
 
