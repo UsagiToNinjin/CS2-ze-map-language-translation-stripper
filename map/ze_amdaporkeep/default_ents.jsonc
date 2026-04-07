@@ -395,18 +395,18 @@
 
                 {
 					"outputname": "OnCase01",
-					"targetname": "Anti_Glitch_Text",
+					"targetname": "Level_Template_ZM",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>ServerCommand>Command>say 生存200秒>10.0>1",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 軽く遊ぼう~>12.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 
                 {
 					"outputname": "OnCase01",
-					"targetname": "Anti_Glitch_Text",
+					"targetname": "Level_Template_ZM",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>ServerCommand>Command>say 軽く遊ぼう>12.0>1",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 生存200秒>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -719,18 +719,18 @@
 
                 {
 					"outputname": "OnCase02",
-					"targetname": "Anti_Glitch_Text",
+					"targetname": "Level_Template_ZM",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>ServerCommand>Command>say 생존 200초>10.0>1",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 가볍게 놀자~>12.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 
                 {
 					"outputname": "OnCase02",
-					"targetname": "Anti_Glitch_Text",
+					"targetname": "Level_Template_ZM",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>ServerCommand>Command>say 가볍게 놀자>12.0>1",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 생존 200초>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1039,6 +1039,24 @@
 					"overrideparam": "ou feel an inexplicable resistance，and，then a voice echoes in your mind：“The area ahead can be explored later。”",
 					"delay": 0.0,
 					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Level_Template_ZM",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say Let’s have some fun~>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Level_Template_ZM",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say Survive for 200 seconds>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
 				}
 			]
 		},
@@ -1101,25 +1119,7 @@
                     "overrideparam": "OnStartTouch>ServerCommand>Command>say ** Savage Mode cleared! **>1.0>1",
                     "delay": 0.75,
                     "timestofire": -1
-                },
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "Anti_Glitch_Text",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>ServerCommand>Command>say Survive for 200 seconds>10.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase03",
-					"targetname": "Anti_Glitch_Text",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>ServerCommand>Command>say Let’s have some fun>12.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				}
+                }
             ]
 		},
 
@@ -4655,7 +4655,7 @@
                 ]
             }
         },
-		// add language translation entity
+        // add language translation entity
         // 1896#entityLumpName
         {
             "match":
