@@ -4655,6 +4655,7 @@
                 ]
             }
         },
+		// add language translation entity
         // 1896#entityLumpName
         {
             "match":
