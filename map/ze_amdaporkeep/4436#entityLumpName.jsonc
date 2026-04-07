@@ -1,0 +1,59 @@
+// stripper by 兎RB 26.04.07
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Samurai_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 一位武士加入了队伍 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Samurai_Text"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "对头顶使用释放居合斩，之后会短暂失去斩击极速冷却效果",
+                        "delay": 3.5,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "需要三次连击点和一定冷却时间才可解锁居合斩",
+                        "delay": 7.5,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

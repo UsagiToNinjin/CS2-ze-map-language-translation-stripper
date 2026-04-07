@@ -1,0 +1,59 @@
+// stripper by 兎RB 26.04.07
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Black_Mage_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 一位黑魔法师加入了队伍 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Black_Mage_Text"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "被暴雷击中的敌方每隔5s会受到伤害，并有概率被减速，持续7次",
+                        "delay": 3.5,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "对头顶使用释放黑魔纹，玩家处于黑魔纹中可加速爆炎/暴雷冷却cd",
+                        "delay": 7.5,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

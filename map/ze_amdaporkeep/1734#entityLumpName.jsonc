@@ -1,0 +1,47 @@
+// stripper by 兎RB 26.04.07
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]ZM_Doom_Text"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 湮与噬的归零奇点已准备随时坍缩 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "ps:深渊致死伤害可被阳星合相（占星奶）抵御",
+                        "delay": 3.5,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "ps:深渊致死伤害可被阳星合相（占星奶）抵御",
+                        "delay": 7.5,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

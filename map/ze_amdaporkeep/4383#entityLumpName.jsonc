@@ -1,0 +1,29 @@
+// stripper by 兎RB 26.03.03
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Red_Mage_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 一位赤魔法师加入了队伍 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

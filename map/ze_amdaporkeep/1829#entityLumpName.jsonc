@@ -1,0 +1,38 @@
+// stripper by 兎RB 26.03.02
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]ZM_Ahriman_Text"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 影与梦的沉眠使者已于夜幕下展开双翼 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "凝视无法对暗黑骑士造成效果",
+                        "delay": 7.5,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

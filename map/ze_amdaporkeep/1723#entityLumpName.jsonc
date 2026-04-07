@@ -1,0 +1,50 @@
+// stripper by 兎RB 26.03.02
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Elidibus_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 一位光之战士加入了队伍 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Elidibus_Text"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser2",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "光之壁垒",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+    ]
+}

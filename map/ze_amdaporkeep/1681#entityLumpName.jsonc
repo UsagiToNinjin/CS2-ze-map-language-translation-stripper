@@ -1,0 +1,116 @@
+// stripper by 兎RB 26.04.02
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Astrologer_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 一位占星术士加入了队伍 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Astrologer_Case_Draw"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]Item_Astrologer_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "太阳神之衡：为周围队友提供对boss造成额外伤害的增益，持续7s",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+						"targetname": "[PR#]Item_Astrologer_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "世界树之干：为周围队友提供免疫大部分伤害的增益，持续5s",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+						"targetname": "[PR#]Item_Astrologer_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "放浪神之箭：为周围队友提供小幅度加快移速的增益，持续15s",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+						"targetname": "[PR#]Item_Astrologer_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "战争神之枪：为周围队友提供无限弹药的增益，持续8s ",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+						"targetname": "[PR#]Item_Astrologer_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "河流神之瓶：使周围队友的生命值短时间小幅度溢出，并使自身的恢复效果提高，持续7s ",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase06",
+						"targetname": "[PR#]Item_Astrologer_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "建筑神之塔：为周围队友提供缓慢治疗，持续12s ",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Astrologer_Play_Filter"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]Item_Astrologer_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "抽卡冷却中……",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }            
+    ]
+}

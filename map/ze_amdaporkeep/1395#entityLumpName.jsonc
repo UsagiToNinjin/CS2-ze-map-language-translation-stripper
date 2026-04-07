@@ -1,0 +1,156 @@
+// stripper by 兎RB 26.02.27
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, split duplicate targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Savage_Trigger",
+                "hammeruniqueid": "1491"
+            },
+            "replace":
+            {
+                "targetname": "Savage_Trigger_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Savage_Trigger",
+                "hammeruniqueid": "1497"
+            },
+            "replace":
+            {
+                "targetname": "Savage_Trigger_2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Savage_Trigger",
+                "hammeruniqueid": "1549"
+            },
+            "replace":
+            {
+                "targetname": "Savage_Trigger_3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Savage_Trigger",
+                "hammeruniqueid": "1670"
+            },
+            "replace":
+            {
+                "targetname": "Savage_Trigger_4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 暗黑能量已然消散…… >",
+                        "delay": 45.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 那是……",
+                        "delay": 46.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Savage_Trigger",
+                "hammeruniqueid": "1929"
+            },
+            "replace":
+            {
+                "targetname": "Savage_Trigger_5"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}

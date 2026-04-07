@@ -1,0 +1,50 @@
+// stripper by 兎RB 26.04.07
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Scholar_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 一位学者加入了队伍 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Scholar_Text"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "对头顶使用释放防护阵，为友方提供减伤，阻挡敌方并拦截部分飞行弹道",
+                        "delay": 3.5,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

@@ -1,0 +1,4681 @@
+// stripper by 兎RB,Frame 26.04.07
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+// serial number 日本語:"1" 한국어:"2" English:"3"
+{
+    "modify":
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "delete": 
+            {
+                "io":
+                [
+					// readjusting the delay to apply AddOutPut +0.1 sec
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]Stage_counter",
+                        "inputname": "GetValue",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "Stage_counter",
+                        "inputname": "GetValue",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "1", // please type language serial number here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 26.04.07 by 兎RB,Frame",
+                        "delay": 13.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_counter",
+			"classname": "math_counter",
+            "startvalue": "0",
+            "min": "0",
+            "max": "3",
+			"io":
+            [
+				{
+                    "outputname": "OutValue",
+                    "targetname": "language_case",
+                    "inputname": "InValue",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "1", // 日本語
+			"case02": "2", // 한국어
+			"case03": "3", // English
+			"io":
+			[
+                // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "Level_Template_Extreme",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say ＜ エクストリームモード ＞>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Castle_Right_Trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Castle_Trigger_Case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase03>Castle_Trigger_Case_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Castle_Trigger_Door",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Level_Template_Hard",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say ＜ ハードモード ＞>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Laser_Omega_Ending",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Laser_Omega_Ending_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Level_Template_Hard",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Hard_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_Cloud_of_Darkness",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Cloud_of_Darkness_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_Cloud_of_Darkness",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Cloud_of_Darkness_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Level_Template_Savage",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Savage_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Level_Template_Extreme",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Extreme_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_Stage2_Ending",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Stage2_Ending_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_ZM_Storm",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Storm_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Astrologer_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Astrologer_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Dark_Knight_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Dark_Knight_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Black_Mage_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Black_Mage_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Ninja_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Ninja_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Elidibus_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Elidibus_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_ZM_Warp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Warp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_ZM_Heal",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Heal_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_ZM_Ahriman",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Ahriman_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_Diabolos",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Diabolos_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Red_Mage_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Red_Mage_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Samurai_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Samurai_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Scholar_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Scholar_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Level_Template_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Omega_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_Laser_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Laser_Omega_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_ZM_Diabolos_Hollow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Diabolos_Hollow_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_ZM_C_O_D",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_C_O_D_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_ZM_Flying_Sprites",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Flying_Sprites_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Omega_Extra_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Omega_Extra_Temp_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_Omega_Sagittarius_Arrow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Omega_Sagittarius_Arrow_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Temp_ZM_Flying_Sprites",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 蝶が舞い織り上げた通路の下には何か秘密があるようだ……>60.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "SetMessage",
+					"overrideparam": "得体の知れない拒絶感を覚え，その直後，頭の中に声が響いた：“この先のエリアは，また今度探索しよう。”",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 生存200秒>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 軽く遊ぼう>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // 한국어
+				{
+					"outputname": "OnCase02",
+					"targetname": "Level_Template_Extreme",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say ＜ 익스트림 모드 ＞>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Castle_Right_Trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Castle_Trigger_Case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase03>Castle_Trigger_Case_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Castle_Trigger_Door",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Level_Template_Hard",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say ＜ 하드 모드 ＞>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Laser_Omega_Ending",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Laser_Omega_Ending_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Level_Template_Hard",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Hard_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_Cloud_of_Darkness",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Cloud_of_Darkness_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Level_Template_Savage",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Savage_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Level_Template_Extreme",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Extreme_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_Stage2_Ending",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Stage2_Ending_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_ZM_Storm",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Storm_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Item_Astrologer_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Astrologer_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Item_Dark_Knight_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Dark_Knight_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Item_Black_Mage_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Black_Mage_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Item_Ninja_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Ninja_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Item_Elidibus_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Elidibus_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_ZM_Warp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Warp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_ZM_Heal",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Heal_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_ZM_Ahriman",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Ahriman_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_Hollow_Night",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Hollow_Night_tl_relay*>FireUser2>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_Diabolos",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Diabolos_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Item_Red_Mage_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Red_Mage_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Item_Samurai_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Samurai_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Item_Scholar_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Scholar_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Level_Template_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Omega_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_Laser_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Laser_Omega_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_ZM_Diabolos_Hollow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Diabolos_Hollow_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_ZM_C_O_D",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_C_O_D_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_ZM_Flying_Sprites",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Flying_Sprites_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Omega_Extra_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Omega_Extra_Temp_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Temp_Omega_Sagittarius_Arrow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Omega_Sagittarius_Arrow_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Temp_ZM_Flying_Sprites",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 나비가 춤추어 엮어 만든 길 아래에 무언가 비밀이 있는 것 같다……>60.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "SetMessage",
+					"overrideparam": "너는 알 수 없는 거부감을 느끼고，이어서，머릿속에서 한 문장이 들려온다：“앞의 지역은，나중에 다시 탐험하자。”",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 생존 200초>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say 가볍게 놀자>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+                // English
+				{
+					"outputname": "OnCase03",
+					"targetname": "Level_Template_Extreme",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say ＜ Extreme Mode ＞>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Castle_Right_Trigger",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Castle_Trigger_Case",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnCase03>Castle_Trigger_Case_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Castle_Trigger_Door",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Level_Template_Hard",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say ＜ Hard Mode ＞>9.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Laser_Omega_Ending",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Laser_Omega_Ending_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Level_Template_Hard",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Hard_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_Cloud_of_Darkness",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Cloud_of_Darkness_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Level_Template_Savage",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Savage_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Level_Template_Extreme",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Extreme_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_Stage2_Ending",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Stage2_Ending_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_ZM_Storm",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Storm_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Item_Astrologer_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Astrologer_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Item_Dark_Knight_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Dark_Knight_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Item_Black_Mage_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Black_Mage_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Item_Ninja_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Ninja_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Item_Elidibus_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Elidibus_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_ZM_Warp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Warp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_ZM_Heal",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Heal_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_ZM_Ahriman",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Ahriman_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_Hollow_Night",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Hollow_Night_tl_relay*>FireUser3>>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_Diabolos",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Diabolos_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Item_Red_Mage_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Red_Mage_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Item_Samurai_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Samurai_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Item_Scholar_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Item_Scholar_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Level_Template_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Level_Template_Omega_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_Laser_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Laser_Omega_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_ZM_Diabolos_Hollow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Diabolos_Hollow_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_ZM_C_O_D",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_C_O_D_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_ZM_Flying_Sprites",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_ZM_Flying_Sprites_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Omega_Extra_Temp",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Omega_Extra_Temp_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_Omega_Sagittarius_Arrow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Omega_Sagittarius_Arrow_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Temp_ZM_Flying_Sprites",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say There seems to be some secret beneath the passage woven by dancing butterflies……>60.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "SetMessage",
+					"overrideparam": "ou feel an inexplicable resistance，and，then a voice echoes in your mind：“The area ahead can be explored later。”",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+			]
+		},
+
+		{
+			"targetname": "Castle_Trigger_Case_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "TP_AFK_KEEP2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 冥獄の魔神が深淵より帰還した **>0.0>1",
+                    "delay": 0.5,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "TP_AFK_KEEP3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 零式モードクリア! **>1.0>1",
+                    "delay": 0.75,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "TP_AFK_KEEP2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 명옥의 마신이 심연으로부터 귀환했다 **>0.0>1",
+                    "delay": 0.5,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "TP_AFK_KEEP3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 영식 모드 클리어! **>1.0>1",
+                    "delay": 0.75,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "TP_AFK_KEEP2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** The Demon God of the Underworld Prison has come back from the depths **>0.0>1",
+                    "delay": 0.5,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "TP_AFK_KEEP3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** Savage Mode cleared! **>1.0>1",
+                    "delay": 0.75,
+                    "timestofire": -1
+                },
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say Survive for 200 seconds>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Anti_Glitch_Text",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>ServerCommand>Command>say Let’s have some fun>12.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				}
+            ]
+		},
+
+        {
+			"targetname": "Level_Template_Hard_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ テレポートが起動するまで防御 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Hard_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 道が開くまで防御 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Hard_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Level_Detect_Hard*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 鬼眼が虚無の中より蘇る **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Level_Ending_Hard*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** ハードモードクリア! **>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 텔레포트가 가동할 때까지 방어 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Hard_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 길이 열릴 때까지 방어 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Hard_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Level_Detect_Hard*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 귀안이 허무 속에서 부활한다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Level_Ending_Hard*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 하드 모드 클리어! **>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the teleport activates ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Hard_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the road is clear ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Hard_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Level_Detect_Hard*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** The Demon Eye is reborn in the void **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Level_Ending_Hard*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** Hard Mode Cleared! **>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_Cloud_of_Darkness_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say  ＞* 闇の戦技 *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say  ＞* 零式波動砲 *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say  ＞* 広域波動砲 *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say  ＞* 闇の氾濫 *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say  ＞* 어둠의 전투 기술 *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say  ＞* 영식 파동포 *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say  ＞* 광역 파동포 *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say  ＞* 어둠의 범람 *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say  ＞* Dark Combat Skill *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say  ＞* Savage Wave Cannon *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say  ＞* Wide area Wave Cannon *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Cloud_of_Darkness_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say  ＞* Overflow of Darkness *＜ >0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Level_Template_Savage_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Savage_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Savage_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Savage_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 暗黒のエネルギーはすでに消え去った…… ＞ >45.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ あれは…… ＞ >46.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Savage_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Savage_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Savage_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Savage_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 암흑의 에너지는 이미 사라졌다…… ＞ >45.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 저것은…… ＞ >46.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Savage_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Savage_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Savage_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Savage_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Dark energy has already dissipated…… ＞ >45.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Savage_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ That is…… ＞ >46.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Savage_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Level_Template_Extreme_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 内部の水晶エネルギーに強い波動を感知した！それを破壊すると一時的に安全を確保することができる！  >30.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 弾があのバリアを貫通できないみたいだ！彼女の背後に回り込め！>38.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_6*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Extreme_Trigger_7*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Level_Detect_Extreme*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 暗雲が再び立ち込めている ** >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Level_Ending_Extreme*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** エクストリームモードクリア! ** >1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 내부의 수정 에너지의 강력한 파동을 감지했다！그것을 파괴하면 일시적으로 안전을 확보할 수 있다！  >30.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 탄이 저 벽을 관통할 수 없는 것 같다！그녀의 후방으로 돌아가라！>38.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_6*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Extreme_Trigger_7*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Level_Detect_Extreme*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 먹구름이 다시 몰려들고 있다 ** >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Level_Ending_Extreme*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 익스트림 모드 클리어! ** >1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say We've detected intense energy fluctuations within the crystal！We have to destroy it to secure even brief safety！  >30.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say The bullets can't seem to penetrate that barrier！Move around to her rear！>38.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_6*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Extreme_Trigger_7*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞ >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Level_Detect_Extreme*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** Storm clouds are forming once more ** >0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Level_Ending_Extreme*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** Extreme Mode Cleared! ** >1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_Stage2_Ending_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Crystal_HP*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMin>ServerCommand>Command>say やった！あの水晶はもうただの瓦礫だ >4.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Crystal_HP*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMin>ServerCommand>Command>say 해냈다！그 수정은 이제 그냥 부서진 돌덩이다 >4.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Crystal_HP*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMin>ServerCommand>Command>say Well done！That crystal is now nothing but a pile of broken stones >4.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_ZM_Storm_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "正面Eキーで嵐の目を発動，もう一度嵐の目を使うと嵐に進化する，最大距離に到達すると二段効果が自動的に発動する",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 咆哮と泣きの滅世の剛風が天空を引き裂こうとする ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser3>!self>SetMessage>私は暗黒のエネルギーではないけれど 確かに暫く使えないんだ>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "정면 E키로 폭풍의 눈을 발동，다시 한번 사용하면 폭풍으로 진화한다，최대거리에 도달하면 2단효과가 자동으로 발동한다",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 포효과 눈물의 멸세 푹풍이 곧 천공을 찢으려 한다 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser3>!self>SetMessage>나는 암흑의 에너지가 아니지만 확실히 잠시동안 사용할 수 없군>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Front E-key to activate Eye of the Storm，then use it once more to evolve into a Storm，Upon reaching the maximum distance，the second-stage effect is automatically triggered",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ The howling and wailing gale of doom is about to tear apart the sky＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Storm_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser3>!self>SetMessage>Although I’m not dark energy I can’t use it for the time being>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Astrologer_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 占星術士がチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "占星術士：陽星合相を発動，深淵ダメージを防げる，右キーで魔法カードを引く，頭上Eキーでその効果を発動",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>太陽神の衡：周囲の味方にボスダメージが増加する効果を付与，持続7秒>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Astrologer_Text*>SetMessage>世界樹の幹：周囲の味方に大部分の被害を無効化する効果を付与，持続5秒>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Astrologer_Text*>SetMessage>放浪神の矢：周囲の味方に移動速度を小幅上昇させる効果を付与，持続15秒>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>戦神の槍：周囲の味方に無限弾薬の効果を付与，持続8秒>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase05>Item_Astrologer_Text*>SetMessage>河流神の瓶：周囲の味方に短時間体力を超過回復させる，自身の回復効果が上昇する，持続7秒>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>建築神の塔：周囲の味方に徐々に回復させる効果を付与，持続12秒>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Astrologer_Play_Filter*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPass>Item_Astrologer_Text*>SetMessage>ガチャクールダウン中……>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 점성술사가 팀에 합류했다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "점성술사：양성합상을 발동，심연 대미지를 막을 수 있다，우측 키로 마법 카드를 뽑음，머리 위 E키로 그 효과를 발동",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>태양신의 저울：주변 아군에게 보스 대미지가 증가하는 효과를 부여，지속 7초>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Astrologer_Text*>SetMessage>세계수의 줄기：주변 아군에게 대부분의 피해를 무효화 하는 효과를 부여，지속 5초>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Astrologer_Text*>SetMessage>방량신의 화살：주변 아군에게 이동속도를 소폭 상승시키는 효과를 부여，지속 15초>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>전쟁신의 창：주변 아군에게 무한탄약 효과를 부여，지속 8초>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase05>Item_Astrologer_Text*>SetMessage>하류신의 병：주변 아군에게 단시간 체력을 초과회복 시킴，자신의 회복 효과가 상승한다，지속 7초>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>건축신의 탑：주변 아군에게 서서히 회복시키는 효과를 부여，지속 12초>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Astrologer_Play_Filter*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPass>Item_Astrologer_Text*>SetMessage>뽑기 쿨타임 중……>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** An astrologer has joined the team **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Astrologer：Activate Solar Conjunction，can block Abyss damage，Right-key to draw magic card ，Overhead E-key to activate its effect",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>Scale of the Sun God：Grants nearby allies an effect that deals extra damage to bosses，Duration 7sec>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Astrologer_Text*>SetMessage>World Tree’s Trunk：Grants nearby allies an effect that makes them immune to most damage，Duration 5sec>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Astrologer_Text*>SetMessage>Arrow of the Wandering God：Grants nearby allies an effect that slightly increases movement speed，Duration 15sec>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>Spear of the War God：Grants nearby allies an effect of unlimited ammunition，Duration 8sec>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase05>Item_Astrologer_Text*>SetMessage>Bottle of the River God：Grants nearby allies a brief overheal，increases the user’s healing effectiveness，Duration 7sec>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Case_Draw*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>Tower of the God of Construction：Grants nearby allies an effect that gradually restores HP，Duration 12sec>0.05>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Astrologer_Play_Filter*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPass>Item_Astrologer_Text*>SetMessage>Draw is on cooldown……>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Dark_Knight_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 暗黒騎士がチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "暗黒騎士：正面Eキーで突き刺しを発動，短い遅延後に周囲の敵へダメージを与える，自身の体力を少量回復する",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser4>!self>SetMessage>暗黒のエネルギーはすでに消え去った……>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>頭上Eキーで腐敗の大地を発動，自身は短時間無敵状態になる>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>突き刺しで敵にダメージを与えるとエネルギーを得られる，一定量集めると腐敗の大地を発動できる，自身は一部の深淵効果を無視する>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text1*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>>>挑発中<<<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text2*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>>挑発中<<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text3*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>挑発中<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text4*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>挑発中<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text5*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>挑発中<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text6*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>挑発中<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text7*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>挑発中<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text8*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>挑発中<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text9*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>挑発中<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text10*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">挑発中<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Dark_Knight_Provoke_Text11*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "挑発終了！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 암흑기사가 팀에 합류했다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "암흑기사：정면 E키로 찌르기를 발동，짧은 지연후 주위의 적에게 대미지를 줌，자신의 체력을 소량 회복함",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser4>!self>SetMessage>암흑 에너지는 이미 소멸했다……>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>머리 위 E키로 부패의 대지를 발동，자신은 단시간 무적상태가 됨>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>찌르기로 적에게 대미지를 주면 에너지를 얻을 수 있다，일정량 모으면 부패의 대지를 발동할 수 있음，자신은 일부 심연효과를 무시함>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text1*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>>>도발중<<<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text2*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>>도발중<<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text3*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>도발중<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text4*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>도발중<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text5*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>도발중<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text6*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>도발중<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text7*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>도발중<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text8*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>도발중<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text9*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>도발중<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text10*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">도발중<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Dark_Knight_Provoke_Text11*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "도발종료！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A dark knight has joined the team **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Dark Knight：Front E-key to activate Piercing，After a brief delay deals damage to nearby enemies，Small amount of self-healing",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser4>!self>SetMessage>Dark energy has dissipated……>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Overhead E-key to activate Corrupt Earth，Become briefly invincible>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Piercing damage to enemies generates energy，Collect enough energy to activate Corrupt Earth，User ignores certain Abyss effects>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text1*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>>>Taunting<<<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text2*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>>Taunting<<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text3*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>>Taunting<<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text4*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>>Taunting<<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text5*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>>Taunting<<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text6*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>>Taunting<<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text7*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>>Taunting<<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text8*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>>Taunting<<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text9*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>Taunting<<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text10*",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">Taunting<",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Dark_Knight_Provoke_Text11*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Taunt ended！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Black_Mage_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Black_Mage_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 黒魔法使いがチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "黒魔法使い：正面Eキーで爆炎を発射，大ダメージを与える，爆炎を3回発射した後に暴雷を発動",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>暴雷に当たった敵は5秒ごとにダメージを受ける，一定確率で減速，持続7回>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>頭上Eキーで黒魔紋を発動，プレイヤーが黒魔紋内にいると爆炎/暴雷のクールダウンが減少する>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Black_Mage_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 흑마법사가 팀에 합류했다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "흑마법사：정면 E키로 폭염을 발사，큰 피해를 줌，폭염 3회 사용 후 폭뢰를 발동",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>폭뢰에 맞은 적은 5초 씩 대미지를 받음，일정확률로 감속，지속 7회>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>머리 위 E키로 흑마문을 발동，플레이어가 흑마문내에 있으면 폭염/폭뢰의 쿨타임이 감소함>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Black_Mage_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A black mage has joined the team **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Black mage：Front E-key to shoot the Flame Burst，Dealing heavy damage，Activate Thunderstorm after using Flame Burst 3 times",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Enemies hit by Thunderstorm take damage every 5 seconds，may be slowed，lasting 7 times>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Black_Mage_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Overhead E-key to activate Dark Magic Seal，Players inside the Dark Magic Seal have reduced cooldowns for Flame Burst/Thunderstorm>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Ninja_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Ninja_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 忍者がチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "忍者：忍術を発動 頭上Eキーで忍術の種類を切り替える",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser2>!self>SetMessage>氷遁の術>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>土遁の術>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Ninja_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 닌자가 팀에 합류했다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "닌자：닌술을 발동 머리 위 E키로 닌술 종류를 변환",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser2>!self>SetMessage>빙둔술>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>토둔술>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Ninja_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A ninja has joined the team **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Ninja：Activate Ninja skill  Overhead E-key to switch Ninja skill type",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser2>!self>SetMessage>Ice Release Technique>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Ninja_Ninjutsu_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Earth Release Technique>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Elidibus_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Elidibus_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 光の戦士がチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Elidibus_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "光の戦士：強力なスキルを発動 | 頭上Eキーで効果を切り替える，ただし各効果は1回のみ",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Elidibus_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser2>!self>SetMessage>光の壁>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Elidibus_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 빛의 전사가 팀에 합류했다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Elidibus_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "빛의 전사：강력한 스킬을 발동 | 머리 위 E키로 효과를 전환，단 각 효과는 1회 한정",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Elidibus_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser2>!self>SetMessage>빛의 벽>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Elidibus_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A light warrior has joined the team **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Elidibus_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Light Warrior：Activate powerful skill | E-key above the head to switch effects，but each can only be used once",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Elidibus_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser2>!self>SetMessage>Light Wall>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Temp_ZM_Warp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "近距離の敵を抹殺，中距離では深淵状態の敵を即時処刑，その後に敵に深淵(減速)状態を付与する",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 湮と噬の帰零特異点がいつでも崩壊する準備ができている ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>ps:深淵の致死ダメージは陽星合相(占星ヒール)で防げる>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>範囲ダメージは暗黒騎士に効かない>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "근거리의 적을 말살，중거리에서는 심연상태의 적을 즉시 처형，그 후에 적에게 심연(감속)상태를 부여함",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 인(湮)과 서(噬)의 귀영 특이점이 언제든 붕괴할 준비가 되어 있다 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>ps:심연의 치사 대미지는 양성합상(점성 힐)으로 막을 수 있다>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>범위 대미지는 암흑기사에게 효과가 없음>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Eliminate enemies at close range，Directly execute enemies in the Abyss state at mid range，then apply Abyss(slow) status to them",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ The Zero Singularity of Yān(湮) and Shì(噬) is prepared to collapse at any time ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>ps:Lethal Abyss damage can be blocked by Solar Conjunction(Astrologer Heal)>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Doom_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Area damage has no effect on the Dark Knight>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },        
+        
+        {
+			"targetname": "Temp_ZM_Heal_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "持続的な回復と移動速度回復効果を付与，範囲内の深淵(減速)状態の敵に出血効果を与える",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 血と腐敗の逆生呪文が潰瘍の中で蠢いている ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>流血：5秒間持続するドットダメージを与える，ダメージを受ける度に麻痺される>7.98>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "지속적인 회복과 이동속도 회복효과를 부여，범위내의 심연(감속)상태의 적에게 출혈효과를 부여함",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 피와 부패의 역생주문이 궤양에서 꿈틀거리고 있다 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>유혈：5초간 지속하는 도트 대미지를 입힘，대미지를 받을 때 마다 바미됨>7.98>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Provides continuous healing and movement speed recovery，Applies Bleed to enemies in the area that are in the Abyss(slow) state",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ Blood and necrotic reversal spell of decay writhes in the rotting area＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Heal_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Bleed：Deals dot damage over time for 5 seconds，Each time the target takes damage they are paralyzed>7.98>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_ZM_Ahriman_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "左キーで凝視を発動，目撃者に短時間の盲目と深淵(減速)状態を付与，右キーで自身をゆっくり飛行させる",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 影と夢の沈眠の使者が夜の帳の下で翼を広げた ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>Setmessage>凝視は暗黒騎士に効かない>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "좌측 키로 응시를 발동，목격자에게 단시간 실명 심연(감속)상태를 부여，우측 키로 자신을 서서히 비행시킴",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 그림자와 꿈의 침면 사자가 밤의 장막 아래에서 날개를 펼쳤다 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>Setmessage>응시는 암흑기사에게 효과가 없음>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Left-key to activate Gaze，Causing a brief blindness effect and applying Abyss(slow) to witnesses，Right-key to allows slow flight",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ The Slumbering Messenger of Shadow and Dream has spread its wings beneath the veil of night ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Ahriman_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>Setmessage>Gaze has no effect on the Dark Knight>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_Diabolos_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* 虚空の悪夢 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* 虚空の恐怖 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* 虚空の驚愕 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* 影の一突き *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase05>ServerCommand>Command>say ＞* 虚空の暗夜 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* 悪夢 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* 究極の恐怖 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* 暗夜の恐怖 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* 暗影の盾 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* 허공의 악몽 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* 허공의 공포 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* 허공의 경악 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* 그림자 일격 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase05>ServerCommand>Command>say ＞* 허공의 암야 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* 악몽 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* 궁극의 공포 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* 암야의 공포 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* 암영의 방패 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* Void Nightmare *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* Void Terror *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* Shock of the Void *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* Shadow Thrust *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Hollow_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase05>ServerCommand>Command>say ＞* Void Dark Night *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* Nightmare *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* Ultimate Fear *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* Dark Night Fear *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* Shadow Shield *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Red_Mage_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Red_Mage_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 赤魔道士がチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Red_Mage_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "赤魔道士：正面Eキーでそれぞれの魔連攻、円斬と魔交撃斬を発動，命中した敵の移動速度をリセットできる",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Red_Mage_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 적마법사가 팀에 합류했다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Red_Mage_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "적마법사：정면 E키로 각각 마연격、원참과 마교격참을 발동，명중시킨 적의 이동속도를 리셋할 수 있다",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Red_Mage_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A red mage has joined the team **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Red_Mage_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Red Mage：Front E-key to activate Magic Combo Attack，Circular Slash and last Magic Cross Strike，Can reset the movement speed of hit enemies",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Samurai_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Samurai_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 武士がチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "武士：正面Eキーで斬撃を発射，敵に命中時クールタイムが返還される",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>頭上Eキーで居合斬を発動，その後に斬撃の高速クールダウン効果が一時的に失われる>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>居合斬を発動するため，3回の連撃と一定のクールタイムが必要だ>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Samurai_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 무사가 팀에 합류했다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "무사：정면 E키로 참격을 발사，적에게 명중시 쿨타임이 반환 됨",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>머리 위 E키로 거합참을 발동，그 후에 초고속 쿨다운 효과가 잠시 잃는다>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>거합참을 발동하기 위해，3회의 참격과 일정의 쿨타임이 필요하다>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Samurai_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A samurai has joined the team **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Samurai：Front E-key to shoot the Slash，Hitting an enemy refunds the cooldown",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Overhead E-key to Activate Iai(居合) Slash，Then instant Slash fast cooldown effect is temporarily lost>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Samurai_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>To activate Iai(居合) Slash，3 Slashes and a certain cooldown are required>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Scholar_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Scholar_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 学者がチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Scholar_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "学者：正面Eキーで回復術を発動，持続的に周囲の味方を回復させる",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Scholar_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>頭上Eキーで防護陣を展開，味方にダメージ軽減を付与，敵を阻止して一部の飛行弾道を迎撃する>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Scholar_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 학자가 팀에 합류했다 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Scholar_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "학자：정면 E키로 회복술을 발동，지속적으로 주위의 아군을 회복 시킴",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Scholar_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>머리 위 E키로 방어진을 전개，아군에게 피해감소를 부여，적을 저지하고 일부 비행탄도를 요격함>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Scholar_Elite*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A scholar has joined the team **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Scholar_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Scholar：Front E-key to activate Healing Spell，Continuously healing allies within its area",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Scholar_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Overhead E-key to activate Protective Barrier，Reduce damage for allies，Block enemies and intercept some incoming projectiles>3.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Level_Template_Omega_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 何かが起こるまで防御 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ ゲートが開くまで防御 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 暗黒のエネルギーはすでに消え去った…… ＞>35.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 時空エネルギー波形レベル12を感知した！撤退する前にまずはこれを撃破する必要がありそうだ！ ＞>30.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Level_Ending_Omega*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** おめでとうございます！あなたこそ光の戦士です！ **>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 무언가가 일어날 때까지 방어 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 게이트가 열릴 때까지 방어 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 암흑의 에너지는 이미 사라졌다…… ＞>35.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ 시공에너지 파형 레벨12를 감지했다！후퇴하기 전에 먼저 이것을 파괴할 필요가 있는 것 같다！ ＞>30.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Level_Ending_Omega*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 축하합니다！당신이야 말로 빛의 전사입니다！ **>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Trigger_1*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Trigger_2*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until something happens ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Trigger_3*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Trigger_4*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the gate opens ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Dark energy has already dissipated…… ＞>35.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Trigger_5*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Detected a level 12 temporal energy wave！Looks like we’ll have to defeat it before we can retreat！ ＞>30.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Level_Ending_Omega*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say ** Congratulations！You are the Warrior of Light！ **>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_Laser_Omega_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Laser_Omega_Hp*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMin>ServerCommand>Command>say オメガが撃退された，進み続けろ>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Laser_Omega_Hp*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMin>ServerCommand>Command>say 오메가가 격퇴되었다，계속 전진하라>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Laser_Omega_Hp*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMin>ServerCommand>Command>say Omega has been repelled，continue advancing>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_ZM_Diabolos_Hollow_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "ディアボロスを召喚，数秒後に暗黒の嵐を発動，莫大なダメージを与えて深淵状態を付与する",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 淵と怒りの滅世の具象が地獄の扉を引き裂いている ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>say ディアボロスは一定量の体力を持つ，撃破されると全ての効果が即時無効になる>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "디아볼로스를 소환，암흑의 폭풍을 발동，막대한 대미지를 부여하고 심연상태를 부여함",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 심연과 분노의 멸세의 구현체가 지옥의 문을 찢어 열고 있다 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>say 디아볼로스는 일정량의 체력을 가짐，격파당하면 모든 효과가 즉시 무효됨>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Summon Diabolos， Activate Dark Storm，Inflicts huge damage and applies the Abyss effect",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ The apocalyptic embodiment of the Abyss and Wrath is tearing open the gates of Hell ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Diabolos_Hollow_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>say Diabolos has a set amount of HP，All effects immediately end when it is defeated>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        // refer to 5488#entityLumpName.jsonc
+        {
+			"targetname": "Laser_Omega_Ending_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Laser_Omega_F_Ending_Relay*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser3>Laser_Omega_Ending_tl_relay*>FireUser1>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Laser_Omega_F_Ending_Relay*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser3>Laser_Omega_Ending_tl_relay*>FireUser2>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Laser_Omega_F_Ending_Relay*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser3>Laser_Omega_Ending_tl_relay*>FireUser3>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Temp_ZM_C_O_D_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 欲望と惑乱の奴隷の種がすでに疾走し待機している ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser4>!self>SetMessage>暗黒のエネルギーはすでに消え去った……>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "SetMessage",
+                    "overrideparam": "暗黒の雲のエネルギー球を召喚して発射する，通常状態ではこのボールに効果はない",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_C_O_D_Text2",
+                    "inputname": "SetMessage",
+                    "overrideparam": "球は壁に衝突すると反射されて強化する，強化された球は敵を拘束できる",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 욕망과 혼란의 노예 씨앗이 이미 질주하며 대기 중이다 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser4>!self>SetMessage>암흑의 에너지는 이미 사라졌다……>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "SetMessage",
+                    "overrideparam": "암흑의 구름 에너지 구체를 소환하여 발사한다，평상시에는 이 구체에 효과가 없다",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_C_O_D_Text2",
+                    "inputname": "SetMessage",
+                    "overrideparam": "구체가 벽과 충돌하면 반사되어 강화됨，강화된 구체는 적을 구속할 수 있다",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ The seeds of enslavement fueled by Desire and Confusion are already racing, awaiting orders ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser4>!self>SetMessage>Dark energy has already dissipated……>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_C_O_D_Text",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Summon and launch a Dark Cloud energy orb，It has no effect in its normal state",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_C_O_D_Text2",
+                    "inputname": "SetMessage",
+                    "overrideparam": "The orb is reflected when it hits a wall and becomes empowered，an empowered orb can bind enemies",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_ZM_Flying_Sprites_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+                // 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Flying_Sprites_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 鱗と風の裏切りの翼が道を編んでいる ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "ZM_Flying_Sprites_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "自身の基本移動速度が上昇，飛行フィールドを生成できる",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+				// 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Flying_Sprites_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ 비늘과 바람의 배반의 날개가 길을 엮고 있다 ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "ZM_Flying_Sprites_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "자신의 기본이동속도 상승，비행 필드 생성가능",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Flying_Sprites_Text*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>ServerCommand>Command>say ＜ The scales and Wings of Wind Betrayal are weaving a path ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "ZM_Flying_Sprites_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "Increases base movement speed，allows the creation of a flying field",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Omega_Extra_Temp_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+                // 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Magic_Vulnerability_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "あなたは魔法弱化状態になりました！次の攻撃分担には参加しないこと！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Init_Meteor_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "あなたは隕石のターゲットです！隕石を誘導して人混みから離れてください！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Magic_Vulnerability_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "당신은 마법약화상태가 되었습니다！다음 공격 분담에는 참가하지 말 것！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Init_Meteor_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "당신은 운석의 타겟입니다！운석을 유도하여 사람들로부터 멀리 떨어져 주세요！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Magic_Vulnerability_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "You are afflicted with Magic Vulnerability！Do not participate in the next attack share！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Init_Meteor_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "You are target of the meteor！Guide the meteor away from the people！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Temp_Omega_Sagittarius_Arrow_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+                // 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Omega_Sagittarius_Arrow_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "あなたは射手のターゲットです！隕石を誘導して人混みから離れてください！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Omega_Sagittarius_Arrow_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "당신은 궁수의 타겟입니다！운석을 유도하여 사람들로부터 멀리 떨어져 주세요！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Omega_Sagittarius_Arrow_Text*",
+                    "inputname": "SetMessage",
+                    "overrideparam": "You are target of the archer’s！Guide the meteor away from the people！",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        }
+    ],
+    "modify": // remove message output, add targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Level_Template_Extreme"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 极限模式 >",
+                        "delay": 9.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]Castle_Right_Trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]Castle_Trigger_Case"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase03",
+						"targetname": "[PR#]TP_AFK_KEEP2",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 冥狱的魔神已从深渊中归来 **>0>1",
+                        "delay": 0.5,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnCase03",
+						"targetname": "[PR#]TP_AFK_KEEP3",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnStartTouch>ServerCommand>Command>say ** 零式关卡完成! **>1>1",
+                        "delay": 0.75,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Castle_Trigger_Door"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Level_Template_Hard"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 困难模式 >",
+                        "delay": 9.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]Temp_ZM_Flying_Sprites"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 蝶舞编织的通路下似乎有什么秘密……",
+                        "delay": 60.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Level_Template_ZM"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 放松一下~",
+                        "delay": 12.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 生存200s",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+        // 1896#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Temp_Hollow_Night"
+            },
+            "replace":
+            {
+                "template17": "Hollow_Night_tl_relay"
+            }
+        },
+        // 5488#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Laser_Omega_Ending"
+            },
+            "replace":
+            {
+                "template23": "Laser_Omega_Ending_tl_relay"
+            }
+        }
+    ]
+}

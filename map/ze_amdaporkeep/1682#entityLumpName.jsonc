@@ -1,0 +1,68 @@
+// stripper by 兎RB 26.04.07
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Dark_Knight_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 一位暗黑骑士加入了队伍 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Dark_Knight_Text"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser4",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "暗黑能量已消散……",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "对头顶使用可释放腐秽大地，并使自身处于短暂无敌效果",
+                        "delay": 3.5,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "刺穿伤害敌方可获取能量，收集一定能量可释放腐秽大地 自身无视部分深渊效果",
+                        "delay": 7.5,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}
