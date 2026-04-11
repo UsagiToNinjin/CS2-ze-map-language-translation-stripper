@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.04.09
+// stripper by 兎RB,Frame 26.04.11
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -50,7 +50,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.04.09 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.04.11 by 兎RB,Frame",
                         "delay": 13.0,
                         "timestofire": -1
                     }
@@ -4119,7 +4119,7 @@
                     "outputname": "OnUser1",
 					"targetname": "ZM_Diabolos_Hollow_Text*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser1>!self>SetMessage>say ディアボロスは一定量の体力を持つ，撃破されると全ての効果が即時無効になる>7.5>1",
+                    "overrideparam": "OnUser1>!self>SetMessage>ディアボロスは一定量の体力を持つ，撃破されると全ての効果が即時無効になる>7.5>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -4146,7 +4146,7 @@
                     "outputname": "OnUser2",
 					"targetname": "ZM_Diabolos_Hollow_Text*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser1>!self>SetMessage>say 디아볼로스는 일정량의 체력을 가짐，격파당하면 모든 효과가 즉시 무효됨>7.5>1",
+                    "overrideparam": "OnUser1>!self>SetMessage>디아볼로스는 일정량의 체력을 가짐，격파당하면 모든 효과가 즉시 무효됨>7.5>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -4173,7 +4173,7 @@
                     "outputname": "OnUser3",
 					"targetname": "ZM_Diabolos_Hollow_Text*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser1>!self>SetMessage>say Diabolos has a set amount of HP，All effects immediately end when it is defeated>7.5>1",
+                    "overrideparam": "OnUser1>!self>SetMessage>Diabolos has a set amount of HP，All effects immediately end when it is defeated>7.5>1",
                     "delay": 0.0,
                     "timestofire": -1
                 }
