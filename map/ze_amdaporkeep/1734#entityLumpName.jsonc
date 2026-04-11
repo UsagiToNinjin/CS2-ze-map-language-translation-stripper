@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.04.07
+// stripper by 兎RB 26.04.11
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -36,7 +36,7 @@
                         "outputname": "OnUser1",
 						"targetname": "!self",
                         "inputname": "SetMessage",
-                        "overrideparam": "ps:深渊致死伤害可被阳星合相（占星奶）抵御",
+                        "overrideparam": "外围伤害无法对的暗黑骑士产生效果",
                         "delay": 7.5,
                         "timestofire": 1
                     }
