@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.04.11
+// stripper by 兎RB,Frame 26.04.13
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -50,7 +50,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.04.11 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.04.13 by 兎RB,Frame",
                         "delay": 13.0,
                         "timestofire": -1
                     }
@@ -281,6 +281,15 @@
 					"targetname": "Temp_Diabolos",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnEntitySpawned>Temp_Diabolos_relay>FireUser1>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Temp_Diabolos_Hollow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Diabolos_Hollow_relay>FireUser1>>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -611,6 +620,15 @@
 
                 {
 					"outputname": "OnCase02",
+					"targetname": "Temp_Diabolos_Hollow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Diabolos_Hollow_relay>FireUser2>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase02",
 					"targetname": "Item_Red_Mage_Temp",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnEntitySpawned>Item_Red_Mage_Temp_relay>FireUser2>>0.0>1",
@@ -929,6 +947,15 @@
 					"targetname": "Temp_Diabolos",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnEntitySpawned>Temp_Diabolos_relay>FireUser3>>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
+					"targetname": "Temp_Diabolos_Hollow",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Temp_Diabolos_Hollow_relay>FireUser3>>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3320,6 +3347,122 @@
 			"io":
             [
 				// 日本語
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* 悪夢 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* 究極の恐怖 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* 暗夜の恐怖 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* 暗影の盾 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* 악몽 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* 궁극의 공포 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* 암야의 공포 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* 암영의 방패 *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* Nightmare *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* Ultimate Fear *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* Dark Night Fear *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Diabolos_Attack_Case*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* Shadow Shield *＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Temp_Diabolos_Hollow_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
 				{
                     "outputname": "OnUser1",
 					"targetname": "Diabolos_Hollow_Attack_Case*",
@@ -3361,42 +3504,6 @@
 					"targetname": "Diabolos_Hollow_Attack_Case*",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnCase05>ServerCommand>Command>say ＞* 虚空の暗夜 *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser1",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* 悪夢 *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser1",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* 究極の恐怖 *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser1",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* 暗夜の恐怖 *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser1",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* 暗影の盾 *＜>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -3445,42 +3552,6 @@
                     "delay": 0.0,
                     "timestofire": -1
                 },
-
-                {
-                    "outputname": "OnUser2",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* 악몽 *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser2",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* 궁극의 공포 *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser2",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* 암야의 공포 *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser2",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* 암영의 방패 *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
                 // English
 				{
                     "outputname": "OnUser3",
@@ -3523,42 +3594,6 @@
 					"targetname": "Diabolos_Hollow_Attack_Case*",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnCase05>ServerCommand>Command>say ＞* Void Dark Night *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser3",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase01>ServerCommand>Command>say ＞* Nightmare *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser3",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase02>ServerCommand>Command>say ＞* Ultimate Fear *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser3",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase03>ServerCommand>Command>say ＞* Dark Night Fear *＜>0.0>-1",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnUser3",
-					"targetname": "Diabolos_Attack_Case*",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnCase04>ServerCommand>Command>say ＞* Shadow Shield *＜>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 }
