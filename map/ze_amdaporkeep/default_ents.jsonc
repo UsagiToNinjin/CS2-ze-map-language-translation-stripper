@@ -161,15 +161,6 @@
 
                 {
 					"outputname": "OnCase01",
-					"targetname": "Temp_Cloud_of_Darkness",
-					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Temp_Cloud_of_Darkness_relay>FireUser1>>0.0>1",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnCase01",
 					"targetname": "Level_Template_Savage",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnEntitySpawned>Level_Template_Savage_relay>FireUser1>>0.0>1",
