@@ -1,9 +1,9 @@
-// stripper by 兎RB 26.03.18
+// stripper by 兎RB 26.04.15
 // map ze_popkart_r
 // workshop id 3247766438
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L1508 L1547
+// + fix bug L1447 L1486
 {
 	"filter": // remove unnecessary entity
 	[
@@ -53,7 +53,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.03.18 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.04.15 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -112,7 +112,7 @@
 					"outputname": "OnCase01",
 					"targetname": "kart_temp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>kart_temp_relay>FireUser1>>0.0>-1",
+					"overrideparam": "OnEntitySpawned>kart_temp_tl_relay*>FireUser1>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -163,7 +163,7 @@
 					"outputname": "OnCase02",
 					"targetname": "kart_temp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>kart_temp_relay>FireUser2>>0.0>-1",
+					"overrideparam": "OnEntitySpawned>kart_temp_tl_relay*>FireUser2>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -214,7 +214,7 @@
 					"outputname": "OnCase03",
 					"targetname": "kart_temp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>kart_temp_relay>FireUser3>>0.0>-1",
+					"overrideparam": "OnEntitySpawned>kart_temp_tl_relay*>FireUser3>>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -318,7 +318,7 @@
 					"outputname": "OnCase03",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say “飛んだ！”",
+					"overrideparam": "say “出発！”",
 					"delay": 31.0,
 					"timestofire": -1
 				},
@@ -918,7 +918,7 @@
 					"outputname": "OnCase03",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say “날았다！”",
+					"overrideparam": "say “출발！”",
 					"delay": 31.0,
 					"timestofire": -1
 				},
@@ -1444,67 +1444,6 @@
             "classname": "env_hudhint",
 			"message": "체크포인트2/2"
 		},
-
-		{
-            "targetname": "kart_temp_relay",
-            "classname": "logic_relay",
-            "io":
-            [
-                {
-					"outputname": "OnUser1",
-					"targetname": "kart_boost_text1*",
-					"inputname": "SetMessage",
-					"overrideparam": "Shift:ドリフト",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnUser1",
-					"targetname": "kart_boost_text2*",
-					"inputname": "SetMessage",
-					"overrideparam": "Ctrl:加速",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser2",
-					"targetname": "kart_boost_text1*",
-					"inputname": "SetMessage",
-					"overrideparam": "Shift:드리프트",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnUser2",
-					"targetname": "kart_boost_text2*",
-					"inputname": "SetMessage",
-					"overrideparam": "Ctrl:가속",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnUser3",
-					"targetname": "kart_boost_text1*",
-					"inputname": "SetMessage",
-					"overrideparam": "Shift:drift",
-					"delay": 0.0,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnUser3",
-					"targetname": "kart_boost_text2*",
-					"inputname": "SetMessage",
-					"overrideparam": "Ctrl:boost",
-					"delay": 0.0,
-					"timestofire": -1
-				}
-            ]
-        },
 		// karts(func_phybox) are affected by grenade knockback, disable grenade explosions in racing mode 
 		{
 			"targetname": "disable_nade",
@@ -1557,6 +1496,18 @@
                     }
 				]	
             }
+        },
+		// add language translation entity
+        // 13235#entityLumpName 
+		{
+            "match":
+            {
+                "targetname": "[PR#]kart_temp"
+            },
+            "replace":
+			{
+				"template25": "kart_temp_tl_relay"
+			}
         },
 
 		{

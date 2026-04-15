@@ -1,0 +1,148 @@
+// stripper by 兎RB 26.04.15
+// map ze_popkart_r
+// workshop id 3247766438
+// if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
+{
+	"add":
+    [
+		{
+            "targetname": "kart_temp_tl_relay&0000",
+            "classname": "logic_relay",
+            "io":
+            [
+				// 日本語
+                {
+					"outputname": "OnUser1",
+					"targetname": "kart_boost_firstperson_text1&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Shift:ドリフト",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "kart_boost_firstperson_text2&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Ctrl:加速",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "kart_boost_thirdperson_text1&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Shift:ドリフト",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "kart_boost_thirdperson_text2&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Ctrl:加速",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.05,
+					"timestofire": 1
+				},
+				// 한국어
+                {
+					"outputname": "OnUser2",
+					"targetname": "kart_boost_firstperson_text1&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Shift:드리프트",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "kart_boost_firstperson_text2&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Ctrl:가속",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "kart_boost_thirdperson_text1&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Shift:드리프트",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "kart_boost_thirdperson_text2&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Ctrl:가속",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.05,
+					"timestofire": 1
+				},
+				// English
+                {
+					"outputname": "OnUser3",
+					"targetname": "kart_boost_firstperson_text1&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Shift:drift",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "kart_boost_firstperson_text2&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Ctrl:boost",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "kart_boost_thirdperson_text1&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Shift:drift",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "kart_boost_thirdperson_text2&0000",
+					"inputname": "SetMessage",
+					"overrideparam": "Ctrl:boost",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser3",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.05,
+					"timestofire": 1
+				}
+            ]
+        }
+	]	
+}
