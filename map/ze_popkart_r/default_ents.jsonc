@@ -1,9 +1,9 @@
-// stripper by 兎RB 26.04.15
+// stripper by 兎RB 26.04.16
 // map ze_popkart_r
 // workshop id 3247766438
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L1447 L1486
+// + fix bug L63
 {
 	"filter": // remove unnecessary entity
 	[
@@ -53,11 +53,23 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.04.15 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.04.16 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
                 ]
+            }
+        },
+		// fix door rotation direction
+		{
+            "match":
+            {
+                "classname": "func_door_rotating",
+				"hammeruniqueid": "/(8332|8338|8484|8490)/"
+			},
+			"replace":
+            {
+				"spawnflags": "2"
             }
         }
     ],
@@ -1443,33 +1455,17 @@
             "targetname": "lv4_kart_checkpoint2_hudhint_kr",
             "classname": "env_hudhint",
 			"message": "체크포인트2/2"
-		},
-		// karts(func_phybox) are affected by grenade knockback, disable grenade explosions in racing mode 
-		{
-			"targetname": "disable_nade",
-            "classname": "logic_timer",
-            "startdisabled": "1",
-            "refiretime": "0.01",
-            "io":
-			[
-				{
-                    "outputname": "OnTimer",
-					"targetname": "hegrenade_projectile",
-                    "inputname": "Kill",                       
-                    "delay": 0.0,
-                    "timestofire": -1
-                }
-			]
 		}	
     ],
-    "modify": 
+    "modify":
     [
+		// remove message output
         {
             "match":
             {
                 "targetname": "[PR#]lv4_kart_final_trigger"
             },
-            "delete": // remove message output
+            "delete": 
             {
                 "io":
                 [
@@ -1481,20 +1477,7 @@
                         "delay": 0.0,
                         "timestofire": 1
                     }
-				]	
-            },
-			"insert": // add disable grenade explosions logic
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "disable_nade",
-                        "inputname": "Disable",
-                        "delay": 30.0,
-                        "timestofire": -1
-                    }
-				]	
+				]
             }
         },
 		// add language translation entity
@@ -1508,66 +1491,6 @@
 			{
 				"template25": "kart_temp_tl_relay"
 			}
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]lv3_kart_final_trigger"
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "disable_nade",
-                        "inputname": "Disable",
-                        "delay": 30.0,
-                        "timestofire": -1
-                    }
-				]	
-            }
-        },
-		
-		{
-            "match":
-            {
-                "targetname": "[PR#]lv3_init_relay"
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnTrigger",
-						"targetname": "disable_nade",
-                        "inputname": "Enable",
-                        "delay": 40.0,
-                        "timestofire": -1
-                    }
-				]	
-            }
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]lv4_init_relay"
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnTrigger",
-						"targetname": "disable_nade",
-                        "inputname": "Enable",
-                        "delay": 40.0,
-                        "timestofire": -1
-                    }
-				]	
-            }
         }
     ]
 }
