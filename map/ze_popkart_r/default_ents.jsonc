@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.04.16
+// stripper by 兎RB 26.04.17
 // map ze_popkart_r
 // workshop id 3247766438
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -53,7 +53,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.04.16 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.04.17 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -64,12 +64,12 @@
 		{
             "match":
             {
-                "classname": "func_door_rotating",
-				"hammeruniqueid": "/(8332|8338|8484|8490)/"
+				"targetname": "/lv[1-2]_block[1-4]_rota/",
+                "classname": "func_door_rotating"
 			},
 			"replace":
             {
-				"spawnflags": "2"
+				"spawnflags": "16"
             }
         }
     ],
