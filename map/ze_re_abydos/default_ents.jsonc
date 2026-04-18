@@ -1,8 +1,9 @@
-// stripper by 兎RB 25.10.16
+// stripper by 兎RB 26.04.18
 // map ze_re_abydos
 // workshop id 3261481731
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
+// + fix bug L39
 {
     "modify":
     [
@@ -28,12 +29,24 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.16 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.04.18 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
                 ]
             }
+        },
+		// fix issue where the trigger_push on the 2 floor is also applied on the 1 floor
+		{
+            "match":
+            {
+				"targetname": "[PR#]lv1_door_04_push_01",
+                "classname": "trigger_push"
+            },
+            "replace":
+            {
+				"origin": "272 1112 208"
+			}	
         }
     ],
     "add":
@@ -717,7 +730,7 @@
     ],
     "modify": // remove message output, replace point_worldtext origin
     [
-        // message "感谢以下维护及帮助："
+        // message : "感谢以下维护及帮助："
         {
             "match":
             {
@@ -730,7 +743,7 @@
                 "origin": "-10922.856445 8304.668945 -14517.383789"
             }
         },
-        // message "凯言城的狼"
+        // message : "凯言城的狼"
         {
             "match":
             {
@@ -742,7 +755,7 @@
                 "origin": "-10922.856445 8322.433594 -14529.869141"
             }
         },
-        // message "时墨_luck"
+        // message : "时墨_luck"
         {
             "match":
             {
@@ -754,6 +767,7 @@
                 "origin": "-10922.856445 8318.450195 -14542.646484"
             }
         },
+
         {
             "match":
             {
@@ -858,7 +872,7 @@
                 ]
             }
         },
-
+		// message : ""终于把钢盔团赶出去了！再去操场看看还有没有漏网之鱼吧！""
 		{
             "match":
             {
