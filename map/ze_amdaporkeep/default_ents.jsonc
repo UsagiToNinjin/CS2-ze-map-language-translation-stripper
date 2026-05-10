@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.05.02
+// stripper by 兎RB,Frame 26.05.10
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -50,7 +50,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.05.02 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.05.10 by 兎RB,Frame",
                         "delay": 11.0,
                         "timestofire": -1
                     }
@@ -410,6 +410,42 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say 侵略者よ，我と戦え！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say おかしい，ここは俺の戦場じゃない，なぜ俺はここにいるんだ>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say さて，帰ってまた我がダンジョンを見張るとするか>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "Temp_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>ServerCommand>Command>say これは廃棄されたにゃん，また縁があったら会おうにゃん>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
                 // 한국어
 				{
 					"outputname": "OnCase02",
@@ -743,6 +779,42 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say 침입자여，나와 싸우도록！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say 이상하군，여긴 나의 전장이 아니잖아，어째서 내가 여기에 있는거지>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say 됐다，돌아가서 다시 내 구역을 지킬 때다>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "Temp_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>ServerCommand>Command>say 이건 폐기되었다냥，인연이 있다면 또 만나자냥>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
                 // English
 				{
 					"outputname": "OnCase03",
@@ -1073,6 +1145,42 @@
 					"targetname": "Level_Template_ZM",
 					"inputname": "AddOutPut",
 					"overrideparam": "OnUser1>ServerCommand>Command>say Survive for 200 seconds>10.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say Intruder，fight me！>0.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say No，this isn’t my battlefield，Then why am I here>3.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Filter_Exdeath_Egg_Enable",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnPass>ServerCommand>Command>say Hmph，Time to head back and resume guarding my stage>6.0>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnCase03",
+					"targetname": "Temp_Omega",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>ServerCommand>Command>say This has been scrapped nya，See you again someday nya>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -10721,6 +10829,66 @@
                         "overrideparam": "say 生存200s",
                         "delay": 10.0,
                         "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]Filter_Exdeath_Egg_Enable"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 入侵者，与我一战！",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 不对，这里不是我的战斗领域，可为什么我在这里",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnPass",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 罢了，我该回去继续坐镇我的关卡了",
+                        "delay": 6.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]Temp_Omega"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnEntitySpawned",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 这是一个废案喵，有缘再见吧",
+                        "delay": 0.0,
+                        "timestofire": -1
                     }
                 ]
             }
