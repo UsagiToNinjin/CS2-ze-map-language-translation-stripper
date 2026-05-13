@@ -5,7 +5,7 @@
 // serial number 日本語:"1" 한국어:"2" English:"3"
 // + fix bug L63~74
 {
-	"filter": // remove unnecessary entity
+	"filter": // remove unnecessary entities
 	[
 		{
 			"targetname": "[PR#]language_switch_button"
@@ -23,7 +23,7 @@
             {
                 "classname": "logic_auto"
 			},
-			"delete": // remove unnecessary trigger
+			"delete": // remove unnecessary output
             {
                 "io":
                 [
