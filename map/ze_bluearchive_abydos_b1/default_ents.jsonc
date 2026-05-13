@@ -3,7 +3,7 @@
 // workshop id 3610014260
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L39
+// + fix bug L39~170
 {
     "modify":
     [
@@ -36,7 +36,7 @@
                 ]
             }
         },
-		// fix item origin
+		// fix item origin(animgraph 2 update)
 		{
             "match":
             {
