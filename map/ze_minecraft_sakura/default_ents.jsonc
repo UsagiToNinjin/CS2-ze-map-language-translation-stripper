@@ -6632,7 +6632,7 @@
   					"delay": 130.3,
   					"timestofire": -1
 				},
-					
+
 				{					
   					"outputname": "OnUser2",
   					"targetname": "!self",
@@ -6642,18 +6642,16 @@
   					"timestofire": -1
 				},
 
-
-								{
+				{
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
 					"overrideparam": "You and me",
 					"delay": 142.5,
 					"timestofire": -1
-								},
+				},
 
-
-								{
+				{
   					"outputname": "OnUser2",
   					"targetname": "!self",
   					"inputname": "SetMessage",
@@ -6671,18 +6669,16 @@
   					"timestofire": -1
 				},
 
-
-								{
+				{
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
 					"overrideparam": "I miss you",
 					"delay": 182.0,
 					"timestofire": -1
-								},
+				},
 
-
-								{
+				{
   					"outputname": "OnUser2",
   					"targetname": "!self",
   					"inputname": "SetMessage",
@@ -6709,18 +6705,16 @@
   					"timestofire": -1
 				},
 
-
-								{
+				{
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
 					"overrideparam": "I need you",
 					"delay": 195.2,
 					"timestofire": -1
-								},
+				},
 
-
-								{
+				{
   					"outputname": "OnUser2",
   					"targetname": "!self",
   					"inputname": "SetMessage",
