@@ -1,14 +1,29 @@
-// stripper by 兎RB 26.02.22
+// stripper by 兎RB 26.05.15
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 {
-	"modify": // fix an issue where the maximum HP does not reach 256
+	"modify": // convert RunScriptCode(lua script) to keyvalue format
     [
         {
             "match":
             {
-                "targetname": "[PR#]Release_Heal_TR&0000"
+                "targetname": "[PR#]Release_Heal_TR&0000",
+                "classname": "trigger_hurt"
             },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(256)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
             "insert":
             {
                 "io":
