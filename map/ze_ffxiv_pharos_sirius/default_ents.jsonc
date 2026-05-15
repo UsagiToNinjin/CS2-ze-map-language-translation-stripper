@@ -3,7 +3,7 @@
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + convert lua script L39~343
+// + convert lua script L39~218, L6173~6212, L6235~6274, L6297~6336, L6359~6416, L6439~6478
 {
 	"modify":
 	[
@@ -37,60 +37,6 @@
 			}
 		},
 		// convert RunScriptCode(lua script) to keyvalue format
-		{
-            "match":
-            {
-                "targetname": "/Item_Upgrade_(Fire|Ice|Gravity|Lightning)/",
-				"classname": "logic_relay"
-            },
-			"delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(6.00)",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(1.00)",
-                        "delay": 3.0,
-                        "timestofire": 1
-                    }
-				]
-			},
-            "insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 0.16",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 3.0,
-                        "timestofire": 1
-                    }
-				]
-			}
-		},
-
 		{
             "match":
             {
@@ -184,78 +130,6 @@
 		{
             "match":
             {
-                "targetname": "[PR#]Item_Upgrade_Heal",
-				"classname": "logic_relay"
-            },
-			"delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetMaxHealth(256)",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(6.00)",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(1.00)",
-                        "delay": 3.0,
-                        "timestofire": 1
-                    }
-				]
-			},
-            "insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "max_health 256",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 0.16",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 3.0,
-                        "timestofire": 1
-                    }
-				]
-			}
-		},
-
-		{
-            "match":
-            {
                 "targetname": "[PR#]Ravana_TR_Freeze",
 				"classname": "trigger_multiple"
             },
@@ -310,7 +184,8 @@
 		{
             "match":
             {
-                "targetname": "[PR#]ResetSpeed"
+                "targetname": "[PR#]ResetSpeed",
+				"classname": "game_zone_player"
             },
 			"delete":
             {
@@ -6276,7 +6151,7 @@
 				]
 			}
 		},
-
+		// convert RunScriptCode(lua script) to keyvalue format
 		{
 			"match":
 			{
@@ -6293,11 +6168,52 @@
 						"overrideparam": "say > 火元素已被升级 !",
 						"delay": 0.0,
 						"timestofire": 1
-					}
+					},
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(6.00)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.16",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
 				]
 			}
 		},
-
+		// convert RunScriptCode(lua script) to keyvalue format
 		{
 			"match":
 			{
@@ -6314,11 +6230,52 @@
 						"overrideparam": "say > 冰元素已被升级 !",
 						"delay": 0.0,
 						"timestofire": 1
-					}
+					},
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(6.00)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.16",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
 				]
 			}
 		},
-
+		// convert RunScriptCode(lua script) to keyvalue format
 		{
 			"match":
 			{
@@ -6335,11 +6292,52 @@
 						"overrideparam": "say > 黑元素已被升级 !",
 						"delay": 0.0,
 						"timestofire": 1
-					}
+					},
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(6.00)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.16",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
 				]
 			}
 		},
-
+		// convert RunScriptCode(lua script) to keyvalue format
 		{
 			"match":
 			{
@@ -6356,11 +6354,70 @@
 						"overrideparam": "say > 奶元素已被升级 !",
 						"delay": 0.0,
 						"timestofire": 1
-					}
+					},
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(256)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(6.00)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "max_health 256",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.16",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
 				]
 			}
 		},
-
+		// convert RunScriptCode(lua script) to keyvalue format
 		{
 			"match":
 			{
@@ -6377,7 +6434,48 @@
 						"overrideparam": "say > 电元素已被升级 !",
 						"delay": 0.0,
 						"timestofire": 1
-					}
+					},
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(6.00)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.16",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
 				]
 			}
 		},
