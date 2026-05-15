@@ -1,9 +1,9 @@
-// stripper by 兎RB,Frame 26.02.22
+// stripper by 兎RB,Frame 26.05.15
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L39~80
+// + convert lua script L39~343
 {
 	"modify":
 	[
@@ -29,19 +29,142 @@
 						"outputname": "OnSpawn",
 						"targetname": "Server",
 						"inputname": "Command",
-						"overrideparam": "say language translation stripper 26.02.22 by 兎RB,Frame",
+						"overrideparam": "say language translation stripper 26.05.15 by 兎RB,Frame",
 						"delay": 6.0,
 						"timestofire": -1
 					}
 				]
 			}
 		},
-		// fix an issue where the maximum HP does not reach 256
+		// convert RunScriptCode(lua script) to keyvalue format
 		{
             "match":
             {
-                "targetname": "[PR#]Release_Upgrade_Heal_TR"
+                "targetname": "/Item_Upgrade_(Fire|Ice|Gravity|Lightning)/",
+				"classname": "logic_relay"
             },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(6.00)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.16",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "/(Ravana|Yojimbo)_Attack_Slash_Hurt/",
+				"classname": "trigger_hurt"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(5.00)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.2",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]Release_Upgrade_Heal_TR",
+				"classname": "trigger_hurt"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(256)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
             "insert":
             {
                 "io":
@@ -61,8 +184,41 @@
 		{
             "match":
             {
-                "targetname": "[PR#]Item_Upgrade_Heal"
+                "targetname": "[PR#]Item_Upgrade_Heal",
+				"classname": "logic_relay"
             },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(256)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(6.00)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			},
             "insert":
             {
                 "io":
@@ -74,6 +230,113 @@
                         "overrideparam": "max_health 256",
                         "delay": 0.0,
                         "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.16",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 3.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]Ravana_TR_Freeze",
+				"classname": "trigger_multiple"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(6.00)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 13.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.16",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 13.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+		{
+            "match":
+            {
+                "targetname": "[PR#]ResetSpeed"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerOutZone",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerOutZone",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 0.0,
+                        "timestofire": -1
                     }
 				]
 			}
