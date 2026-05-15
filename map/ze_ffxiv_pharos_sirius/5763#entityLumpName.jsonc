@@ -1,14 +1,15 @@
-// stripper by 兎RB 26.01.09
+// stripper by 兎RB 26.05.15
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 {
-	"modify": // remove message output
+	"modify": // remove message output, convert RunScriptCode(lua script) to keyvalue format
     [
         {
             "match":
             {
-                "targetname": "[PR#]Magic_Silence_WP"
+                "targetname": "[PR#]Magic_Silence_WP",
+                "classname": "weapon_knife"
             },
             "delete":
             {
@@ -21,6 +22,29 @@
                         "overrideparam": "say > 一名玩家学会了沉默魔法",
                         "delay": 0.0,
                         "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(100000)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "max_health 100000",
+                        "delay": 0.0,
+                        "timestofire": -1
                     }
 				]
 			}
