@@ -1,8 +1,14 @@
-// stripper by 兎RB 26.02.15
+// stripper by 兎RB 26.05.31
 // map ze_aot_trost_v6r
 // workshop id 3262920150
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 {
+	"filter": // remove unnecessary lua script
+	[
+		{
+			"classname": "logic_script"
+		}
+	],
     "modify": // remove message output
     [
         {
