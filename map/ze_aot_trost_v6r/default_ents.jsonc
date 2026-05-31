@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.05.26
+// stripper by 兎RB 26.05.31
 // map ze_aot_trost_v6r
 // workshop id 3262920150
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -36,7 +36,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.05.26 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.05.31 by 兎RB",
                         "delay": 9.0,
                         "timestofire": -1
                     }
