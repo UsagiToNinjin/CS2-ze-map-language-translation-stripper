@@ -56,7 +56,7 @@
 				"spawnflags": "0"
             }
         },
-		// convert ScriptPrintMessageCenterAll(lua script) to env_hudhint, refer to L1620~4079
+		// convert ScriptPrintMessageCenterAll(lua script) to env_hudhint, refer to L1634~4093
 		// message : "进击的巨人:特洛斯特区V6重制 \n地图作者   <佐贺>   <皮皮猫233>" 
 		{
             "match":
