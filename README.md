@@ -12,4 +12,4 @@ Supported entities:
 * `point_worldtext`
 * `env_hudhint`
 
-This feature is only available for Stripper configurations whose commit messages contain keywords such as `language`>`other languages`/... or similar.
+This feature is only available for Stripper configurations whose commit messages contain keywords such as `language`>`other languages/...` or similar.
