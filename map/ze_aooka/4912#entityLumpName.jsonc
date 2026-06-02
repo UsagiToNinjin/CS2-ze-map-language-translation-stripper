@@ -1,0 +1,43 @@
+// stripper by 兎RB 26.05.25
+// map ze_aooka
+// workshop id 3310240982
+{
+	"modify": // convert AddOutput to Keyvalue format
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Gold_Spwan",
+				"classname": "classname"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnSpawn",
+						"targetname": "[PR#]Gold_Trigger_Maker",
+						"inputname": "AddOutput",
+						"overrideparam": "angles 0 0 0",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnSpawn",
+						"targetname": "Gold_Trigger_Maker",
+						"inputname": "KeyValue",
+						"overrideparam": "angles 0 0 0",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			}		
+		}
+	]	
+}

@@ -1,0 +1,463 @@
+// stripper by 兎RB 26.05.25
+// map ze_aooka
+// workshop id 3310240982
+{
+	"modify": 
+    [
+		// stripper update log
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+				        "targetname": "Command",
+                        "inputname": "Command",
+                        "overrideparam": "say fix stripper update 26.05.25",
+                        "delay": 7.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+		// fix item filter reset issue
+		{
+		    "match":
+            {
+				"targetname": "[PR#]context_fix",
+				"classname": "logic_relay"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]user",
+						"inputname": "KeyValue",
+						"overrideparam": "targetname none",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "player",
+						"inputname": "KeyValue",
+						"overrideparam": "targetname none",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+		// convert ModifySpeed(player_speedmod) to Keyvalue format
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Stage2_Boot_Attack_Mire_Hurt",
+				"classname": "trigger_hurt"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]jump",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.100000",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "[PR#]jump",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.000000",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]jump",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.000000",
+						"delay": 10.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "gravity 1.1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "gravity 1",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "gravity 1",
+						"delay": 10.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Stage2_Boot_Attack_Poison_Hurt_2",
+				"classname": "trigger_hurt"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "0.650000",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.000000",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.000000",
+						"delay": 8.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.65",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 8.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Stage2_Boot_Attack_Poison_Hurt_1",
+				"classname": "trigger_hurt"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "0.800000",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.000000",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.000000",
+						"delay": 10.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.8",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 10.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Stage2_Boot_Attack_Poison_Hurt_3",
+				"classname": "trigger_hurt"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "0.800000",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.000000",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.000000",
+						"delay": 8.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.8",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 8.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+		// convert AddOutput to new env_fade format, refer to L441~461
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Map_Fade",
+				"classname": "env_fade"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnUser2",
+						"targetname": "!self",
+						"inputname": "AddOutput",
+						"overrideparam": "rendercolor 255 255 255",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnUser2",
+						"targetname": "!self",
+						"inputname": "AddOutput",
+						"overrideparam": "holdtime 1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnUser2",
+						"targetname": "!self",
+						"inputname": "Fade",
+						"delay": 0.01,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnUser3",
+						"targetname": "!self",
+						"inputname": "AddOutput",
+						"overrideparam": "rendercolor 0 0 0",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnUser3",
+						"targetname": "!self",
+						"inputname": "AddOutput",
+						"overrideparam": "holdtime 1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnUser3",
+						"targetname": "!self",
+						"inputname": "Fade",
+						"delay": 0.01,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnUser2",
+						"targetname": "Map_Fade_f1",
+						"inputname": "Fade",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnUser3",
+						"targetname": "Map_Fade_f2",
+						"inputname": "Fade",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		}
+    ],
+	"add":
+	[
+		{
+			"targetname": "Map_Fade_f1",
+			"classname": "env_fade",
+			"reversefadeduration": "2",
+			"rendercolor": "255 255 255",
+			"renderamt": "255",
+			"holdtime": "1",
+			"duration": "2",
+			"spawnflags": "0"
+		},
+
+		{
+			"targetname": "Map_Fade_f2",
+			"classname": "env_fade",
+			"reversefadeduration": "2",
+			"rendercolor": "0 0 0",
+			"renderamt": "255",
+			"holdtime": "1",
+			"duration": "2",
+			"spawnflags": "0"
+		}		
+	]
+}
