@@ -33,3 +33,5 @@ Please enter the desired language serial number in the `overrideparam` value of 
 For maps that contain music, the song title, artist, and lyrics have been added for display.
 
 Both the original lyrics and their romanized version are displayed. This feature is implemented through the `env_hudhint` entity.
+
+For information on this feature, please refer to the // add lyric entity comment in default_ents.jsonc.
