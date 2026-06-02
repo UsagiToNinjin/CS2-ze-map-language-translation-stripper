@@ -1,0 +1,23 @@
+// stripper by 兎RB 26.05.24
+// map ze_realm
+// workshop id 3480319693
+{
+	"filter": 
+	[
+		// sometimes doesn’t work bug, move this entity to default_ents
+		{
+			"targetname": "[PR#]start_des",
+			"classname": "info_teleport_destination"
+		},
+		// remove practice mode entities
+		{
+			"classname": "point_worldtext",
+			"hammeruniqueid": "/(9192|9193)/"
+		},
+
+		{
+			"classname": "func_button",
+			"hammeruniqueid": "/(9188|9189)/"
+		}
+	]		
+}	

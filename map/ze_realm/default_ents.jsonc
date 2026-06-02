@@ -1,0 +1,328 @@
+// stripper by 兎RB 26.05.24
+// map ze_realm
+// workshop id 3480319693
+{
+    "filter": // remove practice mode entities
+    [   
+        {
+            "targetname": "[PR#]normalende_relay",
+			"classname": "logic_relay"
+        },
+
+		{
+            "targetname": "[PR#]stage_case",
+			"classname": "logic_case"
+        }
+    ],
+	"modify": 
+    [
+        
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+			"insert":
+            {
+                "io":
+                [
+					// set start normal stage 
+					{                      
+                        "outputname": "OnMapSpawn",
+				        "targetname": "normal_relay",
+                        "inputname": "Trigger",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+					// stripper update log
+					{                      
+                        "outputname": "OnMapSpawn",
+				        "targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say fix stripper update 26.05.24",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+		// convert AddOutput to keyvalue format
+        {
+		    "match":
+            {
+                "classname": "trigger_multiple",
+				"hammeruniqueid": "1020"
+            },
+			"delete": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "targetname ",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "targetname none",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+                "targetname": "[PR#]tp_start",
+				"classname": "trigger_teleport"
+            },
+			"delete": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "targetname ",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "targetname none",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+        // restrict player acceleration when teleporting, prevent boosting
+        {
+		    "match":
+            {
+                "targetname": "[PR#]final_teleport",
+				"classname": "trigger_multiple"
+            },
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "absvelocity 0 0 -500",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "movetype 0",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "movetype 2",
+						"delay": 0.1,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+        // change classname ambient_generic to point_soundevent to use feature snd_event_param
+        {
+		    "match":
+            {
+                "targetname": "[PR#]p_bgm",
+				"classname": "ambient_generic"
+            },
+            "replace": 
+            {
+                "classname": "point_soundevent"
+			},
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "p_bgm_volume",
+						"inputname": "SetSoundEventGUID",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+        // change inputname PlaySound(ambient_generic) to StartSound(point_soundevent)
+        {
+		    "match":
+            {
+                "targetname": "[PR#]boss_start_r_main",
+				"classname": "logic_relay"
+            },
+            "delete": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]p_bgm",
+						"inputname": "PlaySound",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnTrigger",
+						"targetname": "p_bgm",
+						"inputname": "StartSound",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+        // change inputname StopSound to Volume, based on CS:GO ze_realm_f3
+        {
+		    "match":
+            {
+                "targetname": "[PR#]ende_relay",
+				"classname": "logic_relay"
+            },
+            "delete": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]p_bgm",
+						"inputname": "StopSound",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnTrigger",
+						"targetname": "p_bgm_volume",
+						"inputname": "FireUser1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+    ],
+    "add": 
+    [
+		// move from world_layer_initial to default_ents
+		{
+			"targetname": "start_des",
+			"classname": "info_teleport_destination",
+			"origin": "-9981 12281 11932",
+			"angles": "0 0 0",
+			"scales": "1 1 1"
+		},	
+        // add boss bgm volume entity
+        {
+			"targetname": "p_bgm_volume",
+			"classname": "snd_event_param",
+			"parametername": "Volume",
+			"floatvalue": "1",
+            "io":
+            [
+				{                
+                    "outputname": "OnUser1",
+			        "targetname": "!self",
+                    "inputname": "SetFloatValue",
+                    "overrideparam": "0.9",
+                    "delay": 0.5,
+                    "timestofire": -1
+                },
+
+                {                
+                    "outputname": "OnUser1",
+			        "targetname": "!self",
+                    "inputname": "SetFloatValue",
+                    "overrideparam": "0.7",
+                    "delay": 1.0,
+                    "timestofire": -1
+                },
+
+                {                
+                    "outputname": "OnUser1",
+			        "targetname": "!self",
+                    "inputname": "SetFloatValue",
+                    "overrideparam": "0.5",
+                    "delay": 2.0,
+                    "timestofire": -1
+                },
+
+                {                
+                    "outputname": "OnUser1",
+			        "targetname": "!self",
+                    "inputname": "SetFloatValue",
+                    "overrideparam": "0.3",
+                    "delay": 3.0,
+                    "timestofire": -1
+                },
+
+                {                
+                    "outputname": "OnUser1",
+			        "targetname": "!self",
+                    "inputname": "SetFloatValue",
+                    "overrideparam": "0.1",
+                    "delay": 4.0,
+                    "timestofire": -1
+                },
+
+                {                
+                    "outputname": "OnUser1",
+			        "targetname": "p_bgm",
+                    "inputname": "StopSound",
+                    "delay": 5.0,
+                    "timestofire": -1
+                }
+			]		
+		}
+    ]
+}

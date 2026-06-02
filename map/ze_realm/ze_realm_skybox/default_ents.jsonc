@@ -1,0 +1,12 @@
+// stripper by 兎RB 26.05.24
+// map ze_realm
+// workshop id 3480319693
+{
+    "filter": // remove practice mode entity
+    [   
+        {
+            "targetname": "[PR#]stage_counter",
+			"classname": "math_counter"
+        }
+    ]
+}
