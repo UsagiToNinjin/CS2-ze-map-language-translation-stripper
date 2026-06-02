@@ -1,0 +1,148 @@
+// stripper by 兎RB 26.05.25
+// map ze_surf_vortex_p
+// workshop id 3105755546
+{
+	"modify": 
+    [
+        // stripper update log
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+				        "targetname": "cmd1",
+                        "inputname": "Command",
+                        "overrideparam": "say fix stripper update 26.05.25",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+		// convert RunScriptCode(lua script) to CS2 input format
+		{
+		    "match":
+            {
+				"targetname": "[PR#]end_zombie_hp",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetHealth(10)",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "SetHealth",
+						"overrideparam": "10",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+		// convert ai_changetarget to Keyvalue format
+		{
+		    "match":
+            {
+				"classname": "trigger_once",
+				"hammeruniqueid": "1045"
+            },
+			"delete": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]changetarget_1",
+						"inputname": "activate",
+						"delay": 45.0,
+						"timestofire": -1
+					}
+				]
+			},
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "afk_1",
+						"inputname": "KeyValue",
+						"overrideparam": "target zfinal",
+						"delay": 45.0,
+						"timestofire": 1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]second_te",
+				"classname": "trigger_once"
+            },
+			"delete": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]changetarget_2",
+						"inputname": "activate",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+            "insert": 
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "afk_1",
+						"inputname": "KeyValue",
+						"overrideparam": "target stage2de",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			}		
+		},
+		// change to non-solid
+		{
+		    "match":
+            {
+				"targetname": "[PR#]hdbt1",
+				"classname": "func_button",
+				"hammeruniqueid": "1037"
+            },
+			"replace": 
+            {
+				"spawnflags": "17408"
+			}
+		}
+    ]
+}
