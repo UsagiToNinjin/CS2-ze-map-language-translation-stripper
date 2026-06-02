@@ -1,0 +1,43 @@
+// stripper by 兎RB 26.05.31
+// map ze_ffxii_feywood_t
+// workshop id 3270937493
+{
+	"modify": // convert RunScriptCode(lua script) to Keyvalue format
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Item_Heal_Trigger_lvl3",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetMaxHealth(250)",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "max_health 250",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		}
+	]	
+}

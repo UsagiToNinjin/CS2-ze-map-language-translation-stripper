@@ -1,0 +1,78 @@
+// stripper by 兎RB 26.05.31
+// map ze_ffxii_feywood_t
+// workshop id 3270937493
+{
+	"modify":
+    [
+		// convert AddOutput to Keyvalue format
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Weapon_Z_Warp",
+				"classname": "weapon_knife"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "health 50000",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "health 50000",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			}		
+		},
+		// convert point_entity_finder to game_player_equip format
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Weapon_Z_Warp_Pickup",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Strip_Knife",
+						"inputname": "Trigger",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Map_Stripper",
+						"inputname": "Use",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		}
+	]	
+}

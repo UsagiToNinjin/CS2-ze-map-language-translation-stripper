@@ -1,0 +1,61 @@
+// stripper by 兎RB 26.05.31
+// map ze_ffxii_feywood_t
+// workshop id 3270937493
+{
+	"modify": // convert ModifySpeed(player_speedmod) to Keyvalue format
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Chocobo_Speed_Gain",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.170000",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1.17",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		}
+	]	
+}

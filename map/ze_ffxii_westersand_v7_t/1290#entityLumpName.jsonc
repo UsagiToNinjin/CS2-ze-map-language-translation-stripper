@@ -1,0 +1,43 @@
+// stripper by 兎RB 26.05.17
+// map ze_ffxii_westersand_v7_t
+// workshop id 3236270292
+{
+	"modify": // convert RunScriptCode(lua script) to keyvalue format
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Knife_Lure_Knife",
+                "classname": "weapon_knife"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(50000)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "max_health 50000",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,97 @@
+// stripper by 兎RB 26.05.31
+// map ze_ffxii_feywood_t
+// workshop id 3270937493
+{
+	"modify": // convert ModifySpeed(player_speedmod), AddOutput to Keyvalue format
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Item_Berserk_Trigger_Speed",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "2",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "gravity 0.65",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "gravity 1",
+						"delay": 5.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 5.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 2",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "gravity 0.65",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "gravity 1",
+						"delay": 5.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		}
+	]	
+}
