@@ -1,6 +1,9 @@
 # CS2 Zombie Escape Stripper
 
 This Stripper configuration was created to improve gameplay convenience.
+> [!NOTE]
+> A dedicated plugin is required to use this feature.
+https://github.com/Source2ZE/StripperCS2
 
 ## Translation
 
