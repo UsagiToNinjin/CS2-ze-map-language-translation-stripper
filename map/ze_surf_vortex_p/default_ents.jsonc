@@ -61,7 +61,7 @@
 				]
 			}		
 		},
-		// convert ai_changetarget to Keyvalue format
+		// ai_changetarget does not work in CS2, convert to Keyvalue format
 		{
 		    "match":
             {
