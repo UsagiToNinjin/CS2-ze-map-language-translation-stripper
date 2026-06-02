@@ -1,3 +1,3 @@
-# CS2-ze-map-language-translation-stripper
+# CS2 Zombie Escape Stripper
 
-use free !!
+This Stripper configuration was created to improve gameplay convenience.
