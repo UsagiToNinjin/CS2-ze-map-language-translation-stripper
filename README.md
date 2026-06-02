@@ -27,3 +27,9 @@ Please enter the desired language serial number in the `overrideparam` value of 
     "timestofire": -1
 }
 ```
+
+## Lyrics
+
+For maps that contain music, the song title, artist, and lyrics have been added for display.
+
+Both the original lyrics and their romanized version are displayed. This feature is implemented through the `env_hudhint` entity.
