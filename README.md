@@ -38,8 +38,11 @@ For information on this feature, please refer to the `// add lyric entity` comme
 
 ## Lua Script
 
-Lua script functionality has been converted to work without requiring any Lua script execution plugins.
+Lua script functionality has been implemented to work without requiring any Lua script execution plugins.
 
-This is achieved by replacing the `RunScriptCode` input with `KeyValue` operations.
+For cases where Lua scripts are used to apply effects to players, the `RunScriptCode` input has been replaced with `KeyValue` operations.
+
+The `KeyValue` implementation is based on CS2Fixes.
+https://github.com/Source2ZE/CS2Fixes/wiki/Custom-Mapping-Features
 
 This feature is applied to all Stripper configurations whose commit messages contain `convert lua script`.
