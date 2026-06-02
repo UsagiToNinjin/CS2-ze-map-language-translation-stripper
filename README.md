@@ -46,3 +46,11 @@ The `KeyValue` implementation is based on CS2Fixes.
 https://github.com/Source2ZE/CS2Fixes/wiki/Custom-Mapping-Features
 
 This feature is applied to all Stripper configurations whose commit messages contain `convert lua script`.
+
+## Bug Fixes
+
+Various bugs present in the map have been fixed.
+
+This feature is applied to all Stripper configurations whose commit messages contain `fix bug`.
+
+For detailed information, please refer to the `// + fix bug` comments at the top of the corresponding Stripper files.
