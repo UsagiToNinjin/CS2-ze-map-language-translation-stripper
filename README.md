@@ -27,7 +27,7 @@ Please enter the desired language serial number in the `overrideparam` value of 
     "timestofire": -1
 }
 ```
-
+**_NOTE:_** If this value is not changed, the default Japanese setting will be applied.
 ## Lyrics
 
 For maps that contain music, the song title, artist, and lyrics have been added for display.
