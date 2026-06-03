@@ -15,7 +15,7 @@ Supported entities:
 * `point_worldtext`
 * `env_hudhint`
 
-This feature is only available for Stripper configurations whose commit messages contain keywords such as `language`>`other languages/...` or similar.
+This feature is only available for Stripper configurations whose commit messages contain keywords such as `language`>`other languages/...`.
 
 You can change the language by referring to the comments at the top of the `default_ents.jsonc` file.
 Please enter the desired language serial number in the `overrideparam` value of `language_counter`.
