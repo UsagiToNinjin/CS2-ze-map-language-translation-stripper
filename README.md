@@ -37,6 +37,8 @@ For maps that contain music, the song title, artist, and lyrics have been added 
 
 Both the original lyrics and their romanized version are displayed. This feature is implemented through the `env_hudhint` entity.
 
+<img width="1280" height="424" alt="730_73" src="https://github.com/user-attachments/assets/81741f67-1b99-4094-b643-5932901f7058" />
+
 For information on this feature, please refer to the `// add lyric entity` comment in `default_ents.jsonc`.
 
 ## Lua Script
