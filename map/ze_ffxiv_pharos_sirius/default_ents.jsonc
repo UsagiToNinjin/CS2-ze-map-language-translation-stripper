@@ -3,8 +3,15 @@
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + convert lua script L39~218, L6173~6212, L6235~6274, L6297~6336, L6359~6416, L6439~6478
+// + convert lua script L46~225, L6205~6247, L6267~6309, L6329~6371, L6391~6451, L6471~6513
+// + fix bug L226~251
 {
+	"filter": // remove old zombie item pickup entities and convert them to the new entity system, refer to L226
+	[
+		{
+			"targetname": "/((FD|Temp)_Knife|Knife_Strip_(PT|MK)|Temp_Knife_Strip)/"
+		}
+	],
 	"modify":
 	[
 		{
@@ -215,6 +222,32 @@
                     }
 				]
 			}
+		},
+		// convert player_weaponstrip to game_player_equip
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Strip_Knife",
+				"classname": "logic_relay"
+            },
+			"replace":
+			{
+				"classname": "game_player_equip",
+				"spawnflags": "3"
+			},
+			"delete":
+			{
+				"passthroughcaller": "false",
+				"fastretrigger": "true",
+				"triggeronce": "false",
+				"startdisabled": "false",
+				"io":
+				[
+					{
+						"outputname": "OnTrigger"
+					}	
+				]
+			}		
 		}
 	],
 	"add":
@@ -6151,7 +6184,7 @@
 				]
 			}
 		},
-		// convert RunScriptCode(lua script) to keyvalue format
+
 		{
 			"match":
 			{
@@ -6169,7 +6202,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-
+					// convert RunScriptCode(lua script) to keyvalue format L6205~6247
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6213,7 +6246,7 @@
 				]
 			}
 		},
-		// convert RunScriptCode(lua script) to keyvalue format
+
 		{
 			"match":
 			{
@@ -6231,7 +6264,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-
+					// convert RunScriptCode(lua script) to keyvalue format L6267~6309
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6275,7 +6308,7 @@
 				]
 			}
 		},
-		// convert RunScriptCode(lua script) to keyvalue format
+
 		{
 			"match":
 			{
@@ -6293,7 +6326,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-
+					// convert RunScriptCode(lua script) to keyvalue format L6329~6371
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6337,7 +6370,7 @@
 				]
 			}
 		},
-		// convert RunScriptCode(lua script) to keyvalue format
+
 		{
 			"match":
 			{
@@ -6355,7 +6388,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-
+					// convert RunScriptCode(lua script) to keyvalue format L6391~6451
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6417,7 +6450,7 @@
 				]
 			}
 		},
-		// convert RunScriptCode(lua script) to keyvalue format
+
 		{
 			"match":
 			{
@@ -6435,7 +6468,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-
+					// convert RunScriptCode(lua script) to keyvalue format L6471~6513
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
