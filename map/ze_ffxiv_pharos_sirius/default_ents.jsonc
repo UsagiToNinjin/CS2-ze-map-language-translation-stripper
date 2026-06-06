@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.05.15
+// stripper by 兎RB,Frame 26.06.06
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -36,7 +36,7 @@
 						"outputname": "OnSpawn",
 						"targetname": "Server",
 						"inputname": "Command",
-						"overrideparam": "say language translation stripper 26.05.15 by 兎RB,Frame",
+						"overrideparam": "say language translation stripper 26.06.06 by 兎RB,Frame",
 						"delay": 6.0,
 						"timestofire": -1
 					}
