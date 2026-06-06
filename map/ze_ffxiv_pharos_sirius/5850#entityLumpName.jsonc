@@ -1,7 +1,8 @@
-// stripper by 兎RB 26.01.09
+// stripper by 兎RB 26.06.06
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+// + fix bug L47~80
 {
 	"modify": // remove message output
     [
@@ -42,6 +43,40 @@
                     }
 				]
 			}
+		},
+        // convert point_entity_finder to game_player_equip format
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Magic_Bridge_Strip",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Strip_Knife",
+						"inputname": "Trigger",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Strip_Knife",
+						"inputname": "Use",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
 		}
 	]
 }
