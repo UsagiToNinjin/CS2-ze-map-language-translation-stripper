@@ -52,7 +52,7 @@
 				]
 			}
 		},
-        // convert point_entity_finder to game_player_equip format
+        // convert to game_player_equip input
         {
 		    "match":
             {
