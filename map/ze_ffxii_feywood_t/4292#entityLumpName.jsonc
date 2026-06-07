@@ -1,0 +1,18 @@
+// stripper by 兎RB 26.06.07
+// map ze_ffxii_feywood_t
+// workshop id 3270937493
+{
+	"modify": // change to non-solid to prevent collision damage from players
+    [
+        {
+		    "match":
+            {
+				"classname": "func_physbox"
+            },
+			"replace": 
+			{
+				"notsolid": "1"
+			}
+		}
+	]	
+}
