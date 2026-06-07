@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.05.31
+// stripper by 兎RB 26.06.07
 // map ze_ffxii_feywood_t
 // workshop id 3270937493
 {
@@ -24,7 +24,7 @@
                         "outputname": "OnMapSpawn",
 				        "targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.05.31",
+                        "overrideparam": "say fix stripper update 26.06.07",
                         "delay": 6.0,
                         "timestofire": -1
                     }
