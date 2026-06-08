@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.04.30
+// stripper by 兎RB 26.06.08
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -97,14 +97,6 @@
 						"targetname": "ZM_C_O_D_Text2",
                         "inputname": "Enable",
                         "delay": 4.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnUser1",
-						"targetname": "ZM_C_O_D_Text2",
-                        "inputname": "Kill",
-                        "delay": 15.0,
                         "timestofire": 1
                     },
 

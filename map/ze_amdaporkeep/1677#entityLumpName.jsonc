@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.04.30
+// stripper by 兎RB 26.06.08
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -66,7 +66,7 @@
                         "outputname": "OnUser3",
 						"targetname": "!self",
                         "inputname": "SetMessage",
-                        "overrideparam": "虽然我不是暗黑能量但我确实暂时用不了啦",
+                        "overrideparam": "虽然我不是暗黑能量但我确实用不了啦",
                         "delay": 0.0,
                         "timestofire": 1
                     }

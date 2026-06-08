@@ -2154,7 +2154,7 @@
                     "outputname": "OnUser1",
 					"targetname": "ZM_Storm_Text*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser3>!self>SetMessage>私は暗黒のエネルギーではないけれど\n確かに暫く使えないんだ>0.0>1",
+                    "overrideparam": "OnUser3>!self>SetMessage>私は暗黒のエネルギーではないけれど\n確かに使えないんだ>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2181,7 +2181,7 @@
                     "outputname": "OnUser2",
 					"targetname": "ZM_Storm_Text*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser3>!self>SetMessage>나는 암흑의 에너지가 아니지만\n확실히 잠시동안 사용할 수 없군>0.0>1",
+                    "overrideparam": "OnUser3>!self>SetMessage>나는 암흑의 에너지가 아니지만\n확실히 사용할 수 없군>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2208,7 +2208,7 @@
                     "outputname": "OnUser3",
 					"targetname": "ZM_Storm_Text*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser3>!self>SetMessage>Although I’m not dark energy\nI can’t use it for the time being>0.0>1",
+                    "overrideparam": "OnUser3>!self>SetMessage>Although I’m not dark energy\nBut I can't use it anymore>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 }
@@ -2243,7 +2243,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>太陽神の衡：周囲の味方にボスダメージが増加する効果を付与\n持続7秒>0.05>-1",
+                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>太陽神の衡：周囲の味方にボスダメージが増加する効果を付与\n持続8秒>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2270,7 +2270,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>戦神の槍：周囲の味方に無限弾薬の効果を付与\n持続8秒>0.05>-1",
+                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>戦神の槍：周囲の味方に無限弾薬の効果を付与\n持続7秒>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2288,7 +2288,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>建築神の塔：周囲の味方に徐々に回復させる効果を付与\n持続12秒>0.05>-1",
+                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>建築神の塔：周囲の味方に徐々に回復させる効果を付与\n持続16秒>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2324,7 +2324,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>태양신의 저울：주변 아군에게 보스 대미지가 증가하는 효과를 부여\n지속 7초>0.05>-1",
+                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>태양신의 저울：주변 아군에게 보스 대미지가 증가하는 효과를 부여\n지속 8초>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2351,7 +2351,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>전쟁신의 창：주변 아군에게 무한탄약 효과를 부여\n지속 8초>0.05>-1",
+                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>전쟁신의 창：주변 아군에게 무한탄약 효과를 부여\n지속 7초>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2369,7 +2369,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>건축신의 탑：주변 아군에게 서서히 회복시키는 효과를 부여\n지속 12초>0.05>-1",
+                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>건축신의 탑：주변 아군에게 서서히 회복시키는 효과를 부여\n지속 16초>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2405,7 +2405,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>Scale of the Sun God：\nGrants nearby allies an effect that deals extra damage to bosses\nDuration 7sec>0.05>-1",
+                    "overrideparam": "OnCase01>Item_Astrologer_Text*>SetMessage>Scale of the Sun God：\nGrants nearby allies an effect that deals extra damage to bosses\nDuration 8sec>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2432,7 +2432,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>Spear of the War God：\nGrants nearby allies an effect of unlimited ammunition\nDuration 8sec>0.05>-1",
+                    "overrideparam": "OnCase04>Item_Astrologer_Text*>SetMessage>Spear of the War God：\nGrants nearby allies an effect of unlimited ammunition\nDuration 7sec>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -2450,7 +2450,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Item_Astrologer_Case_Draw*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>Tower of the God of Construction：\nGrants nearby allies an effect that gradually restores HP\nDuration 12sec>0.05>-1",
+                    "overrideparam": "OnCase06>Item_Astrologer_Text*>SetMessage>Tower of the God of Construction：\nGrants nearby allies an effect that gradually restores HP\nDuration 16sec>0.05>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
