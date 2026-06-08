@@ -1,7 +1,13 @@
-// stripper by 兎RB 26.05.17
+// stripper by 兎RB 26.06.08
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
 {
+    "filter": // remove old zombie item pickup entities and convert them to the new entity system
+    [
+        {
+            "targetname": "/(Cloak_Balthier_Finder|Knife_Strip|Knife_Stripper_(Template|Maker))/"
+        }
+    ],
     "modify":
     [
         // stripper update log
@@ -19,13 +25,73 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "Cmd",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.05.17",
+                        "overrideparam": "say fix stripper update 26.06.08",
                         "delay": 7.0,
                         "timestofire": -1
                     }
                 ]
             }
-        },            
+        }, 
+        // convert point_entity_finder to game_player_equip
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Strip_Knife",
+				"classname": "logic_relay"
+            },
+			"replace":
+			{
+				"classname": "game_player_equip",
+				"spawnflags": "3"
+			},
+			"delete":
+			{
+				"passthroughcaller": "false",
+				"fastretrigger": "true",
+				"triggeronce": "false",
+				"startdisabled": "false",
+				"io":
+				[
+					{
+						"outputname": "OnTrigger"
+					}	
+				]
+			}		
+		},
+        
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Cloak_Balthier_Stripper",
+				"classname": "trigger_once"
+            },
+			"delete":
+			{
+				"io":
+				[
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Cloak_Balthier_Finder",
+                        "inputname": "FindEntity",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+			{
+				"io":
+				[
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Strip_Knife",
+                        "inputname": "Use",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}		
+		},
         // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to keyvalue format
         {
             "match":

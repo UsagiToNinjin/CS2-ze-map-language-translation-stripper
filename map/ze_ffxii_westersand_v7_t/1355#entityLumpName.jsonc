@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.05.17
+// stripper by 兎RB 26.06.08
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
 {
@@ -80,7 +80,41 @@
 				]
 			}
 		},
-        // fix item origin
+        // convert to game_player_equip input
+        {
+            "match":
+            {
+                "targetname": "[PR#]Knife_Choc_Stripper&0000",
+                "classname": "trigger_once"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Strip_Knife",
+                        "inputname": "Trigger",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Strip_Knife",
+                        "inputname": "Use",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+        // fix item origin bug caused by logic_measure_movement
         {
             "match":
             {
@@ -89,8 +123,7 @@
             },
             "replace":
             {
-                "origin": "-8 1 -44",
-                "parentname": "[PR#]Knife_Choc&0000",
+                "parentname": "Knife_Choc&0000",
                 "startdisabled": "1"
             }
 		}
