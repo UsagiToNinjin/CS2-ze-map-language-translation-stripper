@@ -1,0 +1,78 @@
+// stripper by 兎RB 26.06.07
+// map ze_ffxii_westersand_v7_t
+// workshop id 3236270292
+{
+	"modify":
+    [
+        // convert RunScriptCode(lua script) to keyvalue format
+        {
+            "match":
+            {
+                "targetname": "[PR#]Knife_Lure_Knife",
+                "classname": "weapon_knife"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(50000)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "max_health 50000",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+        // convert to game_player_equip input
+        {
+            "match":
+            {
+                "targetname": "[PR#]Knife_Lure_Stripper",
+                "classname": "trigger_once"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Strip_Knife",
+                        "inputname": "Trigger",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Strip_Knife",
+                        "inputname": "Use",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}
