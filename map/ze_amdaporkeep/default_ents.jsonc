@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.05.10
+// stripper by 兎RB,Frame 26.06.08
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -50,8 +50,8 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.05.10 by 兎RB,Frame",
-                        "delay": 11.0,
+                        "overrideparam": "say language translation stripper 26.06.08 by 兎RB,Frame",
+                        "delay": 12.0,
                         "timestofire": -1
                     }
                 ]
@@ -1264,6 +1264,33 @@
                     "timestofire": -1
                 },
 
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 見ろ，あそこに祭壇がある>5.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 目的地まで転送してくれるはずだ>10.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 誰がこんな祭壇を作ったんだ，しょぼすぎるだろ……>15.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
                 {
                     "outputname": "OnUser1",
 					"targetname": "Hard_Trigger_1*",
@@ -1309,6 +1336,33 @@
                     "timestofire": -1
                 },
 
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 봐，저기에 제단이 있어>5.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 우리를 목적지까지 이동시켜 줄 것이다>10.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say 누가 이런 제단을 만든 거지，너무 초라하잖아……>15.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
                 {
                     "outputname": "OnUser2",
 					"targetname": "Hard_Trigger_1*",
@@ -1350,6 +1404,33 @@
 					"targetname": "Forest_Teleport_Trigger*",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnStartTouch>ServerCommand>Command>say ＜ Defend until the teleport activates ＞>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say Look，there's an altar over there>5.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say It should be able to teleport us to our destination>10.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Forest_Teleport_Trigger*",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>ServerCommand>Command>say Who made this altar，It looks pretty shabby……>15.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },

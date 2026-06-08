@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.02.27
+// stripper by 兎RB 26.06.08
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -20,6 +20,33 @@
                         "inputname": "Command",
                         "overrideparam": "say < 防守直至传送启动 >",
                         "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 快看那里有一个祭坛",
+                        "delay": 5.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 应该能传送我们到目的地",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 谁搭建的祭坛，也太寒酸了吧……",
+                        "delay": 15.0,
                         "timestofire": 1
                     }
 				]
