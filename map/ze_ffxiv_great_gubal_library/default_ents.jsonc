@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.03.18
+// stripper by 兎RB,Frame 26.06.11
 // map ze_ffxiv_great_gubal_library
 // workshop id 3373306757
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
 						"outputname": "OnMapSpawn",
 						"targetname": "cmd",
 						"inputname": "Command",
-						"overrideparam": "say language translation stripper 26.03.18 by 兎RB,Frame",
+						"overrideparam": "say language translation stripper 26.06.11 by 兎RB,Frame",
 						"delay": 5.0,
 						"timestofire": -1
 					}
@@ -3116,7 +3116,7 @@
 					"outputname": "OnUser2",
 					"targetname": "!self",
 					"inputname": "SetMessage",
-					"overrideparam": "Eikyuu ni aku dooru tachi\n永久に飽くドール達",
+					"overrideparam": "Towa ni aku dooru tachi\n永久に飽くドール達",
 					"delay": 78.0,
 					"timestofire": -1
 				},
