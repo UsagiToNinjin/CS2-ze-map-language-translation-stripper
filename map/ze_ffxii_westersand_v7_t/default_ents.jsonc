@@ -1,0 +1,560 @@
+// stripper by 兎RB 26.06.08
+// map ze_ffxii_westersand_v7_t
+// workshop id 3236270292
+{
+    "filter": // remove old zombie item pickup entities and convert them to the new entity system
+    [
+        {
+            "targetname": "/(Cloak_Balthier_Finder|Knife_Strip|Knife_Stripper_(Template|Maker))/"
+        }
+    ],
+    "modify":
+    [
+        // stripper update log
+        {
+            "match":
+            {
+                "classname": "logic_auto",
+                "hammeruniqueid": "441"
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "Cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say fix stripper update 26.06.08",
+                        "delay": 7.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }, 
+        // convert point_entity_finder to game_player_equip
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Strip_Knife",
+				"classname": "logic_relay"
+            },
+			"replace":
+			{
+				"classname": "game_player_equip",
+				"spawnflags": "3"
+			},
+			"delete":
+			{
+				"passthroughcaller": "false",
+				"fastretrigger": "true",
+				"triggeronce": "false",
+				"startdisabled": "false",
+				"io":
+				[
+					{
+						"outputname": "OnTrigger"
+					}	
+				]
+			}		
+		},
+        
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Cloak_Balthier_Stripper",
+				"classname": "trigger_once"
+            },
+			"delete":
+			{
+				"io":
+				[
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Cloak_Balthier_Finder",
+                        "inputname": "FindEntity",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+			{
+				"io":
+				[
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Strip_Knife",
+                        "inputname": "Use",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}		
+		},
+        // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to keyvalue format
+        {
+            "match":
+            {
+                "targetname": "[PR#]Boss_Water",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(5.00)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.2",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+                "hammeruniqueid": "1264"
+            },
+            "delete":
+            {
+                "io":
+                [	
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1.350000",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(50000)",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1.35",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "max_health 50000",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]  
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Reset",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "movetype",
+                        "overrideparam": "2",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "/Cloak_(Balthier|Vaan|Ashe|Basch)_Knife/",
+                "classname": "weapon_knife"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnUser1",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetMaxHealth(250)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "max_health 250",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]EasterEgg_Look",
+                "classname": "trigger_look"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1.500000",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1",
+                        "delay": 20.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1.5",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 20.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]ZE_Easy_Ending_Trigger",
+                "classname": "trigger_multiple",
+                "hammeruniqueid": "1314"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "0.600000",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.6",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Cloak_Vaan_Relay",
+                "classname": "logic_relay"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1.500000",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1.5",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+        // convert AddOutPut to keyvalue format
+        {
+            "match":
+            {
+                "targetname": "[PR#]Map_Case_Zombieweapons",
+                "classname": "logic_case"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]Temp_Maker",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -1456.01 -2656 2200",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+						"targetname": "[PR#]Temp_Maker",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -1456.01 -2272 2200",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+						"targetname": "[PR#]Temp_Maker",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -1456.01 1632 2200",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+						"targetname": "[PR#]Temp_Maker",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -1456.01 1248 2200",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnCase01",
+						"targetname": "Temp_Maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -1456.01 -2656 2200",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+						"targetname": "Temp_Maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -1456.01 -2272 2200",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+						"targetname": "Temp_Maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -1456.01 1632 2200",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+						"targetname": "Temp_Maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -1456.01 1248 2200",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            }
+        },
+        // fix item origin
+        // 1355#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Boss_Water",
+                "classname": "trigger_multiple"
+            },
+            "replace":
+            {
+                "template08": "Knife_Choc_Model_Fix"
+            }
+        }
+    ]      
+}            
