@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.05.25
+// stripper by 兎RB 26.06.12
 // map ze_aooka
 // workshop id 3310240982
 {
@@ -18,7 +18,7 @@
                         "outputname": "OnMapSpawn",
 				        "targetname": "Command",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.05.25",
+                        "overrideparam": "say fix stripper update 26.06.12",
                         "delay": 7.0,
                         "timestofire": -1
                     }
@@ -349,7 +349,7 @@
 				]
 			}		
 		},
-		// convert AddOutput to new env_fade format, refer to L441~461
+		// convert AddOutput to new env_fade format, refer to L504~524
 		{
 		    "match":
             {
@@ -434,6 +434,69 @@
 					}
 				]
 			}		
+		},
+		// fix missing nuke for human team, refer to L526~575
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Stage1_Win_Zombie",
+				"classname": "trigger_multiple"
+            },
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "stage1_nuke_fail",
+						"inputname": "Enable",
+						"delay": 3.0,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Stage2_Win_Zombie",
+				"classname": "trigger_multiple"
+            },
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "stage2_nuke_fail",
+						"inputname": "Enable",
+						"delay": 3.0,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Stage3_Win_Zombie",
+				"classname": "trigger_multiple"
+            },
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "stage3_nuke_fail",
+						"inputname": "Enable",
+						"delay": 3.0,
+						"timestofire": 1
+					}
+				]
+			}
 		}
     ],
 	"add":
@@ -458,6 +521,57 @@
 			"holdtime": "1",
 			"duration": "2",
 			"spawnflags": "0"
-		}		
+		},
+		
+		{
+            "targetname": "stage1_nuke_fail",
+			"classname": "trigger_hurt",
+		    "origin": "-9460 -2560 -1840",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"filtername": "Human",
+            "forgivedelay": "3",
+            "damagemodel": "0",
+			"damagetype": "512",
+			"damagecap": "20",
+            "damage": "999999",
+			"startdisabled": "1",
+			"spawnflags": "4097",
+            "model": "maps/ze_aooka/entities/stage1_nuke_4185.vmdl"
+		},
+
+		{
+            "targetname": "stage2_nuke_fail",
+			"classname": "trigger_hurt",
+		    "origin": "-11152 3328 -4224",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"filtername": "Human",
+            "forgivedelay": "3",
+            "damagemodel": "0",
+			"damagetype": "512",
+			"damagecap": "20",
+            "damage": "999999",
+			"startdisabled": "1",
+			"spawnflags": "4097",
+            "model": "maps/ze_aooka/entities/stage1_nuke_4185.vmdl"
+		},
+
+		{
+            "targetname": "stage3_nuke_fail",
+			"classname": "trigger_hurt",
+		    "origin": "-11144 0 512",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"filtername": "Human",
+            "forgivedelay": "3",
+            "damagemodel": "0",
+			"damagetype": "512",
+			"damagecap": "20",
+            "damage": "999999",
+			"startdisabled": "1",
+			"spawnflags": "4097",
+            "model": "maps/ze_aooka/entities/stage4_nuke_3280.vmdl"
+		}
 	]
 }
