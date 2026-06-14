@@ -1,979 +1,733 @@
-// stripper by 兎RB 26.06.14
-// map ze_ffxii_westersand_v7_t
-// workshop id 3236270292
-// boss HP adjustment refet to L560~977
+// stripper by 兎RB 26.05.31
+// map ze_ffxii_feywood_t
+// workshop id 3270937493
 {
-    "filter": // remove old zombie item pickup entities and convert them to the new entity system
+	"filter": // remove old zombie item pickup entities and convert them to the new entity system, refer to L719
+	[
+		{
+			"targetname": "/(Strip_Knife|Knife_Strip|Knife_Stripper_(Teleport|Template|Maker))/"
+		}
+	],
+	"modify": 
     [
-        {
-            "targetname": "/(Cloak_Balthier_Finder|Knife_Strip|Knife_Stripper_(Template|Maker))/"
-        }
-    ],
-    "modify":
-    [
-        // stripper update log
+		// stripper update log
         {
             "match":
             {
-                "classname": "logic_auto",
-                "hammeruniqueid": "441"
+                "classname": "logic_auto"
             },
-            "insert":
+			"insert":
             {
                 "io":
-                [				
+                [
 					{
                         "outputname": "OnMapSpawn",
-						"targetname": "Cmd",
+				        "targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.06.14",
-                        "delay": 7.0,
+                        "overrideparam": "say fix stripper update 26.05.31",
+                        "delay": 6.0,
                         "timestofire": -1
                     }
-                ]
-            }
-        },
-        // convert point_entity_finder to game_player_equip
+				]
+			}
+		},
+		// convert ModifySpeed(player_speedmod), RunScriptCode(lua script), AddOutput to Keyvalue format
 		{
 		    "match":
             {
-				"targetname": "[PR#]Strip_Knife",
+				"targetname": "[PR#]Chaos_Ice",
+				"classname": "trigger_hurt"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "0.150000",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1",
+						"delay": 4.95,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(5.00)",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 4.95,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.15",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 4.95,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Chaos_Attack_Case",
+				"classname": "logic_case"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase05",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1",
+						"delay": 5.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase05",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 5.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Item_Relay_Blizzard",
 				"classname": "logic_relay"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					// why isn't the default value 1 ?
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.050000",
+						"delay": 6.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 6.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]ZMround_Solo_Trigger",
+				"classname": "trigger_once"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "2.200000",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "gravity 0.25",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "health 999999999",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 2.2",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "gravity 0.25",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "health 999999999",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]lvl1_Win_Bonus",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "health 999999999",
+						"delay": 1.4,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "health 999999999",
+						"delay": 1.4,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "/lvl[2-4]_Win_Bonus/",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "health 999999999",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "health 999999999",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]lvl5_Win_Bonus",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "health 999999999",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "OnUser2>!self>AddOutput>gravity 0.4>0>1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "OnUser2>!self>AddOutput>rendercolor 235 120 35>0>1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "OnUser2>!self>AddOutput>health 10000>0>1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "health 999999999",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnUser2>!self>KeyValue>gravity 0.4>0>1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnUser2>!self>KeyValue>color 235 120 35>0>1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnUser2>!self>KeyValue>health 10000>0>1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]lvl1_Win_Trigger_CT",
+				"classname": "trigger_once"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Map_All_Hurt_Zombie",
+						"inputname": "AddOutput",
+						"overrideparam": "filtername Zombie_Filter",
+						"delay": 1.9,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Map_All_Hurt_Zombie",
+						"inputname": "KeyValue",
+						"overrideparam": "filtername Zombie_Filter",
+						"delay": 1.9,
+						"timestofire": 1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Item_Z_Heal_Level_Case",
+				"classname": "logic_case"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase01",
+						"targetname": "[PR#]Item_Z_Heal_Trigger",
+						"inputname": "AddOutput",
+						"overrideparam": "OnStartTouch>!activator>AddOutput>health 7500>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase03",
+						"targetname": "[PR#]Item_Z_Heal_Trigger",
+						"inputname": "AddOutput",
+						"overrideparam": "OnStartTouch>!activator>AddOutput>health 10000>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase05",
+						"targetname": "[PR#]Item_Z_Heal_Trigger",
+						"inputname": "AddOutput",
+						"overrideparam": "OnStartTouch>!activator>AddOutput>health 12500>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase02",
+						"targetname": "[PR#]Item_Z_Heal_Trigger",
+						"inputname": "AddOutput",
+						"overrideparam": "OnStartTouch>!activator>AddOutput>health 7500>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase04",
+						"targetname": "[PR#]Item_Z_Heal_Trigger",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnStartTouch>!activator>AddOutput>health 10000>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase01",
+						"targetname": "Item_Z_Heal_Trigger",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnStartTouch>!activator>KeyValue>health 7500>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase03",
+						"targetname": "Item_Z_Heal_Trigger",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnStartTouch>!activator>KeyValue>health 10000>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase05",
+						"targetname": "Item_Z_Heal_Trigger",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnStartTouch>!activator>KeyValue>health 12500>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase02",
+						"targetname": "Item_Z_Heal_Trigger",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnStartTouch>!activator>KeyValue>health 7500>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase04",
+						"targetname": "Item_Z_Heal_Trigger",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnStartTouch>!activator>KeyValue>health 10000>0>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]ZMround_Win_Trigger",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "health 99999999",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "health 99999999",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Item_Relay_Darkaga",
+				"classname": "logic_relay"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Item_Darkaga_Spawner",
+						"inputname": "AddOutput",
+						"overrideparam": "angles 0 0 0",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Item_Darkaga_Spawner",
+						"inputname": "KeyValue",
+						"overrideparam": "angles 0 0 0",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Zodiark_HP_Attack",
+				"classname": "logic_case"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase05",
+						"targetname": "[PR#]Zodiark_Thrust_Forward",
+						"inputname": "AddOutput",
+						"overrideparam": "force 1500",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase04",
+						"targetname": "[PR#]Zodiark_Thrust_Forward",
+						"inputname": "AddOutput",
+						"overrideparam": "force 1400",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase05",
+						"targetname": "Zodiark_Thrust_Forward",
+						"inputname": "KeyValue",
+						"overrideparam": "force 1500",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase04",
+						"targetname": "Zodiark_Thrust_Forward",
+						"inputname": "KeyValue",
+						"overrideparam": "force 1400",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+		// convert AddOutput to CS2 input format
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Boss_End_Relay",
+				"classname": "logic_relay"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]lvl1_Boss_Poison",
+						"inputname": "AddOutput",
+						"overrideparam": "damage 300",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "lvl1_Boss_Poison",
+						"inputname": "SetDamage",
+						"overrideparam": "300",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		},
+		// convert player_weaponstrip to game_player_equip
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Map_Stripper",
+				"classname": "player_weaponstrip"
             },
 			"replace":
 			{
 				"classname": "game_player_equip",
 				"spawnflags": "3"
-			},
-			"delete":
-			{
-				"passthroughcaller": "false",
-				"fastretrigger": "true",
-				"triggeronce": "false",
-				"startdisabled": "false",
-				"io":
-				[
-					{
-						"outputname": "OnTrigger"
-					}	
-				]
 			}		
-		},
-        
-        {
-		    "match":
-            {
-				"targetname": "[PR#]Cloak_Balthier_Stripper",
-				"classname": "trigger_once"
-            },
-			"delete":
-			{
-				"io":
-				[
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "[PR#]Cloak_Balthier_Finder",
-                        "inputname": "FindEntity",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-				]
-			},
-            "insert":
-			{
-				"io":
-				[
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "Strip_Knife",
-                        "inputname": "Use",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-				]
-			}		
-		},
-        // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to keyvalue format
-        {
-            "match":
-            {
-                "targetname": "[PR#]Boss_Water",
-                "classname": "trigger_multiple"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(5.00)",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(1.00)",
-                        "delay": 5.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 0.2",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 5.0,
-                        "timestofire": -1
-                    }
-                ]  
-            }
-        },
-
-        {
-            "match":
-            {
-                "classname": "trigger_once",
-                "hammeruniqueid": "1264"
-            },
-            "delete":
-            {
-                "io":
-                [	
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1.350000",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetMaxHealth(50000)",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1.35",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "max_health 50000",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]  
-            }
-        },
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]Reset",
-                "classname": "trigger_multiple"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(1.00)",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "movetype",
-                        "overrideparam": "2",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]  
-            }
-        },
-
-        {
-            "match":
-            {
-                "targetname": "/Cloak_(Balthier|Vaan|Ashe|Basch)_Knife/",
-                "classname": "weapon_knife"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnUser1",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetMaxHealth(250)",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnUser1",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "max_health 250",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]  
-            }
-        },
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]EasterEgg_Look",
-                "classname": "trigger_look"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1.500000",
-                        "delay": 1.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1",
-                        "delay": 20.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1.5",
-                        "delay": 1.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 20.0,
-                        "timestofire": -1
-                    }
-                ]  
-            }
-        },
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]ZE_Easy_Ending_Trigger",
-                "classname": "trigger_multiple",
-                "hammeruniqueid": "1314"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "0.600000",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1",
-                        "delay": 5.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 0.6",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 5.0,
-                        "timestofire": -1
-                    }
-                ]  
-            }
-        },
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]Cloak_Vaan_Relay",
-                "classname": "logic_relay"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1.500000",
-                        "delay": 0.05,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1",
-                        "delay": 5.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1.5",
-                        "delay": 0.05,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 5.0,
-                        "timestofire": -1
-                    }
-                ]  
-            }
-        },
-        // convert AddOutPut to keyvalue format
-        {
-            "match":
-            {
-                "targetname": "[PR#]Map_Case_Zombieweapons",
-                "classname": "logic_case"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnCase01",
-						"targetname": "[PR#]Temp_Maker",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1456.01 -2656 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase02",
-						"targetname": "[PR#]Temp_Maker",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1456.01 -2272 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase03",
-						"targetname": "[PR#]Temp_Maker",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1456.01 1632 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase04",
-						"targetname": "[PR#]Temp_Maker",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1456.01 1248 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnCase01",
-						"targetname": "Temp_Maker",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1456.01 -2656 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase02",
-						"targetname": "Temp_Maker",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1456.01 -2272 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase03",
-						"targetname": "Temp_Maker",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1456.01 1632 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase04",
-						"targetname": "Temp_Maker",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1456.01 1248 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]    
-            }
-        },
-        // fix item origin
-        // 1355#entityLumpName
-        {
-            "match":
-            {
-                "targetname": "[PR#]Boss_Water",
-                "classname": "trigger_multiple"
-            },
-            "replace":
-            {
-                "template08": "Knife_Choc_Model_Fix"
-            }
-        }
-        // boss HP is set based on china server's balance, making it excessively high
-        // reduce boss HP by approximately 50%
-        // uncomment if necessary
-        // stage hard mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Boss_Trigger_Add_Health_Hard",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "30",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "15",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage hard,extreme mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Boss_Trigger_Add_Health_Default",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "60",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "30",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage extreme mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Boss_Trigger_Add_Health_Extreme",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "5",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "3",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage hard,extreme last boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Ehe_Dragon_AddHP",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Ehe_Dragon_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "100",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Ehe_Dragon_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "50",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage extreme midlast boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]ZE_Extreme_Ending",
-        //        "classname": "trigger_multiple",
-        //        "hammeruniqueid": "1001"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Ehe_Guardian_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "30",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Ehe_Guardian_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "15",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage epic,god mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Airship_Guard_Trigger_Add_Health_Default",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Guard_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "40",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Guard_2_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Guard_3_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Gabranth_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "1.200000",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Guard_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Guard_2_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "10",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Guard_3_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "10",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Gabranth_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "0.6",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]  
-        //    }
-        //},
-        //// stage god mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Airship_Guard_Trigger_Add_Health_Godmode",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Guard_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "80",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Guard_2_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Guard_3_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Guard_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "40",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Guard_2_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "10",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Guard_3_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "10",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]  
-        //    }
-        //},
-        //// stage epic,god last boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "classname": "trigger_multiple",
-        //        "hammeruniqueid": "604"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Airship_Ending_Boss_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "145",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Airship_Ending_Boss_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "72",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage god last boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Airship_Ending_Boss_Trigger_Add_Health_Godmode",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "[PR#]Airship_Ending_Boss_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "55",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			{
-        //                "outputname": "OnStartTouch",
-		//				"targetname": "Airship_Ending_Boss_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "27",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //}
-    ]      
+		}
+	]
 }
