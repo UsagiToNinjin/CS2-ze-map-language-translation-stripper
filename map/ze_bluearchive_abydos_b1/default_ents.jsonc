@@ -1,9 +1,9 @@
-// stripper by 兎RB 26.06.13
+// stripper by 兎RB 26.06.14
 // map ze_bluearchive_abydos_b1
 // workshop id 3610014260
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L39~293, L1552~1657
+// + fix bug L39~161, L1420~1525
 {
     "modify":
     [
@@ -29,144 +29,12 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.06.13 兎RB",
+                        "overrideparam": "say language translation stripper 26.06.14 兎RB",
                         "delay": 3.0,
                         "timestofire": -1
                     }
                 ]
             }
-        },
-		// fix item origin(animgraph 2 update)
-		{
-            "match":
-            {
-                "targetname": "[PR#]komakaze_button",
-				"classname": "func_button"
-            },
-            "replace":
-            {
-				"origin": "-10802.341797 -1534.294434 7016.734375"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]komakaze_granede_text_01",
-				"classname": "point_worldtext"
-            },
-            "replace":
-            {
-				"origin": "-10802.341797 -1502.294434 7016.734375"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]komakaze_phys",
-				"classname": "trigger_multiple"
-            },
-            "replace":
-            {
-				"origin": "-10858.341797 -1534.294434 6964.734375"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]hoshino_phys",
-				"classname": "trigger_multiple"
-            },
-            "replace":
-            {
-				"origin": "-10777.218750 -889.539246 6718.000000"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]hoshino_EX_button",
-				"classname": "func_button"
-            },
-            "replace":
-            {
-				"origin": "-10729.218750 -889.539246 6772.000000"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]arona_card_10_partcile",
-				"classname": "info_particle_system"
-            },
-            "replace":
-            {
-				"origin": "-10776.000000 -3002.960205 8338.129883"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]arona_card_button",
-				"classname": "func_button"
-            },
-            "replace":
-            {
-				"origin": "-10784.000000 -2994.960205 8358.129883"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]ayane_healdrone",
-				"classname": "prop_dynamic"
-            },
-            "replace":
-            {
-				"origin": "-10710.916016 -2425.383545 8277.191406"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]ayane_healdrone_box_iddle",
-				"classname": "prop_physics_multiplayer"
-            },
-            "replace":
-            {
-				"origin": "-10708.953125 -2425.072266 8285.191406"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]ayane_healdrone_button",
-				"classname": "func_button"
-            },
-            "replace":
-            {
-				"origin": "-10654.916016 -2449.383545 8225.191406"
-			}	
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]Ayane",
-				"classname": "info_particle_system"
-            },
-            "replace":
-            {
-				"origin": "-10707.916016 -2423.383545 8323.191406"
-			}	
         },
 		// remake invisible model
 		{
