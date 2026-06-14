@@ -2,7 +2,7 @@
 // map ze_ffxii_feywood_t
 // workshop id 3270937493
 {
-	"filter": // remove old zombie item pickup entities and convert them to the new entity system, refer to L719
+	"filter": // remove old zombie item pickup entities and convert them to the new entity system
 	[
 		{
 			"targetname": "/(Strip_Knife|Knife_Strip|Knife_Stripper_(Teleport|Template|Maker))/"
